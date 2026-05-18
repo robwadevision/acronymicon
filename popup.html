@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acronymicon</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon" aria-hidden="true">Aa</div>
+        <span class="logo-name">Acronymicon</span>
+      </div>
+      <div class="badge" id="industry-badge">detecting…</div>
+    </header>
+
+    <div class="toggle-row">
+      <div>
+        <div class="toggle-label">Active on this page</div>
+        <div class="toggle-sub" id="toggle-sub">Scanning for acronyms</div>
+      </div>
+      <label class="switch" aria-label="Toggle Acronymicon">
+        <input type="checkbox" id="main-toggle" checked />
+        <span class="switch-track"></span>
+      </label>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-value" id="stat-found">—</div>
+        <div class="stat-label">Found</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="stat-defined">—</div>
+        <div class="stat-label">Defined</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="stat-dict">105</div>
+        <div class="stat-label">In dictionary</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <span>v1.0.0</span>
+      <a href="https://github.com/yourusername/acronym-clarity" target="_blank" class="footer-link">GitHub ↗</a>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

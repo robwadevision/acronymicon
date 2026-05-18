@@ -1,0 +1,6 @@
+CLAUDE.md
+node_modules/
+package-lock.json
+*.zip
+dist/
+.DS_Store

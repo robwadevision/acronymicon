@@ -1,0 +1,156 @@
+/* ── Acronymicon — content.css ────────────────────────────────────────
+   Injected into every page. Uses a high-specificity prefix to avoid
+   collisions with host page styles.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── Highlighted word ── */
+.acronym-clarity-word {
+  border-bottom: 2px dotted #2563eb;
+  cursor: pointer;
+  color: inherit;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  transition: color 0.12s ease, border-color 0.12s ease;
+}
+
+.acronym-clarity-word:hover,
+.acronym-clarity-word[data-ac-active="true"] {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+/* ── Tooltip container ── */
+#acronym-clarity-tooltip {
+  all: initial; /* reset all inherited host-page styles */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  position: absolute;
+  z-index: 2147483647; /* max z-index */
+  width: 240px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  #acronym-clarity-tooltip {
+    background: #1e2130;
+    border-color: #2d3348;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ── Close button ── */
+.ac-tooltip-close {
+  all: unset;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.1s;
+}
+
+.ac-tooltip-close:hover {
+  color: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-close { color: #64748b; }
+  .ac-tooltip-close:hover { color: #94a3b8; }
+}
+
+/* ── Acronym label (e.g. "SOC") ── */
+.ac-tooltip-word {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-word { color: #64748b; }
+}
+
+/* ── Primary definition ── */
+.ac-tooltip-primary {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 2px;
+  padding-right: 20px; /* avoid overlap with close btn */
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-primary { color: #f1f5f9; }
+}
+
+/* ── Context label ── */
+.ac-tooltip-context {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-context { color: #64748b; }
+}
+
+/* ── Divider ── */
+.ac-tooltip-divider {
+  all: unset;
+  display: block;
+  height: 1px;
+  background: #f1f5f9;
+  margin: 10px 0 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-divider { background: #2d3348; }
+}
+
+/* ── "Also means" label ── */
+.ac-tooltip-alt-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-alt-label { color: #64748b; }
+}
+
+/* ── Alternative definitions ── */
+.ac-tooltip-alt {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+  padding: 1px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ac-tooltip-alt { color: #94a3b8; }
+}
+
+/* ── No definition fallback ── */
+.ac-tooltip-nodef {
+  font-size: 13px;
+  color: #94a3b8;
+  font-style: italic;
+}

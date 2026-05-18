@@ -1,0 +1,62 @@
+/**
+ * Acronymicon — popup.js
+ */
+
+(async function () {
+  const toggle = document.getElementById("main-toggle");
+  const toggleSub = document.getElementById("toggle-sub");
+  const industryBadge = document.getElementById("industry-badge");
+  const statFound = document.getElementById("stat-found");
+  const statDefined = document.getElementById("stat-defined");
+
+  // ── Load persisted state ───────────────────────────────────────────────
+  const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
+  toggle.checked = acEnabled;
+  updateSubLabel(acEnabled);
+
+  // ── Query the active tab for live stats ───────────────────────────────
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+  if (tab?.id) {
+    try {
+      const response = await chrome.tabs.sendMessage(tab.id, { type: "AC_GET_STATS" });
+      if (response) {
+        statFound.textContent = response.found ?? "—";
+        statDefined.textContent = response.defined ?? "—";
+        setIndustryBadge(response.industry || "default");
+      }
+    } catch {
+      // Content script not yet injected (e.g. chrome:// pages)
+      statFound.textContent = "—";
+      statDefined.textContent = "—";
+      industryBadge.textContent = "n/a";
+    }
+  }
+
+  // ── Toggle handler ────────────────────────────────────────────────────
+  toggle.addEventListener("change", async () => {
+    const enabled = toggle.checked;
+    await chrome.storage.sync.set({ acEnabled: enabled });
+    updateSubLabel(enabled);
+
+    if (tab?.id) {
+      chrome.tabs.sendMessage(tab.id, { type: "AC_TOGGLE", enabled }).catch(() => {});
+    }
+  });
+
+  function updateSubLabel(enabled) {
+    toggleSub.textContent = enabled ? "Scanning for acronyms" : "Extension paused";
+  }
+
+  function setIndustryBadge(industry) {
+    const labels = {
+      tech: "Tech",
+      finance: "Finance",
+      pharma: "Pharma",
+      hr: "HR",
+      default: "General"
+    };
+    industryBadge.textContent = labels[industry] || "General";
+    industryBadge.className = `badge ${industry}`;
+  }
+})();

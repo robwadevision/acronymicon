@@ -1,0 +1,199 @@
+/* ── Acronymicon — popup.css ─────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+  min-width: 260px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #0f1117; color: #f1f5f9; }
+}
+
+.popup { padding: 16px; }
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  background: #2563eb;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.logo-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-name { color: #f1f5f9; }
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.badge.tech    { background: #eff6ff; color: #2563eb; }
+.badge.finance { background: #fefce8; color: #a16207; }
+.badge.pharma  { background: #f0fdf4; color: #15803d; }
+.badge.hr      { background: #fdf4ff; color: #9333ea; }
+.badge.default { background: #f8fafc; color: #64748b; }
+
+@media (prefers-color-scheme: dark) {
+  .badge         { background: #1e3a8a22; color: #60a5fa; }
+  .badge.finance { background: #78350f22; color: #fbbf24; }
+  .badge.pharma  { background: #14532d22; color: #4ade80; }
+  .badge.hr      { background: #581c8722; color: #c084fc; }
+  .badge.default { background: #1e293b;   color: #94a3b8; }
+}
+
+/* ── Toggle row ── */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0 4px;
+}
+
+.toggle-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.toggle-sub {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .toggle-label { color: #f1f5f9; }
+}
+
+/* ── Toggle switch ── */
+.switch { position: relative; display: inline-block; width: 40px; height: 22px; flex-shrink: 0; cursor: pointer; }
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.switch-track {
+  position: absolute;
+  inset: 0;
+  background: #cbd5e1;
+  border-radius: 22px;
+  transition: background 0.2s;
+}
+
+.switch-track::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.switch input:checked + .switch-track { background: #2563eb; }
+.switch input:checked + .switch-track::before { transform: translateX(18px); }
+.switch input:focus-visible + .switch-track { outline: 2px solid #2563eb; outline-offset: 2px; }
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: #f1f5f9;
+  margin: 12px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .divider { background: #1e2130; }
+}
+
+/* ── Stats ── */
+.stats {
+  display: flex;
+  gap: 0;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-item + .stat-item {
+  border-left: 1px solid #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stat-item + .stat-item { border-color: #1e2130; }
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stat-value { color: #f1f5f9; }
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.footer-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.footer-link:hover { text-decoration: underline; }
