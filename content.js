@@ -1,7 +1,7 @@
 /**
  * Acronymicon — content.js
- * Scans the page for known acronyms, wraps them in interactive spans,
- * and renders instant tooltip definitions on click.
+ * v1.1: Whole-page highlight mode on by default, with MutationObserver
+ * to catch dynamically loaded content (SPAs, infinite scroll, etc.)
  */
 
 (function () {
@@ -14,7 +14,8 @@
   let activeTooltip = null;
   let activeSpan = null;
   let isEnabled = true;
-  let hasScanned = false;
+  let observer = null;
+  let isProcessing = false;
 
   // ─── Constants ────────────────────────────────────────────────────────────
 
@@ -22,7 +23,6 @@
   const TOOLTIP_ID = "acronymicon-tooltip";
   const TOOLTIP_ANCHOR_ATTR = "data-ac-word";
 
-  // Tags whose text content we must never touch
   const EXCLUDED_TAGS = new Set([
     "SCRIPT", "STYLE", "NOSCRIPT", "IFRAME", "OBJECT", "EMBED",
     "INPUT", "TEXTAREA", "SELECT", "BUTTON", "LABEL",
@@ -30,7 +30,6 @@
     "SVG", "MATH", "CANVAS"
   ]);
 
-  // Industry keyword map for lightweight context detection
   const INDUSTRY_KEYWORDS = {
     tech: [
       "saas", "api", "cloud", "devops", "kubernetes", "docker", "microservice",
@@ -52,18 +51,20 @@
     ]
   };
 
-  // ─── Initialisation ───────────────────────────────────────────────────────
+  // ─── Init ─────────────────────────────────────────────────────────────────
 
   async function init() {
     const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
     isEnabled = acEnabled;
-    if (!isEnabled) return;
 
     acronymData = await loadAcronymData();
     detectedIndustry = detectIndustry();
-    scanAndHighlight();
 
-    // Listen for toggle messages from popup
+    if (isEnabled) {
+      scanAndHighlight(document.body);
+      startObserver();
+    }
+
     chrome.runtime.onMessage.addListener(handleMessage);
   }
 
@@ -72,7 +73,6 @@
       const url = chrome.runtime.getURL("src/acronyms.json");
       const res = await fetch(url);
       const json = await res.json();
-      // Remove _meta key before using
       const { _meta, ...data } = json;
       return data;
     } catch (err) {
@@ -92,17 +92,15 @@
     return "default";
   }
 
-  // ─── Acronym Lookup ───────────────────────────────────────────────────────
+  // ─── Lookup ───────────────────────────────────────────────────────────────
 
   function lookup(word) {
     const entry = acronymData[word];
     if (!entry) return null;
-
     let primary = entry.default;
     if (entry.industry && entry.industry[detectedIndustry]) {
       primary = entry.industry[detectedIndustry];
     }
-
     return {
       primary,
       alternatives: (entry.alternatives || []).filter((a) => a !== primary)
@@ -111,8 +109,6 @@
 
   // ─── DOM Scanning ─────────────────────────────────────────────────────────
 
-  // Matches 2-6 uppercase letters (with optional trailing 's'), or known mixed-case
-  // acronyms like "SaaS", "IaC", "OTel", "DevOps", "MLOps"
   const ACRONYM_RE = /\b([A-Z]{2,6}s?|[A-Z][a-z]+[A-Z][A-Za-z]*)\b/g;
 
   function isExcludedNode(node) {
@@ -179,10 +175,10 @@
     textNode.parentNode.replaceChild(frag, textNode);
   }
 
-  function scanAndHighlight() {
-    if (hasScanned) return;
-    hasScanned = true;
-    const nodes = getTextNodes(document.body);
+  function scanAndHighlight(root) {
+    if (!root || root.nodeType !== Node.ELEMENT_NODE) return;
+    if (root.id === TOOLTIP_ID) return;
+    const nodes = getTextNodes(root);
     nodes.forEach(processTextNode);
   }
 
@@ -192,7 +188,38 @@
       span.replaceWith(document.createTextNode(span.textContent));
     });
     document.normalize();
-    hasScanned = false;
+  }
+
+  // ─── MutationObserver ─────────────────────────────────────────────────────
+
+  function startObserver() {
+    if (observer) return;
+
+    observer = new MutationObserver((mutations) => {
+      if (isProcessing) return;
+      isProcessing = true;
+
+      requestAnimationFrame(() => {
+        for (const mutation of mutations) {
+          for (const node of mutation.addedNodes) {
+            if (node.nodeType !== Node.ELEMENT_NODE) continue;
+            if (node.id === TOOLTIP_ID) continue;
+            if (EXCLUDED_TAGS.has(node.tagName)) continue;
+            scanAndHighlight(node);
+          }
+        }
+        isProcessing = false;
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  function stopObserver() {
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
   }
 
   // ─── Click Handler ────────────────────────────────────────────────────────
@@ -200,10 +227,7 @@
   function onAcronymClick(e) {
     e.stopPropagation();
     const span = e.currentTarget;
-    if (span === activeSpan) {
-      closeTooltip();
-      return;
-    }
+    if (span === activeSpan) { closeTooltip(); return; }
     openTooltip(span);
   }
 
@@ -213,8 +237,7 @@
     const word = span.getAttribute(TOOLTIP_ANCHOR_ATTR);
     const result = lookup(word);
 
-    closeTooltip(); // clean up previous
-
+    closeTooltip();
     activeSpan = span;
     span.setAttribute("data-ac-active", "true");
 
@@ -223,7 +246,6 @@
     box.setAttribute("role", "tooltip");
     box.setAttribute("aria-label", `Definition of ${word}`);
 
-    // Close button
     const closeBtn = document.createElement("button");
     closeBtn.className = "ai-tooltip-close";
     closeBtn.setAttribute("aria-label", "Close");
@@ -231,7 +253,6 @@
     closeBtn.addEventListener("click", (e) => { e.stopPropagation(); closeTooltip(); });
     box.appendChild(closeBtn);
 
-    // Word label
     const wordLabel = document.createElement("div");
     wordLabel.className = "ai-tooltip-word";
     wordLabel.textContent = word;
@@ -245,10 +266,9 @@
 
       const contextLabel = document.createElement("div");
       contextLabel.className = "ai-tooltip-context";
-      contextLabel.textContent =
-        detectedIndustry !== "default"
-          ? `Most likely in ${detectedIndustry} context`
-          : "Most likely meaning";
+      contextLabel.textContent = detectedIndustry !== "default"
+        ? `Most likely in ${detectedIndustry} context`
+        : "Most likely meaning";
       box.appendChild(contextLabel);
 
       if (result.alternatives.length > 0) {
@@ -292,11 +312,9 @@
     let top = spanRect.bottom + scrollY + 8;
     let left = spanRect.left + scrollX;
 
-    // Flip above if clipped at bottom
     if (spanRect.bottom + boxHeight + 8 > vpHeight) {
       top = spanRect.top + scrollY - boxHeight - 8;
     }
-    // Nudge left if clipped at right
     if (left + boxWidth > vpWidth + scrollX - 12) {
       left = vpWidth + scrollX - boxWidth - 12;
     }
@@ -307,17 +325,11 @@
   }
 
   function closeTooltip() {
-    if (activeTooltip) {
-      activeTooltip.remove();
-      activeTooltip = null;
-    }
-    if (activeSpan) {
-      activeSpan.removeAttribute("data-ac-active");
-      activeSpan = null;
-    }
+    if (activeTooltip) { activeTooltip.remove(); activeTooltip = null; }
+    if (activeSpan) { activeSpan.removeAttribute("data-ac-active"); activeSpan = null; }
   }
 
-  // ─── Global dismiss on outside click ─────────────────────────────────────
+  // ─── Global dismiss ───────────────────────────────────────────────────────
 
   document.addEventListener("click", (e) => {
     if (!activeTooltip) return;
@@ -326,14 +338,16 @@
     closeTooltip();
   }, true);
 
-  // ─── Message handler (from popup) ────────────────────────────────────────
+  // ─── Messages ─────────────────────────────────────────────────────────────
 
   function handleMessage(msg, _sender, sendResponse) {
     if (msg.type === "AC_TOGGLE") {
       isEnabled = msg.enabled;
       if (isEnabled) {
-        scanAndHighlight();
+        scanAndHighlight(document.body);
+        startObserver();
       } else {
+        stopObserver();
         removeHighlights();
       }
     }
@@ -344,14 +358,10 @@
       spans.forEach((s) => {
         if (lookup(s.getAttribute(TOOLTIP_ANCHOR_ATTR))) defined++;
       });
-      sendResponse({
-        found: spans.length,
-        defined,
-        industry: detectedIndustry
-      });
+      sendResponse({ found: spans.length, defined, industry: detectedIndustry });
     }
 
-    return true; // keep message channel open for async sendResponse
+    return true;
   }
 
   // ─── Boot ─────────────────────────────────────────────────────────────────

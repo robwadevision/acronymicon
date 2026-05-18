@@ -8,12 +8,22 @@ A lightweight browser extension that detects acronyms on web pages — especiall
 
 ## Features
 
-- Detects acronyms using a fast regex + local dictionary
+- **Whole-page highlight mode** — every acronym on the page is underlined automatically on load
+- **MutationObserver** — catches dynamically loaded content (LinkedIn, Greenhouse, SPAs, infinite scroll)
 - Shows primary meaning instantly on click, with alternatives
 - Detects industry context (tech, finance, pharma, HR) to surface the most relevant definition
 - Dark mode support
-- Toggle on/off per session from the popup
+- Toggle on/off from the popup
 - 100+ acronyms in the dictionary out of the box
+
+## Changelog
+
+### v1.1.0
+- Whole-page highlight mode on by default — all acronyms underlined automatically
+- MutationObserver added to scan dynamically injected content (LinkedIn job cards, SPA navigation, etc.)
+
+### v1.0.0
+- Initial release
 
 ---
 
@@ -71,25 +81,6 @@ Edit `src/acronyms.json`. Each entry follows this schema:
 ```
 
 Industry keys: `tech`, `finance`, `pharma`, `hr`
-
----
-
-## Publishing to Chrome Web Store
-
-1. Zip the extension folder:
-   ```bash
-   cd acronymicon && zip -r ../acronymicon.zip . --exclude "*.DS_Store"
-   ```
-2. Go to [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
-3. Click **New item** → upload the zip
-4. Fill in store listing details, add screenshots, submit for review
-
-> Chrome Web Store requires a one-time $5 developer registration fee.
-
-### Publishing to Edge Add-ons
-1. Zip the same folder (same codebase works for Edge)
-2. Go to [Edge Add-ons Partner Center](https://partner.microsoft.com/en-us/dashboard/microsoftedge/overview)
-3. Submit for review (free, no fee)
 
 ---
 
