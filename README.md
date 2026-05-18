@@ -1,6 +1,6 @@
 # Acronymicon 🔍
 
-A lightweight browser extension that detects acronyms on web pages — designed primarily for job ads — and shows instant definitions via a tooltip on click.
+A lightweight browser extension that detects acronyms on web pages — especially job ads — and shows instant definitions via a tooltip on click.
 
 **No backend. No tracking. No external API calls.** Everything runs locally in your browser.
 
@@ -23,7 +23,7 @@ A lightweight browser extension that detects acronyms on web pages — designed 
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked**
-4. Select this folder (`acronym-clarity/`)
+4. Select this folder (`acronymicon/`)
 
 ### Edge
 1. Open `edge://extensions`
@@ -36,7 +36,7 @@ A lightweight browser extension that detects acronyms on web pages — designed 
 ## Project Structure
 
 ```
-acronym-clarity/
+acronymicon/
 ├── manifest.json          # Chrome MV3 manifest
 ├── popup.html             # Extension popup UI
 ├── popup.css
@@ -78,7 +78,7 @@ Industry keys: `tech`, `finance`, `pharma`, `hr`
 
 1. Zip the extension folder:
    ```bash
-   cd acronym-clarity && zip -r ../acronym-clarity.zip . --exclude "*.DS_Store"
+   cd acronymicon && zip -r ../acronymicon.zip . --exclude "*.DS_Store"
    ```
 2. Go to [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
 3. Click **New item** → upload the zip
