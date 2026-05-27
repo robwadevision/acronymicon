@@ -21,6 +21,7 @@ const AcronymAnalytics = (() => {
   const queue = [];
 
   async function init() {
+    if (!chrome.runtime?.id) return;
     const { acClientId } = await chrome.storage.local.get("acClientId");
     if (acClientId) {
       clientId = acClientId;
@@ -39,7 +40,7 @@ const AcronymAnalytics = (() => {
   function flush() {
     if (!queue.length || !MEASUREMENT_ID || !API_SECRET || !clientId) return;
     const events = queue.splice(0).map((e) =>
-      DEBUG ? { ...e, params: { ...e.params, debug_mode: 1 } } : e
+      DEBUG ? { ...e, params: { ...e.params, debug_mode: 1, traffic_type: "internal" } } : e
     );
     const payload = JSON.stringify({ client_id: clientId, events });
     navigator.sendBeacon(

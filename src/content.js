@@ -267,6 +267,7 @@
   // ─── Ratings ──────────────────────────────────────────────────────────────
 
   function saveRating(word, vote) {
+    if (!chrome.runtime?.id) return;
     if (ratings[word] === vote) {
       delete ratings[word];
     } else {
