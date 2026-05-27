@@ -34,7 +34,7 @@
 
   "web_accessible_resources": [
     {
-      "resources": ["src/acronyms.json"],
+      "resources": ["src/acronyms.*.json"],
       "matches": ["<all_urls>"]
     }
   ],

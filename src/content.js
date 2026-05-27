@@ -16,6 +16,7 @@
   let isEnabled = true;
   let observer = null;
   let isProcessing = false;
+  let closeTimer = null;
 
   // ─── Constants ────────────────────────────────────────────────────────────
 
@@ -70,7 +71,8 @@
 
   async function loadAcronymData() {
     try {
-      const url = chrome.runtime.getURL("src/acronyms.json");
+      const { acLang = "en" } = await chrome.storage.sync.get("acLang");
+      const url = chrome.runtime.getURL(`src/acronyms.${acLang}.json`);
       const res = await fetch(url);
       const json = await res.json();
       const { _meta, ...data } = json;
@@ -163,7 +165,8 @@
       span.className = ACRONYM_CLASS;
       span.setAttribute(TOOLTIP_ANCHOR_ATTR, word);
       span.textContent = word;
-      span.addEventListener("click", onAcronymClick);
+      span.addEventListener("mouseenter", onAcronymEnter);
+      span.addEventListener("mouseleave", onAcronymLeave);
       frag.appendChild(span);
       cursor = index + length;
     }
@@ -183,6 +186,7 @@
   }
 
   function removeHighlights() {
+    clearTimeout(closeTimer);
     closeTooltip();
     document.querySelectorAll(`.${ACRONYM_CLASS}`).forEach((span) => {
       span.replaceWith(document.createTextNode(span.textContent));
@@ -222,13 +226,24 @@
     }
   }
 
-  // ─── Click Handler ────────────────────────────────────────────────────────
+  // ─── Hover Handlers ───────────────────────────────────────────────────────
 
-  function onAcronymClick(e) {
-    e.stopPropagation();
-    const span = e.currentTarget;
-    if (span === activeSpan) { closeTooltip(); return; }
-    openTooltip(span);
+  function scheduleClose() {
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(closeTooltip, 150);
+  }
+
+  function cancelClose() {
+    clearTimeout(closeTimer);
+  }
+
+  function onAcronymEnter(e) {
+    cancelClose();
+    openTooltip(e.currentTarget);
+  }
+
+  function onAcronymLeave() {
+    scheduleClose();
   }
 
   // ─── Tooltip ──────────────────────────────────────────────────────────────
@@ -294,6 +309,9 @@
       nodef.textContent = "No definition available yet";
       box.appendChild(nodef);
     }
+
+    box.addEventListener("mouseenter", cancelClose);
+    box.addEventListener("mouseleave", scheduleClose);
 
     document.body.appendChild(box);
     activeTooltip = box;

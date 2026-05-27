@@ -86,7 +86,7 @@ Industry keys: `tech`, `finance`, `pharma`, `hr`
 
 ## Roadmap
 
-- [ ] Whole-page mode (auto-highlight all acronyms on load)
+- [X] Whole-page mode (auto-highlight all acronyms on load)
 - [ ] User-contributed definitions (👍/👎 feedback)
 - [ ] Domain whitelist / blacklist settings
 - [ ] Community dictionary via GitHub-hosted JSON
