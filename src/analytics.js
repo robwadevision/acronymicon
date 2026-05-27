@@ -34,19 +34,35 @@ const AcronymAnalytics = (() => {
   function track(eventName, params = {}) {
     if (!MEASUREMENT_ID || !API_SECRET) return;
     queue.push({ name: eventName, params });
-    if (queue.length >= 25) flush(); // GA4 max per request
+    if (DEBUG) {
+      console.log(`[Acronymicon Analytics] Queued: ${eventName}`, params, `(clientId: ${clientId ?? "pending"})`);
+      flush();
+    } else if (queue.length >= 25) {
+      flush();
+    }
   }
 
   function flush() {
-    if (!queue.length || !MEASUREMENT_ID || !API_SECRET || !clientId) return;
+    if (!queue.length || !MEASUREMENT_ID || !API_SECRET || !clientId) {
+      if (DEBUG && queue.length) console.warn("[Acronymicon Analytics] Flush skipped — clientId not ready yet");
+      return;
+    }
     const events = queue.splice(0).map((e) =>
       DEBUG ? { ...e, params: { ...e.params, debug_mode: 1, traffic_type: "internal" } } : e
     );
     const payload = JSON.stringify({ client_id: clientId, events });
-    navigator.sendBeacon(
-      `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`,
-      new Blob([payload], { type: "application/json" })
-    );
+
+    if (DEBUG) {
+      const endpoint = `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`;
+      fetch(endpoint, { method: "POST", body: payload })
+        .then((r) => console.log("[Acronymicon Analytics] Sent — status:", r.status))
+        .catch((e) => console.warn("[Acronymicon Analytics] Send failed:", e));
+    } else {
+      navigator.sendBeacon(
+        `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`,
+        new Blob([payload], { type: "application/json" })
+      );
+    }
   }
 
   document.addEventListener("visibilitychange", () => {

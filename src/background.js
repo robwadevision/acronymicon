@@ -17,6 +17,13 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
       .then((res) => res.json())
       .then(({ _meta, ...data }) => sendResponse({ data }))
       .catch(() => sendResponse({ data: {} }));
-    return true; // keep message channel open for async response
+    return true;
+  }
+
+  if (msg.type === "AC_FLUSH_ANALYTICS") {
+    fetch(msg.endpoint, { method: "POST", body: msg.payload })
+      .then((r) => sendResponse({ status: r.status }))
+      .catch((e) => sendResponse({ error: e.message }));
+    return true;
   }
 });
