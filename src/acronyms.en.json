@@ -1,7 +1,8 @@
 {
   "_meta": {
     "version": "1.0.0",
-    "description": "Acronymicon dictionary. Add new entries following the schema below.",
+    "lang": "en",
+    "description": "Acronymicon English dictionary. Add new entries following the schema below.",
     "schema": {
       "default": "Primary/most common meaning",
       "alternatives": "Other possible meanings",
@@ -9,6 +10,10 @@
     }
   },
 
+  "AI": {
+    "default": "Artificial Intelligence",
+    "alternatives": []
+  },
   "API": {
     "default": "Application Programming Interface",
     "alternatives": ["Application Program Interface"]

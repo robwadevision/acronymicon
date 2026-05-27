@@ -6,7 +6,7 @@
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === "install") {
     // Set default storage values on first install
-    chrome.storage.sync.set({ acEnabled: true });
+    chrome.storage.sync.set({ acEnabled: true, acLang: "en" });
     console.log("[AcronymClarity] Installed. Extension active.");
   }
 });
