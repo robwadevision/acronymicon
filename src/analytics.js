@@ -15,6 +15,7 @@ const AcronymAnalytics = (() => {
   const GA_ENDPOINT = "https://www.google-analytics.com/mp/collect";
   const MEASUREMENT_ID = AcronymConfig.measurementId;
   const API_SECRET = AcronymConfig.apiSecret;
+  const DEBUG = AcronymConfig.debug ?? false;
 
   let clientId = null;
   const queue = [];
@@ -37,7 +38,9 @@ const AcronymAnalytics = (() => {
 
   function flush() {
     if (!queue.length || !MEASUREMENT_ID || !API_SECRET || !clientId) return;
-    const events = queue.splice(0);
+    const events = queue.splice(0).map((e) =>
+      DEBUG ? { ...e, params: { ...e.params, debug_mode: 1 } } : e
+    );
     const payload = JSON.stringify({ client_id: clientId, events });
     navigator.sendBeacon(
       `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`,

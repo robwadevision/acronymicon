@@ -7,4 +7,5 @@
 const AcronymConfig = {
   measurementId: "", // GA4 measurement ID, e.g. "G-XXXXXXXXXX"
   apiSecret: "",     // GA4 Measurement Protocol API secret
+  debug: false,      // set to true to send debug_mode:1 with all events (visible in GA4 DebugView)
 };

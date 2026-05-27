@@ -78,11 +78,12 @@
     try {
       if (!chrome.runtime?.id) return {};
       const { acLang = "en" } = await chrome.storage.sync.get("acLang");
-      const url = chrome.runtime.getURL(`src/acronyms.${acLang}.json`);
-      const res = await fetch(url);
-      const json = await res.json();
-      const { _meta, ...data } = json;
-      return data;
+      return new Promise((resolve) => {
+        chrome.runtime.sendMessage({ type: "AC_GET_ACRONYM_DATA", lang: acLang }, (response) => {
+          if (chrome.runtime.lastError) { resolve({}); return; }
+          resolve(response?.data ?? {});
+        });
+      });
     } catch (err) {
       console.warn("[Acronymicon] Failed to load acronym data:", err);
       return {};
