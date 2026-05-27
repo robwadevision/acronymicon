@@ -17,6 +17,7 @@
   let observer = null;
   let isProcessing = false;
   let closeTimer = null;
+  let ratings = {};
 
   // ─── Constants ────────────────────────────────────────────────────────────
 
@@ -60,6 +61,9 @@
 
     acronymData = await loadAcronymData();
     detectedIndustry = detectIndustry();
+
+    const { acRatings = {} } = await chrome.storage.local.get("acRatings");
+    ratings = acRatings;
 
     if (isEnabled) {
       scanAndHighlight(document.body);
@@ -246,6 +250,25 @@
     scheduleClose();
   }
 
+  // ─── Ratings ──────────────────────────────────────────────────────────────
+
+  function saveRating(word, vote) {
+    if (ratings[word] === vote) {
+      delete ratings[word];
+    } else {
+      ratings[word] = vote;
+    }
+    chrome.storage.local.set({ acRatings: ratings });
+    updateRatingButtons(word);
+  }
+
+  function updateRatingButtons(word) {
+    if (!activeTooltip) return;
+    activeTooltip.querySelectorAll(".ai-rating-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.vote === ratings[word]);
+    });
+  }
+
   // ─── Tooltip ──────────────────────────────────────────────────────────────
 
   function openTooltip(span) {
@@ -303,6 +326,27 @@
           box.appendChild(altItem);
         });
       }
+
+      const ratingRow = document.createElement("div");
+      ratingRow.className = "ai-tooltip-rating";
+
+      const ratingLabel = document.createElement("span");
+      ratingLabel.className = "ai-tooltip-rating-label";
+      ratingLabel.textContent = "Helpful?";
+      ratingRow.appendChild(ratingLabel);
+
+      ["up", "down"].forEach((vote) => {
+        const btn = document.createElement("button");
+        btn.className = "ai-rating-btn";
+        btn.dataset.vote = vote;
+        btn.textContent = vote === "up" ? "👍" : "👎";
+        btn.setAttribute("aria-label", vote === "up" ? "Helpful" : "Not helpful");
+        if (ratings[word] === vote) btn.classList.add("active");
+        btn.addEventListener("click", (e) => { e.stopPropagation(); saveRating(word, vote); });
+        ratingRow.appendChild(btn);
+      });
+
+      box.appendChild(ratingRow);
     } else {
       const nodef = document.createElement("div");
       nodef.className = "ai-tooltip-nodef";

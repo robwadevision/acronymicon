@@ -154,3 +154,53 @@
   color: #94a3b8;
   font-style: italic;
 }
+
+/* ── Rating row ── */
+.ai-tooltip-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ai-tooltip-rating { border-top-color: #2d3348; }
+}
+
+.ai-tooltip-rating-label {
+  font-size: 10px;
+  color: #94a3b8;
+  flex: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ai-tooltip-rating-label { color: #64748b; }
+}
+
+.ai-rating-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  line-height: 1;
+  opacity: 0.45;
+  transition: opacity 0.1s, background 0.1s;
+}
+
+.ai-rating-btn:hover {
+  opacity: 1;
+  background: #f1f5f9;
+}
+
+.ai-rating-btn.active {
+  opacity: 1;
+  background: #e0f2fe;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ai-rating-btn:hover { background: #2d3348; }
+  .ai-rating-btn.active { background: #1e3a5f; }
+}
