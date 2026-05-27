@@ -18,6 +18,7 @@
   let isProcessing = false;
   let closeTimer = null;
   let ratings = {};
+  const trackedHighlights = new Set();
 
   // ─── Constants ────────────────────────────────────────────────────────────
 
@@ -153,7 +154,16 @@
       const word = m[1];
       if (lookup(word)) {
         matches.push({ word, index: m.index, length: m[0].length });
+        if (!trackedHighlights.has(word)) {
+          trackedHighlights.add(word);
+          AcronymAnalytics.track("acronym_highlighted", { acronym: word });
+        }
       }
+      // not yet triggered — enable once undefined-acronym surfacing is built:
+      // else if (!trackedHighlights.has(word)) {
+      //   trackedHighlights.add(word);
+      //   AcronymAnalytics.track("acronym_undefined", { acronym: word });
+      // }
     }
 
     if (matches.length === 0) return;
@@ -191,6 +201,7 @@
 
   function removeHighlights() {
     clearTimeout(closeTimer);
+    trackedHighlights.clear();
     closeTooltip();
     document.querySelectorAll(`.${ACRONYM_CLASS}`).forEach((span) => {
       span.replaceWith(document.createTextNode(span.textContent));
@@ -257,6 +268,7 @@
       delete ratings[word];
     } else {
       ratings[word] = vote;
+      AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", { acronym: word });
     }
     chrome.storage.local.set({ acRatings: ratings });
     updateRatingButtons(word);

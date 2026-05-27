@@ -1,4 +1,5 @@
 CLAUDE.md
+src/constants.js
 node_modules/
 package-lock.json
 *.zip
