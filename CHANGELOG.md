@@ -1,5 +1,12 @@
 # Changelog
 
+### v1.4.8
+- Analytics: `rating_helpful` and `rating_not_helpful` events now both include `definition` param — the primary definition text shown at the time of rating
+
+### v1.4.7
+
+- Abstracted changelog into its own file, and alphabetised the definitions
+
 ### v1.4.6
 - Renamed `language` user property to `dictionary_language` to avoid conflict with GA4's auto-collected `language` event parameter
 

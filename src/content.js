@@ -272,7 +272,8 @@
       delete ratings[word];
     } else {
       ratings[word] = vote;
-      AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", { acronym: word });
+      const params = { acronym: word, definition: lookup(word)?.primary ?? null };
+      AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", params);
     }
     chrome.storage.local.set({ acRatings: ratings });
     updateRatingButtons(word);
