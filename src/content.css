@@ -27,11 +27,11 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   position: absolute;
   z-index: 2147483647; /* max z-index */
-  width: 240px;
+  width: 264px;
   background: #1e0a3c;
   border: 1px solid #3d2a6e;
-  border-radius: 10px;
-  padding: 14px 16px 14px;
+  border-radius: 11px;
+  padding: 15px 18px 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   pointer-events: auto;
@@ -39,14 +39,14 @@
 
 /* ── Header ── */
 .ai-tooltip-header {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #a78bfa;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-  padding-right: 24px; /* avoid overlap with close btn */
+  padding-bottom: 9px;
+  margin-bottom: 11px;
+  padding-right: 26px; /* avoid overlap with close btn */
   border-bottom: 1px solid #3d2a6e;
 }
 
@@ -54,9 +54,9 @@
 .ai-tooltip-close {
   all: unset;
   position: absolute;
-  top: 10px;
-  right: 12px;
-  font-size: 18px;
+  top: 11px;
+  right: 13px;
+  font-size: 20px;
   line-height: 1;
   color: #ffffff;
   cursor: pointer;
@@ -71,27 +71,27 @@
 
 /* ── Acronym label (e.g. "SOC") ── */
 .ai-tooltip-word {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #a78bfa;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* ── Primary definition ── */
 .ai-tooltip-primary {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: #ffffff;
   line-height: 1.35;
   margin-bottom: 2px;
-  padding-right: 20px; /* avoid overlap with close btn */
+  padding-right: 22px; /* avoid overlap with close btn */
 }
 
 /* ── Context label ── */
 .ai-tooltip-context {
-  font-size: 11px;
+  font-size: 12px;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -102,22 +102,22 @@
   display: block;
   height: 1px;
   background: #3d2a6e;
-  margin: 10px 0 8px;
+  margin: 11px 0 9px;
 }
 
 /* ── "Also means" label ── */
 .ai-tooltip-alt-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* ── Alternative definitions ── */
 .ai-tooltip-alt {
-  font-size: 13px;
+  font-size: 14px;
   color: #ffffff;
   line-height: 1.5;
   padding: 1px 0;
@@ -125,7 +125,7 @@
 
 /* ── No definition fallback ── */
 .ai-tooltip-nodef {
-  font-size: 13px;
+  font-size: 14px;
   color: #ffffff;
   font-style: italic;
 }
@@ -135,13 +135,13 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
-  padding-top: 8px;
+  margin-top: 11px;
+  padding-top: 9px;
   border-top: 1px solid #3d2a6e;
 }
 
 .ai-tooltip-rating-label {
-  font-size: 10px;
+  font-size: 11px;
   color: #ffffff;
   flex: 1;
 }
@@ -149,8 +149,8 @@
 .ai-rating-btn {
   all: unset;
   cursor: pointer;
-  font-size: 13px;
-  padding: 2px 5px;
+  font-size: 14px;
+  padding: 2px 6px;
   border-radius: 4px;
   line-height: 1;
   opacity: 0.45;

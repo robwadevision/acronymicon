@@ -1,5 +1,20 @@
 # Changelog
 
+### v1.5.4
+- Removed dictionary gating — all regex-matched acronyms are highlighted, not just those with a dictionary entry
+- `acronym_highlighted` now fires for undefined acronyms too, capturing user intent (hover on unknown term = desire to know)
+- `acronym_undefined` still fires on page scan to flag gaps in the dictionary
+
+### v1.5.3
+- Popup and tooltip redesigned with a dark purple theme (`#1e0a3c` background, white text)
+- Tooltip now has a branded "The Acronymicon" header with a purple accent and divider
+- Acronym label in tooltip coloured in light purple (`#a78bfa`) to visually distinguish it from the definition
+- Acronym label font size increased from 10px to 14px
+- Tooltip scaled up 10% proportionally (width 240px → 264px, all font sizes and spacing adjusted)
+- `versionNumber` constant added to `src/constants.js` as the single source of truth for the version
+- `scripts/sync-version.js` added to propagate `versionNumber` to `manifest.json` and `CLAUDE.md`
+- Release workflow updated to generate `constants.js` from the git tag and run the version sync before zipping
+
 ### v1.5.2
 - Reverted visual highlighting to dictionary-gated only — too many false positives on all-caps words when highlighting all regex matches
 - `acronym_undefined` analytics event still fires silently for regex matches with no dictionary entry, preserving the data signal without the UX noise
