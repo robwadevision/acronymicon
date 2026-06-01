@@ -57,10 +57,11 @@
   // ─── Init ─────────────────────────────────────────────────────────────────
 
   async function init() {
-    const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
+    const { acEnabled = true, acLang = "en" } = await chrome.storage.sync.get(["acEnabled", "acLang"]);
     isEnabled = acEnabled;
+    AcronymAnalytics.setUserProperty("language", acLang);
 
-    acronymData = await loadAcronymData();
+    acronymData = await loadAcronymData(acLang);
     detectedIndustry = detectIndustry();
 
     const { acRatings = {} } = await chrome.storage.local.get("acRatings");
@@ -74,12 +75,11 @@
     chrome.runtime.onMessage.addListener(handleMessage);
   }
 
-  async function loadAcronymData() {
+  async function loadAcronymData(lang = "en") {
     try {
       if (!chrome.runtime?.id) return {};
-      const { acLang = "en" } = await chrome.storage.sync.get("acLang");
       return new Promise((resolve) => {
-        chrome.runtime.sendMessage({ type: "AC_GET_ACRONYM_DATA", lang: acLang }, (response) => {
+        chrome.runtime.sendMessage({ type: "AC_GET_ACRONYM_DATA", lang }, (response) => {
           if (chrome.runtime.lastError) { resolve({}); return; }
           resolve(response?.data ?? {});
         });

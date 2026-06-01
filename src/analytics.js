@@ -21,6 +21,7 @@ const AcronymAnalytics = (() => {
   const queue = [];
   const sessionId = Date.now().toString();
   const sessionStart = Date.now();
+  const userProperties = {};
 
   async function init() {
     if (!chrome.runtime?.id) return;
@@ -31,6 +32,10 @@ const AcronymAnalytics = (() => {
       clientId = crypto.randomUUID();
       chrome.storage.local.set({ acClientId: clientId });
     }
+  }
+
+  function setUserProperty(key, value) {
+    userProperties[key] = { value: String(value) };
   }
 
   function track(eventName, params = {}) {
@@ -58,7 +63,11 @@ const AcronymAnalytics = (() => {
         ...(DEBUG ? { debug_mode: 1, traffic_type: "internal" } : {})
       }
     }));
-    const payload = JSON.stringify({ client_id: clientId, events });
+    const payload = JSON.stringify({
+      client_id: clientId,
+      ...(Object.keys(userProperties).length ? { user_properties: userProperties } : {}),
+      events
+    });
 
     if (DEBUG) {
       const endpoint = `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`;
@@ -79,5 +88,5 @@ const AcronymAnalytics = (() => {
 
   init();
 
-  return { track };
+  return { track, setUserProperty };
 })();
