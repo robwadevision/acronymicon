@@ -23,24 +23,7 @@ A lightweight browser extension that detects acronyms on web pages — especiall
 
 ## Changelog
 
-### v1.4.0
-- Added `constants.js` / `constants.example.js` for credential management (gitignored)
-
-### v1.3.0
-- Anonymous aggregate analytics via GA4 Measurement Protocol — events batched and flushed on page hide via `sendBeacon`
-- Tracked events: `acronym_highlighted`, `rating_helpful`, `rating_not_helpful`
-
-### v1.2.0
-- Hover replaces click — tooltip opens on `mouseenter`, closes on `mouseleave` (150ms delay to allow mouse travel to tooltip)
-- Rating system — 👍 / 👎 per definition, persisted to `chrome.storage.local`
-- Multi-language support — dictionary renamed to `acronyms.en.json`; language resolved from `acLang` storage key
-
-### v1.1.0
-- Whole-page highlight mode on by default — all known acronyms underlined automatically
-- MutationObserver added to scan dynamically injected content (LinkedIn job cards, SPA navigation, etc.)
-
-### v1.0.0
-- Initial release
+See [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

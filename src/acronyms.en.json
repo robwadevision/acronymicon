@@ -9,145 +9,258 @@
       "industry": "Optional: industry-specific overrides keyed by industry slug"
     }
   },
-
+  "ADR": {
+    "default": "Architecture Decision Record",
+    "alternatives": []
+  },
   "AI": {
     "default": "Artificial Intelligence",
     "alternatives": []
   },
   "API": {
     "default": "Application Programming Interface",
-    "alternatives": ["Application Program Interface"]
+    "alternatives": [
+      "Application Program Interface"
+    ]
   },
   "APIs": {
     "default": "Application Programming Interfaces",
+    "alternatives": []
+  },
+  "ARR": {
+    "default": "Annual Recurring Revenue",
+    "alternatives": [
+      "Accounting Rate of Return"
+    ]
+  },
+  "ASAP": {
+    "default": "As Soon As Possible",
     "alternatives": []
   },
   "AWS": {
     "default": "Amazon Web Services",
     "alternatives": []
   },
+  "B2B": {
+    "default": "Business to Business",
+    "alternatives": []
+  },
+  "B2C": {
+    "default": "Business to Consumer",
+    "alternatives": []
+  },
+  "CAC": {
+    "default": "Customer Acquisition Cost",
+    "alternatives": []
+  },
+  "CD": {
+    "default": "Continuous Deployment",
+    "alternatives": [
+      "Continuous Delivery"
+    ],
+    "industry": {
+      "tech": "Continuous Deployment"
+    }
+  },
+  "CDK": {
+    "default": "Cloud Development Kit",
+    "alternatives": [
+      "Content Delivery Kit"
+    ]
+  },
+  "CDN": {
+    "default": "Content Delivery Network",
+    "alternatives": []
+  },
+  "CEO": {
+    "default": "Chief Executive Officer",
+    "alternatives": []
+  },
+  "CFO": {
+    "default": "Chief Financial Officer",
+    "alternatives": []
+  },
+  "CI": {
+    "default": "Continuous Integration",
+    "alternatives": [
+      "Configuration Item"
+    ],
+    "industry": {
+      "tech": "Continuous Integration"
+    }
+  },
+  "CISO": {
+    "default": "Chief Information Security Officer",
+    "alternatives": []
+  },
+  "CMO": {
+    "default": "Chief Marketing Officer",
+    "alternatives": []
+  },
+  "COO": {
+    "default": "Chief Operating Officer",
+    "alternatives": []
+  },
+  "CPO": {
+    "default": "Chief Product Officer",
+    "alternatives": [
+      "Chief People Officer"
+    ]
+  },
+  "CPU": {
+    "default": "Central Processing Unit",
+    "alternatives": []
+  },
+  "CRM": {
+    "default": "Customer Relationship Management",
+    "alternatives": []
+  },
+  "CTO": {
+    "default": "Chief Technology Officer",
+    "alternatives": []
+  },
+  "DevOps": {
+    "default": "Development and Operations",
+    "alternatives": []
+  },
+  "DM": {
+    "default": "Direct Message",
+    "alternatives": [
+      "Data Migration",
+      "Decision Maker"
+    ]
+  },
+  "DNS": {
+    "default": "Domain Name System",
+    "alternatives": []
+  },
+  "DPO": {
+    "default": "Data Protection Officer",
+    "alternatives": [
+      "Days Payable Outstanding"
+    ]
+  },
+  "DSS": {
+    "default": "Data Security Standard",
+    "alternatives": [
+      "Decision Support System"
+    ]
+  },
+  "EAP": {
+    "default": "Employee Assistance Programme",
+    "alternatives": [
+      "Extensible Authentication Protocol"
+    ]
+  },
+  "EBITDA": {
+    "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
+    "alternatives": []
+  },
+  "EM": {
+    "default": "Engineering Manager",
+    "alternatives": []
+  },
+  "EMI": {
+    "default": "Enterprise Management Incentive",
+    "alternatives": [
+      "Electromagnetic Interference",
+      "Equated Monthly Instalment"
+    ]
+  },
+  "EOD": {
+    "default": "End of Day",
+    "alternatives": [
+      "End of Discussion"
+    ]
+  },
+  "EOM": {
+    "default": "End of Month",
+    "alternatives": []
+  },
+  "EOY": {
+    "default": "End of Year",
+    "alternatives": []
+  },
+  "ERP": {
+    "default": "Enterprise Resource Planning",
+    "alternatives": []
+  },
+  "FYI": {
+    "default": "For Your Information",
+    "alternatives": []
+  },
   "GCP": {
     "default": "Google Cloud Platform",
     "alternatives": []
   },
-  "SaaS": {
-    "default": "Software as a Service",
-    "alternatives": [],
-    "industry": { "tech": "Software as a Service" }
+  "GDPR": {
+    "default": "General Data Protection Regulation",
+    "alternatives": []
   },
-  "PaaS": {
-    "default": "Platform as a Service",
+  "GPU": {
+    "default": "Graphics Processing Unit",
+    "alternatives": []
+  },
+  "GTM": {
+    "default": "Go-to-Market",
+    "alternatives": [
+      "Google Tag Manager"
+    ]
+  },
+  "HIPAA": {
+    "default": "Health Insurance Portability and Accountability Act",
+    "alternatives": []
+  },
+  "HR": {
+    "default": "Human Resources",
     "alternatives": []
   },
   "IaaS": {
     "default": "Infrastructure as a Service",
     "alternatives": []
   },
-  "CI": {
-    "default": "Continuous Integration",
-    "alternatives": ["Configuration Item"],
-    "industry": { "tech": "Continuous Integration" }
-  },
-  "CD": {
-    "default": "Continuous Deployment",
-    "alternatives": ["Continuous Delivery"],
-    "industry": { "tech": "Continuous Deployment" }
-  },
-  "DevOps": {
-    "default": "Development and Operations",
-    "alternatives": []
-  },
   "IaC": {
     "default": "Infrastructure as Code",
-    "alternatives": []
-  },
-  "CDK": {
-    "default": "Cloud Development Kit",
-    "alternatives": ["Content Delivery Kit"]
-  },
-  "SOC": {
-    "default": "Security Operations Center",
-    "alternatives": ["System on Chip", "Statement of Changes"],
-    "industry": {
-      "tech": "Security Operations Center",
-      "hardware": "System on Chip",
-      "finance": "Statement of Changes"
-    }
-  },
-  "SRE": {
-    "default": "Site Reliability Engineer",
-    "alternatives": ["Site Reliability Engineering"]
-  },
-  "SLA": {
-    "default": "Service Level Agreement",
-    "alternatives": []
-  },
-  "SLO": {
-    "default": "Service Level Objective",
-    "alternatives": ["Service Level Offering"]
-  },
-  "SLI": {
-    "default": "Service Level Indicator",
-    "alternatives": []
-  },
-  "OTel": {
-    "default": "OpenTelemetry",
-    "alternatives": []
-  },
-  "ITSM": {
-    "default": "IT Service Management",
-    "alternatives": []
-  },
-  "RBAC": {
-    "default": "Role-Based Access Control",
     "alternatives": []
   },
   "IAM": {
     "default": "Identity and Access Management",
     "alternatives": []
   },
-  "SSO": {
-    "default": "Single Sign-On",
-    "alternatives": []
-  },
-  "MFA": {
-    "default": "Multi-Factor Authentication",
-    "alternatives": []
-  },
-  "TLS": {
-    "default": "Transport Layer Security",
-    "alternatives": []
-  },
-  "SSL": {
-    "default": "Secure Sockets Layer",
-    "alternatives": []
-  },
-  "TCP": {
-    "default": "Transmission Control Protocol",
-    "alternatives": []
-  },
-  "DNS": {
-    "default": "Domain Name System",
-    "alternatives": []
-  },
-  "CDN": {
-    "default": "Content Delivery Network",
-    "alternatives": []
-  },
-  "REST": {
-    "default": "Representational State Transfer",
-    "alternatives": []
-  },
-  "SDK": {
-    "default": "Software Development Kit",
-    "alternatives": []
+  "IC": {
+    "default": "Individual Contributor",
+    "alternatives": [
+      "Integrated Circuit"
+    ]
   },
   "IDE": {
     "default": "Integrated Development Environment",
     "alternatives": []
   },
-  "ORM": {
-    "default": "Object-Relational Mapping",
+  "ISO": {
+    "default": "International Organisation for Standardisation",
+    "alternatives": [
+      "In Search Of"
+    ]
+  },
+  "IT": {
+    "default": "Information Technology",
+    "alternatives": []
+  },
+  "ITSM": {
+    "default": "IT Service Management",
+    "alternatives": []
+  },
+  "KPI": {
+    "default": "Key Performance Indicator",
+    "alternatives": []
+  },
+  "KPIs": {
+    "default": "Key Performance Indicators",
+    "alternatives": []
+  },
+  "LGTM": {
+    "default": "Looks Good to Me",
     "alternatives": []
   },
   "LLM": {
@@ -158,37 +271,33 @@
     "default": "Large Language Models",
     "alternatives": []
   },
-  "RAG": {
-    "default": "Retrieval-Augmented Generation",
-    "alternatives": ["Red, Amber, Green (status)"],
-    "industry": { "tech": "Retrieval-Augmented Generation" }
+  "LTV": {
+    "default": "Lifetime Value",
+    "alternatives": [
+      "Long-Term Value",
+      "Loan To Value"
+    ]
+  },
+  "MFA": {
+    "default": "Multi-Factor Authentication",
+    "alternatives": []
   },
   "MLOps": {
     "default": "Machine Learning Operations",
     "alternatives": []
   },
-  "NLP": {
-    "default": "Natural Language Processing",
-    "alternatives": []
-  },
-  "GPU": {
-    "default": "Graphics Processing Unit",
-    "alternatives": []
-  },
-  "CPU": {
-    "default": "Central Processing Unit",
+  "MRR": {
+    "default": "Monthly Recurring Revenue",
     "alternatives": []
   },
   "MVP": {
     "default": "Minimum Viable Product",
-    "alternatives": ["Most Valuable Player"]
+    "alternatives": [
+      "Most Valuable Player"
+    ]
   },
-  "KPI": {
-    "default": "Key Performance Indicator",
-    "alternatives": []
-  },
-  "KPIs": {
-    "default": "Key Performance Indicators",
+  "NLP": {
+    "default": "Natural Language Processing",
     "alternatives": []
   },
   "OKR": {
@@ -199,216 +308,189 @@
     "default": "Objectives and Key Results",
     "alternatives": []
   },
-  "ROI": {
-    "default": "Return on Investment",
+  "OOP": {
+    "default": "Object-Oriented Programming",
     "alternatives": []
   },
-  "ARR": {
-    "default": "Annual Recurring Revenue",
-    "alternatives": ["Accounting Rate of Return"]
-  },
-  "MRR": {
-    "default": "Monthly Recurring Revenue",
-    "alternatives": []
-  },
-  "CAC": {
-    "default": "Customer Acquisition Cost",
-    "alternatives": []
-  },
-  "LTV": {
-    "default": "Lifetime Value",
-    "alternatives": ["Long-Term Value"]
-  },
-  "EBITDA": {
-    "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
-    "alternatives": []
-  },
-  "P&L": {
-    "default": "Profit and Loss",
+  "ORM": {
+    "default": "Object-Relational Mapping",
     "alternatives": []
   },
   "OTE": {
     "default": "On-Target Earnings",
     "alternatives": []
   },
-  "EMI": {
-    "default": "Enterprise Management Incentive",
-    "alternatives": ["Electromagnetic Interference", "Equated Monthly Instalment"]
-  },
-  "PTO": {
-    "default": "Paid Time Off",
+  "OTel": {
+    "default": "OpenTelemetry",
     "alternatives": []
   },
-  "EAP": {
-    "default": "Employee Assistance Programme",
-    "alternatives": ["Extensible Authentication Protocol"]
+  "P&L": {
+    "default": "Profit and Loss",
+    "alternatives": []
   },
-  "GDPR": {
-    "default": "General Data Protection Regulation",
+  "PaaS": {
+    "default": "Platform as a Service",
     "alternatives": []
   },
   "PCI": {
     "default": "Payment Card Industry",
     "alternatives": []
   },
-  "DSS": {
-    "default": "Data Security Standard",
-    "alternatives": ["Decision Support System"]
+  "PIP": {
+    "default": "Performance Improvement Plan",
+    "alternatives": [
+      "Python Installer Package"
+    ]
   },
-  "DPO": {
-    "default": "Data Protection Officer",
-    "alternatives": ["Days Payable Outstanding"]
+  "PM": {
+    "default": "Product Manager",
+    "alternatives": [
+      "Project Manager",
+      "Private Message"
+    ]
   },
-  "HIPAA": {
-    "default": "Health Insurance Portability and Accountability Act",
+  "POC": {
+    "default": "Proof of Concept",
+    "alternatives": [
+      "Point of Contact"
+    ]
+  },
+  "PR": {
+    "default": "Pull Request",
+    "alternatives": [
+      "Public Relations",
+      "Performance Review"
+    ]
+  },
+  "PTO": {
+    "default": "Paid Time Off",
     "alternatives": []
   },
-  "ISO": {
-    "default": "International Organisation for Standardisation",
-    "alternatives": ["In Search Of"]
+  "QA": {
+    "default": "Quality Assurance",
+    "alternatives": [
+      "Question and Answer"
+    ]
   },
-  "CISO": {
-    "default": "Chief Information Security Officer",
+  "RAG": {
+    "default": "Retrieval-Augmented Generation",
+    "alternatives": [
+      "Red, Amber, Green (status)"
+    ],
+    "industry": {
+      "tech": "Retrieval-Augmented Generation"
+    }
+  },
+  "RBAC": {
+    "default": "Role-Based Access Control",
     "alternatives": []
   },
-  "CEO": {
-    "default": "Chief Executive Officer",
+  "REST": {
+    "default": "Representational State Transfer",
     "alternatives": []
   },
-  "CTO": {
-    "default": "Chief Technology Officer",
+  "RFC": {
+    "default": "Request for Comments",
+    "alternatives": [
+      "Request for Change"
+    ]
+  },
+  "ROI": {
+    "default": "Return on Investment",
     "alternatives": []
   },
-  "CPO": {
-    "default": "Chief Product Officer",
-    "alternatives": ["Chief People Officer"]
+  "RTO": {
+    "default": "Return to Office",
+    "alternatives": [
+      "Recovery Time Objective"
+    ]
   },
-  "CFO": {
-    "default": "Chief Financial Officer",
+  "SaaS": {
+    "default": "Software as a Service",
+    "alternatives": [],
+    "industry": {
+      "tech": "Software as a Service"
+    }
+  },
+  "SDK": {
+    "default": "Software Development Kit",
     "alternatives": []
   },
-  "COO": {
-    "default": "Chief Operating Officer",
+  "SLA": {
+    "default": "Service Level Agreement",
     "alternatives": []
   },
-  "CMO": {
-    "default": "Chief Marketing Officer",
+  "SLI": {
+    "default": "Service Level Indicator",
+    "alternatives": []
+  },
+  "SLO": {
+    "default": "Service Level Objective",
+    "alternatives": [
+      "Service Level Offering"
+    ]
+  },
+  "SME": {
+    "default": "Subject Matter Expert",
+    "alternatives": [
+      "Small and Medium Enterprise"
+    ]
+  },
+  "SOC": {
+    "default": "Security Operations Center",
+    "alternatives": [
+      "System on Chip",
+      "Statement of Changes"
+    ],
+    "industry": {
+      "tech": "Security Operations Center",
+      "hardware": "System on Chip",
+      "finance": "Statement of Changes"
+    }
+  },
+  "SRE": {
+    "default": "Site Reliability Engineer",
+    "alternatives": [
+      "Site Reliability Engineering"
+    ]
+  },
+  "SSL": {
+    "default": "Secure Sockets Layer",
+    "alternatives": []
+  },
+  "SSO": {
+    "default": "Single Sign-On",
+    "alternatives": []
+  },
+  "TBC": {
+    "default": "To Be Confirmed",
+    "alternatives": []
+  },
+  "TBD": {
+    "default": "To Be Determined",
+    "alternatives": [
+      "To Be Decided",
+      "To Be Defined"
+    ]
+  },
+  "TCP": {
+    "default": "Transmission Control Protocol",
+    "alternatives": []
+  },
+  "TLS": {
+    "default": "Transport Layer Security",
+    "alternatives": []
+  },
+  "UAT": {
+    "default": "User Acceptance Testing",
     "alternatives": []
   },
   "VP": {
     "default": "Vice President",
     "alternatives": []
   },
-  "HR": {
-    "default": "Human Resources",
-    "alternatives": []
-  },
-  "IC": {
-    "default": "Individual Contributor",
-    "alternatives": ["Integrated Circuit"]
-  },
-  "PIP": {
-    "default": "Performance Improvement Plan",
-    "alternatives": ["Python Installer Package"]
-  },
-  "QA": {
-    "default": "Quality Assurance",
-    "alternatives": ["Question and Answer"]
-  },
-  "UAT": {
-    "default": "User Acceptance Testing",
-    "alternatives": []
-  },
-  "POC": {
-    "default": "Proof of Concept",
-    "alternatives": ["Point of Contact"]
-  },
-  "EOD": {
-    "default": "End of Day",
-    "alternatives": ["End of Discussion"]
-  },
-  "EOM": {
-    "default": "End of Month",
-    "alternatives": []
-  },
-  "EOY": {
-    "default": "End of Year",
-    "alternatives": []
-  },
-  "ASAP": {
-    "default": "As Soon As Possible",
-    "alternatives": []
-  },
-  "FYI": {
-    "default": "For Your Information",
-    "alternatives": []
-  },
-  "TBD": {
-    "default": "To Be Determined",
-    "alternatives": ["To Be Decided", "To Be Defined"]
-  },
-  "TBC": {
-    "default": "To Be Confirmed",
-    "alternatives": []
-  },
   "WFH": {
     "default": "Work From Home",
-    "alternatives": []
-  },
-  "RTO": {
-    "default": "Return to Office",
-    "alternatives": ["Recovery Time Objective"]
-  },
-  "SME": {
-    "default": "Subject Matter Expert",
-    "alternatives": ["Small and Medium Enterprise"]
-  },
-  "GTM": {
-    "default": "Go-to-Market",
-    "alternatives": ["Google Tag Manager"]
-  },
-  "B2B": {
-    "default": "Business to Business",
-    "alternatives": []
-  },
-  "B2C": {
-    "default": "Business to Consumer",
-    "alternatives": []
-  },
-  "CRM": {
-    "default": "Customer Relationship Management",
-    "alternatives": []
-  },
-  "ERP": {
-    "default": "Enterprise Resource Planning",
-    "alternatives": []
-  },
-  "PM": {
-    "default": "Product Manager",
-    "alternatives": ["Project Manager", "Private Message"]
-  },
-  "EM": {
-    "default": "Engineering Manager",
-    "alternatives": []
-  },
-  "DM": {
-    "default": "Direct Message",
-    "alternatives": ["Data Migration", "Decision Maker"]
-  },
-  "LGTM": {
-    "default": "Looks Good to Me",
-    "alternatives": []
-  },
-  "PR": {
-    "default": "Pull Request",
-    "alternatives": ["Public Relations", "Performance Review"]
-  },
-  "RFC": {
-    "default": "Request for Comments",
-    "alternatives": ["Request for Change"]
-  },
-  "ADR": {
-    "default": "Architecture Decision Record",
     "alternatives": []
   }
 }
