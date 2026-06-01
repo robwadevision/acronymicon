@@ -158,7 +158,7 @@
         matches.push({ word, index: m.index, length: m[0].length });
         if (!trackedHighlights.has(word)) {
           trackedHighlights.add(word);
-          AcronymAnalytics.track("acronym_highlighted", { acronym: word });
+          AcronymAnalytics.track("acronym_identified", { acronym: word });
         }
       }
       // not yet triggered — enable once undefined-acronym surfacing is built:
@@ -290,6 +290,7 @@
   function openTooltip(span) {
     const word = span.getAttribute(TOOLTIP_ANCHOR_ATTR);
     const result = lookup(word);
+    AcronymAnalytics.track("acronym_highlighted", { acronym: word });
 
     closeTooltip();
     activeSpan = span;
