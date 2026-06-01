@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.5.2
+- Reverted visual highlighting to dictionary-gated only — too many false positives on all-caps words when highlighting all regex matches
+- `acronym_undefined` analytics event still fires silently for regex matches with no dictionary entry, preserving the data signal without the UX noise
+
+### v1.5.1
+
+- CSS changes and version control sync to enable one-place updates
+
 ### v1.5.0
 - All regex-matched acronyms are now highlighted, regardless of whether they have a dictionary entry
 - Tooltip already handled the no-definition case ("No definition available yet") — no UI change needed

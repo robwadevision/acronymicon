@@ -154,14 +154,15 @@
     let m;
     while ((m = ACRONYM_RE.exec(text)) !== null) {
       const word = m[1];
-      matches.push({ word, index: m.index, length: m[0].length });
-      if (!trackedHighlights.has(word)) {
-        trackedHighlights.add(word);
-        if (lookup(word)) {
+      if (lookup(word)) {
+        matches.push({ word, index: m.index, length: m[0].length });
+        if (!trackedHighlights.has(word)) {
+          trackedHighlights.add(word);
           AcronymAnalytics.track("acronym_identified", { acronym: word });
-        } else {
-          AcronymAnalytics.track("acronym_undefined", { acronym: word });
         }
+      } else if (!trackedHighlights.has(word)) {
+        trackedHighlights.add(word);
+        AcronymAnalytics.track("acronym_undefined", { acronym: word });
       }
     }
 
