@@ -19,6 +19,8 @@ const AcronymAnalytics = (() => {
 
   let clientId = null;
   const queue = [];
+  const sessionId = Date.now().toString();
+  const sessionStart = Date.now();
 
   async function init() {
     if (!chrome.runtime?.id) return;
@@ -47,9 +49,15 @@ const AcronymAnalytics = (() => {
       if (DEBUG && queue.length) console.warn("[Acronymicon Analytics] Flush skipped — clientId not ready yet");
       return;
     }
-    const events = queue.splice(0).map((e) =>
-      DEBUG ? { ...e, params: { ...e.params, debug_mode: 1, traffic_type: "internal" } } : e
-    );
+    const events = queue.splice(0).map((e) => ({
+      ...e,
+      params: {
+        ...e.params,
+        session_id: sessionId,
+        engagement_time_msec: Date.now() - sessionStart,
+        ...(DEBUG ? { debug_mode: 1, traffic_type: "internal" } : {})
+      }
+    }));
     const payload = JSON.stringify({ client_id: clientId, events });
 
     if (DEBUG) {
