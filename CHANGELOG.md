@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.5.0
+- All regex-matched acronyms are now highlighted, regardless of whether they have a dictionary entry
+- Tooltip already handled the no-definition case ("No definition available yet") — no UI change needed
+- `acronym_undefined` analytics event now fires for regex matches with no dictionary entry (once per unique word per page scan)
+- Deleted legacy `acronyms.json` from root (superseded by `src/acronyms.en.json`)
+
 ### v1.4.8
 - Analytics: `rating_helpful` and `rating_not_helpful` events now both include `definition` param — the primary definition text shown at the time of rating
 
