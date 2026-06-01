@@ -59,7 +59,7 @@
   async function init() {
     const { acEnabled = true, acLang = "en" } = await chrome.storage.sync.get(["acEnabled", "acLang"]);
     isEnabled = acEnabled;
-    AcronymAnalytics.setUserProperty("language", acLang);
+    AcronymAnalytics.setUserProperty("dictionary_language", acLang);
 
     acronymData = await loadAcronymData(acLang);
     detectedIndustry = detectIndustry();

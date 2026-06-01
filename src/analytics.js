@@ -70,6 +70,7 @@ const AcronymAnalytics = (() => {
     });
 
     if (DEBUG) {
+      console.log("[Acronymicon Analytics] Payload:", JSON.parse(payload));
       const endpoint = `${GA_ENDPOINT}?measurement_id=${encodeURIComponent(MEASUREMENT_ID)}&api_secret=${encodeURIComponent(API_SECRET)}`;
       fetch(endpoint, { method: "POST", body: payload })
         .then((r) => console.log("[Acronymicon Analytics] Sent — status:", r.status))
