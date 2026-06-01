@@ -4,13 +4,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #ffffff;
-  color: #0f172a;
+  background: #1e0a3c;
+  color: #ffffff;
   min-width: 260px;
-}
-
-@media (prefers-color-scheme: dark) {
-  body { background: #0f1117; color: #f1f5f9; }
 }
 
 .popup { padding: 16px; }
@@ -32,7 +28,7 @@ body {
 .logo-icon {
   width: 28px;
   height: 28px;
-  background: #2563eb;
+  background: #7c3aed;
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -46,11 +42,7 @@ body {
 .logo-name {
   font-size: 14px;
   font-weight: 600;
-  color: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo-name { color: #f1f5f9; }
+  color: #ffffff;
 }
 
 .badge {
@@ -60,23 +52,15 @@ body {
   text-transform: uppercase;
   padding: 3px 8px;
   border-radius: 20px;
-  background: #eff6ff;
-  color: #d40bca;
+  background: #2d1b5e;
+  color: #c4b5d9;
 }
 
-.badge.tech    { background: #eff6ff; color: #2563eb; }
-.badge.finance { background: #fefce8; color: #a16207; }
-.badge.pharma  { background: #f0fdf4; color: #15803d; }
-.badge.hr      { background: #fdf4ff; color: #9333ea; }
-.badge.default { background: #f8fafc; color: #64748b; }
-
-@media (prefers-color-scheme: dark) {
-  .badge         { background: #1e3a8a22; color: #60a5fa; }
-  .badge.finance { background: #78350f22; color: #fbbf24; }
-  .badge.pharma  { background: #14532d22; color: #4ade80; }
-  .badge.hr      { background: #581c8722; color: #c084fc; }
-  .badge.default { background: #1e293b;   color: #94a3b8; }
-}
+.badge.tech    { background: #1e3a8a33; color: #60a5fa; }
+.badge.finance { background: #78350f33; color: #fbbf24; }
+.badge.pharma  { background: #14532d33; color: #4ade80; }
+.badge.hr      { background: #58108733; color: #c084fc; }
+.badge.default { background: #2d1b5e;   color: #c4b5d9; }
 
 /* ── Toggle row ── */
 .toggle-row {
@@ -90,17 +74,13 @@ body {
 .toggle-label {
   font-size: 13px;
   font-weight: 500;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .toggle-sub {
   font-size: 11px;
-  color: #94a3b8;
+  color: #c4b5d9;
   margin-top: 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .toggle-label { color: #f1f5f9; }
 }
 
 /* ── Toggle switch ── */
@@ -110,7 +90,7 @@ body {
 .switch-track {
   position: absolute;
   inset: 0;
-  background: #cbd5e1;
+  background: #3d2a6e;
   border-radius: 22px;
   transition: background 0.2s;
 }
@@ -128,19 +108,15 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-.switch input:checked + .switch-track { background: #2563eb; }
+.switch input:checked + .switch-track { background: #7c3aed; }
 .switch input:checked + .switch-track::before { transform: translateX(18px); }
-.switch input:focus-visible + .switch-track { outline: 2px solid #2563eb; outline-offset: 2px; }
+.switch input:focus-visible + .switch-track { outline: 2px solid #7c3aed; outline-offset: 2px; }
 
 /* ── Divider ── */
 .divider {
   height: 1px;
-  background: #f1f5f9;
+  background: #3d2a6e;
   margin: 12px 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .divider { background: #1e2130; }
 }
 
 /* ── Stats ── */
@@ -155,30 +131,22 @@ body {
 }
 
 .stat-item + .stat-item {
-  border-left: 1px solid #f1f5f9;
-}
-
-@media (prefers-color-scheme: dark) {
-  .stat-item + .stat-item { border-color: #1e2130; }
+  border-left: 1px solid #3d2a6e;
 }
 
 .stat-value {
   font-size: 20px;
   font-weight: 600;
-  color: #0f172a;
+  color: #ffffff;
   line-height: 1.2;
 }
 
 .stat-label {
   font-size: 10px;
-  color: #94a3b8;
+  color: #c4b5d9;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-top: 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .stat-value { color: #f1f5f9; }
 }
 
 /* ── Footer ── */
@@ -187,11 +155,11 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 11px;
-  color: #94a3b8;
+  color: #c4b5d9;
 }
 
 .footer-link {
-  color: #2563eb;
+  color: #a78bfa;
   text-decoration: none;
   font-size: 11px;
 }

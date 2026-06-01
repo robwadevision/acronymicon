@@ -299,6 +299,11 @@
     box.setAttribute("role", "tooltip");
     box.setAttribute("aria-label", `Definition of ${word}`);
 
+    const header = document.createElement("div");
+    header.className = "ai-tooltip-header";
+    header.textContent = "The Acronymicon";
+    box.appendChild(header);
+
     const closeBtn = document.createElement("button");
     closeBtn.className = "ai-tooltip-close";
     closeBtn.setAttribute("aria-label", "Close");

@@ -5,7 +5,7 @@
 
 /* ── Highlighted word ── */
 .acronymicon-word {
-  border-bottom: 2px dotted #2563eb;
+  border-bottom: 2px dotted #7c3aed;
   cursor: pointer;
   color: inherit;
   background: none;
@@ -17,8 +17,8 @@
 
 .acronymicon-word:hover,
 .acronymicon-word[data-ac-active="true"] {
-  color: #2563eb;
-  border-bottom-color: #2563eb;
+  color: #a78bfa;
+  border-bottom-color: #a78bfa;
 }
 
 /* ── Tooltip container ── */
@@ -28,22 +28,26 @@
   position: absolute;
   z-index: 2147483647; /* max z-index */
   width: 240px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #1e0a3c;
+  border: 1px solid #3d2a6e;
   border-radius: 10px;
   padding: 14px 16px 14px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   pointer-events: auto;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  #acronymicon-tooltip {
-    background: #1e2130;
-    border-color: #2d3348;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.2);
-  }
+/* ── Header ── */
+.ai-tooltip-header {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  padding-right: 24px; /* avoid overlap with close btn */
+  border-bottom: 1px solid #3d2a6e;
 }
 
 /* ── Close button ── */
@@ -54,7 +58,7 @@
   right: 12px;
   font-size: 18px;
   line-height: 1;
-  color: #94a3b8;
+  color: #ffffff;
   cursor: pointer;
   padding: 2px 4px;
   border-radius: 4px;
@@ -62,51 +66,34 @@
 }
 
 .ai-tooltip-close:hover {
-  color: #475569;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-close { color: #64748b; }
-  .ai-tooltip-close:hover { color: #94a3b8; }
+  color: #ffffff;
 }
 
 /* ── Acronym label (e.g. "SOC") ── */
 .ai-tooltip-word {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #94a3b8;
+  color: #a78bfa;
   margin-bottom: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-word { color: #64748b; }
 }
 
 /* ── Primary definition ── */
 .ai-tooltip-primary {
   font-size: 15px;
   font-weight: 600;
-  color: #0f172a;
+  color: #ffffff;
   line-height: 1.35;
   margin-bottom: 2px;
   padding-right: 20px; /* avoid overlap with close btn */
 }
 
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-primary { color: #f1f5f9; }
-}
-
 /* ── Context label ── */
 .ai-tooltip-context {
   font-size: 11px;
-  color: #94a3b8;
+  color: #ffffff;
   margin-bottom: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-context { color: #64748b; }
 }
 
 /* ── Divider ── */
@@ -114,12 +101,8 @@
   all: unset;
   display: block;
   height: 1px;
-  background: #f1f5f9;
+  background: #3d2a6e;
   margin: 10px 0 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-divider { background: #2d3348; }
 }
 
 /* ── "Also means" label ── */
@@ -128,30 +111,22 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #94a3b8;
+  color: #ffffff;
   margin-bottom: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-alt-label { color: #64748b; }
 }
 
 /* ── Alternative definitions ── */
 .ai-tooltip-alt {
   font-size: 13px;
-  color: #64748b;
+  color: #ffffff;
   line-height: 1.5;
   padding: 1px 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-alt { color: #94a3b8; }
 }
 
 /* ── No definition fallback ── */
 .ai-tooltip-nodef {
   font-size: 13px;
-  color: #94a3b8;
+  color: #ffffff;
   font-style: italic;
 }
 
@@ -162,21 +137,13 @@
   gap: 4px;
   margin-top: 10px;
   padding-top: 8px;
-  border-top: 1px solid #f1f5f9;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-rating { border-top-color: #2d3348; }
+  border-top: 1px solid #3d2a6e;
 }
 
 .ai-tooltip-rating-label {
   font-size: 10px;
-  color: #94a3b8;
+  color: #ffffff;
   flex: 1;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-tooltip-rating-label { color: #64748b; }
 }
 
 .ai-rating-btn {
@@ -192,15 +159,10 @@
 
 .ai-rating-btn:hover {
   opacity: 1;
-  background: #f1f5f9;
+  background: #2d1b5e;
 }
 
 .ai-rating-btn.active {
   opacity: 1;
-  background: #e0f2fe;
-}
-
-@media (prefers-color-scheme: dark) {
-  .ai-rating-btn:hover { background: #2d3348; }
-  .ai-rating-btn.active { background: #1e3a5f; }
+  background: #3d2a6e;
 }

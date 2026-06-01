@@ -20,6 +20,23 @@ jobs:
         id: version
         run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
 
+      - name: Create constants.js from secrets
+        run: |
+          VERSION_NUM="${{ steps.version.outputs.VERSION }}"
+          VERSION_NUM="${VERSION_NUM#v}"
+          cat > src/constants.js << EOF
+          const versionNumber = "${VERSION_NUM}";
+          const AcronymConfig = {
+            version: "${VERSION_NUM}",
+            measurementId: "${{ secrets.GA4_MEASUREMENT_ID }}",
+            apiSecret: "${{ secrets.GA4_API_SECRET }}",
+            debug: false,
+          };
+          EOF
+
+      - name: Sync version to manifest.json
+        run: node scripts/sync-version.js
+
       - name: Build zip
         run: |
           zip -r acronymicon-${{ steps.version.outputs.VERSION }}.zip . \
