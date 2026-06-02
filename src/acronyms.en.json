@@ -11,7 +11,7 @@
   },
   "AE": {
     "default": "United Arab Emirates",
-    "alternatives": []
+    "alternatives": ["Account Executive"]
   },
   "AED": {
     "default": "UAE Dirham",
@@ -68,6 +68,10 @@
     "default": "Australia",
     "alternatives": []
   },
+  "AVP": {
+    "default": "Associate Vice President",
+    "alternatives": ["Assistant Vice President"]
+  },
   "AWS": {
     "default": "Amazon Web Services",
     "alternatives": []
@@ -78,6 +82,14 @@
   },
   "B2C": {
     "default": "Business to Consumer",
+    "alternatives": []
+  },
+  "BDM": {
+    "default": "Business Development Manager",
+    "alternatives": []
+  },
+  "BDR": {
+    "default": "Business Development Representative",
     "alternatives": []
   },
   "BE": {
@@ -114,6 +126,10 @@
     "default": "Canada",
     "alternatives": []
   },
+  "CCO": {
+    "default": "Chief Commercial Officer",
+    "alternatives": ["Chief Compliance Officer", "Chief Content Officer"]
+  },
   "CD": {
     "default": "Continuous Deployment",
     "alternatives": ["Continuous Delivery"],
@@ -126,6 +142,10 @@
   "CDN": {
     "default": "Content Delivery Network",
     "alternatives": []
+  },
+  "CDO": {
+    "default": "Chief Data Officer",
+    "alternatives": ["Chief Digital Officer"]
   },
   "CEO": {
     "default": "Chief Executive Officer",
@@ -148,10 +168,18 @@
     "default": "China",
     "alternatives": []
   },
+  "CHRO": {
+    "default": "Chief Human Resources Officer",
+    "alternatives": []
+  },
   "CI": {
     "default": "Continuous Integration",
     "alternatives": ["Configuration Item", "Côte d'Ivoire"],
     "industry": { "tech": "Continuous Integration" }
+  },
+  "CIO": {
+    "default": "Chief Information Officer",
+    "alternatives": ["Chief Investment Officer"]
   },
   "CISO": {
     "default": "Chief Information Security Officer",
@@ -160,6 +188,10 @@
   "CL": {
     "default": "Chile",
     "alternatives": []
+  },
+  "CLO": {
+    "default": "Chief Legal Officer",
+    "alternatives": ["Chief Learning Officer"]
   },
   "CLP": {
     "default": "Chilean Peso",
@@ -208,6 +240,18 @@
     "default": "Customer Relationship Management",
     "alternatives": []
   },
+  "CRO": {
+    "default": "Chief Revenue Officer",
+    "alternatives": ["Chief Risk Officer", "Conversion Rate Optimisation"]
+  },
+  "CSM": {
+    "default": "Customer Success Manager",
+    "alternatives": []
+  },
+  "CSO": {
+    "default": "Chief Strategy Officer",
+    "alternatives": ["Chief Security Officer", "Chief Sales Officer"]
+  },
   "CTO": {
     "default": "Chief Technology Officer",
     "alternatives": []
@@ -220,6 +264,10 @@
     "default": "Czech Koruna",
     "alternatives": [],
     "industry": { "finance": "Czech Koruna" }
+  },
+  "DBA": {
+    "default": "Database Administrator",
+    "alternatives": []
   },
   "DE": {
     "default": "Germany",
@@ -262,6 +310,10 @@
     "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
     "alternatives": []
   },
+  "ED": {
+    "default": "Executive Director",
+    "alternatives": ["Engineering Director"]
+  },
   "EG": {
     "default": "Egypt",
     "alternatives": []
@@ -274,6 +326,10 @@
   "EGY": {
     "default": "Egypt",
     "alternatives": []
+  },
+  "ELT": {
+    "default": "Executive Leadership Team",
+    "alternatives": ["English Language Teaching"]
   },
   "EM": {
     "default": "Engineering Manager",
@@ -316,6 +372,10 @@
     "alternatives": [],
     "industry": { "finance": "Euro" }
   },
+  "EVP": {
+    "default": "Executive Vice President",
+    "alternatives": []
+  },
   "FI": {
     "default": "Finland",
     "alternatives": []
@@ -323,6 +383,10 @@
   "FR": {
     "default": "France",
     "alternatives": []
+  },
+  "FTE": {
+    "default": "Full-Time Employee",
+    "alternatives": ["Full-Time Equivalent"]
   },
   "FYI": {
     "default": "For Your Information",
@@ -347,6 +411,10 @@
   },
   "GDPR": {
     "default": "General Data Protection Regulation",
+    "alternatives": []
+  },
+  "GM": {
+    "default": "General Manager",
     "alternatives": []
   },
   "GPU": {
@@ -374,9 +442,17 @@
     "alternatives": [],
     "industry": { "finance": "Hong Kong Dollar" }
   },
+  "HM": {
+    "default": "Hiring Manager",
+    "alternatives": ["Her Majesty's", "His Majesty's"]
+  },
   "HR": {
     "default": "Human Resources",
     "alternatives": ["Croatia"]
+  },
+  "HRBP": {
+    "default": "HR Business Partner",
+    "alternatives": []
   },
   "HU": {
     "default": "Hungary",
@@ -518,6 +594,10 @@
   "LTV": {
     "default": "Lifetime Value",
     "alternatives": ["Long-Term Value", "Loan To Value"]
+  },
+  "MD": {
+    "default": "Managing Director",
+    "alternatives": ["Medical Doctor"]
   },
   "MEX": {
     "default": "Mexico",
@@ -678,7 +758,7 @@
   },
   "PM": {
     "default": "Product Manager",
-    "alternatives": ["Project Manager", "Private Message"]
+    "alternatives": ["Project Manager", "Programme Manager", "Private Message"]
   },
   "POC": {
     "default": "Proof of Concept",
@@ -713,6 +793,10 @@
   },
   "QAT": {
     "default": "Qatar",
+    "alternatives": []
+  },
+  "QE": {
+    "default": "Quality Engineer",
     "alternatives": []
   },
   "RAG": {
@@ -759,7 +843,8 @@
   },
   "SA": {
     "default": "Saudi Arabia",
-    "alternatives": ["South Africa"]
+    "alternatives": ["South Africa", "Solutions Architect"],
+    "industry": { "tech": "Solutions Architect" }
   },
   "SaaS": {
     "default": "Software as a Service",
@@ -774,6 +859,11 @@
   "SDK": {
     "default": "Software Development Kit",
     "alternatives": []
+  },
+  "SDR": {
+    "default": "Sales Development Representative",
+    "alternatives": ["Special Drawing Rights"],
+    "industry": { "finance": "Special Drawing Rights" }
   },
   "SE": {
     "default": "Sweden",
@@ -806,6 +896,10 @@
     "default": "Service Level Objective",
     "alternatives": ["Service Level Offering"]
   },
+  "SLT": {
+    "default": "Senior Leadership Team",
+    "alternatives": []
+  },
   "SME": {
     "default": "Subject Matter Expert",
     "alternatives": ["Small and Medium Enterprise"]
@@ -827,9 +921,17 @@
     "default": "Single Sign-On",
     "alternatives": []
   },
+  "SVP": {
+    "default": "Senior Vice President",
+    "alternatives": []
+  },
   "SWE": {
     "default": "Sweden",
     "alternatives": []
+  },
+  "TA": {
+    "default": "Talent Acquisition",
+    "alternatives": ["Teaching Assistant", "Technical Analyst"]
   },
   "TBC": {
     "default": "To Be Confirmed",
@@ -852,9 +954,17 @@
     "alternatives": [],
     "industry": { "finance": "Thai Baht" }
   },
+  "TL": {
+    "default": "Tech Lead",
+    "alternatives": ["Team Lead"]
+  },
   "TLS": {
     "default": "Transport Layer Security",
     "alternatives": []
+  },
+  "TPM": {
+    "default": "Technical Program Manager",
+    "alternatives": ["Trusted Platform Module"]
   },
   "TR": {
     "default": "Turkey",

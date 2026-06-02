@@ -9,6 +9,7 @@
   const statIdentified = document.getElementById("stat-identified");
   const statDefined = document.getElementById("stat-defined");
   const statNote = document.getElementById("stat-note");
+  const statDict = document.getElementById("stat-dict");
 
   // ── Load persisted state ───────────────────────────────────────────────
   const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
@@ -29,6 +30,9 @@
         statDefined.textContent = defined || "—";
         if (undefined_ > 0) {
           statNote.textContent = `${undefined_} identified without a definition`;
+        }
+        if (response.dictionarySize) {
+          statDict.textContent = `${response.dictionarySize} Definitions available`;
         }
         setIndustryBadge(response.industry || "default");
       }

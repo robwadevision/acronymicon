@@ -439,7 +439,8 @@
       spans.forEach((s) => {
         if (lookup(s.getAttribute(TOOLTIP_ANCHOR_ATTR))) defined++;
       });
-      sendResponse({ identified: spans.length, defined, industry: detectedIndustry });
+      const dictionarySize = Object.keys(acronymData).filter(k => k !== "_meta").length;
+      sendResponse({ identified: spans.length, defined, industry: detectedIndustry, dictionarySize });
     }
 
     return true;

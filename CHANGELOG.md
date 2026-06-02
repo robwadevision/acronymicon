@@ -1,5 +1,12 @@
 # Changelog
 
+### v1.5.7
+- Added 27 job title acronyms: AVP, BDM, BDR, CCO, CDO, CHRO, CIO, CLO, CRO, CSM, CSO, DBA, ED, ELT, EVP, FTE, GM, HM, HRBP, MD, QE, SDR, SLT, SVP, TA, TL, TPM
+- SDR carries a `finance` industry override (Special Drawing Rights); all other new entries have no industry tag
+- Updated existing entries: AE gains "Account Executive" as an alternative; SA gains "Solutions Architect" as an alternative with a `tech` industry override; PM gains "Programme Manager" as an alternative
+- Popup now shows "X Definitions available" below the stat note, sourced from the live dictionary size
+- `AC_GET_STATS` response extended with `dictionarySize` (total entries in the loaded dictionary, excluding `_meta`)
+
 ### v1.5.6
 - Added 52 ISO 3166-1 alpha-2 country codes to the dictionary (AE, AR, AT, BE, BR, CA, CH, CL, CN, CO, CZ, DE, DK, EG, ES, EU, FI, FR, GB, GR, HK, HU, ID, IL, IN, JP, KR, KW, MX, MY, NG, NL, NO, NZ, PE, PH, PK, PL, PT, RO, RU, SA, SE, SG, TH, TW, UA, UK, US, VN, ZA)
 - Country codes carry no industry tag unless an alternate meaning is industry-specific (SE → Software Engineer in tech; ID → Identifier in tech; PT → Physical Therapy in pharma; PE → Private Equity in finance)

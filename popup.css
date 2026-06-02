@@ -158,6 +158,14 @@ body {
   min-height: 14px;
 }
 
+.stat-dict {
+  font-size: 11px;
+  color: #6b5a8a;
+  text-align: center;
+  margin-top: 4px;
+  min-height: 14px;
+}
+
 /* ── Footer ── */
 .footer {
   display: flex;
