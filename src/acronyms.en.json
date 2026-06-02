@@ -9,6 +9,16 @@
       "industry": "Optional: industry-specific overrides keyed by industry slug"
     }
   },
+  "ABS": {
+    "default": "Asset-Backed Securities",
+    "alternatives": [],
+    "industry": { "finance": "Asset-Backed Securities" }
+  },
+  "ACV": {
+    "default": "Annual Contract Value",
+    "alternatives": [],
+    "industry": { "finance": "Annual Contract Value" }
+  },
   "AE": {
     "default": "United Arab Emirates",
     "alternatives": ["Account Executive"]
@@ -21,6 +31,11 @@
   "AI": {
     "default": "Artificial Intelligence",
     "alternatives": []
+  },
+  "AML": {
+    "default": "Anti-Money Laundering",
+    "alternatives": [],
+    "industry": { "finance": "Anti-Money Laundering" }
   },
   "API": {
     "default": "Application Programming Interface",
@@ -36,6 +51,10 @@
   },
   "ARG": {
     "default": "Argentina",
+    "alternatives": []
+  },
+  "ARPU": {
+    "default": "Average Revenue Per User",
     "alternatives": []
   },
   "ARR": {
@@ -63,6 +82,11 @@
     "default": "Australian Dollar",
     "alternatives": [],
     "industry": { "finance": "Australian Dollar" }
+  },
+  "AUM": {
+    "default": "Assets Under Management",
+    "alternatives": [],
+    "industry": { "finance": "Assets Under Management" }
   },
   "AUS": {
     "default": "Australia",
@@ -122,6 +146,11 @@
     "alternatives": [],
     "industry": { "finance": "Canadian Dollar" }
   },
+  "CAGR": {
+    "default": "Compound Annual Growth Rate",
+    "alternatives": [],
+    "industry": { "finance": "Compound Annual Growth Rate" }
+  },
   "CAN": {
     "default": "Canada",
     "alternatives": []
@@ -145,7 +174,13 @@
   },
   "CDO": {
     "default": "Chief Data Officer",
-    "alternatives": ["Chief Digital Officer"]
+    "alternatives": ["Chief Digital Officer", "Collateralised Debt Obligation"],
+    "industry": { "finance": "Collateralised Debt Obligation" }
+  },
+  "CDS": {
+    "default": "Credit Default Swap",
+    "alternatives": [],
+    "industry": { "finance": "Credit Default Swap" }
   },
   "CEO": {
     "default": "Chief Executive Officer",
@@ -191,7 +226,8 @@
   },
   "CLO": {
     "default": "Chief Legal Officer",
-    "alternatives": ["Chief Learning Officer"]
+    "alternatives": ["Chief Learning Officer", "Collateralised Loan Obligation"],
+    "industry": { "finance": "Collateralised Loan Obligation" }
   },
   "CLP": {
     "default": "Chilean Peso",
@@ -200,7 +236,8 @@
   },
   "CMO": {
     "default": "Chief Marketing Officer",
-    "alternatives": []
+    "alternatives": ["Collateralised Mortgage Obligation"],
+    "industry": { "finance": "Collateralised Mortgage Obligation" }
   },
   "CN": {
     "default": "China",
@@ -269,6 +306,15 @@
     "default": "Database Administrator",
     "alternatives": []
   },
+  "DCF": {
+    "default": "Discounted Cash Flow",
+    "alternatives": [],
+    "industry": { "finance": "Discounted Cash Flow" }
+  },
+  "DD": {
+    "default": "Due Diligence",
+    "alternatives": []
+  },
   "DE": {
     "default": "Germany",
     "alternatives": []
@@ -294,6 +340,11 @@
     "default": "Domain Name System",
     "alternatives": []
   },
+  "DPI": {
+    "default": "Distributions to Paid-In",
+    "alternatives": [],
+    "industry": { "finance": "Distributions to Paid-In" }
+  },
   "DPO": {
     "default": "Data Protection Officer",
     "alternatives": ["Days Payable Outstanding"]
@@ -305,6 +356,11 @@
   "EAP": {
     "default": "Employee Assistance Programme",
     "alternatives": ["Extensible Authentication Protocol"]
+  },
+  "EBIT": {
+    "default": "Earnings Before Interest and Taxes",
+    "alternatives": [],
+    "industry": { "finance": "Earnings Before Interest and Taxes" }
   },
   "EBITDA": {
     "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
@@ -351,6 +407,11 @@
     "default": "End of Year",
     "alternatives": []
   },
+  "EPS": {
+    "default": "Earnings Per Share",
+    "alternatives": [],
+    "industry": { "finance": "Earnings Per Share" }
+  },
   "ERP": {
     "default": "Enterprise Resource Planning",
     "alternatives": []
@@ -363,6 +424,11 @@
     "default": "Spain",
     "alternatives": []
   },
+  "ETF": {
+    "default": "Exchange-Traded Fund",
+    "alternatives": [],
+    "industry": { "finance": "Exchange-Traded Fund" }
+  },
   "EU": {
     "default": "European Union",
     "alternatives": []
@@ -372,12 +438,36 @@
     "alternatives": [],
     "industry": { "finance": "Euro" }
   },
+  "EV": {
+    "default": "Enterprise Value",
+    "alternatives": ["Electric Vehicle"],
+    "industry": { "finance": "Enterprise Value" }
+  },
   "EVP": {
     "default": "Executive Vice President",
     "alternatives": []
   },
+  "FCA": {
+    "default": "Financial Conduct Authority",
+    "alternatives": [],
+    "industry": { "finance": "Financial Conduct Authority" }
+  },
+  "FCF": {
+    "default": "Free Cash Flow",
+    "alternatives": [],
+    "industry": { "finance": "Free Cash Flow" }
+  },
+  "FDI": {
+    "default": "Foreign Direct Investment",
+    "alternatives": [],
+    "industry": { "finance": "Foreign Direct Investment" }
+  },
   "FI": {
     "default": "Finland",
+    "alternatives": []
+  },
+  "FIFO": {
+    "default": "First In, First Out",
     "alternatives": []
   },
   "FR": {
@@ -388,9 +478,18 @@
     "default": "Full-Time Employee",
     "alternatives": ["Full-Time Equivalent"]
   },
+  "FY": {
+    "default": "Financial Year",
+    "alternatives": ["Fiscal Year"]
+  },
   "FYI": {
     "default": "For Your Information",
     "alternatives": []
+  },
+  "GAAP": {
+    "default": "Generally Accepted Accounting Principles",
+    "alternatives": [],
+    "industry": { "finance": "Generally Accepted Accounting Principles" }
   },
   "GB": {
     "default": "United Kingdom",
@@ -416,6 +515,11 @@
   "GM": {
     "default": "General Manager",
     "alternatives": []
+  },
+  "GP": {
+    "default": "General Practitioner",
+    "alternatives": ["General Partner"],
+    "industry": { "finance": "General Partner" }
   },
   "GPU": {
     "default": "Graphics Processing Unit",
@@ -477,7 +581,8 @@
   },
   "IC": {
     "default": "Individual Contributor",
-    "alternatives": ["Integrated Circuit"]
+    "alternatives": ["Investment Committee", "Integrated Circuit"],
+    "industry": { "finance": "Investment Committee" }
   },
   "ID": {
     "default": "Indonesia",
@@ -492,6 +597,11 @@
     "default": "Indonesian Rupiah",
     "alternatives": [],
     "industry": { "finance": "Indonesian Rupiah" }
+  },
+  "IFRS": {
+    "default": "International Financial Reporting Standards",
+    "alternatives": [],
+    "industry": { "finance": "International Financial Reporting Standards" }
   },
   "IL": {
     "default": "Israel",
@@ -514,6 +624,16 @@
     "default": "Indian Rupee",
     "alternatives": [],
     "industry": { "finance": "Indian Rupee" }
+  },
+  "IPO": {
+    "default": "Initial Public Offering",
+    "alternatives": [],
+    "industry": { "finance": "Initial Public Offering" }
+  },
+  "IRR": {
+    "default": "Internal Rate of Return",
+    "alternatives": [],
+    "industry": { "finance": "Internal Rate of Return" }
   },
   "ISO": {
     "default": "International Organisation for Standardisation",
@@ -579,8 +699,22 @@
     "alternatives": [],
     "industry": { "finance": "Kuwaiti Dinar" }
   },
+  "KYC": {
+    "default": "Know Your Customer",
+    "alternatives": [],
+    "industry": { "finance": "Know Your Customer" }
+  },
+  "LBO": {
+    "default": "Leveraged Buyout",
+    "alternatives": [],
+    "industry": { "finance": "Leveraged Buyout" }
+  },
   "LGTM": {
     "default": "Looks Good to Me",
+    "alternatives": []
+  },
+  "LIFO": {
+    "default": "Last In, First Out",
     "alternatives": []
   },
   "LLM": {
@@ -591,9 +725,27 @@
     "default": "Large Language Models",
     "alternatives": []
   },
+  "LOI": {
+    "default": "Letter of Intent",
+    "alternatives": []
+  },
+  "LP": {
+    "default": "Limited Partner",
+    "alternatives": ["Long Play", "Linear Programming"]
+  },
   "LTV": {
     "default": "Lifetime Value",
     "alternatives": ["Long-Term Value", "Loan To Value"]
+  },
+  "MBO": {
+    "default": "Management Buyout",
+    "alternatives": ["Management by Objectives"],
+    "industry": { "finance": "Management Buyout" }
+  },
+  "MBS": {
+    "default": "Mortgage-Backed Securities",
+    "alternatives": [],
+    "industry": { "finance": "Mortgage-Backed Securities" }
   },
   "MD": {
     "default": "Managing Director",
@@ -610,6 +762,11 @@
   "MLOps": {
     "default": "Machine Learning Operations",
     "alternatives": []
+  },
+  "MOIC": {
+    "default": "Multiple on Invested Capital",
+    "alternatives": [],
+    "industry": { "finance": "Multiple on Invested Capital" }
   },
   "MRR": {
     "default": "Monthly Recurring Revenue",
@@ -636,6 +793,15 @@
     "default": "Malaysian Ringgit",
     "alternatives": [],
     "industry": { "finance": "Malaysian Ringgit" }
+  },
+  "NAV": {
+    "default": "Net Asset Value",
+    "alternatives": ["Navigation"],
+    "industry": { "finance": "Net Asset Value" }
+  },
+  "NDA": {
+    "default": "Non-Disclosure Agreement",
+    "alternatives": []
   },
   "NG": {
     "default": "Nigeria",
@@ -671,6 +837,19 @@
     "default": "Norway",
     "alternatives": []
   },
+  "NPS": {
+    "default": "Net Promoter Score",
+    "alternatives": []
+  },
+  "NPV": {
+    "default": "Net Present Value",
+    "alternatives": [],
+    "industry": { "finance": "Net Present Value" }
+  },
+  "NRR": {
+    "default": "Net Revenue Retention",
+    "alternatives": ["Net Recurring Revenue"]
+  },
   "NZ": {
     "default": "New Zealand",
     "alternatives": []
@@ -700,6 +879,11 @@
     "default": "Object-Relational Mapping",
     "alternatives": []
   },
+  "OTC": {
+    "default": "Over the Counter",
+    "alternatives": [],
+    "industry": { "finance": "Over the Counter" }
+  },
   "OTE": {
     "default": "On-Target Earnings",
     "alternatives": []
@@ -724,6 +908,11 @@
     "default": "Peru",
     "alternatives": ["Private Equity"],
     "industry": { "finance": "Private Equity" }
+  },
+  "PEG": {
+    "default": "Price/Earnings to Growth",
+    "alternatives": [],
+    "industry": { "finance": "Price/Earnings to Growth" }
   },
   "PH": {
     "default": "Philippines",
@@ -797,7 +986,8 @@
   },
   "QE": {
     "default": "Quality Engineer",
-    "alternatives": []
+    "alternatives": ["Quantitative Easing"],
+    "industry": { "finance": "Quantitative Easing" }
   },
   "RAG": {
     "default": "Retrieval-Augmented Generation",
@@ -807,6 +997,11 @@
   "RBAC": {
     "default": "Role-Based Access Control",
     "alternatives": []
+  },
+  "REIT": {
+    "default": "Real Estate Investment Trust",
+    "alternatives": [],
+    "industry": { "finance": "Real Estate Investment Trust" }
   },
   "REST": {
     "default": "Representational State Transfer",
@@ -823,6 +1018,11 @@
   "ROI": {
     "default": "Return on Investment",
     "alternatives": []
+  },
+  "RSU": {
+    "default": "Restricted Stock Unit",
+    "alternatives": [],
+    "industry": { "finance": "Restricted Stock Unit" }
   },
   "RTO": {
     "default": "Return to Office",
@@ -851,6 +1051,15 @@
     "alternatives": [],
     "industry": { "tech": "Software as a Service" }
   },
+  "SAFE": {
+    "default": "Simple Agreement for Future Equity",
+    "alternatives": [],
+    "industry": { "finance": "Simple Agreement for Future Equity" }
+  },
+  "SAM": {
+    "default": "Serviceable Addressable Market",
+    "alternatives": ["Serviceable Available Market"]
+  },
   "SAR": {
     "default": "Saudi Riyal",
     "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
@@ -869,6 +1078,11 @@
     "default": "Sweden",
     "alternatives": ["Software Engineer", "Software Engineering"],
     "industry": { "tech": "Software Engineer" }
+  },
+  "SEC": {
+    "default": "Securities and Exchange Commission",
+    "alternatives": [],
+    "industry": { "finance": "Securities and Exchange Commission" }
   },
   "SEK": {
     "default": "Swedish Krona",
@@ -909,6 +1123,15 @@
     "alternatives": ["System on Chip", "Statement of Changes"],
     "industry": { "tech": "Security Operations Center", "hardware": "System on Chip", "finance": "Statement of Changes" }
   },
+  "SOM": {
+    "default": "Serviceable Obtainable Market",
+    "alternatives": ["Share of Market"]
+  },
+  "SPV": {
+    "default": "Special Purpose Vehicle",
+    "alternatives": ["Special Purpose Entity"],
+    "industry": { "finance": "Special Purpose Vehicle" }
+  },
   "SRE": {
     "default": "Site Reliability Engineer",
     "alternatives": ["Site Reliability Engineering"]
@@ -933,6 +1156,10 @@
     "default": "Talent Acquisition",
     "alternatives": ["Teaching Assistant", "Technical Analyst"]
   },
+  "TAM": {
+    "default": "Total Addressable Market",
+    "alternatives": ["Total Available Market"]
+  },
   "TBC": {
     "default": "To Be Confirmed",
     "alternatives": []
@@ -943,6 +1170,10 @@
   },
   "TCP": {
     "default": "Transmission Control Protocol",
+    "alternatives": []
+  },
+  "TCV": {
+    "default": "Total Contract Value",
     "alternatives": []
   },
   "TH": {
@@ -978,6 +1209,11 @@
   "TUR": {
     "default": "Turkey",
     "alternatives": []
+  },
+  "TVPI": {
+    "default": "Total Value to Paid-In",
+    "alternatives": [],
+    "industry": { "finance": "Total Value to Paid-In" }
   },
   "TW": {
     "default": "Taiwan",
@@ -1026,9 +1262,10 @@
     "alternatives": ["United States Dollar"],
     "industry": { "finance": "US Dollar" }
   },
-  "VP": {
-    "default": "Vice President",
-    "alternatives": []
+  "VC": {
+    "default": "Venture Capital",
+    "alternatives": ["Venture Capitalist"],
+    "industry": { "finance": "Venture Capital" }
   },
   "VN": {
     "default": "Vietnam",
@@ -1039,8 +1276,21 @@
     "alternatives": [],
     "industry": { "finance": "Vietnamese Dong" }
   },
+  "VP": {
+    "default": "Vice President",
+    "alternatives": []
+  },
+  "WACC": {
+    "default": "Weighted Average Cost of Capital",
+    "alternatives": [],
+    "industry": { "finance": "Weighted Average Cost of Capital" }
+  },
   "WFH": {
     "default": "Work From Home",
+    "alternatives": []
+  },
+  "YTD": {
+    "default": "Year to Date",
     "alternatives": []
   },
   "ZA": {

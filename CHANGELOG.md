@@ -6,6 +6,10 @@
 - Updated existing entries: AE gains "Account Executive" as an alternative; SA gains "Solutions Architect" as an alternative with a `tech` industry override; PM gains "Programme Manager" as an alternative
 - Popup now shows "X Definitions available" below the stat note, sourced from the live dictionary size
 - `AC_GET_STATS` response extended with `dictionarySize` (total entries in the loaded dictionary, excluding `_meta`)
+- Added ~52 finance and investment terms: ABS, ACV, AML, ARPU, AUM, CAGR, CDS, DCF, DD, DPI, EBIT, EPS, ETF, EV, FCA, FCF, FDI, FIFO, FY, GAAP, GP, IFRS, IPO, IRR, KYC, LBO, LIFO, LOI, LP, MBO, MBS, MOIC, NAV, NDA, NPS, NPV, NRR, OTC, PEG, REIT, RSU, SAFE, SAM, SEC, SOM, SPV, TAM, TCV, TVPI, VC, WACC, YTD
+- Updated CDO, CLO, CMO with their respective collateralised securities meanings as `finance` industry overrides (CDO → Collateralised Debt Obligation, CLO → Collateralised Loan Obligation, CMO → Collateralised Mortgage Obligation)
+- Updated IC with "Investment Committee" as a `finance` industry override
+- Updated QE with "Quantitative Easing" as a `finance` industry override
 
 ### v1.5.6
 - Added 52 ISO 3166-1 alpha-2 country codes to the dictionary (AE, AR, AT, BE, BR, CA, CH, CL, CN, CO, CZ, DE, DK, EG, ES, EU, FI, FR, GB, GR, HK, HU, ID, IL, IN, JP, KR, KW, MX, MY, NG, NL, NO, NZ, PE, PH, PK, PL, PT, RO, RU, SA, SE, SG, TH, TW, UA, UK, US, VN, ZA)
