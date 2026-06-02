@@ -9,16 +9,14 @@
       "industry": "Optional: industry-specific overrides keyed by industry slug"
     }
   },
-  "ADR": {
-    "default": "Architecture Decision Record",
+  "AE": {
+    "default": "United Arab Emirates",
     "alternatives": []
   },
   "AED": {
     "default": "UAE Dirham",
     "alternatives": [],
-    "industry": {
-      "finance": "UAE Dirham"
-    }
+    "industry": { "finance": "UAE Dirham" }
   },
   "AI": {
     "default": "Artificial Intelligence",
@@ -26,37 +24,49 @@
   },
   "API": {
     "default": "Application Programming Interface",
-    "alternatives": [
-      "Application Program Interface"
-    ]
+    "alternatives": ["Application Program Interface"]
   },
   "APIs": {
     "default": "Application Programming Interfaces",
     "alternatives": []
   },
+  "AR": {
+    "default": "Argentina",
+    "alternatives": []
+  },
+  "ARG": {
+    "default": "Argentina",
+    "alternatives": []
+  },
   "ARR": {
     "default": "Annual Recurring Revenue",
-    "alternatives": [
-      "Accounting Rate of Return"
-    ]
+    "alternatives": ["Accounting Rate of Return"]
   },
   "ARS": {
     "default": "Argentine Peso",
     "alternatives": [],
-    "industry": {
-      "finance": "Argentine Peso"
-    }
+    "industry": { "finance": "Argentine Peso" }
   },
   "ASAP": {
     "default": "As Soon As Possible",
     "alternatives": []
   },
+  "AT": {
+    "default": "Austria",
+    "alternatives": []
+  },
+  "AU": {
+    "default": "Australia",
+    "alternatives": []
+  },
   "AUD": {
     "default": "Australian Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "Australian Dollar"
-    }
+    "industry": { "finance": "Australian Dollar" }
+  },
+  "AUS": {
+    "default": "Australia",
+    "alternatives": []
   },
   "AWS": {
     "default": "Amazon Web Services",
@@ -70,12 +80,26 @@
     "default": "Business to Consumer",
     "alternatives": []
   },
+  "BE": {
+    "default": "Belgium",
+    "alternatives": []
+  },
+  "BR": {
+    "default": "Brazil",
+    "alternatives": []
+  },
+  "BRA": {
+    "default": "Brazil",
+    "alternatives": []
+  },
   "BRL": {
     "default": "Brazilian Real",
     "alternatives": [],
-    "industry": {
-      "finance": "Brazilian Real"
-    }
+    "industry": { "finance": "Brazilian Real" }
+  },
+  "CA": {
+    "default": "Canada",
+    "alternatives": []
   },
   "CAC": {
     "default": "Customer Acquisition Cost",
@@ -84,24 +108,20 @@
   "CAD": {
     "default": "Canadian Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "Canadian Dollar"
-    }
+    "industry": { "finance": "Canadian Dollar" }
+  },
+  "CAN": {
+    "default": "Canada",
+    "alternatives": []
   },
   "CD": {
     "default": "Continuous Deployment",
-    "alternatives": [
-      "Continuous Delivery"
-    ],
-    "industry": {
-      "tech": "Continuous Deployment"
-    }
+    "alternatives": ["Continuous Delivery"],
+    "industry": { "tech": "Continuous Deployment" }
   },
   "CDK": {
     "default": "Cloud Development Kit",
-    "alternatives": [
-      "Content Delivery Kit"
-    ]
+    "alternatives": ["Content Delivery Kit"]
   },
   "CDN": {
     "default": "Content Delivery Network",
@@ -115,46 +135,57 @@
     "default": "Chief Financial Officer",
     "alternatives": []
   },
+  "CH": {
+    "default": "Switzerland",
+    "alternatives": []
+  },
   "CHF": {
     "default": "Swiss Franc",
     "alternatives": [],
-    "industry": {
-      "finance": "Swiss Franc"
-    }
+    "industry": { "finance": "Swiss Franc" }
+  },
+  "CHN": {
+    "default": "China",
+    "alternatives": []
   },
   "CI": {
     "default": "Continuous Integration",
-    "alternatives": [
-      "Configuration Item"
-    ],
-    "industry": {
-      "tech": "Continuous Integration"
-    }
+    "alternatives": ["Configuration Item", "Côte d'Ivoire"],
+    "industry": { "tech": "Continuous Integration" }
   },
   "CISO": {
     "default": "Chief Information Security Officer",
     "alternatives": []
   },
+  "CL": {
+    "default": "Chile",
+    "alternatives": []
+  },
   "CLP": {
     "default": "Chilean Peso",
     "alternatives": [],
-    "industry": {
-      "finance": "Chilean Peso"
-    }
+    "industry": { "finance": "Chilean Peso" }
   },
   "CMO": {
     "default": "Chief Marketing Officer",
     "alternatives": []
   },
+  "CN": {
+    "default": "China",
+    "alternatives": []
+  },
   "CNY": {
     "default": "Chinese Yuan Renminbi",
-    "alternatives": [
-      "Chinese Yuan",
-      "Renminbi"
-    ],
-    "industry": {
-      "finance": "Chinese Yuan Renminbi"
-    }
+    "alternatives": ["Chinese Yuan", "Renminbi"],
+    "industry": { "finance": "Chinese Yuan Renminbi" }
+  },
+  "CO": {
+    "default": "Colombia",
+    "alternatives": []
+  },
+  "COL": {
+    "default": "Colombia",
+    "alternatives": []
   },
   "COO": {
     "default": "Chief Operating Officer",
@@ -162,18 +193,12 @@
   },
   "COP": {
     "default": "Colombian Peso",
-    "alternatives": [
-      "Community of Practice"
-    ],
-    "industry": {
-      "finance": "Colombian Peso"
-    }
+    "alternatives": ["Community of Practice"],
+    "industry": { "finance": "Colombian Peso" }
   },
   "CPO": {
     "default": "Chief Product Officer",
-    "alternatives": [
-      "Chief People Officer"
-    ]
+    "alternatives": ["Chief People Officer"]
   },
   "CPU": {
     "default": "Central Processing Unit",
@@ -187,30 +212,35 @@
     "default": "Chief Technology Officer",
     "alternatives": []
   },
+  "CZ": {
+    "default": "Czech Republic",
+    "alternatives": ["Czechia"]
+  },
   "CZK": {
     "default": "Czech Koruna",
     "alternatives": [],
-    "industry": {
-      "finance": "Czech Koruna"
-    }
+    "industry": { "finance": "Czech Koruna" }
+  },
+  "DE": {
+    "default": "Germany",
+    "alternatives": []
   },
   "DevOps": {
     "default": "Development and Operations",
     "alternatives": []
   },
+  "DK": {
+    "default": "Denmark",
+    "alternatives": []
+  },
   "DKK": {
     "default": "Danish Krone",
     "alternatives": [],
-    "industry": {
-      "finance": "Danish Krone"
-    }
+    "industry": { "finance": "Danish Krone" }
   },
   "DM": {
     "default": "Direct Message",
-    "alternatives": [
-      "Data Migration",
-      "Decision Maker"
-    ]
+    "alternatives": ["Data Migration", "Decision Maker"]
   },
   "DNS": {
     "default": "Domain Name System",
@@ -218,32 +248,32 @@
   },
   "DPO": {
     "default": "Data Protection Officer",
-    "alternatives": [
-      "Days Payable Outstanding"
-    ]
+    "alternatives": ["Days Payable Outstanding"]
   },
   "DSS": {
     "default": "Data Security Standard",
-    "alternatives": [
-      "Decision Support System"
-    ]
+    "alternatives": ["Decision Support System"]
   },
   "EAP": {
     "default": "Employee Assistance Programme",
-    "alternatives": [
-      "Extensible Authentication Protocol"
-    ]
+    "alternatives": ["Extensible Authentication Protocol"]
   },
   "EBITDA": {
     "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
     "alternatives": []
   },
+  "EG": {
+    "default": "Egypt",
+    "alternatives": []
+  },
   "EGP": {
     "default": "Egyptian Pound",
     "alternatives": [],
-    "industry": {
-      "finance": "Egyptian Pound"
-    }
+    "industry": { "finance": "Egyptian Pound" }
+  },
+  "EGY": {
+    "default": "Egypt",
+    "alternatives": []
   },
   "EM": {
     "default": "Engineering Manager",
@@ -251,16 +281,11 @@
   },
   "EMI": {
     "default": "Enterprise Management Incentive",
-    "alternatives": [
-      "Electromagnetic Interference",
-      "Equated Monthly Instalment"
-    ]
+    "alternatives": ["Electromagnetic Interference", "Equated Monthly Instalment"]
   },
   "EOD": {
     "default": "End of Day",
-    "alternatives": [
-      "End of Discussion"
-    ]
+    "alternatives": ["End of Discussion"]
   },
   "EOM": {
     "default": "End of Month",
@@ -274,26 +299,47 @@
     "default": "Enterprise Resource Planning",
     "alternatives": []
   },
+  "ES": {
+    "default": "Spain",
+    "alternatives": []
+  },
+  "ESP": {
+    "default": "Spain",
+    "alternatives": []
+  },
+  "EU": {
+    "default": "European Union",
+    "alternatives": []
+  },
   "EUR": {
     "default": "Euro",
     "alternatives": [],
-    "industry": {
-      "finance": "Euro"
-    }
+    "industry": { "finance": "Euro" }
+  },
+  "FI": {
+    "default": "Finland",
+    "alternatives": []
+  },
+  "FR": {
+    "default": "France",
+    "alternatives": []
   },
   "FYI": {
     "default": "For Your Information",
     "alternatives": []
   },
+  "GB": {
+    "default": "United Kingdom",
+    "alternatives": ["Great Britain"]
+  },
   "GBP": {
     "default": "British Pound Sterling",
-    "alternatives": [
-      "Sterling",
-      "Pound Sterling"
-    ],
-    "industry": {
-      "finance": "British Pound Sterling"
-    }
+    "alternatives": ["Sterling", "Pound Sterling"],
+    "industry": { "finance": "British Pound Sterling" }
+  },
+  "GBR": {
+    "default": "United Kingdom",
+    "alternatives": ["Great Britain"]
   },
   "GCP": {
     "default": "Google Cloud Platform",
@@ -307,33 +353,39 @@
     "default": "Graphics Processing Unit",
     "alternatives": []
   },
+  "GR": {
+    "default": "Greece",
+    "alternatives": []
+  },
   "GTM": {
     "default": "Go-to-Market",
-    "alternatives": [
-      "Google Tag Manager"
-    ]
+    "alternatives": ["Google Tag Manager"]
   },
   "HIPAA": {
     "default": "Health Insurance Portability and Accountability Act",
     "alternatives": []
   },
+  "HK": {
+    "default": "Hong Kong",
+    "alternatives": []
+  },
   "HKD": {
     "default": "Hong Kong Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "Hong Kong Dollar"
-    }
+    "industry": { "finance": "Hong Kong Dollar" }
   },
   "HR": {
     "default": "Human Resources",
+    "alternatives": ["Croatia"]
+  },
+  "HU": {
+    "default": "Hungary",
     "alternatives": []
   },
   "HUF": {
     "default": "Hungarian Forint",
     "alternatives": [],
-    "industry": {
-      "finance": "Hungarian Forint"
-    }
+    "industry": { "finance": "Hungarian Forint" }
   },
   "IaaS": {
     "default": "Infrastructure as a Service",
@@ -349,9 +401,12 @@
   },
   "IC": {
     "default": "Individual Contributor",
-    "alternatives": [
-      "Integrated Circuit"
-    ]
+    "alternatives": ["Integrated Circuit"]
+  },
+  "ID": {
+    "default": "Indonesia",
+    "alternatives": ["Identifier"],
+    "industry": { "tech": "Identifier" }
   },
   "IDE": {
     "default": "Integrated Development Environment",
@@ -360,46 +415,63 @@
   "IDR": {
     "default": "Indonesian Rupiah",
     "alternatives": [],
-    "industry": {
-      "finance": "Indonesian Rupiah"
-    }
+    "industry": { "finance": "Indonesian Rupiah" }
+  },
+  "IL": {
+    "default": "Israel",
+    "alternatives": []
   },
   "ILS": {
     "default": "Israeli New Shekel",
-    "alternatives": [
-      "Instrument Landing System"
-    ],
-    "industry": {
-      "finance": "Israeli New Shekel"
-    }
+    "alternatives": ["Instrument Landing System"],
+    "industry": { "finance": "Israeli New Shekel" }
+  },
+  "IN": {
+    "default": "India",
+    "alternatives": []
+  },
+  "IND": {
+    "default": "India",
+    "alternatives": []
   },
   "INR": {
     "default": "Indian Rupee",
     "alternatives": [],
-    "industry": {
-      "finance": "Indian Rupee"
-    }
+    "industry": { "finance": "Indian Rupee" }
   },
   "ISO": {
     "default": "International Organisation for Standardisation",
-    "alternatives": [
-      "In Search Of"
-    ]
+    "alternatives": ["In Search Of"]
+  },
+  "ISR": {
+    "default": "Israel",
+    "alternatives": []
   },
   "IT": {
     "default": "Information Technology",
-    "alternatives": []
+    "alternatives": ["Italy"],
+    "industry": { "tech": "Information Technology" }
   },
   "ITSM": {
     "default": "IT Service Management",
     "alternatives": []
   },
+  "JP": {
+    "default": "Japan",
+    "alternatives": []
+  },
+  "JPN": {
+    "default": "Japan",
+    "alternatives": []
+  },
   "JPY": {
     "default": "Japanese Yen",
     "alternatives": [],
-    "industry": {
-      "finance": "Japanese Yen"
-    }
+    "industry": { "finance": "Japanese Yen" }
+  },
+  "KOR": {
+    "default": "South Korea",
+    "alternatives": []
   },
   "KPI": {
     "default": "Key Performance Indicator",
@@ -409,19 +481,27 @@
     "default": "Key Performance Indicators",
     "alternatives": []
   },
+  "KR": {
+    "default": "South Korea",
+    "alternatives": []
+  },
   "KRW": {
     "default": "South Korean Won",
     "alternatives": [],
-    "industry": {
-      "finance": "South Korean Won"
-    }
+    "industry": { "finance": "South Korean Won" }
+  },
+  "KSA": {
+    "default": "Saudi Arabia",
+    "alternatives": ["Kingdom of Saudi Arabia"]
+  },
+  "KW": {
+    "default": "Kuwait",
+    "alternatives": []
   },
   "KWD": {
     "default": "Kuwaiti Dinar",
     "alternatives": [],
-    "industry": {
-      "finance": "Kuwaiti Dinar"
-    }
+    "industry": { "finance": "Kuwaiti Dinar" }
   },
   "LGTM": {
     "default": "Looks Good to Me",
@@ -437,10 +517,11 @@
   },
   "LTV": {
     "default": "Lifetime Value",
-    "alternatives": [
-      "Long-Term Value",
-      "Loan To Value"
-    ]
+    "alternatives": ["Long-Term Value", "Loan To Value"]
+  },
+  "MEX": {
+    "default": "Mexico",
+    "alternatives": []
   },
   "MFA": {
     "default": "Multi-Factor Authentication",
@@ -456,48 +537,72 @@
   },
   "MVP": {
     "default": "Minimum Viable Product",
-    "alternatives": [
-      "Most Valuable Player"
-    ]
+    "alternatives": ["Most Valuable Player"]
+  },
+  "MX": {
+    "default": "Mexico",
+    "alternatives": []
   },
   "MXN": {
     "default": "Mexican Peso",
     "alternatives": [],
-    "industry": {
-      "finance": "Mexican Peso"
-    }
+    "industry": { "finance": "Mexican Peso" }
+  },
+  "MY": {
+    "default": "Malaysia",
+    "alternatives": []
   },
   "MYR": {
     "default": "Malaysian Ringgit",
     "alternatives": [],
-    "industry": {
-      "finance": "Malaysian Ringgit"
-    }
+    "industry": { "finance": "Malaysian Ringgit" }
+  },
+  "NG": {
+    "default": "Nigeria",
+    "alternatives": []
+  },
+  "NGA": {
+    "default": "Nigeria",
+    "alternatives": []
   },
   "NGN": {
     "default": "Nigerian Naira",
     "alternatives": [],
-    "industry": {
-      "finance": "Nigerian Naira"
-    }
+    "industry": { "finance": "Nigerian Naira" }
+  },
+  "NL": {
+    "default": "Netherlands",
+    "alternatives": []
   },
   "NLP": {
     "default": "Natural Language Processing",
     "alternatives": []
   },
+  "NO": {
+    "default": "Norway",
+    "alternatives": []
+  },
   "NOK": {
     "default": "Norwegian Krone",
     "alternatives": [],
-    "industry": {
-      "finance": "Norwegian Krone"
-    }
+    "industry": { "finance": "Norwegian Krone" }
+  },
+  "NOR": {
+    "default": "Norway",
+    "alternatives": []
+  },
+  "NZ": {
+    "default": "New Zealand",
+    "alternatives": []
   },
   "NZD": {
     "default": "New Zealand Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "New Zealand Dollar"
-    }
+    "industry": { "finance": "New Zealand Dollar" }
+  },
+  "NZL": {
+    "default": "New Zealand",
+    "alternatives": []
   },
   "OKR": {
     "default": "Objectives and Key Results",
@@ -535,55 +640,62 @@
     "default": "Payment Card Industry",
     "alternatives": []
   },
+  "PE": {
+    "default": "Peru",
+    "alternatives": ["Private Equity"],
+    "industry": { "finance": "Private Equity" }
+  },
+  "PH": {
+    "default": "Philippines",
+    "alternatives": []
+  },
   "PHP": {
     "default": "Philippine Peso",
-    "alternatives": [
-      "Hypertext Preprocessor"
-    ],
-    "industry": {
-      "finance": "Philippine Peso",
-      "tech": "Hypertext Preprocessor"
-    }
+    "alternatives": ["Hypertext Preprocessor"],
+    "industry": { "finance": "Philippine Peso", "tech": "Hypertext Preprocessor" }
   },
   "PIP": {
     "default": "Performance Improvement Plan",
-    "alternatives": [
-      "Python Installer Package"
-    ]
+    "alternatives": ["Python Installer Package"]
+  },
+  "PK": {
+    "default": "Pakistan",
+    "alternatives": []
   },
   "PKR": {
     "default": "Pakistani Rupee",
     "alternatives": [],
-    "industry": {
-      "finance": "Pakistani Rupee"
-    }
+    "industry": { "finance": "Pakistani Rupee" }
+  },
+  "PL": {
+    "default": "Poland",
+    "alternatives": []
   },
   "PLN": {
     "default": "Polish Zloty",
     "alternatives": [],
-    "industry": {
-      "finance": "Polish Zloty"
-    }
+    "industry": { "finance": "Polish Zloty" }
   },
   "PM": {
     "default": "Product Manager",
-    "alternatives": [
-      "Project Manager",
-      "Private Message"
-    ]
+    "alternatives": ["Project Manager", "Private Message"]
   },
   "POC": {
     "default": "Proof of Concept",
-    "alternatives": [
-      "Point of Contact"
-    ]
+    "alternatives": ["Point of Contact"]
+  },
+  "POL": {
+    "default": "Poland",
+    "alternatives": []
   },
   "PR": {
     "default": "Pull Request",
-    "alternatives": [
-      "Public Relations",
-      "Performance Review"
-    ]
+    "alternatives": ["Public Relations", "Performance Review"]
+  },
+  "PT": {
+    "default": "Portugal",
+    "alternatives": ["Physical Therapy", "Part-Time"],
+    "industry": { "pharma": "Physical Therapy" }
   },
   "PTO": {
     "default": "Paid Time Off",
@@ -591,25 +703,22 @@
   },
   "QA": {
     "default": "Quality Assurance",
-    "alternatives": [
-      "Question and Answer"
-    ]
+    "alternatives": ["Question and Answer", "Qatar"],
+    "industry": { "tech": "Quality Assurance" }
   },
   "QAR": {
     "default": "Qatari Riyal",
     "alternatives": [],
-    "industry": {
-      "finance": "Qatari Riyal"
-    }
+    "industry": { "finance": "Qatari Riyal" }
+  },
+  "QAT": {
+    "default": "Qatar",
+    "alternatives": []
   },
   "RAG": {
     "default": "Retrieval-Augmented Generation",
-    "alternatives": [
-      "Red, Amber, Green (status)"
-    ],
-    "industry": {
-      "tech": "Retrieval-Augmented Generation"
-    }
+    "alternatives": ["Red, Amber, Green (status)"],
+    "industry": { "tech": "Retrieval-Augmented Generation" }
   },
   "RBAC": {
     "default": "Role-Based Access Control",
@@ -621,9 +730,11 @@
   },
   "RFC": {
     "default": "Request for Comments",
-    "alternatives": [
-      "Request for Change"
-    ]
+    "alternatives": ["Request for Change"]
+  },
+  "RO": {
+    "default": "Romania",
+    "alternatives": []
   },
   "ROI": {
     "default": "Return on Investment",
@@ -631,52 +742,57 @@
   },
   "RTO": {
     "default": "Return to Office",
-    "alternatives": [
-      "Recovery Time Objective"
-    ]
+    "alternatives": ["Recovery Time Objective"]
+  },
+  "RU": {
+    "default": "Russia",
+    "alternatives": []
   },
   "RUB": {
     "default": "Russian Ruble",
     "alternatives": [],
-    "industry": {
-      "finance": "Russian Ruble"
-    }
+    "industry": { "finance": "Russian Ruble" }
+  },
+  "RUS": {
+    "default": "Russia",
+    "alternatives": []
+  },
+  "SA": {
+    "default": "Saudi Arabia",
+    "alternatives": ["South Africa"]
   },
   "SaaS": {
     "default": "Software as a Service",
     "alternatives": [],
-    "industry": {
-      "tech": "Software as a Service"
-    }
+    "industry": { "tech": "Software as a Service" }
   },
   "SAR": {
     "default": "Saudi Riyal",
-    "alternatives": [
-      "Suspicious Activity Report",
-      "Specific Absorption Rate",
-      "Search and Rescue"
-    ],
-    "industry": {
-      "finance": "Saudi Riyal"
-    }
+    "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
+    "industry": { "finance": "Saudi Riyal" }
   },
   "SDK": {
     "default": "Software Development Kit",
     "alternatives": []
   },
+  "SE": {
+    "default": "Sweden",
+    "alternatives": ["Software Engineer", "Software Engineering"],
+    "industry": { "tech": "Software Engineer" }
+  },
   "SEK": {
     "default": "Swedish Krona",
     "alternatives": [],
-    "industry": {
-      "finance": "Swedish Krona"
-    }
+    "industry": { "finance": "Swedish Krona" }
+  },
+  "SG": {
+    "default": "Singapore",
+    "alternatives": []
   },
   "SGD": {
     "default": "Singapore Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "Singapore Dollar"
-    }
+    "industry": { "finance": "Singapore Dollar" }
   },
   "SLA": {
     "default": "Service Level Agreement",
@@ -688,33 +804,20 @@
   },
   "SLO": {
     "default": "Service Level Objective",
-    "alternatives": [
-      "Service Level Offering"
-    ]
+    "alternatives": ["Service Level Offering"]
   },
   "SME": {
     "default": "Subject Matter Expert",
-    "alternatives": [
-      "Small and Medium Enterprise"
-    ]
+    "alternatives": ["Small and Medium Enterprise"]
   },
   "SOC": {
     "default": "Security Operations Center",
-    "alternatives": [
-      "System on Chip",
-      "Statement of Changes"
-    ],
-    "industry": {
-      "tech": "Security Operations Center",
-      "hardware": "System on Chip",
-      "finance": "Statement of Changes"
-    }
+    "alternatives": ["System on Chip", "Statement of Changes"],
+    "industry": { "tech": "Security Operations Center", "hardware": "System on Chip", "finance": "Statement of Changes" }
   },
   "SRE": {
     "default": "Site Reliability Engineer",
-    "alternatives": [
-      "Site Reliability Engineering"
-    ]
+    "alternatives": ["Site Reliability Engineering"]
   },
   "SSL": {
     "default": "Secure Sockets Layer",
@@ -724,86 +827,123 @@
     "default": "Single Sign-On",
     "alternatives": []
   },
+  "SWE": {
+    "default": "Sweden",
+    "alternatives": []
+  },
   "TBC": {
     "default": "To Be Confirmed",
     "alternatives": []
   },
   "TBD": {
     "default": "To Be Determined",
-    "alternatives": [
-      "To Be Decided",
-      "To Be Defined"
-    ]
+    "alternatives": ["To Be Decided", "To Be Defined"]
   },
   "TCP": {
     "default": "Transmission Control Protocol",
     "alternatives": []
   },
+  "TH": {
+    "default": "Thailand",
+    "alternatives": []
+  },
   "THB": {
     "default": "Thai Baht",
     "alternatives": [],
-    "industry": {
-      "finance": "Thai Baht"
-    }
+    "industry": { "finance": "Thai Baht" }
   },
   "TLS": {
     "default": "Transport Layer Security",
     "alternatives": []
   },
+  "TR": {
+    "default": "Turkey",
+    "alternatives": []
+  },
   "TRY": {
     "default": "Turkish Lira",
     "alternatives": [],
-    "industry": {
-      "finance": "Turkish Lira"
-    }
+    "industry": { "finance": "Turkish Lira" }
+  },
+  "TUR": {
+    "default": "Turkey",
+    "alternatives": []
+  },
+  "TW": {
+    "default": "Taiwan",
+    "alternatives": []
   },
   "TWD": {
     "default": "New Taiwan Dollar",
     "alternatives": [],
-    "industry": {
-      "finance": "New Taiwan Dollar"
-    }
+    "industry": { "finance": "New Taiwan Dollar" }
+  },
+  "UA": {
+    "default": "Ukraine",
+    "alternatives": []
+  },
+  "UAE": {
+    "default": "United Arab Emirates",
+    "alternatives": []
   },
   "UAH": {
     "default": "Ukrainian Hryvnia",
     "alternatives": [],
-    "industry": {
-      "finance": "Ukrainian Hryvnia"
-    }
+    "industry": { "finance": "Ukrainian Hryvnia" }
   },
   "UAT": {
     "default": "User Acceptance Testing",
     "alternatives": []
   },
+  "UK": {
+    "default": "United Kingdom",
+    "alternatives": []
+  },
+  "UKR": {
+    "default": "Ukraine",
+    "alternatives": []
+  },
+  "US": {
+    "default": "United States",
+    "alternatives": []
+  },
+  "USA": {
+    "default": "United States",
+    "alternatives": ["United States of America"]
+  },
   "USD": {
     "default": "US Dollar",
-    "alternatives": [
-      "United States Dollar"
-    ],
-    "industry": {
-      "finance": "US Dollar"
-    }
+    "alternatives": ["United States Dollar"],
+    "industry": { "finance": "US Dollar" }
   },
   "VP": {
     "default": "Vice President",
     "alternatives": []
   },
+  "VN": {
+    "default": "Vietnam",
+    "alternatives": []
+  },
   "VND": {
     "default": "Vietnamese Dong",
     "alternatives": [],
-    "industry": {
-      "finance": "Vietnamese Dong"
-    }
+    "industry": { "finance": "Vietnamese Dong" }
   },
   "WFH": {
     "default": "Work From Home",
     "alternatives": []
   },
+  "ZA": {
+    "default": "South Africa",
+    "alternatives": []
+  },
+  "ZAF": {
+    "default": "South Africa",
+    "alternatives": []
+  },
   "ZAR": {
     "default": "South African Rand",
     "alternatives": [],
-    "industry": {
-      "finance": "South African Rand"
-    }
+    "industry": { "finance": "South African Rand" }
   }
 }

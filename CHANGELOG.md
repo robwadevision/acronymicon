@@ -1,5 +1,12 @@
 # Changelog
 
+### v1.5.6
+- Added 52 ISO 3166-1 alpha-2 country codes to the dictionary (AE, AR, AT, BE, BR, CA, CH, CL, CN, CO, CZ, DE, DK, EG, ES, EU, FI, FR, GB, GR, HK, HU, ID, IL, IN, JP, KR, KW, MX, MY, NG, NL, NO, NZ, PE, PH, PK, PL, PT, RO, RU, SA, SE, SG, TH, TW, UA, UK, US, VN, ZA)
+- Country codes carry no industry tag unless an alternate meaning is industry-specific (SE → Software Engineer in tech; ID → Identifier in tech; PT → Physical Therapy in pharma; PE → Private Equity in finance)
+- Four existing entries updated to add country as an alternative: CI (Côte d'Ivoire), HR (Croatia), IT (Italy), QA (Qatar); QA gains a tech industry override since its primary meaning is industry-specific
+- Added 3-letter codes for countries where the 3-letter form is in common use: UAE, USA, GBR, AUS, CAN, CHN, JPN, KOR, IND, BRA, MEX, ARG, RUS, TUR, UKR, ISR, EGY, NGA, PAK, ZAF, QAT, COL, ESP, NOR, SWE, POL, NZL, KSA (Saudi Arabia — common informal code, not ISO standard)
+- Also added missing 2-letter codes AU (Australia) and TR (Turkey)
+
 ### v1.5.5
 - Popup stats renamed "Found" → "Identified" to align with analytics event naming
 - Removed the "Undefined" stat column; replaced with a text note below the stats (e.g. "3 identified without a definition") that only appears when the gap is non-zero
