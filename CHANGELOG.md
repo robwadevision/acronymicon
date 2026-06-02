@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.5.9
+- Added ~70 programming and web technology terms: ACID, AJAX, AOT, AST, BDD, CLI, CMS, CORS, CQRS, CRUD, CSRF, CSP, CSR, CSS, DDD, DHCP, DI, DOM, DRY, ECMA, ETL, FTP, GC, GUI, HTML, HTTP, HTTPS, IEEE, IMAP, IoC, IP, JIT, JSON, JWT, KISS, LAN, MR, MVC, MVVM, NAT, NoSQL, OLAP, OLTP, OS, OSS, POSIX, PWA, RAM, ROM, SAML, SFTP, SMTP, SOA, SOAP, SPA, SQL, SSH, SSG, SSR, TDD, UDP, URI, URL, VM, VPN, WAN, WASM, XML, XSS, YAGNI, YAML
+- Ambiguous entries carry industry overrides: CSR (tech → Client-Side Rendering), GC (tech → Garbage Collection), IP (tech → Internet Protocol), JIT (tech → Just-In-Time Compilation), MR (tech → Merge Request), ROM (pharma → Range of Motion)
+- MVP updated with "Model-View-Presenter" as an additional alternative
+
 ### v1.5.7
 - Added 27 job title acronyms: AVP, BDM, BDR, CCO, CDO, CHRO, CIO, CLO, CRO, CSM, CSO, DBA, ED, ELT, EVP, FTE, GM, HM, HRBP, MD, QE, SDR, SLT, SVP, TA, TL, TPM
 - SDR carries a `finance` industry override (Special Drawing Rights); all other new entries have no industry tag

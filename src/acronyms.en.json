@@ -14,6 +14,10 @@
     "alternatives": [],
     "industry": { "finance": "Asset-Backed Securities" }
   },
+  "ACID": {
+    "default": "Atomicity, Consistency, Isolation, Durability",
+    "alternatives": []
+  },
   "ACV": {
     "default": "Annual Contract Value",
     "alternatives": [],
@@ -32,10 +36,18 @@
     "default": "Artificial Intelligence",
     "alternatives": []
   },
+  "AJAX": {
+    "default": "Asynchronous JavaScript and XML",
+    "alternatives": []
+  },
   "AML": {
     "default": "Anti-Money Laundering",
     "alternatives": [],
     "industry": { "finance": "Anti-Money Laundering" }
+  },
+  "AOT": {
+    "default": "Ahead-of-Time Compilation",
+    "alternatives": ["Ahead-of-Time"]
   },
   "API": {
     "default": "Application Programming Interface",
@@ -68,6 +80,10 @@
   },
   "ASAP": {
     "default": "As Soon As Possible",
+    "alternatives": []
+  },
+  "AST": {
+    "default": "Abstract Syntax Tree",
     "alternatives": []
   },
   "AT": {
@@ -106,6 +122,10 @@
   },
   "B2C": {
     "default": "Business to Consumer",
+    "alternatives": []
+  },
+  "BDD": {
+    "default": "Behaviour-Driven Development",
     "alternatives": []
   },
   "BDM": {
@@ -224,6 +244,10 @@
     "default": "Chile",
     "alternatives": []
   },
+  "CLI": {
+    "default": "Command Line Interface",
+    "alternatives": []
+  },
   "CLO": {
     "default": "Chief Legal Officer",
     "alternatives": ["Chief Learning Officer", "Collateralised Loan Obligation"],
@@ -238,6 +262,10 @@
     "default": "Chief Marketing Officer",
     "alternatives": ["Collateralised Mortgage Obligation"],
     "industry": { "finance": "Collateralised Mortgage Obligation" }
+  },
+  "CMS": {
+    "default": "Content Management System",
+    "alternatives": []
   },
   "CN": {
     "default": "China",
@@ -265,12 +293,20 @@
     "alternatives": ["Community of Practice"],
     "industry": { "finance": "Colombian Peso" }
   },
+  "CORS": {
+    "default": "Cross-Origin Resource Sharing",
+    "alternatives": []
+  },
   "CPO": {
     "default": "Chief Product Officer",
     "alternatives": ["Chief People Officer"]
   },
   "CPU": {
     "default": "Central Processing Unit",
+    "alternatives": []
+  },
+  "CQRS": {
+    "default": "Command Query Responsibility Segregation",
     "alternatives": []
   },
   "CRM": {
@@ -281,6 +317,14 @@
     "default": "Chief Revenue Officer",
     "alternatives": ["Chief Risk Officer", "Conversion Rate Optimisation"]
   },
+  "CSRF": {
+    "default": "Cross-Site Request Forgery",
+    "alternatives": []
+  },
+  "CRUD": {
+    "default": "Create, Read, Update, Delete",
+    "alternatives": []
+  },
   "CSM": {
     "default": "Customer Success Manager",
     "alternatives": []
@@ -288,6 +332,19 @@
   "CSO": {
     "default": "Chief Strategy Officer",
     "alternatives": ["Chief Security Officer", "Chief Sales Officer"]
+  },
+  "CSP": {
+    "default": "Content Security Policy",
+    "alternatives": []
+  },
+  "CSR": {
+    "default": "Client-Side Rendering",
+    "alternatives": ["Corporate Social Responsibility"],
+    "industry": { "tech": "Client-Side Rendering" }
+  },
+  "CSS": {
+    "default": "Cascading Style Sheets",
+    "alternatives": []
   },
   "CTO": {
     "default": "Chief Technology Officer",
@@ -315,12 +372,24 @@
     "default": "Due Diligence",
     "alternatives": []
   },
+  "DDD": {
+    "default": "Domain-Driven Design",
+    "alternatives": []
+  },
   "DE": {
     "default": "Germany",
     "alternatives": []
   },
   "DevOps": {
     "default": "Development and Operations",
+    "alternatives": []
+  },
+  "DHCP": {
+    "default": "Dynamic Host Configuration Protocol",
+    "alternatives": []
+  },
+  "DI": {
+    "default": "Dependency Injection",
     "alternatives": []
   },
   "DK": {
@@ -340,6 +409,10 @@
     "default": "Domain Name System",
     "alternatives": []
   },
+  "DOM": {
+    "default": "Document Object Model",
+    "alternatives": []
+  },
   "DPI": {
     "default": "Distributions to Paid-In",
     "alternatives": [],
@@ -348,6 +421,10 @@
   "DPO": {
     "default": "Data Protection Officer",
     "alternatives": ["Days Payable Outstanding"]
+  },
+  "DRY": {
+    "default": "Don't Repeat Yourself",
+    "alternatives": []
   },
   "DSS": {
     "default": "Data Security Standard",
@@ -365,6 +442,10 @@
   "EBITDA": {
     "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
     "alternatives": []
+  },
+  "ECMA": {
+    "default": "Ecma International",
+    "alternatives": ["European Computer Manufacturers Association"]
   },
   "ED": {
     "default": "Executive Director",
@@ -429,6 +510,10 @@
     "alternatives": [],
     "industry": { "finance": "Exchange-Traded Fund" }
   },
+  "ETL": {
+    "default": "Extract, Transform, Load",
+    "alternatives": []
+  },
   "EU": {
     "default": "European Union",
     "alternatives": []
@@ -478,6 +563,10 @@
     "default": "Full-Time Employee",
     "alternatives": ["Full-Time Equivalent"]
   },
+  "FTP": {
+    "default": "File Transfer Protocol",
+    "alternatives": []
+  },
   "FY": {
     "default": "Financial Year",
     "alternatives": ["Fiscal Year"]
@@ -503,6 +592,11 @@
   "GBR": {
     "default": "United Kingdom",
     "alternatives": ["Great Britain"]
+  },
+  "GC": {
+    "default": "Garbage Collection",
+    "alternatives": ["General Counsel"],
+    "industry": { "tech": "Garbage Collection" }
   },
   "GCP": {
     "default": "Google Cloud Platform",
@@ -533,6 +627,10 @@
     "default": "Go-to-Market",
     "alternatives": ["Google Tag Manager"]
   },
+  "GUI": {
+    "default": "Graphical User Interface",
+    "alternatives": []
+  },
   "HIPAA": {
     "default": "Health Insurance Portability and Accountability Act",
     "alternatives": []
@@ -556,6 +654,18 @@
   },
   "HRBP": {
     "default": "HR Business Partner",
+    "alternatives": []
+  },
+  "HTML": {
+    "default": "HyperText Markup Language",
+    "alternatives": []
+  },
+  "HTTP": {
+    "default": "HyperText Transfer Protocol",
+    "alternatives": []
+  },
+  "HTTPS": {
+    "default": "HyperText Transfer Protocol Secure",
     "alternatives": []
   },
   "HU": {
@@ -598,6 +708,10 @@
     "alternatives": [],
     "industry": { "finance": "Indonesian Rupiah" }
   },
+  "IEEE": {
+    "default": "Institute of Electrical and Electronics Engineers",
+    "alternatives": []
+  },
   "IFRS": {
     "default": "International Financial Reporting Standards",
     "alternatives": [],
@@ -612,6 +726,10 @@
     "alternatives": ["Instrument Landing System"],
     "industry": { "finance": "Israeli New Shekel" }
   },
+  "IMAP": {
+    "default": "Internet Message Access Protocol",
+    "alternatives": []
+  },
   "IN": {
     "default": "India",
     "alternatives": []
@@ -624,6 +742,15 @@
     "default": "Indian Rupee",
     "alternatives": [],
     "industry": { "finance": "Indian Rupee" }
+  },
+  "IoC": {
+    "default": "Inversion of Control",
+    "alternatives": []
+  },
+  "IP": {
+    "default": "Internet Protocol",
+    "alternatives": ["Intellectual Property"],
+    "industry": { "tech": "Internet Protocol" }
   },
   "IPO": {
     "default": "Initial Public Offering",
@@ -652,6 +779,11 @@
     "default": "IT Service Management",
     "alternatives": []
   },
+  "JIT": {
+    "default": "Just-In-Time",
+    "alternatives": ["Just-In-Time Compilation"],
+    "industry": { "tech": "Just-In-Time Compilation" }
+  },
   "JP": {
     "default": "Japan",
     "alternatives": []
@@ -664,6 +796,18 @@
     "default": "Japanese Yen",
     "alternatives": [],
     "industry": { "finance": "Japanese Yen" }
+  },
+  "JSON": {
+    "default": "JavaScript Object Notation",
+    "alternatives": []
+  },
+  "JWT": {
+    "default": "JSON Web Token",
+    "alternatives": []
+  },
+  "KISS": {
+    "default": "Keep It Simple, Stupid",
+    "alternatives": ["Keep It Simple and Straightforward"]
   },
   "KOR": {
     "default": "South Korea",
@@ -703,6 +847,10 @@
     "default": "Know Your Customer",
     "alternatives": [],
     "industry": { "finance": "Know Your Customer" }
+  },
+  "LAN": {
+    "default": "Local Area Network",
+    "alternatives": []
   },
   "LBO": {
     "default": "Leveraged Buyout",
@@ -768,13 +916,26 @@
     "alternatives": [],
     "industry": { "finance": "Multiple on Invested Capital" }
   },
+  "MR": {
+    "default": "Merge Request",
+    "alternatives": ["Magnetic Resonance"],
+    "industry": { "tech": "Merge Request" }
+  },
   "MRR": {
     "default": "Monthly Recurring Revenue",
     "alternatives": []
   },
+  "MVC": {
+    "default": "Model-View-Controller",
+    "alternatives": []
+  },
   "MVP": {
     "default": "Minimum Viable Product",
-    "alternatives": ["Most Valuable Player"]
+    "alternatives": ["Most Valuable Player", "Model-View-Presenter"]
+  },
+  "MVVM": {
+    "default": "Model-View-ViewModel",
+    "alternatives": []
   },
   "MX": {
     "default": "Mexico",
@@ -793,6 +954,10 @@
     "default": "Malaysian Ringgit",
     "alternatives": [],
     "industry": { "finance": "Malaysian Ringgit" }
+  },
+  "NAT": {
+    "default": "Network Address Translation",
+    "alternatives": []
   },
   "NAV": {
     "default": "Net Asset Value",
@@ -837,6 +1002,10 @@
     "default": "Norway",
     "alternatives": []
   },
+  "NoSQL": {
+    "default": "Not Only SQL",
+    "alternatives": []
+  },
   "NPS": {
     "default": "Net Promoter Score",
     "alternatives": []
@@ -871,12 +1040,28 @@
     "default": "Objectives and Key Results",
     "alternatives": []
   },
+  "OLAP": {
+    "default": "Online Analytical Processing",
+    "alternatives": []
+  },
+  "OLTP": {
+    "default": "Online Transaction Processing",
+    "alternatives": []
+  },
   "OOP": {
     "default": "Object-Oriented Programming",
     "alternatives": []
   },
   "ORM": {
     "default": "Object-Relational Mapping",
+    "alternatives": []
+  },
+  "OS": {
+    "default": "Operating System",
+    "alternatives": []
+  },
+  "OSS": {
+    "default": "Open Source Software",
     "alternatives": []
   },
   "OTC": {
@@ -957,6 +1142,10 @@
     "default": "Poland",
     "alternatives": []
   },
+  "POSIX": {
+    "default": "Portable Operating System Interface",
+    "alternatives": []
+  },
   "PR": {
     "default": "Pull Request",
     "alternatives": ["Public Relations", "Performance Review"]
@@ -969,6 +1158,10 @@
   "PTO": {
     "default": "Paid Time Off",
     "alternatives": []
+  },
+  "PWA": {
+    "default": "Progressive Web App",
+    "alternatives": ["Progressive Web Application"]
   },
   "QA": {
     "default": "Quality Assurance",
@@ -994,6 +1187,10 @@
     "alternatives": ["Red, Amber, Green (status)"],
     "industry": { "tech": "Retrieval-Augmented Generation" }
   },
+  "RAM": {
+    "default": "Random Access Memory",
+    "alternatives": []
+  },
   "RBAC": {
     "default": "Role-Based Access Control",
     "alternatives": []
@@ -1018,6 +1215,11 @@
   "ROI": {
     "default": "Return on Investment",
     "alternatives": []
+  },
+  "ROM": {
+    "default": "Read-Only Memory",
+    "alternatives": ["Range of Motion"],
+    "industry": { "pharma": "Range of Motion" }
   },
   "RSU": {
     "default": "Restricted Stock Unit",
@@ -1060,6 +1262,10 @@
     "default": "Serviceable Addressable Market",
     "alternatives": ["Serviceable Available Market"]
   },
+  "SAML": {
+    "default": "Security Assertion Markup Language",
+    "alternatives": []
+  },
   "SAR": {
     "default": "Saudi Riyal",
     "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
@@ -1088,6 +1294,10 @@
     "default": "Swedish Krona",
     "alternatives": [],
     "industry": { "finance": "Swedish Krona" }
+  },
+  "SFTP": {
+    "default": "SSH File Transfer Protocol",
+    "alternatives": ["Secure File Transfer Protocol"]
   },
   "SG": {
     "default": "Singapore",
@@ -1118,6 +1328,18 @@
     "default": "Subject Matter Expert",
     "alternatives": ["Small and Medium Enterprise"]
   },
+  "SMTP": {
+    "default": "Simple Mail Transfer Protocol",
+    "alternatives": []
+  },
+  "SOA": {
+    "default": "Service-Oriented Architecture",
+    "alternatives": []
+  },
+  "SOAP": {
+    "default": "Simple Object Access Protocol",
+    "alternatives": []
+  },
   "SOC": {
     "default": "Security Operations Center",
     "alternatives": ["System on Chip", "Statement of Changes"],
@@ -1127,14 +1349,30 @@
     "default": "Serviceable Obtainable Market",
     "alternatives": ["Share of Market"]
   },
+  "SPA": {
+    "default": "Single Page Application",
+    "alternatives": []
+  },
   "SPV": {
     "default": "Special Purpose Vehicle",
     "alternatives": ["Special Purpose Entity"],
     "industry": { "finance": "Special Purpose Vehicle" }
   },
+  "SQL": {
+    "default": "Structured Query Language",
+    "alternatives": []
+  },
   "SRE": {
     "default": "Site Reliability Engineer",
     "alternatives": ["Site Reliability Engineering"]
+  },
+  "SSH": {
+    "default": "Secure Shell",
+    "alternatives": []
+  },
+  "SSG": {
+    "default": "Static Site Generation",
+    "alternatives": ["Static Site Generator"]
   },
   "SSL": {
     "default": "Secure Sockets Layer",
@@ -1142,6 +1380,10 @@
   },
   "SSO": {
     "default": "Single Sign-On",
+    "alternatives": []
+  },
+  "SSR": {
+    "default": "Server-Side Rendering",
     "alternatives": []
   },
   "SVP": {
@@ -1174,6 +1416,10 @@
   },
   "TCV": {
     "default": "Total Contract Value",
+    "alternatives": []
+  },
+  "TDD": {
+    "default": "Test-Driven Development",
     "alternatives": []
   },
   "TH": {
@@ -1241,12 +1487,24 @@
     "default": "User Acceptance Testing",
     "alternatives": []
   },
+  "UDP": {
+    "default": "User Datagram Protocol",
+    "alternatives": []
+  },
   "UK": {
     "default": "United Kingdom",
     "alternatives": []
   },
   "UKR": {
     "default": "Ukraine",
+    "alternatives": []
+  },
+  "URI": {
+    "default": "Uniform Resource Identifier",
+    "alternatives": []
+  },
+  "URL": {
+    "default": "Uniform Resource Locator",
     "alternatives": []
   },
   "US": {
@@ -1267,6 +1525,10 @@
     "alternatives": ["Venture Capitalist"],
     "industry": { "finance": "Venture Capital" }
   },
+  "VM": {
+    "default": "Virtual Machine",
+    "alternatives": []
+  },
   "VN": {
     "default": "Vietnam",
     "alternatives": []
@@ -1280,13 +1542,41 @@
     "default": "Vice President",
     "alternatives": []
   },
+  "VPN": {
+    "default": "Virtual Private Network",
+    "alternatives": []
+  },
   "WACC": {
     "default": "Weighted Average Cost of Capital",
     "alternatives": [],
     "industry": { "finance": "Weighted Average Cost of Capital" }
   },
+  "WAN": {
+    "default": "Wide Area Network",
+    "alternatives": []
+  },
+  "WASM": {
+    "default": "WebAssembly",
+    "alternatives": []
+  },
   "WFH": {
     "default": "Work From Home",
+    "alternatives": []
+  },
+  "XML": {
+    "default": "Extensible Markup Language",
+    "alternatives": []
+  },
+  "XSS": {
+    "default": "Cross-Site Scripting",
+    "alternatives": []
+  },
+  "YAGNI": {
+    "default": "You Aren't Gonna Need It",
+    "alternatives": []
+  },
+  "YAML": {
+    "default": "YAML Ain't Markup Language",
     "alternatives": []
   },
   "YTD": {
