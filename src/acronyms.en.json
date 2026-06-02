@@ -14,6 +14,10 @@
     "alternatives": [],
     "industry": { "finance": "Asset-Backed Securities" }
   },
+  "ACAS": {
+    "default": "Advisory, Conciliation and Arbitration Service",
+    "alternatives": []
+  },
   "ACID": {
     "default": "Atomicity, Consistency, Isolation, Durability",
     "alternatives": []
@@ -90,6 +94,10 @@
     "default": "Austria",
     "alternatives": []
   },
+  "ATF": {
+    "default": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+    "alternatives": []
+  },
   "AU": {
     "default": "Australia",
     "alternatives": []
@@ -140,6 +148,10 @@
     "default": "Belgium",
     "alternatives": []
   },
+  "BLS": {
+    "default": "Bureau of Labor Statistics",
+    "alternatives": []
+  },
   "BR": {
     "default": "Brazil",
     "alternatives": []
@@ -155,6 +167,10 @@
   },
   "CA": {
     "default": "Canada",
+    "alternatives": []
+  },
+  "CAA": {
+    "default": "Civil Aviation Authority",
     "alternatives": []
   },
   "CAC": {
@@ -175,6 +191,14 @@
     "default": "Canada",
     "alternatives": []
   },
+  "CBO": {
+    "default": "Congressional Budget Office",
+    "alternatives": []
+  },
+  "CBP": {
+    "default": "Customs and Border Protection",
+    "alternatives": []
+  },
   "CCO": {
     "default": "Chief Commercial Officer",
     "alternatives": ["Chief Compliance Officer", "Chief Content Officer"]
@@ -183,6 +207,10 @@
     "default": "Continuous Deployment",
     "alternatives": ["Continuous Delivery"],
     "industry": { "tech": "Continuous Deployment" }
+  },
+  "CDC": {
+    "default": "Centers for Disease Control and Prevention",
+    "alternatives": []
   },
   "CDK": {
     "default": "Cloud Development Kit",
@@ -210,6 +238,14 @@
     "default": "Chief Financial Officer",
     "alternatives": []
   },
+  "CFPB": {
+    "default": "Consumer Financial Protection Bureau",
+    "alternatives": []
+  },
+  "CFTC": {
+    "default": "Commodity Futures Trading Commission",
+    "alternatives": []
+  },
   "CH": {
     "default": "Switzerland",
     "alternatives": []
@@ -231,6 +267,10 @@
     "default": "Continuous Integration",
     "alternatives": ["Configuration Item", "Côte d'Ivoire"],
     "industry": { "tech": "Continuous Integration" }
+  },
+  "CIA": {
+    "default": "Central Intelligence Agency",
+    "alternatives": []
   },
   "CIO": {
     "default": "Chief Information Officer",
@@ -258,6 +298,10 @@
     "alternatives": [],
     "industry": { "finance": "Chilean Peso" }
   },
+  "CMA": {
+    "default": "Competition and Markets Authority",
+    "alternatives": []
+  },
   "CMO": {
     "default": "Chief Marketing Officer",
     "alternatives": ["Collateralised Mortgage Obligation"],
@@ -265,7 +309,7 @@
   },
   "CMS": {
     "default": "Content Management System",
-    "alternatives": []
+    "alternatives": ["Centers for Medicare and Medicaid Services"]
   },
   "CN": {
     "default": "China",
@@ -301,8 +345,16 @@
     "default": "Chief Product Officer",
     "alternatives": ["Chief People Officer"]
   },
+  "CPS": {
+    "default": "Crown Prosecution Service",
+    "alternatives": ["Child Protective Services"]
+  },
   "CPU": {
     "default": "Central Processing Unit",
+    "alternatives": []
+  },
+  "CQC": {
+    "default": "Care Quality Commission",
     "alternatives": []
   },
   "CQRS": {
@@ -363,6 +415,10 @@
     "default": "Database Administrator",
     "alternatives": []
   },
+  "DBT": {
+    "default": "Department for Business and Trade",
+    "alternatives": []
+  },
   "DCF": {
     "default": "Discounted Cash Flow",
     "alternatives": [],
@@ -380,12 +436,32 @@
     "default": "Germany",
     "alternatives": []
   },
+  "DEA": {
+    "default": "Drug Enforcement Administration",
+    "alternatives": []
+  },
+  "DEFRA": {
+    "default": "Department for Environment, Food and Rural Affairs",
+    "alternatives": []
+  },
   "DevOps": {
     "default": "Development and Operations",
     "alternatives": []
   },
+  "DfE": {
+    "default": "Department for Education",
+    "alternatives": []
+  },
+  "DfT": {
+    "default": "Department for Transport",
+    "alternatives": []
+  },
   "DHCP": {
     "default": "Dynamic Host Configuration Protocol",
+    "alternatives": []
+  },
+  "DHS": {
+    "default": "Department of Homeland Security",
     "alternatives": []
   },
   "DI": {
@@ -409,8 +485,32 @@
     "default": "Domain Name System",
     "alternatives": []
   },
+  "DOD": {
+    "default": "Department of Defense",
+    "alternatives": []
+  },
+  "DOE": {
+    "default": "Department of Energy",
+    "alternatives": ["Department of Education"]
+  },
+  "DOJ": {
+    "default": "Department of Justice",
+    "alternatives": []
+  },
+  "DOL": {
+    "default": "Department of Labor",
+    "alternatives": []
+  },
   "DOM": {
     "default": "Document Object Model",
+    "alternatives": []
+  },
+  "DOS": {
+    "default": "Disk Operating System",
+    "alternatives": ["Department of State", "Denial of Service"]
+  },
+  "DOT": {
+    "default": "Department of Transportation",
     "alternatives": []
   },
   "DPI": {
@@ -426,9 +526,25 @@
     "default": "Don't Repeat Yourself",
     "alternatives": []
   },
+  "DSIT": {
+    "default": "Department for Science, Innovation and Technology",
+    "alternatives": []
+  },
   "DSS": {
     "default": "Data Security Standard",
     "alternatives": ["Decision Support System"]
+  },
+  "DVLA": {
+    "default": "Driver and Vehicle Licensing Agency",
+    "alternatives": []
+  },
+  "DVSA": {
+    "default": "Driver and Vehicle Standards Agency",
+    "alternatives": []
+  },
+  "DWP": {
+    "default": "Department for Work and Pensions",
+    "alternatives": []
   },
   "EAP": {
     "default": "Employee Assistance Programme",
@@ -450,6 +566,10 @@
   "ED": {
     "default": "Executive Director",
     "alternatives": ["Engineering Director"]
+  },
+  "EEOC": {
+    "default": "Equal Employment Opportunity Commission",
+    "alternatives": []
   },
   "EG": {
     "default": "Egypt",
@@ -486,6 +606,10 @@
   },
   "EOY": {
     "default": "End of Year",
+    "alternatives": []
+  },
+  "EPA": {
+    "default": "Environmental Protection Agency",
     "alternatives": []
   },
   "EPS": {
@@ -532,20 +656,44 @@
     "default": "Executive Vice President",
     "alternatives": []
   },
+  "FBI": {
+    "default": "Federal Bureau of Investigation",
+    "alternatives": []
+  },
   "FCA": {
     "default": "Financial Conduct Authority",
     "alternatives": [],
     "industry": { "finance": "Financial Conduct Authority" }
+  },
+  "FCC": {
+    "default": "Federal Communications Commission",
+    "alternatives": []
+  },
+  "FCDO": {
+    "default": "Foreign, Commonwealth and Development Office",
+    "alternatives": ["Foreign and Commonwealth Office"]
   },
   "FCF": {
     "default": "Free Cash Flow",
     "alternatives": [],
     "industry": { "finance": "Free Cash Flow" }
   },
+  "FDA": {
+    "default": "Food and Drug Administration",
+    "alternatives": []
+  },
   "FDI": {
     "default": "Foreign Direct Investment",
     "alternatives": [],
     "industry": { "finance": "Foreign Direct Investment" }
+  },
+  "FDIC": {
+    "default": "Federal Deposit Insurance Corporation",
+    "alternatives": []
+  },
+  "FEMA": {
+    "default": "Federal Emergency Management Agency",
+    "alternatives": []
   },
   "FI": {
     "default": "Finland",
@@ -557,6 +705,10 @@
   },
   "FR": {
     "default": "France",
+    "alternatives": []
+  },
+  "FTC": {
+    "default": "Federal Trade Commission",
     "alternatives": []
   },
   "FTE": {
@@ -580,6 +732,10 @@
     "alternatives": [],
     "industry": { "finance": "Generally Accepted Accounting Principles" }
   },
+  "GAO": {
+    "default": "Government Accountability Office",
+    "alternatives": []
+  },
   "GB": {
     "default": "United Kingdom",
     "alternatives": ["Great Britain"]
@@ -597,6 +753,10 @@
     "default": "Garbage Collection",
     "alternatives": ["General Counsel"],
     "industry": { "tech": "Garbage Collection" }
+  },
+  "GCHQ": {
+    "default": "Government Communications Headquarters",
+    "alternatives": []
   },
   "GCP": {
     "default": "Google Cloud Platform",
@@ -623,12 +783,20 @@
     "default": "Greece",
     "alternatives": []
   },
+  "GSA": {
+    "default": "General Services Administration",
+    "alternatives": []
+  },
   "GTM": {
     "default": "Go-to-Market",
     "alternatives": ["Google Tag Manager"]
   },
   "GUI": {
     "default": "Graphical User Interface",
+    "alternatives": []
+  },
+  "HHS": {
+    "default": "Department of Health and Human Services",
     "alternatives": []
   },
   "HIPAA": {
@@ -648,12 +816,24 @@
     "default": "Hiring Manager",
     "alternatives": ["Her Majesty's", "His Majesty's"]
   },
+  "HMRC": {
+    "default": "His Majesty's Revenue and Customs",
+    "alternatives": []
+  },
+  "HMT": {
+    "default": "His Majesty's Treasury",
+    "alternatives": []
+  },
   "HR": {
     "default": "Human Resources",
     "alternatives": ["Croatia"]
   },
   "HRBP": {
     "default": "HR Business Partner",
+    "alternatives": []
+  },
+  "HSE": {
+    "default": "Health and Safety Executive",
     "alternatives": []
   },
   "HTML": {
@@ -670,6 +850,10 @@
   },
   "HU": {
     "default": "Hungary",
+    "alternatives": []
+  },
+  "HUD": {
+    "default": "Department of Housing and Urban Development",
     "alternatives": []
   },
   "HUF": {
@@ -693,6 +877,10 @@
     "default": "Individual Contributor",
     "alternatives": ["Investment Committee", "Integrated Circuit"],
     "industry": { "finance": "Investment Committee" }
+  },
+  "ICE": {
+    "default": "Immigration and Customs Enforcement",
+    "alternatives": []
   },
   "ID": {
     "default": "Indonesia",
@@ -761,6 +949,10 @@
     "default": "Internal Rate of Return",
     "alternatives": [],
     "industry": { "finance": "Internal Rate of Return" }
+  },
+  "IRS": {
+    "default": "Internal Revenue Service",
+    "alternatives": []
   },
   "ISO": {
     "default": "International Organisation for Standardisation",
@@ -911,10 +1103,18 @@
     "default": "Machine Learning Operations",
     "alternatives": []
   },
+  "MOD": {
+    "default": "Ministry of Defence",
+    "alternatives": []
+  },
   "MOIC": {
     "default": "Multiple on Invested Capital",
     "alternatives": [],
     "industry": { "finance": "Multiple on Invested Capital" }
+  },
+  "MOJ": {
+    "default": "Ministry of Justice",
+    "alternatives": []
   },
   "MR": {
     "default": "Merge Request",
@@ -955,6 +1155,14 @@
     "alternatives": [],
     "industry": { "finance": "Malaysian Ringgit" }
   },
+  "NAO": {
+    "default": "National Audit Office",
+    "alternatives": []
+  },
+  "NASA": {
+    "default": "National Aeronautics and Space Administration",
+    "alternatives": []
+  },
   "NAT": {
     "default": "Network Address Translation",
     "alternatives": []
@@ -963,6 +1171,10 @@
     "default": "Net Asset Value",
     "alternatives": ["Navigation"],
     "industry": { "finance": "Net Asset Value" }
+  },
+  "NCA": {
+    "default": "National Crime Agency",
+    "alternatives": []
   },
   "NDA": {
     "default": "Non-Disclosure Agreement",
@@ -981,6 +1193,22 @@
     "alternatives": [],
     "industry": { "finance": "Nigerian Naira" }
   },
+  "NHS": {
+    "default": "National Health Service",
+    "alternatives": []
+  },
+  "NHSE": {
+    "default": "NHS England",
+    "alternatives": []
+  },
+  "NIH": {
+    "default": "National Institutes of Health",
+    "alternatives": []
+  },
+  "NIST": {
+    "default": "National Institute of Standards and Technology",
+    "alternatives": []
+  },
   "NL": {
     "default": "Netherlands",
     "alternatives": []
@@ -991,6 +1219,10 @@
   },
   "NO": {
     "default": "Norway",
+    "alternatives": []
+  },
+  "NOAA": {
+    "default": "National Oceanic and Atmospheric Administration",
     "alternatives": []
   },
   "NOK": {
@@ -1008,7 +1240,7 @@
   },
   "NPS": {
     "default": "Net Promoter Score",
-    "alternatives": []
+    "alternatives": ["National Park Service"]
   },
   "NPV": {
     "default": "Net Present Value",
@@ -1018,6 +1250,14 @@
   "NRR": {
     "default": "Net Revenue Retention",
     "alternatives": ["Net Recurring Revenue"]
+  },
+  "NSA": {
+    "default": "National Security Agency",
+    "alternatives": []
+  },
+  "NSF": {
+    "default": "National Science Foundation",
+    "alternatives": []
   },
   "NZ": {
     "default": "New Zealand",
@@ -1030,6 +1270,10 @@
   },
   "NZL": {
     "default": "New Zealand",
+    "alternatives": []
+  },
+  "OBR": {
+    "default": "Office for Budget Responsibility",
     "alternatives": []
   },
   "OKR": {
@@ -1048,8 +1292,20 @@
     "default": "Online Transaction Processing",
     "alternatives": []
   },
+  "OMB": {
+    "default": "Office of Management and Budget",
+    "alternatives": []
+  },
+  "ONS": {
+    "default": "Office for National Statistics",
+    "alternatives": []
+  },
   "OOP": {
     "default": "Object-Oriented Programming",
+    "alternatives": []
+  },
+  "OPM": {
+    "default": "Office of Personnel Management",
     "alternatives": []
   },
   "ORM": {
@@ -1058,6 +1314,10 @@
   },
   "OS": {
     "default": "Operating System",
+    "alternatives": []
+  },
+  "OSHA": {
+    "default": "Occupational Safety and Health Administration",
     "alternatives": []
   },
   "OSS": {
@@ -1144,6 +1404,10 @@
   },
   "POSIX": {
     "default": "Portable Operating System Interface",
+    "alternatives": []
+  },
+  "POTUS": {
+    "default": "President of the United States",
     "alternatives": []
   },
   "PR": {
@@ -1271,6 +1535,10 @@
     "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
     "industry": { "finance": "Saudi Riyal" }
   },
+  "SCOTUS": {
+    "default": "Supreme Court of the United States",
+    "alternatives": []
+  },
   "SDK": {
     "default": "Software Development Kit",
     "alternatives": []
@@ -1307,6 +1575,10 @@
     "default": "Singapore Dollar",
     "alternatives": [],
     "industry": { "finance": "Singapore Dollar" }
+  },
+  "SIS": {
+    "default": "Secret Intelligence Service",
+    "alternatives": []
   },
   "SLA": {
     "default": "Service Level Agreement",
@@ -1366,13 +1638,17 @@
     "default": "Site Reliability Engineer",
     "alternatives": ["Site Reliability Engineering"]
   },
-  "SSH": {
-    "default": "Secure Shell",
+  "SSA": {
+    "default": "Social Security Administration",
     "alternatives": []
   },
   "SSG": {
     "default": "Static Site Generation",
     "alternatives": ["Static Site Generator"]
+  },
+  "SSH": {
+    "default": "Secure Shell",
+    "alternatives": []
   },
   "SSL": {
     "default": "Secure Sockets Layer",
@@ -1452,6 +1728,10 @@
     "alternatives": [],
     "industry": { "finance": "Turkish Lira" }
   },
+  "TSA": {
+    "default": "Transportation Security Administration",
+    "alternatives": []
+  },
   "TUR": {
     "default": "Turkey",
     "alternatives": []
@@ -1495,8 +1775,16 @@
     "default": "United Kingdom",
     "alternatives": []
   },
+  "UKHSA": {
+    "default": "UK Health Security Agency",
+    "alternatives": []
+  },
   "UKR": {
     "default": "Ukraine",
+    "alternatives": []
+  },
+  "UKRI": {
+    "default": "UK Research and Innovation",
     "alternatives": []
   },
   "URI": {
@@ -1515,10 +1803,26 @@
     "default": "United States",
     "alternatives": ["United States of America"]
   },
+  "USCIS": {
+    "default": "United States Citizenship and Immigration Services",
+    "alternatives": []
+  },
   "USD": {
     "default": "US Dollar",
     "alternatives": ["United States Dollar"],
     "industry": { "finance": "US Dollar" }
+  },
+  "USDA": {
+    "default": "United States Department of Agriculture",
+    "alternatives": []
+  },
+  "USPS": {
+    "default": "United States Postal Service",
+    "alternatives": []
+  },
+  "VA": {
+    "default": "Department of Veterans Affairs",
+    "alternatives": ["Virginia"]
   },
   "VC": {
     "default": "Venture Capital",

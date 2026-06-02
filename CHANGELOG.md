@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.5.10
+- Added 29 UK government departments and agencies: ACAS, CAA, CMA, CPS, CQC, DBT, DEFRA, DfE, DfT, DSIT, DVLA, DVSA, DWP, FCDO, GCHQ, HMRC, HMT, HSE, MOD, MOJ, NAO, NCA, NHS, NHSE, OBR, ONS, SIS, UKHSA, UKRI
+- Added 45 US government departments and agencies: ATF, BLS, CBP, CBO, CDC, CFPB, CFTC, CIA, DEA, DHS, DOD, DOE, DOJ, DOL, DOS, DOT, EEOC, EPA, FBI, FCC, FDIC, FEMA, FDA, FTC, GAO, GSA, HHS, HUD, ICE, IRS, NASA, NIH, NIST, NOAA, NSA, NSF, OSHA, OMB, OPM, POTUS, SCOTUS, SSA, TSA, USCIS, USDA, USPS, VA
+- Updated CMS to include "Centers for Medicare and Medicaid Services" as an alternative
+- Updated NPS to include "National Park Service" as an alternative
+- DOS set as "Disk Operating System" (primary) with "Department of State" and "Denial of Service" as alternatives
+- CPS set as "Crown Prosecution Service" (primary) with "Child Protective Services" as alternative
+
 ### v1.5.9
 - Added ~70 programming and web technology terms: ACID, AJAX, AOT, AST, BDD, CLI, CMS, CORS, CQRS, CRUD, CSRF, CSP, CSR, CSS, DDD, DHCP, DI, DOM, DRY, ECMA, ETL, FTP, GC, GUI, HTML, HTTP, HTTPS, IEEE, IMAP, IoC, IP, JIT, JSON, JWT, KISS, LAN, MR, MVC, MVVM, NAT, NoSQL, OLAP, OLTP, OS, OSS, POSIX, PWA, RAM, ROM, SAML, SFTP, SMTP, SOA, SOAP, SPA, SQL, SSH, SSG, SSR, TDD, UDP, URI, URL, VM, VPN, WAN, WASM, XML, XSS, YAGNI, YAML
 - Ambiguous entries carry industry overrides: CSR (tech → Client-Side Rendering), GC (tech → Garbage Collection), IP (tech → Internet Protocol), JIT (tech → Just-In-Time Compilation), MR (tech → Merge Request), ROM (pharma → Range of Motion)
