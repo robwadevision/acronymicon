@@ -6,8 +6,9 @@
   const toggle = document.getElementById("main-toggle");
   const toggleSub = document.getElementById("toggle-sub");
   const industryBadge = document.getElementById("industry-badge");
-  const statFound = document.getElementById("stat-found");
+  const statIdentified = document.getElementById("stat-identified");
   const statDefined = document.getElementById("stat-defined");
+  const statNote = document.getElementById("stat-note");
 
   // ── Load persisted state ───────────────────────────────────────────────
   const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
@@ -21,13 +22,19 @@
     try {
       const response = await chrome.tabs.sendMessage(tab.id, { type: "AC_GET_STATS" });
       if (response) {
-        statFound.textContent = response.found ?? "—";
-        statDefined.textContent = response.defined ?? "—";
+        const identified = response.identified ?? 0;
+        const defined = response.defined ?? 0;
+        const undefined_ = identified - defined;
+        statIdentified.textContent = identified || "—";
+        statDefined.textContent = defined || "—";
+        if (undefined_ > 0) {
+          statNote.textContent = `${undefined_} identified without a definition`;
+        }
         setIndustryBadge(response.industry || "default");
       }
     } catch {
       // Content script not yet injected (e.g. chrome:// pages)
-      statFound.textContent = "—";
+      statIdentified.textContent = "—";
       statDefined.textContent = "—";
       industryBadge.textContent = "n/a";
     }

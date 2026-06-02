@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.5.5
+- Popup stats renamed "Found" → "Identified" to align with analytics event naming
+- Removed the "Undefined" stat column; replaced with a text note below the stats (e.g. "3 identified without a definition") that only appears when the gap is non-zero
+- `AC_GET_STATS` response key renamed `found` → `identified` to match
+- Added 42 ISO 4217 currency codes to the dictionary (AED, ARS, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EGP, EUR, GBP, HKD, HUF, IDR, ILS, INR, JPY, KRW, KWD, MXN, MYR, NGN, NOK, NZD, PHP, PKR, PLN, QAR, RUB, SAR, SEK, SGD, THB, TRY, TWD, UAH, USD, VND, ZAR)
+- All currency entries include a `finance` industry override and alternatives where relevant (e.g. CNY → Renminbi, GBP → Sterling)
+- Ambiguous codes carry additional alternatives (PHP → Hypertext Preprocessor in tech, SAR → Suspicious Activity Report/Search and Rescue, COP → Community of Practice)
+
 ### v1.5.4
 - Removed dictionary gating — all regex-matched acronyms are highlighted, not just those with a dictionary entry
 - `acronym_highlighted` now fires for undefined acronyms too, capturing user intent (hover on unknown term = desire to know)

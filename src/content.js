@@ -439,7 +439,7 @@
       spans.forEach((s) => {
         if (lookup(s.getAttribute(TOOLTIP_ANCHOR_ATTR))) defined++;
       });
-      sendResponse({ found: spans.length, defined, industry: detectedIndustry });
+      sendResponse({ identified: spans.length, defined, industry: detectedIndustry });
     }
 
     return true;

@@ -149,6 +149,15 @@ body {
   margin-top: 2px;
 }
 
+/* ── Stat note ── */
+.stat-note {
+  font-size: 11px;
+  color: #c4b5d9;
+  text-align: center;
+  margin-top: 8px;
+  min-height: 14px;
+}
+
 /* ── Footer ── */
 .footer {
   display: flex;
