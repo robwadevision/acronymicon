@@ -31,6 +31,10 @@
     "default": "United Arab Emirates",
     "alternatives": ["Account Executive"]
   },
+  "AEs": {
+    "default": "Account Executives",
+    "alternatives": []
+  },
   "AED": {
     "default": "UAE Dirham",
     "alternatives": [],
@@ -120,6 +124,10 @@
     "default": "Associate Vice President",
     "alternatives": ["Assistant Vice President"]
   },
+  "AVPs": {
+    "default": "Associate Vice Presidents",
+    "alternatives": ["Assistant Vice Presidents"]
+  },
   "AWS": {
     "default": "Amazon Web Services",
     "alternatives": []
@@ -140,8 +148,16 @@
     "default": "Business Development Manager",
     "alternatives": []
   },
+  "BDMs": {
+    "default": "Business Development Managers",
+    "alternatives": []
+  },
   "BDR": {
     "default": "Business Development Representative",
+    "alternatives": []
+  },
+  "BDRs": {
+    "default": "Business Development Representatives",
     "alternatives": []
   },
   "BE": {
@@ -203,6 +219,10 @@
     "default": "Chief Commercial Officer",
     "alternatives": ["Chief Compliance Officer", "Chief Content Officer"]
   },
+  "CCOs": {
+    "default": "Chief Commercial Officers",
+    "alternatives": ["Chief Compliance Officers", "Chief Content Officers"]
+  },
   "CD": {
     "default": "Continuous Deployment",
     "alternatives": ["Continuous Delivery"],
@@ -225,6 +245,10 @@
     "alternatives": ["Chief Digital Officer", "Collateralised Debt Obligation"],
     "industry": { "finance": "Collateralised Debt Obligation" }
   },
+  "CDOs": {
+    "default": "Chief Data Officers",
+    "alternatives": ["Chief Digital Officers"]
+  },
   "CDS": {
     "default": "Credit Default Swap",
     "alternatives": [],
@@ -234,8 +258,16 @@
     "default": "Chief Executive Officer",
     "alternatives": []
   },
+  "CEOs": {
+    "default": "Chief Executive Officers",
+    "alternatives": []
+  },
   "CFO": {
     "default": "Chief Financial Officer",
+    "alternatives": []
+  },
+  "CFOs": {
+    "default": "Chief Financial Officers",
     "alternatives": []
   },
   "CFPB": {
@@ -263,6 +295,10 @@
     "default": "Chief Human Resources Officer",
     "alternatives": []
   },
+  "CHROs": {
+    "default": "Chief Human Resources Officers",
+    "alternatives": []
+  },
   "CI": {
     "default": "Continuous Integration",
     "alternatives": ["Configuration Item", "Côte d'Ivoire"],
@@ -276,8 +312,16 @@
     "default": "Chief Information Officer",
     "alternatives": ["Chief Investment Officer"]
   },
+  "CIOs": {
+    "default": "Chief Information Officers",
+    "alternatives": ["Chief Investment Officers"]
+  },
   "CISO": {
     "default": "Chief Information Security Officer",
+    "alternatives": []
+  },
+  "CISOs": {
+    "default": "Chief Information Security Officers",
     "alternatives": []
   },
   "CL": {
@@ -293,6 +337,10 @@
     "alternatives": ["Chief Learning Officer", "Collateralised Loan Obligation"],
     "industry": { "finance": "Collateralised Loan Obligation" }
   },
+  "CLOs": {
+    "default": "Chief Legal Officers",
+    "alternatives": ["Chief Learning Officers"]
+  },
   "CLP": {
     "default": "Chilean Peso",
     "alternatives": [],
@@ -306,6 +354,10 @@
     "default": "Chief Marketing Officer",
     "alternatives": ["Collateralised Mortgage Obligation"],
     "industry": { "finance": "Collateralised Mortgage Obligation" }
+  },
+  "CMOs": {
+    "default": "Chief Marketing Officers",
+    "alternatives": []
   },
   "CMS": {
     "default": "Content Management System",
@@ -332,6 +384,10 @@
     "default": "Chief Operating Officer",
     "alternatives": []
   },
+  "COOs": {
+    "default": "Chief Operating Officers",
+    "alternatives": []
+  },
   "COP": {
     "default": "Colombian Peso",
     "alternatives": ["Community of Practice"],
@@ -344,6 +400,10 @@
   "CPO": {
     "default": "Chief Product Officer",
     "alternatives": ["Chief People Officer"]
+  },
+  "CPOs": {
+    "default": "Chief Product Officers",
+    "alternatives": ["Chief People Officers"]
   },
   "CPS": {
     "default": "Crown Prosecution Service",
@@ -369,6 +429,10 @@
     "default": "Chief Revenue Officer",
     "alternatives": ["Chief Risk Officer", "Conversion Rate Optimisation"]
   },
+  "CROs": {
+    "default": "Chief Revenue Officers",
+    "alternatives": ["Chief Risk Officers"]
+  },
   "CSRF": {
     "default": "Cross-Site Request Forgery",
     "alternatives": []
@@ -381,9 +445,17 @@
     "default": "Customer Success Manager",
     "alternatives": []
   },
+  "CSMs": {
+    "default": "Customer Success Managers",
+    "alternatives": []
+  },
   "CSO": {
     "default": "Chief Strategy Officer",
     "alternatives": ["Chief Security Officer", "Chief Sales Officer"]
+  },
+  "CSOs": {
+    "default": "Chief Strategy Officers",
+    "alternatives": ["Chief Security Officers", "Chief Sales Officers"]
   },
   "CSP": {
     "default": "Content Security Policy",
@@ -402,6 +474,10 @@
     "default": "Chief Technology Officer",
     "alternatives": []
   },
+  "CTOs": {
+    "default": "Chief Technology Officers",
+    "alternatives": []
+  },
   "CZ": {
     "default": "Czech Republic",
     "alternatives": ["Czechia"]
@@ -413,6 +489,10 @@
   },
   "DBA": {
     "default": "Database Administrator",
+    "alternatives": []
+  },
+  "DBAs": {
+    "default": "Database Administrators",
     "alternatives": []
   },
   "DBT": {
@@ -522,6 +602,10 @@
     "default": "Data Protection Officer",
     "alternatives": ["Days Payable Outstanding"]
   },
+  "DPOs": {
+    "default": "Data Protection Officers",
+    "alternatives": []
+  },
   "DRY": {
     "default": "Don't Repeat Yourself",
     "alternatives": []
@@ -567,6 +651,10 @@
     "default": "Executive Director",
     "alternatives": ["Engineering Director"]
   },
+  "EDs": {
+    "default": "Executive Directors",
+    "alternatives": ["Engineering Directors"]
+  },
   "EEOC": {
     "default": "Equal Employment Opportunity Commission",
     "alternatives": []
@@ -590,6 +678,10 @@
   },
   "EM": {
     "default": "Engineering Manager",
+    "alternatives": []
+  },
+  "EMs": {
+    "default": "Engineering Managers",
     "alternatives": []
   },
   "EMI": {
@@ -654,6 +746,10 @@
   },
   "EVP": {
     "default": "Executive Vice President",
+    "alternatives": []
+  },
+  "EVPs": {
+    "default": "Executive Vice Presidents",
     "alternatives": []
   },
   "FBI": {
@@ -770,10 +866,19 @@
     "default": "General Manager",
     "alternatives": []
   },
+  "GMs": {
+    "default": "General Managers",
+    "alternatives": []
+  },
   "GP": {
     "default": "General Practitioner",
     "alternatives": ["General Partner"],
     "industry": { "finance": "General Partner" }
+  },
+  "GPs": {
+    "default": "General Practitioners",
+    "alternatives": ["General Partners"],
+    "industry": { "finance": "General Partners" }
   },
   "GPU": {
     "default": "Graphics Processing Unit",
@@ -832,6 +937,10 @@
     "default": "HR Business Partner",
     "alternatives": []
   },
+  "HRBPs": {
+    "default": "HR Business Partners",
+    "alternatives": []
+  },
   "HSE": {
     "default": "Health and Safety Executive",
     "alternatives": []
@@ -877,6 +986,10 @@
     "default": "Individual Contributor",
     "alternatives": ["Investment Committee", "Integrated Circuit"],
     "industry": { "finance": "Investment Committee" }
+  },
+  "ICs": {
+    "default": "Individual Contributors",
+    "alternatives": []
   },
   "ICE": {
     "default": "Immigration and Customs Enforcement",
@@ -1073,6 +1186,10 @@
     "default": "Limited Partner",
     "alternatives": ["Long Play", "Linear Programming"]
   },
+  "LPs": {
+    "default": "Limited Partners",
+    "alternatives": []
+  },
   "LTV": {
     "default": "Lifetime Value",
     "alternatives": ["Long-Term Value", "Loan To Value"]
@@ -1090,6 +1207,10 @@
   "MD": {
     "default": "Managing Director",
     "alternatives": ["Medical Doctor"]
+  },
+  "MDs": {
+    "default": "Managing Directors",
+    "alternatives": ["Medical Doctors"]
   },
   "MEX": {
     "default": "Mexico",
@@ -1394,6 +1515,10 @@
     "default": "Product Manager",
     "alternatives": ["Project Manager", "Programme Manager", "Private Message"]
   },
+  "PMs": {
+    "default": "Product Managers",
+    "alternatives": ["Project Managers", "Programme Managers"]
+  },
   "POC": {
     "default": "Proof of Concept",
     "alternatives": ["Point of Contact"]
@@ -1548,6 +1673,10 @@
     "alternatives": ["Special Drawing Rights"],
     "industry": { "finance": "Special Drawing Rights" }
   },
+  "SDRs": {
+    "default": "Sales Development Representatives",
+    "alternatives": []
+  },
   "SE": {
     "default": "Sweden",
     "alternatives": ["Software Engineer", "Software Engineering"],
@@ -1638,6 +1767,10 @@
     "default": "Site Reliability Engineer",
     "alternatives": ["Site Reliability Engineering"]
   },
+  "SREs": {
+    "default": "Site Reliability Engineers",
+    "alternatives": []
+  },
   "SSA": {
     "default": "Social Security Administration",
     "alternatives": []
@@ -1664,6 +1797,10 @@
   },
   "SVP": {
     "default": "Senior Vice President",
+    "alternatives": []
+  },
+  "SVPs": {
+    "default": "Senior Vice Presidents",
     "alternatives": []
   },
   "SWE": {
@@ -1711,6 +1848,10 @@
     "default": "Tech Lead",
     "alternatives": ["Team Lead"]
   },
+  "TLs": {
+    "default": "Tech Leads",
+    "alternatives": ["Team Leads"]
+  },
   "TLS": {
     "default": "Transport Layer Security",
     "alternatives": []
@@ -1718,6 +1859,10 @@
   "TPM": {
     "default": "Technical Program Manager",
     "alternatives": ["Trusted Platform Module"]
+  },
+  "TPMs": {
+    "default": "Technical Program Managers",
+    "alternatives": []
   },
   "TR": {
     "default": "Turkey",
@@ -1829,6 +1974,11 @@
     "alternatives": ["Venture Capitalist"],
     "industry": { "finance": "Venture Capital" }
   },
+  "VCs": {
+    "default": "Venture Capitalists",
+    "alternatives": [],
+    "industry": { "finance": "Venture Capitalists" }
+  },
   "VM": {
     "default": "Virtual Machine",
     "alternatives": []
@@ -1844,6 +1994,10 @@
   },
   "VP": {
     "default": "Vice President",
+    "alternatives": []
+  },
+  "VPs": {
+    "default": "Vice Presidents",
     "alternatives": []
   },
   "VPN": {

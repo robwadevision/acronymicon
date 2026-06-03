@@ -29,6 +29,16 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## Install (Development / Unpacked)
 
+Before loading the extension, create the required credentials file:
+
+```
+cp src/constants.example.js src/constants.js
+```
+
+(On Windows: `copy src\constants.example.js src\constants.js`)
+
+The file can be left as-is — analytics are disabled when credentials are empty and the extension works normally without them.
+
 ### Chrome
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top right)
