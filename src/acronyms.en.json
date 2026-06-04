@@ -9,6 +9,10 @@
       "industry": "Optional: industry-specific overrides keyed by industry slug"
     }
   },
+  "ABR": {
+    "default": "Adaptive Bitrate",
+    "alternatives": ["Adaptive Bitrate Streaming"]
+  },
   "ABS": {
     "default": "Asset-Backed Securities",
     "alternatives": [],
@@ -118,6 +122,14 @@
   },
   "AUS": {
     "default": "Australia",
+    "alternatives": []
+  },
+  "AVC": {
+    "default": "Advanced Video Coding",
+    "alternatives": ["H.264"]
+  },
+  "AVOD": {
+    "default": "Advertising Video on Demand",
     "alternatives": []
   },
   "AVP": {
@@ -397,6 +409,18 @@
     "default": "Cross-Origin Resource Sharing",
     "alternatives": []
   },
+  "CPA": {
+    "default": "Cost Per Acquisition",
+    "alternatives": ["Cost Per Action"]
+  },
+  "CPC": {
+    "default": "Cost Per Click",
+    "alternatives": []
+  },
+  "CPM": {
+    "default": "Cost Per Mille",
+    "alternatives": ["Cost Per Thousand Impressions"]
+  },
   "CPO": {
     "default": "Chief Product Officer",
     "alternatives": ["Chief People Officer"]
@@ -478,6 +502,14 @@
     "default": "Chief Technology Officers",
     "alternatives": []
   },
+  "CTR": {
+    "default": "Click-Through Rate",
+    "alternatives": []
+  },
+  "CTV": {
+    "default": "Connected TV",
+    "alternatives": []
+  },
   "CZ": {
     "default": "Czech Republic",
     "alternatives": ["Czechia"]
@@ -486,6 +518,18 @@
     "default": "Czech Koruna",
     "alternatives": [],
     "industry": { "finance": "Czech Koruna" }
+  },
+  "DAI": {
+    "default": "Dynamic Ad Insertion",
+    "alternatives": []
+  },
+  "DASH": {
+    "default": "Dynamic Adaptive Streaming over HTTP",
+    "alternatives": []
+  },
+  "DAU": {
+    "default": "Daily Active Users",
+    "alternatives": []
   },
   "DBA": {
     "default": "Database Administrator",
@@ -606,6 +650,10 @@
     "default": "Data Protection Officers",
     "alternatives": []
   },
+  "DRM": {
+    "default": "Digital Rights Management",
+    "alternatives": []
+  },
   "DRY": {
     "default": "Don't Repeat Yourself",
     "alternatives": []
@@ -620,6 +668,10 @@
   },
   "DVLA": {
     "default": "Driver and Vehicle Licensing Agency",
+    "alternatives": []
+  },
+  "DVR": {
+    "default": "Digital Video Recorder",
     "alternatives": []
   },
   "DVSA": {
@@ -704,6 +756,10 @@
     "default": "Environmental Protection Agency",
     "alternatives": []
   },
+  "EPG": {
+    "default": "Electronic Programme Guide",
+    "alternatives": ["Electronic Program Guide"]
+  },
   "EPS": {
     "default": "Earnings Per Share",
     "alternatives": [],
@@ -750,6 +806,10 @@
   },
   "EVPs": {
     "default": "Executive Vice Presidents",
+    "alternatives": []
+  },
+  "FAST": {
+    "default": "Free Ad-Supported Streaming TV",
     "alternatives": []
   },
   "FBI": {
@@ -799,6 +859,10 @@
     "default": "First In, First Out",
     "alternatives": []
   },
+  "FPS": {
+    "default": "Frames Per Second",
+    "alternatives": []
+  },
   "FR": {
     "default": "France",
     "alternatives": []
@@ -810,6 +874,10 @@
   "FTE": {
     "default": "Full-Time Employee",
     "alternatives": ["Full-Time Equivalent"]
+  },
+  "FTA": {
+    "default": "Free to Air",
+    "alternatives": []
   },
   "FTP": {
     "default": "File Transfer Protocol",
@@ -900,6 +968,14 @@
     "default": "Graphical User Interface",
     "alternatives": []
   },
+  "HDR": {
+    "default": "High Dynamic Range",
+    "alternatives": []
+  },
+  "HEVC": {
+    "default": "High Efficiency Video Coding",
+    "alternatives": ["H.265"]
+  },
   "HHS": {
     "default": "Department of Health and Human Services",
     "alternatives": []
@@ -916,6 +992,10 @@
     "default": "Hong Kong Dollar",
     "alternatives": [],
     "industry": { "finance": "Hong Kong Dollar" }
+  },
+  "HLS": {
+    "default": "HTTP Live Streaming",
+    "alternatives": []
   },
   "HM": {
     "default": "Hiring Manager",
@@ -1058,6 +1138,10 @@
     "alternatives": [],
     "industry": { "finance": "Initial Public Offering" }
   },
+  "IPTV": {
+    "default": "Internet Protocol Television",
+    "alternatives": []
+  },
   "IRR": {
     "default": "Internal Rate of Return",
     "alternatives": [],
@@ -1194,6 +1278,10 @@
     "default": "Lifetime Value",
     "alternatives": ["Long-Term Value", "Loan To Value"]
   },
+  "MAU": {
+    "default": "Monthly Active Users",
+    "alternatives": []
+  },
   "MBO": {
     "default": "Management Buyout",
     "alternatives": ["Management by Objectives"],
@@ -1203,6 +1291,10 @@
     "default": "Mortgage-Backed Securities",
     "alternatives": [],
     "industry": { "finance": "Mortgage-Backed Securities" }
+  },
+  "MCN": {
+    "default": "Multi-Channel Network",
+    "alternatives": []
   },
   "MD": {
     "default": "Managing Director",
@@ -1454,6 +1546,10 @@
     "default": "On-Target Earnings",
     "alternatives": []
   },
+  "OTT": {
+    "default": "Over the Top",
+    "alternatives": ["Over-the-Top streaming"]
+  },
   "OTel": {
     "default": "OpenTelemetry",
     "alternatives": []
@@ -1548,6 +1644,10 @@
     "default": "Paid Time Off",
     "alternatives": []
   },
+  "PVR": {
+    "default": "Personal Video Recorder",
+    "alternatives": []
+  },
   "PWA": {
     "default": "Progressive Web App",
     "alternatives": ["Progressive Web Application"]
@@ -1615,9 +1715,17 @@
     "alternatives": [],
     "industry": { "finance": "Restricted Stock Unit" }
   },
+  "RTMP": {
+    "default": "Real-Time Messaging Protocol",
+    "alternatives": []
+  },
   "RTO": {
     "default": "Return to Office",
     "alternatives": ["Recovery Time Objective"]
+  },
+  "RTSP": {
+    "default": "Real-Time Streaming Protocol",
+    "alternatives": []
   },
   "RU": {
     "default": "Russia",
@@ -1670,7 +1778,7 @@
   },
   "SDR": {
     "default": "Sales Development Representative",
-    "alternatives": ["Special Drawing Rights"],
+    "alternatives": ["Special Drawing Rights", "Standard Dynamic Range"],
     "industry": { "finance": "Special Drawing Rights" }
   },
   "SDRs": {
@@ -1795,6 +1903,14 @@
     "default": "Server-Side Rendering",
     "alternatives": []
   },
+  "STB": {
+    "default": "Set-Top Box",
+    "alternatives": []
+  },
+  "SVOD": {
+    "default": "Subscription Video on Demand",
+    "alternatives": []
+  },
   "SVP": {
     "default": "Senior Vice President",
     "alternatives": []
@@ -1881,6 +1997,10 @@
     "default": "Turkey",
     "alternatives": []
   },
+  "TVOD": {
+    "default": "Transactional Video on Demand",
+    "alternatives": []
+  },
   "TVPI": {
     "default": "Total Value to Paid-In",
     "alternatives": [],
@@ -1914,6 +2034,14 @@
   },
   "UDP": {
     "default": "User Datagram Protocol",
+    "alternatives": []
+  },
+  "UGC": {
+    "default": "User-Generated Content",
+    "alternatives": []
+  },
+  "UHD": {
+    "default": "Ultra High Definition",
     "alternatives": []
   },
   "UK": {
@@ -1969,6 +2097,10 @@
     "default": "Department of Veterans Affairs",
     "alternatives": ["Virginia"]
   },
+  "VAST": {
+    "default": "Video Ad Serving Template",
+    "alternatives": []
+  },
   "VC": {
     "default": "Venture Capital",
     "alternatives": ["Venture Capitalist"],
@@ -1991,6 +2123,10 @@
     "default": "Vietnamese Dong",
     "alternatives": [],
     "industry": { "finance": "Vietnamese Dong" }
+  },
+  "VOD": {
+    "default": "Video on Demand",
+    "alternatives": []
   },
   "VP": {
     "default": "Vice President",

@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.5.13
+- Dictionary: added 36 media and streaming terms — delivery protocols (ABR, DASH, HLS, RTMP, RTSP), business models (AVOD, FAST, OTT, SVOD, TVOD, VOD), platforms (CTV, IPTV, STB), content protection (DRM), video (AVC, DVR, EPG, FPS, HDR, HEVC, PVR, UHD), advertising (CPA, CPC, CPM, CTR, DAI, VAST), and general (DAU, FTA, MAU, MCN, UGC)
+- Dictionary: SDR gains "Standard Dynamic Range" as an alternative
+
 ### v1.5.12
 - Bugfix: skip acronym detection when the matched token is immediately preceded by `#`, eliminating hashtag false positives (e.g. `#CEO`, `#HR`)
 
