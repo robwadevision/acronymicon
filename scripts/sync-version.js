@@ -29,12 +29,16 @@ manifest.version = version;
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf8");
 console.log(`manifest.json → ${version}`);
 
-// CLAUDE.md
+// CLAUDE.md (gitignored — skip if not present)
 const claudePath = path.join(root, "CLAUDE.md");
-const claude = fs.readFileSync(claudePath, "utf8");
-const updatedClaude = claude.replace(
-  /\*\*Current version:\*\* v[\d.]+/,
-  `**Current version:** v${version}`
-);
-fs.writeFileSync(claudePath, updatedClaude, "utf8");
-console.log(`CLAUDE.md     → v${version}`);
+if (fs.existsSync(claudePath)) {
+  const claude = fs.readFileSync(claudePath, "utf8");
+  const updatedClaude = claude.replace(
+    /\*\*Current version:\*\* v[\d.]+/,
+    `**Current version:** v${version}`
+  );
+  fs.writeFileSync(claudePath, updatedClaude, "utf8");
+  console.log(`CLAUDE.md     → v${version}`);
+} else {
+  console.log("CLAUDE.md     → skipped (not present)");
+}
