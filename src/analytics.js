@@ -40,7 +40,7 @@ const AcronymAnalytics = (() => {
 
   function track(eventName, params = {}) {
     if (!MEASUREMENT_ID || !API_SECRET) return;
-    queue.push({ name: eventName, params });
+    queue.push({ name: eventName, params: { page_hostname: window.location.hostname, ...params } });
     if (DEBUG) {
       console.log(`[Acronymicon Analytics] Queued: ${eventName}`, params, `(clientId: ${clientId ?? "pending"})`);
       flush();

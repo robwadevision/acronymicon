@@ -1,5 +1,14 @@
 # Changelog
 
+### v1.5.12
+- Bugfix: skip acronym detection when the matched token is immediately preceded by `#`, eliminating hashtag false positives (e.g. `#CEO`, `#HR`)
+
+### v1.5.11
+- Bugfix: release workflow moved from repo root to `.github/workflows/release.yml` — it was never being picked up by GitHub Actions, causing `constants.js` to be missing from all GitHub release zips
+- README: added setup step to Install (Development / Unpacked) instructions — copy `src/constants.example.js` to `src/constants.js` before loading the extension
+- Dictionary: added 38 pluralised job title entries: AEs, AVPs, BDMs, BDRs, CCOs, CDOs, CEOs, CFOs, CHROs, CIOs, CISOs, CLOs, CMOs, COOs, CPOs, CROs, CSMs, CSOs, CTOs, DBAs, DPOs, EDs, EMs, EVPs, GMs, GPs, HRBPs, ICs, LPs, MDs, PMs, SDRs, SREs, SVPs, TLs, TPMs, VCs, VPs
+- Analytics: added `page_hostname` param to all tracked events — captures the site domain (`window.location.hostname`) automatically on every event
+
 ### v1.5.10
 - Added 29 UK government departments and agencies: ACAS, CAA, CMA, CPS, CQC, DBT, DEFRA, DfE, DfT, DSIT, DVLA, DVSA, DWP, FCDO, GCHQ, HMRC, HMT, HSE, MOD, MOJ, NAO, NCA, NHS, NHSE, OBR, ONS, SIS, UKHSA, UKRI
 - Added 45 US government departments and agencies: ATF, BLS, CBP, CBO, CDC, CFPB, CFTC, CIA, DEA, DHS, DOD, DOE, DOJ, DOL, DOS, DOT, EEOC, EPA, FBI, FCC, FDIC, FEMA, FDA, FTC, GAO, GSA, HHS, HUD, ICE, IRS, NASA, NIH, NIST, NOAA, NSA, NSF, OSHA, OMB, OPM, POTUS, SCOTUS, SSA, TSA, USCIS, USDA, USPS, VA

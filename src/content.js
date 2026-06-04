@@ -154,6 +154,7 @@
     let m;
     while ((m = ACRONYM_RE.exec(text)) !== null) {
       const word = m[1];
+      if (m.index > 0 && text[m.index - 1] === "#") continue;
       matches.push({ word, index: m.index, length: m[0].length });
       if (!trackedHighlights.has(word)) {
         trackedHighlights.add(word);
