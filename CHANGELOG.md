@@ -1,5 +1,8 @@
 # Changelog
 
+### v1.5.17
+- Dictionary: added 33 computer hardware and component entries — storage (HDD, RAID, SATA, SSD), flash memory (NAND, UFS), memory (DDR, DIMM, DRAM, ECC, SRAM, VRAM), processors (APU, NPU, TPU), connectivity (HDMI, USB, VGA, DVI), expansion (PCB), firmware (BIOS, CMOS, POST, UEFI, ACPI), power (PSU, TDP, TDP, UPS), and performance (FLOPS, IOPS, DMA, IRQ, SMT)
+
 ### v1.5.16
 - Dictionary: added 24 job seeking entries — recruitment tools (ATS, VMS), compensation (COLA, ESOP, ESPP, LTI, LTIP, TC), contracts (MSA, MSP, RPO, SOW), workplace (BYOD, DEI, ERG, HRIS, WLB), credentials (CIPD, SHRM), job ads (CV, EEO, EOE, JD), and interview techniques (STAR)
 - Dictionary: DOE gains "Depends on Experience" as an alternative; FTC gains "Fixed-Term Contract"

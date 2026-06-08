@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Acronymicon",
-  "version": "1.5.16",
+  "version": "1.5.17",
   "description": "Detects acronyms on web pages and shows instant definitions via tooltip. Great for job ads, technical docs, and more.",
   "author": "Rob Wade",
   "icons": {

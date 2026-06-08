@@ -26,6 +26,10 @@
     "default": "Atomicity, Consistency, Isolation, Durability",
     "alternatives": []
   },
+  "ACPI": {
+    "default": "Advanced Configuration and Power Interface",
+    "alternatives": []
+  },
   "ACV": {
     "default": "Annual Contract Value",
     "alternatives": [],
@@ -79,6 +83,10 @@
   },
   "APIs": {
     "default": "Application Programming Interfaces",
+    "alternatives": []
+  },
+  "APU": {
+    "default": "Accelerated Processing Unit",
     "alternatives": []
   },
   "AR": {
@@ -202,6 +210,10 @@
   },
   "BGG": {
     "default": "BoardGameGeek",
+    "alternatives": []
+  },
+  "BIOS": {
+    "default": "Basic Input/Output System",
     "alternatives": []
   },
   "BLS": {
@@ -431,6 +443,10 @@
     "default": "Chief Marketing Officers",
     "alternatives": []
   },
+  "CMOS": {
+    "default": "Complementary Metal-Oxide-Semiconductor",
+    "alternatives": []
+  },
   "CMS": {
     "default": "Content Management System",
     "alternatives": ["Centers for Medicare and Medicaid Services"]
@@ -632,6 +648,10 @@
     "default": "Domain-Driven Design",
     "alternatives": []
   },
+  "DDR": {
+    "default": "Double Data Rate",
+    "alternatives": []
+  },
   "DE": {
     "default": "Germany",
     "alternatives": []
@@ -676,6 +696,10 @@
     "default": "Dissociative Identity Disorder",
     "alternatives": []
   },
+  "DIMM": {
+    "default": "Dual In-line Memory Module",
+    "alternatives": []
+  },
   "DK": {
     "default": "Denmark",
     "alternatives": []
@@ -688,6 +712,10 @@
   "DM": {
     "default": "Direct Message",
     "alternatives": ["Dungeon Master", "Data Migration", "Decision Maker"]
+  },
+  "DMA": {
+    "default": "Direct Memory Access",
+    "alternatives": []
   },
   "DNS": {
     "default": "Domain Name System",
@@ -734,6 +762,10 @@
     "default": "Data Protection Officers",
     "alternatives": []
   },
+  "DRAM": {
+    "default": "Dynamic Random Access Memory",
+    "alternatives": []
+  },
   "DRM": {
     "default": "Digital Rights Management",
     "alternatives": []
@@ -753,6 +785,10 @@
   "DSS": {
     "default": "Data Security Standard",
     "alternatives": ["Decision Support System"]
+  },
+  "DVI": {
+    "default": "Digital Visual Interface",
+    "alternatives": []
   },
   "DVLA": {
     "default": "Driver and Vehicle Licensing Agency",
@@ -782,6 +818,10 @@
   "EBITDA": {
     "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
     "alternatives": []
+  },
+  "ECC": {
+    "default": "Error-Correcting Code",
+    "alternatives": ["Error Correction Code"]
   },
   "ECMA": {
     "default": "Ecma International",
@@ -979,6 +1019,10 @@
     "default": "Friendly Local Game Store",
     "alternatives": []
   },
+  "FLOPS": {
+    "default": "Floating-Point Operations Per Second",
+    "alternatives": []
+  },
   "FPS": {
     "default": "Frames Per Second",
     "alternatives": []
@@ -1090,6 +1134,14 @@
   },
   "GUI": {
     "default": "Graphical User Interface",
+    "alternatives": []
+  },
+  "HDD": {
+    "default": "Hard Disk Drive",
+    "alternatives": []
+  },
+  "HDMI": {
+    "default": "High-Definition Multimedia Interface",
     "alternatives": []
   },
   "HDR": {
@@ -1264,6 +1316,10 @@
     "alternatives": [],
     "industry": { "finance": "Indian Rupee" }
   },
+  "IOPS": {
+    "default": "Input/Output Operations Per Second",
+    "alternatives": []
+  },
   "IoC": {
     "default": "Inversion of Control",
     "alternatives": []
@@ -1280,6 +1336,10 @@
   },
   "IPTV": {
     "default": "Internet Protocol Television",
+    "alternatives": []
+  },
+  "IRQ": {
+    "default": "Interrupt Request",
     "alternatives": []
   },
   "IRR": {
@@ -1564,6 +1624,10 @@
     "alternatives": [],
     "industry": { "finance": "Malaysian Ringgit" }
   },
+  "NAND": {
+    "default": "NAND Flash Memory",
+    "alternatives": ["Not AND"]
+  },
   "NAO": {
     "default": "National Audit Office",
     "alternatives": []
@@ -1654,6 +1718,10 @@
   "NPS": {
     "default": "Net Promoter Score",
     "alternatives": ["National Park Service"]
+  },
+  "NPU": {
+    "default": "Neural Processing Unit",
+    "alternatives": []
   },
   "NPV": {
     "default": "Net Present Value",
@@ -1782,6 +1850,10 @@
     "default": "Platform as a Service",
     "alternatives": []
   },
+  "PCB": {
+    "default": "Printed Circuit Board",
+    "alternatives": []
+  },
   "PCI": {
     "default": "Payment Card Industry",
     "alternatives": []
@@ -1855,6 +1927,10 @@
     "default": "Portable Operating System Interface",
     "alternatives": []
   },
+  "POST": {
+    "default": "Power-On Self-Test",
+    "alternatives": []
+  },
   "POTUS": {
     "default": "President of the United States",
     "alternatives": []
@@ -1866,6 +1942,10 @@
   "PR": {
     "default": "Pull Request",
     "alternatives": ["Public Relations", "Performance Review"]
+  },
+  "PSU": {
+    "default": "Power Supply Unit",
+    "alternatives": []
   },
   "PT": {
     "default": "Portugal",
@@ -1919,6 +1999,10 @@
   "RAI": {
     "default": "Rules as Intended",
     "alternatives": []
+  },
+  "RAID": {
+    "default": "Redundant Array of Independent Disks",
+    "alternatives": ["Redundant Array of Inexpensive Disks"]
   },
   "RAM": {
     "default": "Random Access Memory",
@@ -2028,6 +2112,10 @@
     "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
     "industry": { "finance": "Saudi Riyal" }
   },
+  "SATA": {
+    "default": "Serial AT Attachment",
+    "alternatives": ["Serial ATA"]
+  },
   "SCOTUS": {
     "default": "Supreme Court of the United States",
     "alternatives": []
@@ -2101,6 +2189,10 @@
     "default": "Subject Matter Expert",
     "alternatives": ["Small and Medium Enterprise"]
   },
+  "SMT": {
+    "default": "Simultaneous Multithreading",
+    "alternatives": ["Surface Mount Technology"]
+  },
   "SMTP": {
     "default": "Simple Mail Transfer Protocol",
     "alternatives": []
@@ -2147,6 +2239,10 @@
     "default": "Structured Query Language",
     "alternatives": []
   },
+  "SRAM": {
+    "default": "Static Random Access Memory",
+    "alternatives": []
+  },
   "SRD": {
     "default": "System Reference Document",
     "alternatives": []
@@ -2161,6 +2257,10 @@
   },
   "SSA": {
     "default": "Social Security Administration",
+    "alternatives": []
+  },
+  "SSD": {
+    "default": "Solid State Drive",
     "alternatives": []
   },
   "SSG": {
@@ -2251,6 +2351,10 @@
     "default": "Test-Driven Development",
     "alternatives": []
   },
+  "TDP": {
+    "default": "Thermal Design Power",
+    "alternatives": ["Thermal Design Profile"]
+  },
   "TH": {
     "default": "Thailand",
     "alternatives": []
@@ -2282,6 +2386,10 @@
   },
   "TPMs": {
     "default": "Technical Program Managers",
+    "alternatives": []
+  },
+  "TPU": {
+    "default": "Tensor Processing Unit",
     "alternatives": []
   },
   "TR": {
@@ -2348,6 +2456,14 @@
     "default": "User Datagram Protocol",
     "alternatives": []
   },
+  "UEFI": {
+    "default": "Unified Extensible Firmware Interface",
+    "alternatives": []
+  },
+  "UFS": {
+    "default": "Universal Flash Storage",
+    "alternatives": []
+  },
   "UGC": {
     "default": "User-Generated Content",
     "alternatives": []
@@ -2372,6 +2488,10 @@
     "default": "UK Research and Innovation",
     "alternatives": []
   },
+  "UPS": {
+    "default": "Uninterruptible Power Supply",
+    "alternatives": []
+  },
   "URI": {
     "default": "Uniform Resource Identifier",
     "alternatives": []
@@ -2387,6 +2507,10 @@
   "USA": {
     "default": "United States",
     "alternatives": ["United States of America"]
+  },
+  "USB": {
+    "default": "Universal Serial Bus",
+    "alternatives": []
   },
   "USCIS": {
     "default": "United States Citizenship and Immigration Services",
@@ -2423,6 +2547,10 @@
     "alternatives": [],
     "industry": { "finance": "Venture Capitalists" }
   },
+  "VGA": {
+    "default": "Video Graphics Array",
+    "alternatives": ["Video Graphics Adapter"]
+  },
   "VM": {
     "default": "Virtual Machine",
     "alternatives": []
@@ -2455,6 +2583,10 @@
   "VPN": {
     "default": "Virtual Private Network",
     "alternatives": []
+  },
+  "VRAM": {
+    "default": "Video Random Access Memory",
+    "alternatives": ["Video RAM"]
   },
   "WACC": {
     "default": "Weighted Average Cost of Capital",
