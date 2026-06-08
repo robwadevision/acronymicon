@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.5.16
+- Dictionary: added 24 job seeking entries — recruitment tools (ATS, VMS), compensation (COLA, ESOP, ESPP, LTI, LTIP, TC), contracts (MSA, MSP, RPO, SOW), workplace (BYOD, DEI, ERG, HRIS, WLB), credentials (CIPD, SHRM), job ads (CV, EEO, EOE, JD), and interview techniques (STAR)
+- Dictionary: DOE gains "Depends on Experience" as an alternative; FTC gains "Fixed-Term Contract"
+
 ### v1.5.15
 - Dictionary: added 32 mental health entries — conditions (ADD, ADHD, ARFID, ASD, BPD, CPTSD, DID, EUPD, GAD, MDD, OCD, ODD, PMDD, PND, PPD, PTSD, SAD, SPD), therapies (CBT, EMDR, TMS), medications (MAOI, SNRI, SSRI, TCA), services (CAMHS, CMHT, IAPT, MHFA), diagnostic systems (DSM, ICD), and general (MH)
 - Dictionary: DBT gains "Dialectical Behaviour Therapy" as an alternative
