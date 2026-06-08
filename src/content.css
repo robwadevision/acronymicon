@@ -98,13 +98,33 @@
   margin-bottom: 6px;
 }
 
-/* ── Alternative definitions ── */
+/* ── Option items ── */
 .ai-tooltip-alt {
   font-size: 14px;
   color: #ffffff;
   line-height: 1.5;
-  padding: 1px 0;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
+
+/* ── Industry badge ── */
+.ai-tooltip-industry {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ai-tooltip-industry[data-industry="Tech"]    { background: #1e3a8a33; color: #60a5fa; }
+.ai-tooltip-industry[data-industry="Finance"] { background: #78350f33; color: #fbbf24; }
+.ai-tooltip-industry[data-industry="Sports"]  { background: #14532d33; color: #4ade80; }
+.ai-tooltip-industry[data-industry="Medical"] { background: #7f1d1d33; color: #fca5a5; }
 
 /* ── No definition fallback ── */
 .ai-tooltip-nodef {

@@ -71,11 +71,8 @@
 
   function lookup(word) {
     const entry = acronymData[word];
-    if (!entry) return null;
-    return {
-      primary: entry.default,
-      alternatives: (entry.alternatives || []).filter((a) => a !== entry.default)
-    };
+    if (!entry || !entry.definitions) return null;
+    return entry.definitions; // [{ text, industry? }]
   }
 
   // ─── DOM Scanning ─────────────────────────────────────────────────────────
@@ -120,10 +117,13 @@
       matches.push({ word, index: m.index, length: m[0].length });
       if (!trackedHighlights.has(word)) {
         trackedHighlights.add(word);
-        AcronymAnalytics.track(
-          lookup(word) ? "acronym_identified" : "acronym_undefined",
-          { acronym: word }
-        );
+        const definitions = lookup(word);
+        if (definitions) {
+          const industry = definitions[0]?.industry ?? null;
+          AcronymAnalytics.track("acronym_identified", { acronym: word, ...(industry && { industry }) });
+        } else {
+          AcronymAnalytics.track("acronym_undefined", { acronym: word });
+        }
       }
     }
 
@@ -231,7 +231,7 @@
       delete ratings[word];
     } else {
       ratings[word] = vote;
-      const params = { acronym: word, definition: lookup(word)?.primary ?? null };
+      const params = { acronym: word, definition: lookup(word)?.[0]?.text ?? null };
       AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", params);
     }
     chrome.storage.local.set({ acRatings: ratings });
@@ -288,10 +288,22 @@
       altLabel.textContent = "Options";
       box.appendChild(altLabel);
 
-      [result.primary, ...result.alternatives].forEach((opt) => {
+      result.forEach((def) => {
         const optItem = document.createElement("div");
         optItem.className = "ai-tooltip-alt";
-        optItem.textContent = opt;
+
+        const textSpan = document.createElement("span");
+        textSpan.textContent = def.text;
+        optItem.appendChild(textSpan);
+
+        if (def.industry) {
+          const badge = document.createElement("span");
+          badge.className = "ai-tooltip-industry";
+          badge.setAttribute("data-industry", def.industry);
+          badge.textContent = def.industry;
+          optItem.appendChild(badge);
+        }
+
         box.appendChild(optItem);
       });
 
