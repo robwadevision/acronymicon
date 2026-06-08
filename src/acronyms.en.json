@@ -31,6 +31,14 @@
     "alternatives": [],
     "industry": { "finance": "Annual Contract Value" }
   },
+  "ADD": {
+    "default": "Attention Deficit Disorder",
+    "alternatives": []
+  },
+  "ADHD": {
+    "default": "Attention Deficit Hyperactivity Disorder",
+    "alternatives": []
+  },
   "AE": {
     "default": "United Arab Emirates",
     "alternatives": ["Account Executive"]
@@ -61,6 +69,10 @@
     "default": "Ahead-of-Time Compilation",
     "alternatives": ["Ahead-of-Time"]
   },
+  "AP": {
+    "default": "Analysis Paralysis",
+    "alternatives": ["Accounts Payable"]
+  },
   "API": {
     "default": "Application Programming Interface",
     "alternatives": ["Application Program Interface"]
@@ -71,6 +83,10 @@
   },
   "AR": {
     "default": "Argentina",
+    "alternatives": []
+  },
+  "ARFID": {
+    "default": "Avoidant/Restrictive Food Intake Disorder",
     "alternatives": []
   },
   "ARG": {
@@ -92,6 +108,10 @@
   },
   "ASAP": {
     "default": "As Soon As Possible",
+    "alternatives": []
+  },
+  "ASD": {
+    "default": "Autism Spectrum Disorder",
     "alternatives": []
   },
   "AST": {
@@ -176,9 +196,17 @@
     "default": "Belgium",
     "alternatives": []
   },
+  "BGG": {
+    "default": "BoardGameGeek",
+    "alternatives": []
+  },
   "BLS": {
     "default": "Bureau of Labor Statistics",
     "alternatives": []
+  },
+  "BPD": {
+    "default": "Borderline Personality Disorder",
+    "alternatives": ["Bipolar Disorder"]
   },
   "BR": {
     "default": "Brazil",
@@ -215,6 +243,10 @@
     "alternatives": [],
     "industry": { "finance": "Compound Annual Growth Rate" }
   },
+  "CAMHS": {
+    "default": "Child and Adolescent Mental Health Services",
+    "alternatives": []
+  },
   "CAN": {
     "default": "Canada",
     "alternatives": []
@@ -226,6 +258,14 @@
   "CBP": {
     "default": "Customs and Border Protection",
     "alternatives": []
+  },
+  "CBT": {
+    "default": "Cognitive Behavioural Therapy",
+    "alternatives": []
+  },
+  "CCG": {
+    "default": "Collectible Card Game",
+    "alternatives": ["Customisable Card Game"]
   },
   "CCO": {
     "default": "Chief Commercial Officer",
@@ -242,6 +282,10 @@
   },
   "CDC": {
     "default": "Centers for Disease Control and Prevention",
+    "alternatives": []
+  },
+  "CDG": {
+    "default": "Card-Driven Game",
     "alternatives": []
   },
   "CDK": {
@@ -362,6 +406,10 @@
     "default": "Competition and Markets Authority",
     "alternatives": []
   },
+  "CMHT": {
+    "default": "Community Mental Health Team",
+    "alternatives": []
+  },
   "CMO": {
     "default": "Chief Marketing Officer",
     "alternatives": ["Collateralised Mortgage Obligation"],
@@ -386,6 +434,10 @@
   },
   "CO": {
     "default": "Colombia",
+    "alternatives": []
+  },
+  "COIN": {
+    "default": "Counter-Insurgency",
     "alternatives": []
   },
   "COL": {
@@ -432,6 +484,10 @@
   "CPS": {
     "default": "Crown Prosecution Service",
     "alternatives": ["Child Protective Services"]
+  },
+  "CPTSD": {
+    "default": "Complex Post-Traumatic Stress Disorder",
+    "alternatives": []
   },
   "CPU": {
     "default": "Central Processing Unit",
@@ -541,7 +597,7 @@
   },
   "DBT": {
     "default": "Department for Business and Trade",
-    "alternatives": []
+    "alternatives": ["Dialectical Behaviour Therapy"]
   },
   "DCF": {
     "default": "Discounted Cash Flow",
@@ -592,6 +648,10 @@
     "default": "Dependency Injection",
     "alternatives": []
   },
+  "DID": {
+    "default": "Dissociative Identity Disorder",
+    "alternatives": []
+  },
   "DK": {
     "default": "Denmark",
     "alternatives": []
@@ -603,7 +663,7 @@
   },
   "DM": {
     "default": "Direct Message",
-    "alternatives": ["Data Migration", "Decision Maker"]
+    "alternatives": ["Dungeon Master", "Data Migration", "Decision Maker"]
   },
   "DNS": {
     "default": "Domain Name System",
@@ -660,6 +720,10 @@
   },
   "DSIT": {
     "default": "Department for Science, Innovation and Technology",
+    "alternatives": []
+  },
+  "DSM": {
+    "default": "Diagnostic and Statistical Manual",
     "alternatives": []
   },
   "DSS": {
@@ -736,6 +800,10 @@
     "default": "Engineering Managers",
     "alternatives": []
   },
+  "EMDR": {
+    "default": "Eye Movement Desensitisation and Reprocessing",
+    "alternatives": []
+  },
   "EMI": {
     "default": "Enterprise Management Incentive",
     "alternatives": ["Electromagnetic Interference", "Equated Monthly Instalment"]
@@ -788,6 +856,10 @@
   },
   "EU": {
     "default": "European Union",
+    "alternatives": []
+  },
+  "EUPD": {
+    "default": "Emotionally Unstable Personality Disorder",
     "alternatives": []
   },
   "EUR": {
@@ -859,6 +931,10 @@
     "default": "First In, First Out",
     "alternatives": []
   },
+  "FLGS": {
+    "default": "Friendly Local Game Store",
+    "alternatives": []
+  },
   "FPS": {
     "default": "Frames Per Second",
     "alternatives": []
@@ -896,6 +972,10 @@
     "alternatives": [],
     "industry": { "finance": "Generally Accepted Accounting Principles" }
   },
+  "GAD": {
+    "default": "Generalised Anxiety Disorder",
+    "alternatives": []
+  },
   "GAO": {
     "default": "Government Accountability Office",
     "alternatives": []
@@ -932,7 +1012,7 @@
   },
   "GM": {
     "default": "General Manager",
-    "alternatives": []
+    "alternatives": ["Game Master"]
   },
   "GMs": {
     "default": "General Managers",
@@ -1009,6 +1089,10 @@
     "default": "His Majesty's Treasury",
     "alternatives": []
   },
+  "HP": {
+    "default": "Hit Points",
+    "alternatives": ["Hewlett-Packard"]
+  },
   "HR": {
     "default": "Human Resources",
     "alternatives": ["Croatia"]
@@ -1062,6 +1146,10 @@
     "default": "Identity and Access Management",
     "alternatives": []
   },
+  "IAPT": {
+    "default": "Improving Access to Psychological Therapies",
+    "alternatives": []
+  },
   "IC": {
     "default": "Individual Contributor",
     "alternatives": ["Investment Committee", "Integrated Circuit"],
@@ -1069,6 +1157,10 @@
   },
   "ICs": {
     "default": "Individual Contributors",
+    "alternatives": []
+  },
+  "ICD": {
+    "default": "International Classification of Diseases",
     "alternatives": []
   },
   "ICE": {
@@ -1219,6 +1311,10 @@
     "alternatives": [],
     "industry": { "finance": "South Korean Won" }
   },
+  "KS": {
+    "default": "Kickstarter",
+    "alternatives": []
+  },
   "KSA": {
     "default": "Saudi Arabia",
     "alternatives": ["Kingdom of Saudi Arabia"]
@@ -1245,6 +1341,14 @@
     "default": "Leveraged Buyout",
     "alternatives": [],
     "industry": { "finance": "Leveraged Buyout" }
+  },
+  "LCG": {
+    "default": "Living Card Game",
+    "alternatives": []
+  },
+  "LGS": {
+    "default": "Local Game Store",
+    "alternatives": []
   },
   "LGTM": {
     "default": "Looks Good to Me",
@@ -1278,6 +1382,10 @@
     "default": "Lifetime Value",
     "alternatives": ["Long-Term Value", "Loan To Value"]
   },
+  "MAOI": {
+    "default": "Monoamine Oxidase Inhibitor",
+    "alternatives": []
+  },
   "MAU": {
     "default": "Monthly Active Users",
     "alternatives": []
@@ -1300,6 +1408,10 @@
     "default": "Managing Director",
     "alternatives": ["Medical Doctor"]
   },
+  "MDD": {
+    "default": "Major Depressive Disorder",
+    "alternatives": []
+  },
   "MDs": {
     "default": "Managing Directors",
     "alternatives": ["Medical Doctors"]
@@ -1310,6 +1422,14 @@
   },
   "MFA": {
     "default": "Multi-Factor Authentication",
+    "alternatives": []
+  },
+  "MH": {
+    "default": "Mental Health",
+    "alternatives": []
+  },
+  "MHFA": {
+    "default": "Mental Health First Aid",
     "alternatives": []
   },
   "MLOps": {
@@ -1336,6 +1456,14 @@
   },
   "MRR": {
     "default": "Monthly Recurring Revenue",
+    "alternatives": []
+  },
+  "MSRP": {
+    "default": "Manufacturer's Suggested Retail Price",
+    "alternatives": ["Recommended Retail Price"]
+  },
+  "MTG": {
+    "default": "Magic: The Gathering",
     "alternatives": []
   },
   "MVC": {
@@ -1447,6 +1575,10 @@
     "default": "Norway",
     "alternatives": []
   },
+  "NPC": {
+    "default": "Non-Player Character",
+    "alternatives": []
+  },
   "NoSQL": {
     "default": "Not Only SQL",
     "alternatives": []
@@ -1489,6 +1621,14 @@
     "default": "Office for Budget Responsibility",
     "alternatives": []
   },
+  "OCD": {
+    "default": "Obsessive-Compulsive Disorder",
+    "alternatives": []
+  },
+  "ODD": {
+    "default": "Oppositional Defiant Disorder",
+    "alternatives": []
+  },
   "OKR": {
     "default": "Objectives and Key Results",
     "alternatives": []
@@ -1515,7 +1655,7 @@
   },
   "OOP": {
     "default": "Object-Oriented Programming",
-    "alternatives": []
+    "alternatives": ["Out of Print"]
   },
   "OPM": {
     "default": "Office of Personnel Management",
@@ -1532,6 +1672,10 @@
   "OSHA": {
     "default": "Occupational Safety and Health Administration",
     "alternatives": []
+  },
+  "OSR": {
+    "default": "Old School Renaissance",
+    "alternatives": ["Old School Revival"]
   },
   "OSS": {
     "default": "Open Source Software",
@@ -1557,6 +1701,14 @@
   "P&L": {
     "default": "Profit and Loss",
     "alternatives": []
+  },
+  "PBTA": {
+    "default": "Powered by the Apocalypse",
+    "alternatives": []
+  },
+  "PC": {
+    "default": "Personal Computer",
+    "alternatives": ["Player Character"]
   },
   "PaaS": {
     "default": "Platform as a Service",
@@ -1611,9 +1763,17 @@
     "default": "Product Manager",
     "alternatives": ["Project Manager", "Programme Manager", "Private Message"]
   },
+  "PMDD": {
+    "default": "Premenstrual Dysphoric Disorder",
+    "alternatives": []
+  },
   "PMs": {
     "default": "Product Managers",
     "alternatives": ["Project Managers", "Programme Managers"]
+  },
+  "PND": {
+    "default": "Postnatal Depression",
+    "alternatives": []
   },
   "POC": {
     "default": "Proof of Concept",
@@ -1631,6 +1791,10 @@
     "default": "President of the United States",
     "alternatives": []
   },
+  "PPD": {
+    "default": "Postpartum Depression",
+    "alternatives": ["Persistent Depressive Disorder"]
+  },
   "PR": {
     "default": "Pull Request",
     "alternatives": ["Public Relations", "Performance Review"]
@@ -1644,6 +1808,10 @@
     "default": "Paid Time Off",
     "alternatives": []
   },
+  "PTSD": {
+    "default": "Post-Traumatic Stress Disorder",
+    "alternatives": []
+  },
   "PVR": {
     "default": "Personal Video Recorder",
     "alternatives": []
@@ -1651,6 +1819,10 @@
   "PWA": {
     "default": "Progressive Web App",
     "alternatives": ["Progressive Web Application"]
+  },
+  "PnP": {
+    "default": "Print and Play",
+    "alternatives": []
   },
   "QA": {
     "default": "Quality Assurance",
@@ -1676,8 +1848,16 @@
     "alternatives": ["Red, Amber, Green (status)"],
     "industry": { "tech": "Retrieval-Augmented Generation" }
   },
+  "RAI": {
+    "default": "Rules as Intended",
+    "alternatives": []
+  },
   "RAM": {
     "default": "Random Access Memory",
+    "alternatives": []
+  },
+  "RAW": {
+    "default": "Rules as Written",
     "alternatives": []
   },
   "RBAC": {
@@ -1709,6 +1889,10 @@
     "default": "Read-Only Memory",
     "alternatives": ["Range of Motion"],
     "industry": { "pharma": "Range of Motion" }
+  },
+  "RPG": {
+    "default": "Role-Playing Game",
+    "alternatives": []
   },
   "RSU": {
     "default": "Restricted Stock Unit",
@@ -1744,6 +1928,10 @@
     "default": "Saudi Arabia",
     "alternatives": ["South Africa", "Solutions Architect"],
     "industry": { "tech": "Solutions Architect" }
+  },
+  "SAD": {
+    "default": "Seasonal Affective Disorder",
+    "alternatives": ["Social Anxiety Disorder"]
   },
   "SaaS": {
     "default": "Software as a Service",
@@ -1841,6 +2029,10 @@
     "default": "Simple Mail Transfer Protocol",
     "alternatives": []
   },
+  "SNRI": {
+    "default": "Serotonin-Norepinephrine Reuptake Inhibitor",
+    "alternatives": []
+  },
   "SOA": {
     "default": "Service-Oriented Architecture",
     "alternatives": []
@@ -1862,6 +2054,10 @@
     "default": "Single Page Application",
     "alternatives": []
   },
+  "SPD": {
+    "default": "Sensory Processing Disorder",
+    "alternatives": []
+  },
   "SPV": {
     "default": "Special Purpose Vehicle",
     "alternatives": ["Special Purpose Entity"],
@@ -1869,6 +2065,10 @@
   },
   "SQL": {
     "default": "Structured Query Language",
+    "alternatives": []
+  },
+  "SRD": {
+    "default": "System Reference Document",
     "alternatives": []
   },
   "SRE": {
@@ -1901,6 +2101,10 @@
   },
   "SSR": {
     "default": "Server-Side Rendering",
+    "alternatives": []
+  },
+  "SSRI": {
+    "default": "Selective Serotonin Reuptake Inhibitor",
     "alternatives": []
   },
   "STB": {
@@ -1939,6 +2143,14 @@
     "default": "To Be Determined",
     "alternatives": ["To Be Decided", "To Be Defined"]
   },
+  "TCA": {
+    "default": "Tricyclic Antidepressant",
+    "alternatives": []
+  },
+  "TCG": {
+    "default": "Trading Card Game",
+    "alternatives": []
+  },
   "TCP": {
     "default": "Transmission Control Protocol",
     "alternatives": []
@@ -1972,6 +2184,10 @@
     "default": "Transport Layer Security",
     "alternatives": []
   },
+  "TMS": {
+    "default": "Transcranial Magnetic Stimulation",
+    "alternatives": []
+  },
   "TPM": {
     "default": "Technical Program Manager",
     "alternatives": ["Trusted Platform Module"]
@@ -1991,6 +2207,14 @@
   },
   "TSA": {
     "default": "Transportation Security Administration",
+    "alternatives": []
+  },
+  "TTRPG": {
+    "default": "Tabletop Role-Playing Game",
+    "alternatives": []
+  },
+  "TTS": {
+    "default": "Tabletop Simulator",
     "alternatives": []
   },
   "TUR": {
@@ -2130,7 +2354,7 @@
   },
   "VP": {
     "default": "Vice President",
-    "alternatives": []
+    "alternatives": ["Victory Points"]
   },
   "VPs": {
     "default": "Vice Presidents",
@@ -2157,9 +2381,17 @@
     "default": "Work From Home",
     "alternatives": []
   },
+  "WoTC": {
+    "default": "Wizards of the Coast",
+    "alternatives": []
+  },
   "XML": {
     "default": "Extensible Markup Language",
     "alternatives": []
+  },
+  "XP": {
+    "default": "Experience Points",
+    "alternatives": ["Extreme Programming"]
   },
   "XSS": {
     "default": "Cross-Site Scripting",

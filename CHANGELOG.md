@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.5.15
+- Dictionary: added 32 mental health entries — conditions (ADD, ADHD, ARFID, ASD, BPD, CPTSD, DID, EUPD, GAD, MDD, OCD, ODD, PMDD, PND, PPD, PTSD, SAD, SPD), therapies (CBT, EMDR, TMS), medications (MAOI, SNRI, SSRI, TCA), services (CAMHS, CMHT, IAPT, MHFA), diagnostic systems (DSM, ICD), and general (MH)
+- Dictionary: DBT gains "Dialectical Behaviour Therapy" as an alternative
+
+### v1.5.14
+- Dictionary: added 26 board game and tabletop entries — community (BGG, FLGS, KS, LGS, MSRP, PnP, TTS), card games (CCG, LCG, MTG, TCG), board game mechanisms (AP, CDG, COIN), RPG (NPC, OSR, PBTA, RAI, RAW, RPG, SRD, TTRPG, WoTC, XP), and general (HP, PC)
+- Dictionary: DM gains "Dungeon Master", GM gains "Game Master", OOP gains "Out of Print", VP gains "Victory Points" as alternatives
+
 ### v1.5.13
 - Dictionary: added 36 media and streaming terms — delivery protocols (ABR, DASH, HLS, RTMP, RTSP), business models (AVOD, FAST, OTT, SVOD, TVOD, VOD), platforms (CTV, IPTV, STB), content protection (DRM), video (AVC, DVR, EPG, FPS, HDR, HEVC, PVR, UHD), advertising (CPA, CPC, CPM, CTR, DAI, VAST), and general (DAU, FTA, MAU, MCN, UGC)
 - Dictionary: SDR gains "Standard Dynamic Range" as an alternative
