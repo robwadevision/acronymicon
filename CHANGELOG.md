@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.5.18
+- Tooltip: all definitions now shown in a flat "Options" list — primary definition included in the list rather than displayed separately above
+- Tooltip: removed "Most likely meaning" / "Most likely in X context" label; removed "Also means" label (replaced by "Options")
+- Popup: removed the industry-context badge from the header
+- Removed page-context (industry) detection entirely — no longer scans page text on load
+
 ### v1.5.17
 - Dictionary: added 33 computer hardware and component entries — storage (HDD, RAID, SATA, SSD), flash memory (NAND, UFS), memory (DDR, DIMM, DRAM, ECC, SRAM, VRAM), processors (APU, NPU, TPU), connectivity (HDMI, USB, VGA, DVI), expansion (PCB), firmware (BIOS, CMOS, POST, UEFI, ACPI), power (PSU, TDP, TDP, UPS), and performance (FLOPS, IOPS, DMA, IRQ, SMT)
 

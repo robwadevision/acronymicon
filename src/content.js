@@ -10,7 +10,6 @@
   // ─── State ────────────────────────────────────────────────────────────────
 
   let acronymData = {};
-  let detectedIndustry = "default";
   let activeTooltip = null;
   let activeSpan = null;
   let isEnabled = true;
@@ -33,27 +32,6 @@
     "SVG", "MATH", "CANVAS"
   ]);
 
-  const INDUSTRY_KEYWORDS = {
-    tech: [
-      "saas", "api", "cloud", "devops", "kubernetes", "docker", "microservice",
-      "backend", "frontend", "fullstack", "full-stack", "software engineer",
-      "typescript", "javascript", "python", "golang", "terraform", "github",
-      "aws", "gcp", "azure", "machine learning", "llm", "data engineer"
-    ],
-    finance: [
-      "investment", "portfolio", "equity", "hedge fund", "trading", "derivatives",
-      "asset management", "compliance", "regulatory", "basel", "ifrs", "gaap"
-    ],
-    pharma: [
-      "clinical", "regulatory", "fda", "ema", "phase ii", "trial", "pharmacology",
-      "biotech", "drug", "therapeutics", "gcp", "ich", "protocol"
-    ],
-    hr: [
-      "talent acquisition", "people operations", "hrbp", "onboarding",
-      "employee experience", "compensation", "benefits", "learning and development"
-    ]
-  };
-
   // ─── Init ─────────────────────────────────────────────────────────────────
 
   async function init() {
@@ -62,7 +40,6 @@
     AcronymAnalytics.setUserProperty("dictionary_language", acLang);
 
     acronymData = await loadAcronymData(acLang);
-    detectedIndustry = detectIndustry();
 
     const { acRatings = {} } = await chrome.storage.local.get("acRatings");
     ratings = acRatings;
@@ -90,29 +67,14 @@
     }
   }
 
-  // ─── Industry Detection ───────────────────────────────────────────────────
-
-  function detectIndustry() {
-    const pageText = (document.body?.innerText || "").toLowerCase().slice(0, 8000);
-    for (const [industry, keywords] of Object.entries(INDUSTRY_KEYWORDS)) {
-      const hits = keywords.filter((kw) => pageText.includes(kw)).length;
-      if (hits >= 2) return industry;
-    }
-    return "default";
-  }
-
   // ─── Lookup ───────────────────────────────────────────────────────────────
 
   function lookup(word) {
     const entry = acronymData[word];
     if (!entry) return null;
-    let primary = entry.default;
-    if (entry.industry && entry.industry[detectedIndustry]) {
-      primary = entry.industry[detectedIndustry];
-    }
     return {
-      primary,
-      alternatives: (entry.alternatives || []).filter((a) => a !== primary)
+      primary: entry.default,
+      alternatives: (entry.alternatives || []).filter((a) => a !== entry.default)
     };
   }
 
@@ -317,35 +279,21 @@
     box.appendChild(wordLabel);
 
     if (result) {
-      const primary = document.createElement("div");
-      primary.className = "ai-tooltip-primary";
-      primary.textContent = result.primary;
-      box.appendChild(primary);
+      const divider = document.createElement("hr");
+      divider.className = "ai-tooltip-divider";
+      box.appendChild(divider);
 
-      const contextLabel = document.createElement("div");
-      contextLabel.className = "ai-tooltip-context";
-      contextLabel.textContent = detectedIndustry !== "default"
-        ? `Most likely in ${detectedIndustry} context`
-        : "Most likely meaning";
-      box.appendChild(contextLabel);
+      const altLabel = document.createElement("div");
+      altLabel.className = "ai-tooltip-alt-label";
+      altLabel.textContent = "Options";
+      box.appendChild(altLabel);
 
-      if (result.alternatives.length > 0) {
-        const divider = document.createElement("hr");
-        divider.className = "ai-tooltip-divider";
-        box.appendChild(divider);
-
-        const altLabel = document.createElement("div");
-        altLabel.className = "ai-tooltip-alt-label";
-        altLabel.textContent = "Also means";
-        box.appendChild(altLabel);
-
-        result.alternatives.forEach((alt) => {
-          const altItem = document.createElement("div");
-          altItem.className = "ai-tooltip-alt";
-          altItem.textContent = alt;
-          box.appendChild(altItem);
-        });
-      }
+      [result.primary, ...result.alternatives].forEach((opt) => {
+        const optItem = document.createElement("div");
+        optItem.className = "ai-tooltip-alt";
+        optItem.textContent = opt;
+        box.appendChild(optItem);
+      });
 
       const ratingRow = document.createElement("div");
       ratingRow.className = "ai-tooltip-rating";
@@ -441,7 +389,7 @@
         if (lookup(s.getAttribute(TOOLTIP_ANCHOR_ATTR))) defined++;
       });
       const dictionarySize = Object.keys(acronymData).filter(k => k !== "_meta").length;
-      sendResponse({ identified: spans.length, defined, industry: detectedIndustry, dictionarySize });
+      sendResponse({ identified: spans.length, defined, dictionarySize });
     }
 
     return true;

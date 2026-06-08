@@ -2480,6 +2480,10 @@
     "default": "UK Health Security Agency",
     "alternatives": []
   },
+  "UKPW": {
+    "default": "UK Parliament Week",
+    "alternatives": ["United Kingdom Professional Wrestling", "United Kingdom Parliament Week"]
+  },
   "UKR": {
     "default": "Ukraine",
     "alternatives": []
