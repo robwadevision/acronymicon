@@ -273,23 +273,26 @@
 
   // ─── Ratings ──────────────────────────────────────────────────────────────
 
-  function saveRating(word, vote) {
+  function saveRating(word, defText, vote) {
     if (!chrome.runtime?.id) return;
-    if (ratings[word] === vote) {
-      delete ratings[word];
+    const key = word + "||" + defText;
+    if (ratings[key] === vote) {
+      delete ratings[key];
     } else {
-      ratings[word] = vote;
-      const params = { acronym: word, definition: lookup(word)?.[0]?.text ?? null };
-      AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", params);
+      ratings[key] = vote;
+      AcronymAnalytics.track(vote === "up" ? "rating_helpful" : "rating_not_helpful", { acronym: word, definition: defText });
     }
     chrome.storage.local.set({ acRatings: ratings });
-    updateRatingButtons(word);
+    updateRatingButtons(word, defText);
   }
 
-  function updateRatingButtons(word) {
+  function updateRatingButtons(word, defText) {
     if (!activeTooltip) return;
+    const key = word + "||" + defText;
     activeTooltip.querySelectorAll(".ai-rating-btn").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.vote === ratings[word]);
+      if (btn.dataset.acWord === word && btn.dataset.acDef === defText) {
+        btn.classList.toggle("active", btn.dataset.vote === ratings[key]);
+      }
     });
   }
 
@@ -361,6 +364,7 @@
         optItem.className = 'ai-tooltip-alt';
 
         const textSpan = document.createElement('span');
+        textSpan.className = 'ai-tooltip-def-text';
         textSpan.textContent = def.text;
         optItem.appendChild(textSpan);
 
@@ -372,29 +376,22 @@
           optItem.appendChild(badge);
         }
 
+        ['up', 'down'].forEach((vote) => {
+          const btn = document.createElement('button');
+          btn.className = 'ai-rating-btn';
+          btn.dataset.vote = vote;
+          btn.dataset.acWord = word;
+          btn.dataset.acDef = def.text;
+          btn.textContent = vote === 'up' ? '👍' : '👎';
+          btn.setAttribute('aria-label', vote === 'up' ? 'Helpful' : 'Not helpful');
+          const key = word + '||' + def.text;
+          if (ratings[key] === vote) btn.classList.add('active');
+          btn.addEventListener('click', (e) => { e.stopPropagation(); saveRating(word, def.text, vote); });
+          optItem.appendChild(btn);
+        });
+
         box.appendChild(optItem);
       });
-
-      const ratingRow = document.createElement("div");
-      ratingRow.className = "ai-tooltip-rating";
-
-      const ratingLabel = document.createElement("span");
-      ratingLabel.className = "ai-tooltip-rating-label";
-      ratingLabel.textContent = "Helpful?";
-      ratingRow.appendChild(ratingLabel);
-
-      ["up", "down"].forEach((vote) => {
-        const btn = document.createElement("button");
-        btn.className = "ai-rating-btn";
-        btn.dataset.vote = vote;
-        btn.textContent = vote === "up" ? "👍" : "👎";
-        btn.setAttribute("aria-label", vote === "up" ? "Helpful" : "Not helpful");
-        if (ratings[word] === vote) btn.classList.add("active");
-        btn.addEventListener("click", (e) => { e.stopPropagation(); saveRating(word, vote); });
-        ratingRow.appendChild(btn);
-      });
-
-      box.appendChild(ratingRow);
     } else {
       const nodef = document.createElement("div");
       nodef.className = "ai-tooltip-nodef";

@@ -109,6 +109,11 @@
   gap: 7px;
 }
 
+/* ── Option item text ── */
+.ai-tooltip-def-text {
+  flex: 1;
+}
+
 /* ── Industry badge ── */
 .ai-tooltip-industry {
   font-size: 9px;
