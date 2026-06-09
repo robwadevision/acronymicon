@@ -657,6 +657,14 @@
       }
     ]
   },
+  "CAM": {
+    "definitions": [
+      {
+        "text": "Central Attacking Midfielder",
+        "industry": "Sports"
+      }
+    ]
+  },
   "CAMHS": {
     "definitions": [
       {
@@ -670,6 +678,18 @@
       {
         "text": "Canada",
         "industry": "Geography"
+      }
+    ]
+  },
+  "CB": {
+    "definitions": [
+      {
+        "text": "Cornerback",
+        "industry": "Sports"
+      },
+      {
+        "text": "Centre Back",
+        "industry": "Sports"
       }
     ]
   },
@@ -781,6 +801,14 @@
       }
     ]
   },
+  "CDM": {
+    "definitions": [
+      {
+        "text": "Central Defensive Midfielder",
+        "industry": "Sports"
+      }
+    ]
+  },
   "CDN": {
     "definitions": [
       {
@@ -838,6 +866,18 @@
       {
         "text": "Chief Executive Officers",
         "industry": "Business"
+      }
+    ]
+  },
+  "CF": {
+    "definitions": [
+      {
+        "text": "Centre Forward",
+        "industry": "Sports"
+      },
+      {
+        "text": "Center Fielder",
+        "industry": "Sports"
       }
     ]
   },
@@ -1034,6 +1074,14 @@
       {
         "text": "Chilean Peso",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "CM": {
+    "definitions": [
+      {
+        "text": "Central Midfielder",
+        "industry": "Sports"
       }
     ]
   },
@@ -1614,6 +1662,10 @@
       {
         "text": "Germany",
         "industry": "Geography"
+      },
+      {
+        "text": "Defensive End",
+        "industry": "Sports"
       }
     ]
   },
@@ -1638,6 +1690,14 @@
       {
         "text": "Diversity, Equity, and Inclusion",
         "industry": "General"
+      }
+    ]
+  },
+  "DH": {
+    "definitions": [
+      {
+        "text": "Designated Hitter",
+        "industry": "Sports"
       }
     ]
   },
@@ -1906,6 +1966,14 @@
       {
         "text": "Decision Support System",
         "industry": "Tech"
+      }
+    ]
+  },
+  "DT": {
+    "definitions": [
+      {
+        "text": "Defensive Tackle",
+        "industry": "Sports"
       }
     ]
   },
@@ -2473,6 +2541,14 @@
       }
     ]
   },
+  "FH": {
+    "definitions": [
+      {
+        "text": "Fly Half",
+        "industry": "Sports"
+      }
+    ]
+  },
   "FI": {
     "definitions": [
       {
@@ -2501,6 +2577,14 @@
     "definitions": [
       {
         "text": "Fédération Internationale de Ski",
+        "industry": "Sports"
+      }
+    ]
+  },
+  "FL": {
+    "definitions": [
+      {
+        "text": "Flanker",
         "industry": "Sports"
       }
     ]
@@ -2546,6 +2630,14 @@
       {
         "text": "France",
         "industry": "Geography"
+      }
+    ]
+  },
+  "FS": {
+    "definitions": [
+      {
+        "text": "Free Safety",
+        "industry": "Sports"
       }
     ]
   },
@@ -2718,6 +2810,14 @@
       {
         "text": "General Data Protection Regulation",
         "industry": "General"
+      }
+    ]
+  },
+  "GK": {
+    "definitions": [
+      {
+        "text": "Goalkeeper",
+        "industry": "Sports"
       }
     ]
   },
@@ -3601,6 +3701,18 @@
       }
     ]
   },
+  "LB": {
+    "definitions": [
+      {
+        "text": "Linebacker",
+        "industry": "Sports"
+      },
+      {
+        "text": "Left Back",
+        "industry": "Sports"
+      }
+    ]
+  },
   "LBO": {
     "definitions": [
       {
@@ -3614,6 +3726,14 @@
       {
         "text": "Living Card Game",
         "industry": "Gaming"
+      }
+    ]
+  },
+  "LF": {
+    "definitions": [
+      {
+        "text": "Left Fielder",
+        "industry": "Sports"
       }
     ]
   },
@@ -3662,6 +3782,14 @@
       {
         "text": "Large Language Models",
         "industry": "Tech"
+      }
+    ]
+  },
+  "LM": {
+    "definitions": [
+      {
+        "text": "Left Midfielder",
+        "industry": "Sports"
       }
     ]
   },
@@ -3726,6 +3854,14 @@
       {
         "text": "Loan To Value",
         "industry": "Finance"
+      }
+    ]
+  },
+  "LW": {
+    "definitions": [
+      {
+        "text": "Left Wing",
+        "industry": "Sports"
       }
     ]
   },
@@ -4473,6 +4609,14 @@
       }
     ]
   },
+  "OT": {
+    "definitions": [
+      {
+        "text": "Offensive Tackle",
+        "industry": "Sports"
+      }
+    ]
+  },
   "OTC": {
     "definitions": [
       {
@@ -4586,6 +4730,22 @@
       {
         "text": "Price/Earnings to Growth",
         "industry": "Finance"
+      }
+    ]
+  },
+  "PF": {
+    "definitions": [
+      {
+        "text": "Power Forward",
+        "industry": "Sports"
+      }
+    ]
+  },
+  "PG": {
+    "definitions": [
+      {
+        "text": "Point Guard",
+        "industry": "Sports"
       }
     ]
   },
@@ -4913,6 +5073,14 @@
       }
     ]
   },
+  "QB": {
+    "definitions": [
+      {
+        "text": "Quarterback",
+        "industry": "Sports"
+      }
+    ]
+  },
   "QBR": {
     "definitions": [
       {
@@ -4981,6 +5149,14 @@
       }
     ]
   },
+  "RB": {
+    "definitions": [
+      {
+        "text": "Running Back",
+        "industry": "Sports"
+      }
+    ]
+  },
   "RBAC": {
     "definitions": [
       {
@@ -5013,6 +5189,14 @@
       }
     ]
   },
+  "RF": {
+    "definitions": [
+      {
+        "text": "Right Fielder",
+        "industry": "Sports"
+      }
+    ]
+  },
   "RFC": {
     "definitions": [
       {
@@ -5022,6 +5206,14 @@
       {
         "text": "Request for Change",
         "industry": "Tech"
+      }
+    ]
+  },
+  "RM": {
+    "definitions": [
+      {
+        "text": "Right Midfielder",
+        "industry": "Sports"
       }
     ]
   },
@@ -5058,6 +5250,14 @@
       {
         "text": "Range of Motion",
         "industry": "Medical"
+      }
+    ]
+  },
+  "RP": {
+    "definitions": [
+      {
+        "text": "Relief Pitcher",
+        "industry": "Sports"
       }
     ]
   },
@@ -5138,6 +5338,14 @@
       {
         "text": "Russia",
         "industry": "Geography"
+      }
+    ]
+  },
+  "RW": {
+    "definitions": [
+      {
+        "text": "Right Wing",
+        "industry": "Sports"
       }
     ]
   },
@@ -5321,6 +5529,14 @@
       }
     ]
   },
+  "SF": {
+    "definitions": [
+      {
+        "text": "Small Forward",
+        "industry": "Sports"
+      }
+    ]
+  },
   "SFTP": {
     "definitions": [
       {
@@ -5338,6 +5554,10 @@
       {
         "text": "Singapore",
         "industry": "Geography"
+      },
+      {
+        "text": "Shooting Guard",
+        "industry": "Sports"
       }
     ]
   },
@@ -5346,6 +5566,14 @@
       {
         "text": "Singapore Dollar",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "SH": {
+    "definitions": [
+      {
+        "text": "Scrum Half",
+        "industry": "Sports"
       }
     ]
   },
@@ -5521,6 +5749,14 @@
       }
     ]
   },
+  "SP": {
+    "definitions": [
+      {
+        "text": "Starting Pitcher",
+        "industry": "Sports"
+      }
+    ]
+  },
   "SPA": {
     "definitions": [
       {
@@ -5593,6 +5829,18 @@
       }
     ]
   },
+  "SS": {
+    "definitions": [
+      {
+        "text": "Strong Safety",
+        "industry": "Sports"
+      },
+      {
+        "text": "Shortstop",
+        "industry": "Sports"
+      }
+    ]
+  },
   "SSA": {
     "definitions": [
       {
@@ -5658,6 +5906,14 @@
       {
         "text": "Selective Serotonin Reuptake Inhibitor",
         "industry": "Medical"
+      }
+    ]
+  },
+  "ST": {
+    "definitions": [
+      {
+        "text": "Striker",
+        "industry": "Sports"
       }
     ]
   },
@@ -5826,6 +6082,14 @@
       {
         "text": "Thermal Design Profile",
         "industry": "Tech"
+      }
+    ]
+  },
+  "TE": {
+    "definitions": [
+      {
+        "text": "Tight End",
+        "industry": "Sports"
       }
     ]
   },
@@ -6422,6 +6686,14 @@
       {
         "text": "Work-Life Balance",
         "industry": "General"
+      }
+    ]
+  },
+  "WR": {
+    "definitions": [
+      {
+        "text": "Wide Receiver",
+        "industry": "Sports"
       }
     ]
   },
