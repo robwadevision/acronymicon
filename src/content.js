@@ -18,6 +18,7 @@
   let closeTimer = null;
   let ratings = {};
   const trackedHighlights = new Set();
+  let pageIndustry = null;
 
   // ─── Constants ────────────────────────────────────────────────────────────
 
@@ -40,6 +41,7 @@
     AcronymAnalytics.setUserProperty("dictionary_language", acLang);
 
     acronymData = await loadAcronymData(acLang);
+    pageIndustry = detectPageIndustry();
 
     const { acRatings = {} } = await chrome.storage.local.get("acRatings");
     ratings = acRatings;
@@ -73,6 +75,52 @@
     const entry = acronymData[word];
     if (!entry || !entry.definitions) return null;
     return entry.definitions; // [{ text, industry? }]
+  }
+
+  // ─── Page Context ─────────────────────────────────────────────────────────────────────────────
+
+  function detectPageIndustry() {
+    const text = (document.body?.innerText ?? '').slice(0, 50000).toLowerCase();
+
+    const SIGNALS = {
+      Tech:       ['javascript', 'typescript', 'python', 'software engineer', 'developer',
+                   'api', 'cloud', 'devops', 'repository', 'frontend', 'backend', 'microservice'],
+      Finance:    ['investment', 'portfolio', 'equity', 'hedge fund', 'dividend',
+                   'balance sheet', 'asset management', 'shareholder', 'capital markets'],
+      Medical:    ['patient', 'clinical', 'diagnosis', 'hospital', 'physician',
+                   'prescription', 'surgery', 'healthcare', 'treatment plan'],
+      Business:   ['go-to-market', 'stakeholder', 'performance review', 'hiring manager',
+                   'executive team', 'board of directors', 'revenue target', 'corporate strategy'],
+      Government: ['legislation', 'parliament', 'congress', 'minister', 'public sector',
+                   'federal', 'regulatory', 'government department'],
+      Media:      ['streaming', 'broadcast', 'editorial', 'newsroom',
+                   'podcast', 'subscriber', 'content creator', 'publishing'],
+      Gaming:     ['gameplay', 'multiplayer', 'dungeon', 'esports',
+                   'speedrun', 'loot', 'respawn', 'leaderboard'],
+      Sports:     ['fixture', 'league table', 'championship', 'transfer window',
+                   'referee', 'squad', 'match report'],
+      Science:    ['peer review', 'hypothesis', 'laboratory', 'experiment',
+                   'methodology', 'findings', 'clinical study'],
+      Work:       ['job posting', 'job description', 'recruitment', 'candidate',
+                   'salary', 'interview', 'payroll', 'resignation', 'hiring'],
+    };
+
+    let best = null;
+    let bestScore = 0;
+    let secondScore = 0;
+
+    for (const [industry, signals] of Object.entries(SIGNALS)) {
+      const score = signals.reduce((n, s) => n + (text.includes(s) ? 1 : 0), 0);
+      if (score > bestScore) {
+        secondScore = bestScore;
+        bestScore = score;
+        best = industry;
+      } else if (score > secondScore) {
+        secondScore = score;
+      }
+    }
+
+    return bestScore >= 2 && bestScore > secondScore ? best : null;
   }
 
   // ─── DOM Scanning ─────────────────────────────────────────────────────────
@@ -279,27 +327,47 @@
     box.appendChild(wordLabel);
 
     if (result) {
-      const divider = document.createElement("hr");
-      divider.className = "ai-tooltip-divider";
+      const matchedDef = pageIndustry
+        ? (result.find(d => d.industry === pageIndustry) ?? null)
+        : null;
+
+      if (matchedDef) {
+        const primaryLabel = document.createElement('div');
+        primaryLabel.className = 'ai-tooltip-primary-label';
+        primaryLabel.textContent = 'Most likely';
+        box.appendChild(primaryLabel);
+
+        const primaryItem = document.createElement('div');
+        primaryItem.className = 'ai-tooltip-primary';
+        primaryItem.textContent = matchedDef.text;
+        box.appendChild(primaryItem);
+      }
+
+      const divider = document.createElement('hr');
+      divider.className = 'ai-tooltip-divider';
       box.appendChild(divider);
 
-      const altLabel = document.createElement("div");
-      altLabel.className = "ai-tooltip-alt-label";
-      altLabel.textContent = "Options";
+      const altLabel = document.createElement('div');
+      altLabel.className = 'ai-tooltip-alt-label';
+      altLabel.textContent = 'Options';
       box.appendChild(altLabel);
 
-      result.forEach((def) => {
-        const optItem = document.createElement("div");
-        optItem.className = "ai-tooltip-alt";
+      const orderedDefs = matchedDef
+        ? [...result.filter(d => d !== matchedDef), matchedDef]
+        : result;
 
-        const textSpan = document.createElement("span");
+      orderedDefs.forEach((def) => {
+        const optItem = document.createElement('div');
+        optItem.className = 'ai-tooltip-alt';
+
+        const textSpan = document.createElement('span');
         textSpan.textContent = def.text;
         optItem.appendChild(textSpan);
 
         if (def.industry) {
-          const badge = document.createElement("span");
-          badge.className = "ai-tooltip-industry";
-          badge.setAttribute("data-industry", def.industry);
+          const badge = document.createElement('span');
+          badge.className = 'ai-tooltip-industry';
+          badge.setAttribute('data-industry', def.industry);
           badge.textContent = def.industry;
           optItem.appendChild(badge);
         }

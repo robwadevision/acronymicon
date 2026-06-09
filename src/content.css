@@ -121,10 +121,41 @@
   flex-shrink: 0;
 }
 
-.ai-tooltip-industry[data-industry="Tech"]    { background: #1e3a8a33; color: #60a5fa; }
-.ai-tooltip-industry[data-industry="Finance"] { background: #78350f33; color: #fbbf24; }
-.ai-tooltip-industry[data-industry="Sports"]  { background: #14532d33; color: #4ade80; }
-.ai-tooltip-industry[data-industry="Medical"] { background: #7f1d1d33; color: #fca5a5; }
+.ai-tooltip-industry[data-industry="Tech"]       { background: #1e3a8a33; color: #60a5fa; }
+.ai-tooltip-industry[data-industry="Finance"]    { background: #78350f33; color: #fbbf24; }
+.ai-tooltip-industry[data-industry="Sports"]     { background: #14532d33; color: #4ade80; }
+.ai-tooltip-industry[data-industry="Medical"]    { background: #7f1d1d33; color: #fca5a5; }
+.ai-tooltip-industry[data-industry="Business"]   { background: #3b0764aa; color: #d8b4fe; }
+.ai-tooltip-industry[data-industry="Currencies"] { background: #78350f55; color: #fde68a; }
+.ai-tooltip-industry[data-industry="Gaming"]     { background: #052e1633; color: #86efac; }
+.ai-tooltip-industry[data-industry="General"]    { background: #1e293b55; color: #cbd5e1; }
+.ai-tooltip-industry[data-industry="Geography"]  { background: #0c4a6e33; color: #7dd3fc; }
+.ai-tooltip-industry[data-industry="Government"] { background: #1e1b4b33; color: #a5b4fc; }
+.ai-tooltip-industry[data-industry="Media"]      { background: #7c2d1233; color: #fdba74; }
+.ai-tooltip-industry[data-industry="Science"]    { background: #134e4a33; color: #5eead4; }
+.ai-tooltip-industry[data-industry="Work"]       { background: #1c1917aa; color: #d4d4d4; }
+
+/* ── "Most likely" primary match ── */
+.ai-tooltip-primary-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.ai-tooltip-primary {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #2d1b5e;
+  border: 1px solid #4c2889;
+  border-radius: 6px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
 
 /* ── No definition fallback ── */
 .ai-tooltip-nodef {
