@@ -1,5 +1,11 @@
 # Changelog
 
+### v1.6.0
+- Dictionary: all definitions now carry an `industry` tag — 100% coverage across 13 categories: `Business`, `Currencies`, `Finance`, `Gaming`, `General`, `Geography`, `Government`, `Media`, `Medical`, `Science`, `Sports`, `Tech`, `Work`
+- Added 9 new categories beyond the original `Tech`, `Finance`, `Medical`, `Sports`: `Business` (job titles, HR, strategy), `Currencies` (ISO 4217 codes), `Gaming`, `General` (cross-industry terms), `Geography` (country codes, place names), `Government` (agencies, departments), `Media` (streaming, broadcasting), `Science`, `Work` (employment law, professional bodies)
+- Added `scripts/list-untagged.js` — developer utility that scans the dictionary and regenerates `UNTAGGED.md` with any definitions missing an industry tag
+- Added `UNTAGGED.md` — tracked list of untagged definitions for use during categorisation
+
 ### v1.5.18
 - Tooltip: all definitions now shown in a flat "Options" list — primary definition included in the list rather than displayed separately above
 - Tooltip: removed "Most likely meaning" / "Most likely in X context" label; removed "Also means" label (replaced by "Options")

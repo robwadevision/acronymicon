@@ -12,7 +12,7 @@ A lightweight browser extension that detects acronyms on web pages — especiall
 - **Hover to reveal** — tooltip opens on mouseover; no click required (works correctly inside hyperlinks)
 - **MutationObserver** — catches dynamically loaded content (LinkedIn, Greenhouse, SPAs, infinite scroll)
 - Shows primary meaning instantly, with alternatives
-- Detects industry context (Tech, Finance, Medical, Sports, Government, Media, General) to surface the most relevant definition
+- Industry-tagged definitions — every entry is labelled with one of 13 categories (`Business`, `Currencies`, `Finance`, `Gaming`, `General`, `Geography`, `Government`, `Media`, `Medical`, `Science`, `Sports`, `Tech`, `Work`) for richer context
 - **Rate definitions** — 👍 / 👎 feedback per acronym, stored locally
 - **Multi-language ready** — drop in `src/acronyms.<lang>.json` to add a language
 - Dark mode support
