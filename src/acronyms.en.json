@@ -25,6 +25,14 @@
       }
     ]
   },
+  "AAC": {
+    "definitions": [
+      {
+        "text": "Advanced Audio Coding",
+        "industry": "Tech"
+      }
+    ]
+  },
   "ABR": {
     "definitions": [
       {
@@ -82,6 +90,14 @@
       {
         "text": "Audiobook Creation Exchange",
         "industry": "Media"
+      }
+    ]
+  },
+  "ADC": {
+    "definitions": [
+      {
+        "text": "Analogue to Digital Converter",
+        "industry": "Tech"
       }
     ]
   },
@@ -161,6 +177,14 @@
       }
     ]
   },
+  "ALAC": {
+    "definitions": [
+      {
+        "text": "Apple Lossless Audio Codec",
+        "industry": "Tech"
+      }
+    ]
+  },
   "AM": {
     "definitions": [
       {
@@ -185,6 +209,14 @@
       }
     ]
   },
+  "AMOLED": {
+    "definitions": [
+      {
+        "text": "Active Matrix Organic Light Emitting Diode",
+        "industry": "Tech"
+      }
+    ]
+  },
   "AMS": {
     "definitions": [
       {
@@ -206,6 +238,14 @@
       {
         "text": "African National Congress",
         "industry": "Government"
+      }
+    ]
+  },
+  "AOD": {
+    "definitions": [
+      {
+        "text": "Always On Display",
+        "industry": "Tech"
       }
     ]
   },
@@ -266,6 +306,14 @@
       {
         "text": "Argentina",
         "industry": "Geography"
+      }
+    ]
+  },
+  "ARC": {
+    "definitions": [
+      {
+        "text": "Audio Return Channel",
+        "industry": "Tech"
       }
     ]
   },
@@ -850,6 +898,14 @@
       {
         "text": "Credit Default Swap",
         "industry": "Finance"
+      }
+    ]
+  },
+  "CEC": {
+    "definitions": [
+      {
+        "text": "Consumer Electronics Control",
+        "industry": "Tech"
       }
     ]
   },
@@ -1545,6 +1601,14 @@
       }
     ]
   },
+  "CVBS": {
+    "definitions": [
+      {
+        "text": "Composite Video Baseband Signal",
+        "industry": "Tech"
+      }
+    ]
+  },
   "CX": {
     "definitions": [
       {
@@ -1570,6 +1634,14 @@
       {
         "text": "Czech Koruna",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "DAC": {
+    "definitions": [
+      {
+        "text": "Digital to Analogue Converter",
+        "industry": "Tech"
       }
     ]
   },
@@ -1630,6 +1702,14 @@
       {
         "text": "Discounted Cash Flow",
         "industry": "Finance"
+      }
+    ]
+  },
+  "DCI": {
+    "definitions": [
+      {
+        "text": "Digital Cinema Initiatives",
+        "industry": "Tech"
       }
     ]
   },
@@ -1889,6 +1969,14 @@
       }
     ]
   },
+  "DP": {
+    "definitions": [
+      {
+        "text": "DisplayPort",
+        "industry": "Tech"
+      }
+    ]
+  },
   "DPI": {
     "definitions": [
       {
@@ -1954,6 +2042,14 @@
       {
         "text": "Diagnostic and Statistical Manual",
         "industry": "Medical"
+      }
+    ]
+  },
+  "DSP": {
+    "definitions": [
+      {
+        "text": "Digital Signal Processor",
+        "industry": "Tech"
       }
     ]
   },
@@ -2265,6 +2361,14 @@
       }
     ]
   },
+  "ENC": {
+    "definitions": [
+      {
+        "text": "Environmental Noise Cancellation",
+        "industry": "Tech"
+      }
+    ]
+  },
   "EOD": {
     "definitions": [
       {
@@ -2445,6 +2549,14 @@
       }
     ]
   },
+  "FALD": {
+    "definitions": [
+      {
+        "text": "Full Array Local Dimming",
+        "industry": "Tech"
+      }
+    ]
+  },
   "FAST": {
     "definitions": [
       {
@@ -2549,6 +2661,14 @@
       }
     ]
   },
+  "FHD": {
+    "definitions": [
+      {
+        "text": "Full High Definition",
+        "industry": "Tech"
+      }
+    ]
+  },
   "FI": {
     "definitions": [
       {
@@ -2586,6 +2706,14 @@
       {
         "text": "Flanker",
         "industry": "Sports"
+      }
+    ]
+  },
+  "FLAC": {
+    "definitions": [
+      {
+        "text": "Free Lossless Audio Codec",
+        "industry": "Tech"
       }
     ]
   },
@@ -2937,6 +3065,14 @@
     "definitions": [
       {
         "text": "Graphical User Interface",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "HDCP": {
+    "definitions": [
+      {
+        "text": "High-bandwidth Digital Content Protection",
         "industry": "Tech"
       }
     ]
@@ -3401,6 +3537,14 @@
       }
     ]
   },
+  "IPS": {
+    "definitions": [
+      {
+        "text": "In-Plane Switching",
+        "industry": "Tech"
+      }
+    ]
+  },
   "IPTV": {
     "definitions": [
       {
@@ -3721,11 +3865,27 @@
       }
     ]
   },
+  "LCD": {
+    "definitions": [
+      {
+        "text": "Liquid Crystal Display",
+        "industry": "Tech"
+      }
+    ]
+  },
   "LCG": {
     "definitions": [
       {
         "text": "Living Card Game",
         "industry": "Gaming"
+      }
+    ]
+  },
+  "LED": {
+    "definitions": [
+      {
+        "text": "Light Emitting Diode",
+        "industry": "Tech"
       }
     ]
   },
@@ -4497,6 +4657,14 @@
       }
     ]
   },
+  "OIS": {
+    "definitions": [
+      {
+        "text": "Optical Image Stabilisation",
+        "industry": "Tech"
+      }
+    ]
+  },
   "OKR": {
     "definitions": [
       {
@@ -4517,6 +4685,14 @@
     "definitions": [
       {
         "text": "Online Analytical Processing",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "OLED": {
+    "definitions": [
+      {
+        "text": "Organic Light Emitting Diode",
         "industry": "Tech"
       }
     ]
@@ -4702,6 +4878,14 @@
       {
         "text": "Polymerase Chain Reaction",
         "industry": "Science"
+      }
+    ]
+  },
+  "PDAF": {
+    "definitions": [
+      {
+        "text": "Phase Detection Autofocus",
+        "industry": "Tech"
       }
     ]
   },
@@ -5101,6 +5285,22 @@
       }
     ]
   },
+  "QHD": {
+    "definitions": [
+      {
+        "text": "Quad High Definition",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "QLED": {
+    "definitions": [
+      {
+        "text": "Quantum Light Emitting Diode",
+        "industry": "Tech"
+      }
+    ]
+  },
   "RAG": {
     "definitions": [
       {
@@ -5445,6 +5645,14 @@
       }
     ]
   },
+  "SBC": {
+    "definitions": [
+      {
+        "text": "Sub-Band Coding",
+        "industry": "Tech"
+      }
+    ]
+  },
   "SCOTUS": {
     "definitions": [
       {
@@ -5686,6 +5894,14 @@
       {
         "text": "Single Nucleotide Polymorphism",
         "industry": "Science"
+      }
+    ]
+  },
+  "SNR": {
+    "definitions": [
+      {
+        "text": "Signal-to-Noise Ratio",
+        "industry": "Tech"
       }
     ]
   },
@@ -6106,6 +6322,14 @@
       {
         "text": "Thai Baht",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "THD": {
+    "definitions": [
+      {
+        "text": "Total Harmonic Distortion",
+        "industry": "Tech"
       }
     ]
   },
@@ -6641,6 +6865,14 @@
       }
     ]
   },
+  "VRR": {
+    "definitions": [
+      {
+        "text": "Variable Refresh Rate",
+        "industry": "Tech"
+      }
+    ]
+  },
   "WACC": {
     "definitions": [
       {
@@ -6661,6 +6893,14 @@
     "definitions": [
       {
         "text": "WebAssembly",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "WAV": {
+    "definitions": [
+      {
+        "text": "Waveform Audio File Format",
         "industry": "Tech"
       }
     ]
