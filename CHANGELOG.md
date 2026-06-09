@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.6.11
+- Tooltip: undefined acronyms are no longer highlighted or interactive — only dictionary-defined acronyms receive the underline and tooltip
+- Analytics: `acronym_undefined` events continue to fire silently for unrecognised regex matches, preserving the dictionary-gap data signal
+
 ### v1.6.10
 - GitHub Pages: moved Jekyll config (`_config.yml`) and privacy policy copy into a `docs/` subfolder — Chrome extension loader rejects filenames starting with `_` at the extension root
 - GitHub Pages source updated to serve from `/docs` rather than root

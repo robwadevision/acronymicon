@@ -35,10 +35,6 @@ Before loading the extension, create the required credentials file:
 cp src/constants.example.js src/constants.js
 ```
 
-(On Windows: `copy src\constants.example.js src\constants.js`)
-
-The file can be left as-is — analytics are disabled when credentials are empty and the extension works normally without them.
-
 ### Chrome
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top right)
@@ -91,16 +87,11 @@ The first definition is treated as primary. `industry` is optional; omit it for 
 
 ---
 
-## Analytics Setup
-
-Analytics are disabled by default. To activate:
-
-1. Copy `src/constants.example.js` to `src/constants.js`
-2. Fill in your GA4 `measurementId` (e.g. `G-XXXXXXXXXX`) and `apiSecret`
-3. Both are found in GA4 → Admin → Data Streams → Measurement Protocol
+## Analytics
 
 No PII is sent — only acronym tokens and event names, attributed to a randomly generated anonymous device ID.
 
+See [PRIVACY.md](PRIVACY.md).
 ---
 
 ## Roadmap
@@ -110,9 +101,15 @@ No PII is sent — only acronym tokens and event names, attributed to a randomly
 - [x] Rating system (👍 / 👎 feedback)
 - [x] Multi-language dictionary support
 - [x] Anonymous aggregate analytics
-- [ ] Domain whitelist / blacklist settings
-- [ ] Community dictionary via GitHub-hosted JSON
-- [ ] LLM-powered context ranking
+- [x] Community dictionary via GitHub-hosted JSON
+
+---
+
+## Support
+
+Acronymicon is free to use and always will be. If it saves you time and you'd like to say thanks, tips are entirely optional but very welcome!
+
+[Tip via PayPal](https://www.paypal.com/donate?business=fringe_player%40hotmail.co.uk&item_name=Thanks+for+making+Acronymicon&currency_code=GBP)
 
 ---
 

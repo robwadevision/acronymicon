@@ -162,16 +162,18 @@
     while ((m = ACRONYM_RE.exec(text)) !== null) {
       const word = m[1];
       if (m.index > 0 && text[m.index - 1] === "#") continue;
-      matches.push({ word, index: m.index, length: m[0].length });
+      const definitions = lookup(word);
       if (!trackedHighlights.has(word)) {
         trackedHighlights.add(word);
-        const definitions = lookup(word);
         if (definitions) {
           const industry = definitions[0]?.industry ?? null;
           AcronymAnalytics.track("acronym_identified", { acronym: word, ...(industry && { industry }) });
         } else {
           AcronymAnalytics.track("acronym_undefined", { acronym: word });
         }
+      }
+      if (definitions) {
+        matches.push({ word, index: m.index, length: m[0].length });
       }
     }
 
