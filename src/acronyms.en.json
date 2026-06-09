@@ -153,6 +153,18 @@
       }
     ]
   },
+  "AFC": {
+    "definitions": [
+      {
+        "text": "Arsenal Football Club",
+        "industry": "Sports"
+      },
+      {
+        "text": "American Football Conference",
+        "industry": "Sports"
+      }
+    ]
+  },
   "AGI": {
     "definitions": [
       {
@@ -246,6 +258,14 @@
       {
         "text": "Always On Display",
         "industry": "Tech"
+      }
+    ]
+  },
+  "AOE": {
+    "definitions": [
+      {
+        "text": "Age of Empires",
+        "industry": "Gaming"
       }
     ]
   },
@@ -469,6 +489,14 @@
       }
     ]
   },
+  "AVFC": {
+    "definitions": [
+      {
+        "text": "Aston Villa Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "AVOD": {
     "definitions": [
       {
@@ -593,6 +621,14 @@
       }
     ]
   },
+  "BHAFC": {
+    "definitions": [
+      {
+        "text": "Brighton & Hove Albion Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "BIOS": {
     "definitions": [
       {
@@ -618,6 +654,14 @@
       {
         "text": "Basis of Estimate",
         "industry": "Business"
+      }
+    ]
+  },
+  "BOTW": {
+    "definitions": [
+      {
+        "text": "Breath of the Wild",
+        "industry": "Gaming"
       }
     ]
   },
@@ -937,6 +981,14 @@
       }
     ]
   },
+  "CFC": {
+    "definitions": [
+      {
+        "text": "Chelsea Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "CFO": {
     "definitions": [
       {
@@ -1229,6 +1281,14 @@
       }
     ]
   },
+  "COD": {
+    "definitions": [
+      {
+        "text": "Call of Duty",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "COIN": {
     "definitions": [
       {
@@ -1310,6 +1370,14 @@
       {
         "text": "Cost Per Click",
         "industry": "Finance"
+      }
+    ]
+  },
+  "CPFC": {
+    "definitions": [
+      {
+        "text": "Crystal Palace Football Club",
+        "industry": "Sports"
       }
     ]
   },
@@ -1462,6 +1530,14 @@
       {
         "text": "Civil Service",
         "industry": "Government"
+      }
+    ]
+  },
+  "CSGO": {
+    "definitions": [
+      {
+        "text": "Counter-Strike: Global Offensive",
+        "industry": "Gaming"
       }
     ]
   },
@@ -1734,6 +1810,10 @@
       {
         "text": "Double Data Rate",
         "industry": "Tech"
+      },
+      {
+        "text": "Dance Dance Revolution",
+        "industry": "Gaming"
       }
     ]
   },
@@ -1966,6 +2046,14 @@
       {
         "text": "Department of Transportation",
         "industry": "Government"
+      }
+    ]
+  },
+  "DOTA": {
+    "definitions": [
+      {
+        "text": "Defense of the Ancients",
+        "industry": "Gaming"
       }
     ]
   },
@@ -2249,6 +2337,14 @@
       }
     ]
   },
+  "EFC": {
+    "definitions": [
+      {
+        "text": "Everton Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "EG": {
     "definitions": [
       {
@@ -2454,6 +2550,14 @@
       {
         "text": "Spain",
         "industry": "Geography"
+      }
+    ]
+  },
+  "ESO": {
+    "definitions": [
+      {
+        "text": "Elder Scrolls Online",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3049,6 +3153,14 @@
       }
     ]
   },
+  "GTA": {
+    "definitions": [
+      {
+        "text": "Grand Theft Auto",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "GTM": {
     "definitions": [
       {
@@ -3065,6 +3177,14 @@
     "definitions": [
       {
         "text": "Graphical User Interface",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "HD": {
+    "definitions": [
+      {
+        "text": "High Definition",
         "industry": "Tech"
       }
     ]
@@ -3873,6 +3993,14 @@
       }
     ]
   },
+  "LCFC": {
+    "definitions": [
+      {
+        "text": "Leicester City Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "LCG": {
     "definitions": [
       {
@@ -3893,6 +4021,14 @@
     "definitions": [
       {
         "text": "Left Fielder",
+        "industry": "Sports"
+      }
+    ]
+  },
+  "LFC": {
+    "definitions": [
+      {
+        "text": "Liverpool Football Club",
         "industry": "Sports"
       }
     ]
@@ -4017,6 +4153,14 @@
       }
     ]
   },
+  "LUFC": {
+    "definitions": [
+      {
+        "text": "Leeds United Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "LW": {
     "definitions": [
       {
@@ -4058,6 +4202,14 @@
       {
         "text": "Mortgage-Backed Securities",
         "industry": "Finance"
+      }
+    ]
+  },
+  "MCFC": {
+    "definitions": [
+      {
+        "text": "Manchester City Football Club",
+        "industry": "Sports"
       }
     ]
   },
@@ -4158,6 +4310,18 @@
       {
         "text": "MIT License",
         "industry": "Tech"
+      }
+    ]
+  },
+  "MK": {
+    "definitions": [
+      {
+        "text": "Mortal Kombat",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Mario Kart",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4273,6 +4437,14 @@
       }
     ]
   },
+  "MUFC": {
+    "definitions": [
+      {
+        "text": "Manchester United Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "MVC": {
     "definitions": [
       {
@@ -4357,6 +4529,14 @@
       }
     ]
   },
+  "NAS": {
+    "definitions": [
+      {
+        "text": "Network Attached Storage",
+        "industry": "Tech"
+      }
+    ]
+  },
   "NASA": {
     "definitions": [
       {
@@ -4417,11 +4597,27 @@
       }
     ]
   },
+  "NFFC": {
+    "definitions": [
+      {
+        "text": "Nottingham Forest Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "NFL": {
     "definitions": [
       {
         "text": "National Football League",
         "industry": "Sports"
+      }
+    ]
+  },
+  "NFS": {
+    "definitions": [
+      {
+        "text": "Need for Speed",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4598,6 +4794,14 @@
       {
         "text": "National Science Foundation",
         "industry": "Government"
+      }
+    ]
+  },
+  "NUFC": {
+    "definitions": [
+      {
+        "text": "Newcastle United Football Club",
+        "industry": "Sports"
       }
     ]
   },
@@ -4881,6 +5085,30 @@
       }
     ]
   },
+  "PD": {
+    "definitions": [
+      {
+        "text": "Power Delivery",
+        "industry": "Tech"
+      },
+      {
+        "text": "Police Department",
+        "industry": "Government"
+      },
+      {
+        "text": "Parkinson's Disease",
+        "industry": "Medical"
+      },
+      {
+        "text": "Professional Development",
+        "industry": "Work"
+      },
+      {
+        "text": "Pharmacodynamics",
+        "industry": "Science"
+      }
+    ]
+  },
   "PDAF": {
     "definitions": [
       {
@@ -4914,6 +5142,14 @@
       {
         "text": "Price/Earnings to Growth",
         "industry": "Finance"
+      }
+    ]
+  },
+  "PES": {
+    "definitions": [
+      {
+        "text": "Pro Evolution Soccer",
+        "industry": "Gaming"
       }
     ]
   },
@@ -5189,6 +5425,14 @@
       }
     ]
   },
+  "PUBG": {
+    "definitions": [
+      {
+        "text": "PlayerUnknown's Battlegrounds",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "PVR": {
     "definitions": [
       {
@@ -5373,6 +5617,14 @@
       }
     ]
   },
+  "RDR": {
+    "definitions": [
+      {
+        "text": "Red Dead Redemption",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "REIT": {
     "definitions": [
       {
@@ -5405,6 +5657,14 @@
       },
       {
         "text": "Request for Change",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "RGB": {
+    "definitions": [
+      {
+        "text": "Red, Green, Blue",
         "industry": "Tech"
       }
     ]
@@ -5658,6 +5918,22 @@
       {
         "text": "Supreme Court of the United States",
         "industry": "Government"
+      }
+    ]
+  },
+  "SD": {
+    "definitions": [
+      {
+        "text": "Secure Digital",
+        "industry": "Tech"
+      },
+      {
+        "text": "Standard Definition",
+        "industry": "Media"
+      },
+      {
+        "text": "South Dakota",
+        "industry": "Geography"
       }
     ]
   },
@@ -6149,6 +6425,14 @@
       }
     ]
   },
+  "SUFC": {
+    "definitions": [
+      {
+        "text": "Sheffield United Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "SVOD": {
     "definitions": [
       {
@@ -6333,6 +6617,14 @@
       }
     ]
   },
+  "THFC": {
+    "definitions": [
+      {
+        "text": "Tottenham Hotspur Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "TL": {
     "definitions": [
       {
@@ -6370,6 +6662,14 @@
       {
         "text": "Transcranial Magnetic Stimulation",
         "industry": "Medical"
+      }
+    ]
+  },
+  "TOTK": {
+    "definitions": [
+      {
+        "text": "Tears of the Kingdom",
+        "industry": "Gaming"
       }
     ]
   },
@@ -6533,11 +6833,31 @@
       }
     ]
   },
+  "UCL": {
+    "definitions": [
+      {
+        "text": "UEFA Champions League",
+        "industry": "Sports"
+      },
+      {
+        "text": "University College London",
+        "industry": "General"
+      }
+    ]
+  },
   "UDP": {
     "definitions": [
       {
         "text": "User Datagram Protocol",
         "industry": "Tech"
+      }
+    ]
+  },
+  "UEFA": {
+    "definitions": [
+      {
+        "text": "Union of European Football Associations",
+        "industry": "Sports"
       }
     ]
   },
@@ -6722,6 +7042,14 @@
       {
         "text": "Ultraviolet",
         "industry": "Science"
+      }
+    ]
+  },
+  "UWCL": {
+    "definitions": [
+      {
+        "text": "UEFA Women's Champions League",
+        "industry": "Sports"
       }
     ]
   },
@@ -6921,11 +7249,27 @@
       }
     ]
   },
+  "WHUFC": {
+    "definitions": [
+      {
+        "text": "West Ham United Football Club",
+        "industry": "Sports"
+      }
+    ]
+  },
   "WLB": {
     "definitions": [
       {
         "text": "Work-Life Balance",
         "industry": "General"
+      }
+    ]
+  },
+  "WOW": {
+    "definitions": [
+      {
+        "text": "World of Warcraft",
+        "industry": "Gaming"
       }
     ]
   },
@@ -6942,6 +7286,14 @@
       {
         "text": "World Wrestling Entertainment",
         "industry": "Sports"
+      }
+    ]
+  },
+  "WiFi": {
+    "definitions": [
+      {
+        "text": "Wireless Fidelity",
+        "industry": "Tech"
       }
     ]
   },
