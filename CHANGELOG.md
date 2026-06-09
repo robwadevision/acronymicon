@@ -1,5 +1,43 @@
 # Changelog
 
+### v1.6.10
+- GitHub Pages: moved Jekyll config (`_config.yml`) and privacy policy copy into a `docs/` subfolder — Chrome extension loader rejects filenames starting with `_` at the extension root
+- GitHub Pages source updated to serve from `/docs` rather than root
+- Release workflow: fixed missing line-continuation backslash in zip exclude list; added `docs/*` and `scripts/*` excludes
+
+### v1.6.9
+- Added `PRIVACY.md` — full privacy policy covering data collected (analytics events, hostname, acronym tokens, rating events), local storage keys (`acRatings`, `acClientId`, `acEnabled`, `acLang`), permissions justifications, third-party services, and user choices
+
+### v1.6.8
+- Dictionary: added 39 entries — UK Premier League clubs (AFC, AVFC, BHAFC, CFC, CPFC, EFC, LCFC, LFC, LUFC, MCFC, MUFC, NFFC, NUFC, SUFC, THFC, WHUFC), video game franchises (AOE, BOTW, COD, CSGO, DOTA, ESO, GTA, MK, NFS, PES, PUBG, RDR, TOTK, WOW), European football competitions (UCL, UEFA, UWCL), and hardware/display terms (HD, NAS, PD, RGB, SD, WiFi)
+
+### v1.6.7
+- Dictionary: added 30 audiovisual and display technology entries — display technologies (AMOLED, FHD, IPS, LCD, LED, OLED, QLED, QHD), display features (AOD, DCI, FALD, HDCP, VRR), connectivity (ARC, CEC, DP), audio codecs (AAC, ALAC, FLAC, SBC, WAV), audio hardware (ADC, DAC, DSP, ENC, SNR, THD), camera optics (OIS, PDAF)
+
+### v1.6.6
+- Dictionary: added 31 sports position acronyms — association football (CAM, CB, CDM, CF, CM, GK, LB, LM, LW, RM, RW, ST), American football (DT, FL, FS, OT, QB, RB, TE, WR), basketball (PF, PG, SF), baseball (DH, LF, RF, RP, SP, SS), and field hockey/rugby positions (FH, SH)
+
+### v1.6.5
+- Dictionary: added 10 entries — social/messaging platforms (DMs, FB, IG), financial regulation (EMIR, FIS), enterprise software (AMS, SAP), and others (IMI, ION, TT)
+
+### v1.6.4
+- Dictionary: added 7 entries — AGI (Artificial General Intelligence), CX (Customer Experience), EA (Electronic Arts / Enterprise Agreement), GCGRA (General Commercial Gaming Regulatory Authority), IDS (Intrusion Detection System), LLC (Limited Liability Company), PI (Principal Investigator)
+
+### v1.6.3
+- Dictionary: added ~72 new entries across Science (ADME, ATP, AUC, BBB, CRISPR, ELISA, EMA, GLP, GMO, GMP, HPLC, NMR, PCR, RCT, RNA, SNP, UV), Tech (CMOS, CSRF, EKS, GPU, GRR, TLS), Media (ACX, AM, FM, ITV, TV), and General/cross-industry (AA, ANC, BOE, CS, CT, DEI, DIY, DNA, FIFA, ICT, IMF, JPG, LA, MDR, MIT, ML, MRI, NEC, NFL, PDF, PNG, QBR, SEO, SIM, SLAs, UI, UX, VPN, WHO, WWE, and others)
+- Popup: `dictionarySize` refactored to count total definitions (sum of each entry's `definitions.length`) rather than top-level keys — the "X Definitions available" stat now reflects the number of meanings, not the number of acronyms
+
+### v1.6.2
+- Tooltip: replaced single bottom "Helpful?" rating row with per-definition 👍/👎 buttons inline with each option
+- Rating storage key changed from `word` to composite `word||definition text` to support independent ratings across multiple definitions per acronym
+- CSS: added `.ai-tooltip-def-text` for correct flex layout of definition text alongside industry badges and rating buttons
+
+### v1.6.1
+- Tooltip: re-implemented page industry context detection — `detectPageIndustry()` scans up to 50k chars of page text against keyword signals for 10 industries, requiring a score of ≥ 2 with a clear lead over second place to avoid false positives
+- Tooltip: "Most likely" definition surfaced at the top of the tooltip in a highlighted card when a page industry match is found; matched definition also retained at the bottom of the options list
+- CSS: added `.ai-tooltip-primary-label` and `.ai-tooltip-primary` styles for the "Most likely" highlighted card
+- CSS: added industry badge colour rules for the 9 new categories added in v1.6.0 (Business, Currencies, Gaming, General, Geography, Government, Media, Science, Work)
+
 ### v1.6.0
 - Dictionary: all definitions now carry an `industry` tag — 100% coverage across 13 categories: `Business`, `Currencies`, `Finance`, `Gaming`, `General`, `Geography`, `Government`, `Media`, `Medical`, `Science`, `Sports`, `Tech`, `Work`
 - Added 9 new categories beyond the original `Tech`, `Finance`, `Medical`, `Sports`: `Business` (job titles, HR, strategy), `Currencies` (ISO 4217 codes), `Gaming`, `General` (cross-industry terms), `Geography` (country codes, place names), `Government` (agencies, departments), `Media` (streaming, broadcasting), `Science`, `Work` (employment law, professional bodies)

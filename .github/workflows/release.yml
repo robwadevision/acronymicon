@@ -43,8 +43,9 @@ jobs:
             --exclude "*.git*" \
             --exclude ".github/*" \
             --exclude "*.DS_Store" \
-            --exclude "*.md"
-            --exclude ".yml"
+            --exclude "*.md" \
+            --exclude "docs/*" \
+            --exclude "scripts/*"
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
