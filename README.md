@@ -12,7 +12,7 @@ A lightweight browser extension that detects acronyms on web pages — especiall
 - **Hover to reveal** — tooltip opens on mouseover; no click required (works correctly inside hyperlinks)
 - **MutationObserver** — catches dynamically loaded content (LinkedIn, Greenhouse, SPAs, infinite scroll)
 - Shows primary meaning instantly, with alternatives
-- Detects industry context (tech, finance, pharma, HR) to surface the most relevant definition
+- Detects industry context (Tech, Finance, Medical, Sports, Government, Media, General) to surface the most relevant definition
 - **Rate definitions** — 👍 / 👎 feedback per acronym, stored locally
 - **Multi-language ready** — drop in `src/acronyms.<lang>.json` to add a language
 - Dark mode support
@@ -80,16 +80,14 @@ Edit `src/acronyms.en.json`. Each entry follows this schema:
 
 ```json
 "ACRONYM": {
-  "default": "Primary meaning",
-  "alternatives": ["Other meaning 1", "Other meaning 2"],
-  "industry": {
-    "tech": "Tech-specific meaning",
-    "finance": "Finance-specific meaning"
-  }
+  "definitions": [
+    { "text": "Primary meaning", "industry": "Tech" },
+    { "text": "Alternative meaning", "industry": "Finance" }
+  ]
 }
 ```
 
-Industry keys: `tech`, `finance`, `pharma`, `hr`
+The first definition is treated as primary. `industry` is optional; omit it for cross-industry terms or use one of: `Tech`, `Finance`, `Medical`, `Sports`, `Government`, `Media`, `General`, `Geography`, `Gaming`, `Work`, `Currencies`, `Business`, `Science`
 
 ---
 

@@ -45,23 +45,6 @@ body {
   color: #ffffff;
 }
 
-.badge {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 20px;
-  background: #2d1b5e;
-  color: #c4b5d9;
-}
-
-.badge.tech    { background: #1e3a8a33; color: #60a5fa; }
-.badge.finance { background: #78350f33; color: #fbbf24; }
-.badge.pharma  { background: #14532d33; color: #4ade80; }
-.badge.hr      { background: #58108733; color: #c084fc; }
-.badge.default { background: #2d1b5e;   color: #c4b5d9; }
-
 /* ── Toggle row ── */
 .toggle-row {
   display: flex;

@@ -4,2650 +4,5813 @@
     "lang": "en",
     "description": "Acronymicon English dictionary. Add new entries following the schema below.",
     "schema": {
-      "default": "Primary/most common meaning",
-      "alternatives": "Other possible meanings",
-      "industry": "Optional: industry-specific overrides keyed by industry slug"
+      "definitions": "Array of definition objects — first is primary/most common",
+      "definitions[].text": "The definition text",
+      "definitions[].industry": "Optional: Business | Tech | Finance | Sports | Medical | Government | General | Media | Geography | Gaming | Work | Currencies | Science"
     }
   },
   "ABR": {
-    "default": "Adaptive Bitrate",
-    "alternatives": ["Adaptive Bitrate Streaming"]
+    "definitions": [
+      {
+        "text": "Adaptive Bitrate",
+        "industry": "Tech"
+      },
+      {
+        "text": "Adaptive Bitrate Streaming",
+        "industry": "Tech"
+      }
+    ]
   },
   "ABS": {
-    "default": "Asset-Backed Securities",
-    "alternatives": [],
-    "industry": { "finance": "Asset-Backed Securities" }
+    "definitions": [
+      {
+        "text": "Asset-Backed Securities",
+        "industry": "Finance"
+      }
+    ]
   },
   "ACAS": {
-    "default": "Advisory, Conciliation and Arbitration Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Advisory, Conciliation and Arbitration Service",
+        "industry": "Government"
+      }
+    ]
   },
   "ACID": {
-    "default": "Atomicity, Consistency, Isolation, Durability",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Atomicity, Consistency, Isolation, Durability",
+        "industry": "Tech"
+      }
+    ]
   },
   "ACPI": {
-    "default": "Advanced Configuration and Power Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Advanced Configuration and Power Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "ACV": {
-    "default": "Annual Contract Value",
-    "alternatives": [],
-    "industry": { "finance": "Annual Contract Value" }
+    "definitions": [
+      {
+        "text": "Annual Contract Value",
+        "industry": "Finance"
+      }
+    ]
   },
   "ADD": {
-    "default": "Attention Deficit Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Attention Deficit Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "ADHD": {
-    "default": "Attention Deficit Hyperactivity Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Attention Deficit Hyperactivity Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "AE": {
-    "default": "United Arab Emirates",
-    "alternatives": ["Account Executive"]
+    "definitions": [
+      {
+        "text": "United Arab Emirates",
+        "industry": "Geography"
+      },
+      {
+        "text": "Account Executive",
+        "industry": "Business"
+      }
+    ]
   },
   "AEs": {
-    "default": "Account Executives",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Account Executives",
+        "industry": "Business"
+      }
+    ]
   },
   "AED": {
-    "default": "UAE Dirham",
-    "alternatives": [],
-    "industry": { "finance": "UAE Dirham" }
+    "definitions": [
+      {
+        "text": "UAE Dirham",
+        "industry": "Currencies"
+      }
+    ]
   },
   "AI": {
-    "default": "Artificial Intelligence",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Artificial Intelligence",
+        "industry": "Tech"
+      }
+    ]
   },
   "AJAX": {
-    "default": "Asynchronous JavaScript and XML",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Asynchronous JavaScript and XML",
+        "industry": "Tech"
+      }
+    ]
   },
   "AML": {
-    "default": "Anti-Money Laundering",
-    "alternatives": [],
-    "industry": { "finance": "Anti-Money Laundering" }
+    "definitions": [
+      {
+        "text": "Anti-Money Laundering",
+        "industry": "Finance"
+      }
+    ]
   },
   "AOT": {
-    "default": "Ahead-of-Time Compilation",
-    "alternatives": ["Ahead-of-Time"]
+    "definitions": [
+      {
+        "text": "Ahead-of-Time Compilation",
+        "industry": "Tech"
+      },
+      {
+        "text": "Ahead-of-Time",
+        "industry": "Tech"
+      }
+    ]
   },
   "AP": {
-    "default": "Analysis Paralysis",
-    "alternatives": ["Accounts Payable"]
+    "definitions": [
+      {
+        "text": "Analysis Paralysis",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Accounts Payable",
+        "industry": "Finance"
+      }
+    ]
   },
   "API": {
-    "default": "Application Programming Interface",
-    "alternatives": ["Application Program Interface"]
+    "definitions": [
+      {
+        "text": "Application Programming Interface",
+        "industry": "Tech"
+      },
+      {
+        "text": "Application Program Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "APIs": {
-    "default": "Application Programming Interfaces",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Application Programming Interfaces",
+        "industry": "Tech"
+      }
+    ]
   },
   "APU": {
-    "default": "Accelerated Processing Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Accelerated Processing Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "AR": {
-    "default": "Argentina",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Argentina",
+        "industry": "Geography"
+      }
+    ]
   },
   "ARFID": {
-    "default": "Avoidant/Restrictive Food Intake Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Avoidant/Restrictive Food Intake Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "ARG": {
-    "default": "Argentina",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Argentina",
+        "industry": "Geography"
+      }
+    ]
   },
   "ARPU": {
-    "default": "Average Revenue Per User",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Average Revenue Per User",
+        "industry": "Finance"
+      }
+    ]
   },
   "ARR": {
-    "default": "Annual Recurring Revenue",
-    "alternatives": ["Accounting Rate of Return"]
+    "definitions": [
+      {
+        "text": "Annual Recurring Revenue",
+        "industry": "Finance"
+      },
+      {
+        "text": "Accounting Rate of Return",
+        "industry": "Finance"
+      }
+    ]
   },
   "ARS": {
-    "default": "Argentine Peso",
-    "alternatives": [],
-    "industry": { "finance": "Argentine Peso" }
+    "definitions": [
+      {
+        "text": "Argentine Peso",
+        "industry": "Currencies"
+      }
+    ]
   },
   "ASAP": {
-    "default": "As Soon As Possible",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "As Soon As Possible",
+        "industry": "General"
+      }
+    ]
   },
   "ASD": {
-    "default": "Autism Spectrum Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Autism Spectrum Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "AST": {
-    "default": "Abstract Syntax Tree",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Abstract Syntax Tree",
+        "industry": "Tech"
+      }
+    ]
   },
   "AT": {
-    "default": "Austria",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Austria",
+        "industry": "Geography"
+      }
+    ]
   },
   "ATF": {
-    "default": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "industry": "Government"
+      }
+    ]
   },
   "ATS": {
-    "default": "Applicant Tracking System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Applicant Tracking System",
+        "industry": "Tech"
+      }
+    ]
   },
   "AU": {
-    "default": "Australia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Australia",
+        "industry": "Geography"
+      }
+    ]
   },
   "AUD": {
-    "default": "Australian Dollar",
-    "alternatives": [],
-    "industry": { "finance": "Australian Dollar" }
+    "definitions": [
+      {
+        "text": "Australian Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "AUM": {
-    "default": "Assets Under Management",
-    "alternatives": [],
-    "industry": { "finance": "Assets Under Management" }
+    "definitions": [
+      {
+        "text": "Assets Under Management",
+        "industry": "Finance"
+      }
+    ]
   },
   "AUS": {
-    "default": "Australia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Australia",
+        "industry": "Geography"
+      }
+    ]
   },
   "AVC": {
-    "default": "Advanced Video Coding",
-    "alternatives": ["H.264"]
+    "definitions": [
+      {
+        "text": "Advanced Video Coding",
+        "industry": "Tech"
+      },
+      {
+        "text": "H.264",
+        "industry": "Tech"
+      }
+    ]
   },
   "AVOD": {
-    "default": "Advertising Video on Demand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Advertising Video on Demand",
+        "industry": "Media"
+      }
+    ]
   },
   "AVP": {
-    "default": "Associate Vice President",
-    "alternatives": ["Assistant Vice President"]
+    "definitions": [
+      {
+        "text": "Associate Vice President",
+        "industry": "Business"
+      },
+      {
+        "text": "Assistant Vice President",
+        "industry": "Business"
+      }
+    ]
   },
   "AVPs": {
-    "default": "Associate Vice Presidents",
-    "alternatives": ["Assistant Vice Presidents"]
+    "definitions": [
+      {
+        "text": "Associate Vice Presidents",
+        "industry": "Business"
+      },
+      {
+        "text": "Assistant Vice Presidents",
+        "industry": "Business"
+      }
+    ]
   },
   "AWS": {
-    "default": "Amazon Web Services",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Amazon Web Services",
+        "industry": "Tech"
+      }
+    ]
   },
   "B2B": {
-    "default": "Business to Business",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business to Business",
+        "industry": "General"
+      }
+    ]
   },
   "B2C": {
-    "default": "Business to Consumer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business to Consumer",
+        "industry": "General"
+      }
+    ]
   },
   "BDD": {
-    "default": "Behaviour-Driven Development",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Behaviour-Driven Development",
+        "industry": "Tech"
+      }
+    ]
   },
   "BDM": {
-    "default": "Business Development Manager",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business Development Manager",
+        "industry": "Business"
+      }
+    ]
   },
   "BDMs": {
-    "default": "Business Development Managers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business Development Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "BDR": {
-    "default": "Business Development Representative",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business Development Representative",
+        "industry": "Business"
+      }
+    ]
   },
   "BDRs": {
-    "default": "Business Development Representatives",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Business Development Representatives",
+        "industry": "Business"
+      }
+    ]
   },
   "BE": {
-    "default": "Belgium",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Belgium",
+        "industry": "Geography"
+      }
+    ]
   },
   "BGG": {
-    "default": "BoardGameGeek",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "BoardGameGeek",
+        "industry": "Gaming"
+      }
+    ]
   },
   "BIOS": {
-    "default": "Basic Input/Output System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Basic Input/Output System",
+        "industry": "Tech"
+      }
+    ]
   },
   "BLS": {
-    "default": "Bureau of Labor Statistics",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Bureau of Labor Statistics",
+        "industry": "Government"
+      }
+    ]
   },
   "BPD": {
-    "default": "Borderline Personality Disorder",
-    "alternatives": ["Bipolar Disorder"]
+    "definitions": [
+      {
+        "text": "Borderline Personality Disorder",
+        "industry": "Medical"
+      },
+      {
+        "text": "Bipolar Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "BR": {
-    "default": "Brazil",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Brazil",
+        "industry": "Geography"
+      }
+    ]
   },
   "BRA": {
-    "default": "Brazil",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Brazil",
+        "industry": "Geography"
+      }
+    ]
   },
   "BRL": {
-    "default": "Brazilian Real",
-    "alternatives": [],
-    "industry": { "finance": "Brazilian Real" }
+    "definitions": [
+      {
+        "text": "Brazilian Real",
+        "industry": "Currencies"
+      }
+    ]
   },
   "BYOD": {
-    "default": "Bring Your Own Device",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Bring Your Own Device",
+        "industry": "Tech"
+      }
+    ]
   },
   "CA": {
-    "default": "Canada",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Canada",
+        "industry": "Geography"
+      }
+    ]
   },
   "CAA": {
-    "default": "Civil Aviation Authority",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Civil Aviation Authority",
+        "industry": "Government"
+      }
+    ]
   },
   "CAC": {
-    "default": "Customer Acquisition Cost",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Customer Acquisition Cost",
+        "industry": "Finance"
+      }
+    ]
   },
   "CAD": {
-    "default": "Canadian Dollar",
-    "alternatives": [],
-    "industry": { "finance": "Canadian Dollar" }
+    "definitions": [
+      {
+        "text": "Canadian Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "CAGR": {
-    "default": "Compound Annual Growth Rate",
-    "alternatives": [],
-    "industry": { "finance": "Compound Annual Growth Rate" }
+    "definitions": [
+      {
+        "text": "Compound Annual Growth Rate",
+        "industry": "Finance"
+      }
+    ]
   },
   "CAMHS": {
-    "default": "Child and Adolescent Mental Health Services",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Child and Adolescent Mental Health Services",
+        "industry": "Medical"
+      }
+    ]
   },
   "CAN": {
-    "default": "Canada",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Canada",
+        "industry": "Geography"
+      }
+    ]
   },
   "CBO": {
-    "default": "Congressional Budget Office",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Congressional Budget Office",
+        "industry": "Government"
+      }
+    ]
   },
   "CBP": {
-    "default": "Customs and Border Protection",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Customs and Border Protection",
+        "industry": "Government"
+      }
+    ]
   },
   "CBT": {
-    "default": "Cognitive Behavioural Therapy",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cognitive Behavioural Therapy",
+        "industry": "Medical"
+      }
+    ]
   },
   "CCG": {
-    "default": "Collectible Card Game",
-    "alternatives": ["Customisable Card Game"]
+    "definitions": [
+      {
+        "text": "Collectible Card Game",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Customisable Card Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "CCO": {
-    "default": "Chief Commercial Officer",
-    "alternatives": ["Chief Compliance Officer", "Chief Content Officer"]
+    "definitions": [
+      {
+        "text": "Chief Commercial Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Compliance Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Content Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CCOs": {
-    "default": "Chief Commercial Officers",
-    "alternatives": ["Chief Compliance Officers", "Chief Content Officers"]
+    "definitions": [
+      {
+        "text": "Chief Commercial Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Compliance Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Content Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CD": {
-    "default": "Continuous Deployment",
-    "alternatives": ["Continuous Delivery"],
-    "industry": { "tech": "Continuous Deployment" }
+    "definitions": [
+      {
+        "text": "Continuous Deployment",
+        "industry": "Tech"
+      },
+      {
+        "text": "Continuous Delivery",
+        "industry": "Tech"
+      }
+    ]
   },
   "CDC": {
-    "default": "Centers for Disease Control and Prevention",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Centers for Disease Control and Prevention",
+        "industry": "Government"
+      }
+    ]
   },
   "CDG": {
-    "default": "Card-Driven Game",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Card-Driven Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "CDK": {
-    "default": "Cloud Development Kit",
-    "alternatives": ["Content Delivery Kit"]
+    "definitions": [
+      {
+        "text": "Cloud Development Kit",
+        "industry": "Tech"
+      },
+      {
+        "text": "Content Delivery Kit",
+        "industry": "Tech"
+      }
+    ]
   },
   "CDN": {
-    "default": "Content Delivery Network",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Content Delivery Network",
+        "industry": "Tech"
+      }
+    ]
   },
   "CDO": {
-    "default": "Chief Data Officer",
-    "alternatives": ["Chief Digital Officer", "Collateralised Debt Obligation"],
-    "industry": { "finance": "Collateralised Debt Obligation" }
+    "definitions": [
+      {
+        "text": "Chief Data Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Digital Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Collateralised Debt Obligation",
+        "industry": "Finance"
+      }
+    ]
   },
   "CDOs": {
-    "default": "Chief Data Officers",
-    "alternatives": ["Chief Digital Officers"]
+    "definitions": [
+      {
+        "text": "Chief Data Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Digital Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CDS": {
-    "default": "Credit Default Swap",
-    "alternatives": [],
-    "industry": { "finance": "Credit Default Swap" }
+    "definitions": [
+      {
+        "text": "Credit Default Swap",
+        "industry": "Finance"
+      }
+    ]
   },
   "CEO": {
-    "default": "Chief Executive Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Executive Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CEOs": {
-    "default": "Chief Executive Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Executive Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CFO": {
-    "default": "Chief Financial Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Financial Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CFOs": {
-    "default": "Chief Financial Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Financial Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CFPB": {
-    "default": "Consumer Financial Protection Bureau",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Consumer Financial Protection Bureau",
+        "industry": "Finance"
+      }
+    ]
   },
   "CFTC": {
-    "default": "Commodity Futures Trading Commission",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Commodity Futures Trading Commission",
+        "industry": "Finance"
+      }
+    ]
   },
   "CH": {
-    "default": "Switzerland",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Switzerland",
+        "industry": "Geography"
+      }
+    ]
   },
   "CHF": {
-    "default": "Swiss Franc",
-    "alternatives": [],
-    "industry": { "finance": "Swiss Franc" }
+    "definitions": [
+      {
+        "text": "Swiss Franc",
+        "industry": "Currencies"
+      }
+    ]
   },
   "CHN": {
-    "default": "China",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "China",
+        "industry": "Geography"
+      }
+    ]
   },
   "CHRO": {
-    "default": "Chief Human Resources Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Human Resources Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CHROs": {
-    "default": "Chief Human Resources Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Human Resources Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CI": {
-    "default": "Continuous Integration",
-    "alternatives": ["Configuration Item", "Côte d'Ivoire"],
-    "industry": { "tech": "Continuous Integration" }
+    "definitions": [
+      {
+        "text": "Continuous Integration",
+        "industry": "Tech"
+      },
+      {
+        "text": "Configuration Item",
+        "industry": "Tech"
+      },
+      {
+        "text": "Côte d'Ivoire",
+        "industry": "Geography"
+      }
+    ]
   },
   "CIA": {
-    "default": "Central Intelligence Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Central Intelligence Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "CIPD": {
-    "default": "Chartered Institute of Personnel and Development",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chartered Institute of Personnel and Development",
+        "industry": "Work"
+      }
+    ]
   },
   "CIO": {
-    "default": "Chief Information Officer",
-    "alternatives": ["Chief Investment Officer"]
+    "definitions": [
+      {
+        "text": "Chief Information Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Investment Officer",
+        "industry": "Finance"
+      }
+    ]
   },
   "CIOs": {
-    "default": "Chief Information Officers",
-    "alternatives": ["Chief Investment Officers"]
+    "definitions": [
+      {
+        "text": "Chief Information Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Investment Officers",
+        "industry": "Finance"
+      }
+    ]
   },
   "CISO": {
-    "default": "Chief Information Security Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Information Security Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CISOs": {
-    "default": "Chief Information Security Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Information Security Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CL": {
-    "default": "Chile",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chile",
+        "industry": "Geography"
+      }
+    ]
   },
   "CLI": {
-    "default": "Command Line Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Command Line Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "CLO": {
-    "default": "Chief Legal Officer",
-    "alternatives": ["Chief Learning Officer", "Collateralised Loan Obligation"],
-    "industry": { "finance": "Collateralised Loan Obligation" }
+    "definitions": [
+      {
+        "text": "Chief Legal Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Learning Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Collateralised Loan Obligation",
+        "industry": "Finance"
+      }
+    ]
   },
   "CLOs": {
-    "default": "Chief Legal Officers",
-    "alternatives": ["Chief Learning Officers"]
+    "definitions": [
+      {
+        "text": "Chief Legal Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Learning Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CLP": {
-    "default": "Chilean Peso",
-    "alternatives": [],
-    "industry": { "finance": "Chilean Peso" }
+    "definitions": [
+      {
+        "text": "Chilean Peso",
+        "industry": "Currencies"
+      }
+    ]
   },
   "CMA": {
-    "default": "Competition and Markets Authority",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Competition and Markets Authority",
+        "industry": "Finance"
+      }
+    ]
   },
   "CMHT": {
-    "default": "Community Mental Health Team",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Community Mental Health Team",
+        "industry": "Medical"
+      }
+    ]
   },
   "CMO": {
-    "default": "Chief Marketing Officer",
-    "alternatives": ["Collateralised Mortgage Obligation"],
-    "industry": { "finance": "Collateralised Mortgage Obligation" }
+    "definitions": [
+      {
+        "text": "Chief Marketing Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Collateralised Mortgage Obligation",
+        "industry": "Finance"
+      }
+    ]
   },
   "CMOs": {
-    "default": "Chief Marketing Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Marketing Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CMOS": {
-    "default": "Complementary Metal-Oxide-Semiconductor",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Complementary Metal-Oxide-Semiconductor",
+        "industry": "Tech"
+      }
+    ]
   },
   "CMS": {
-    "default": "Content Management System",
-    "alternatives": ["Centers for Medicare and Medicaid Services"]
+    "definitions": [
+      {
+        "text": "Content Management System",
+        "industry": "Tech"
+      },
+      {
+        "text": "Centers for Medicare and Medicaid Services",
+        "industry": "Medical"
+      }
+    ]
   },
   "CN": {
-    "default": "China",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "China",
+        "industry": "Geography"
+      }
+    ]
   },
   "CNY": {
-    "default": "Chinese Yuan Renminbi",
-    "alternatives": ["Chinese Yuan", "Renminbi"],
-    "industry": { "finance": "Chinese Yuan Renminbi" }
+    "definitions": [
+      {
+        "text": "Chinese Yuan Renminbi",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Chinese Yuan",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Renminbi",
+        "industry": "Currencies"
+      }
+    ]
   },
   "CO": {
-    "default": "Colombia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Colombia",
+        "industry": "Geography"
+      }
+    ]
   },
   "COIN": {
-    "default": "Counter-Insurgency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Counter-Insurgency",
+        "industry": "Government"
+      }
+    ]
   },
   "COL": {
-    "default": "Colombia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Colombia",
+        "industry": "Geography"
+      }
+    ]
   },
   "COLA": {
-    "default": "Cost of Living Adjustment",
-    "alternatives": ["Cost of Living Allowance"]
+    "definitions": [
+      {
+        "text": "Cost of Living Adjustment",
+        "industry": "General"
+      },
+      {
+        "text": "Cost of Living Allowance",
+        "industry": "General"
+      }
+    ]
   },
   "COO": {
-    "default": "Chief Operating Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Operating Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "COOs": {
-    "default": "Chief Operating Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Operating Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "COP": {
-    "default": "Colombian Peso",
-    "alternatives": ["Community of Practice"],
-    "industry": { "finance": "Colombian Peso" }
+    "definitions": [
+      {
+        "text": "Colombian Peso",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Community of Practice",
+        "industry": "General"
+      }
+    ]
   },
   "CORS": {
-    "default": "Cross-Origin Resource Sharing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cross-Origin Resource Sharing",
+        "industry": "Tech"
+      }
+    ]
   },
   "CPA": {
-    "default": "Cost Per Acquisition",
-    "alternatives": ["Cost Per Action"]
+    "definitions": [
+      {
+        "text": "Cost Per Acquisition",
+        "industry": "Finance"
+      },
+      {
+        "text": "Cost Per Action",
+        "industry": "Finance"
+      }
+    ]
   },
   "CPC": {
-    "default": "Cost Per Click",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cost Per Click",
+        "industry": "Finance"
+      }
+    ]
   },
   "CPM": {
-    "default": "Cost Per Mille",
-    "alternatives": ["Cost Per Thousand Impressions"]
+    "definitions": [
+      {
+        "text": "Cost Per Mille",
+        "industry": "Finance"
+      },
+      {
+        "text": "Cost Per Thousand Impressions",
+        "industry": "Finance"
+      }
+    ]
   },
   "CPO": {
-    "default": "Chief Product Officer",
-    "alternatives": ["Chief People Officer"]
+    "definitions": [
+      {
+        "text": "Chief Product Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief People Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CPOs": {
-    "default": "Chief Product Officers",
-    "alternatives": ["Chief People Officers"]
+    "definitions": [
+      {
+        "text": "Chief Product Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief People Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CPS": {
-    "default": "Crown Prosecution Service",
-    "alternatives": ["Child Protective Services"]
+    "definitions": [
+      {
+        "text": "Crown Prosecution Service",
+        "industry": "Government"
+      },
+      {
+        "text": "Child Protective Services",
+        "industry": "Government"
+      }
+    ]
   },
   "CPTSD": {
-    "default": "Complex Post-Traumatic Stress Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Complex Post-Traumatic Stress Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "CPU": {
-    "default": "Central Processing Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Central Processing Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "CQC": {
-    "default": "Care Quality Commission",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Care Quality Commission",
+        "industry": "Medical"
+      }
+    ]
   },
   "CQRS": {
-    "default": "Command Query Responsibility Segregation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Command Query Responsibility Segregation",
+        "industry": "Tech"
+      }
+    ]
   },
   "CRM": {
-    "default": "Customer Relationship Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Customer Relationship Management",
+        "industry": "General"
+      }
+    ]
   },
   "CRO": {
-    "default": "Chief Revenue Officer",
-    "alternatives": ["Chief Risk Officer", "Conversion Rate Optimisation"]
+    "definitions": [
+      {
+        "text": "Chief Revenue Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Risk Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Conversion Rate Optimisation",
+        "industry": "Business"
+      }
+    ]
   },
   "CROs": {
-    "default": "Chief Revenue Officers",
-    "alternatives": ["Chief Risk Officers"]
+    "definitions": [
+      {
+        "text": "Chief Revenue Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Risk Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CSRF": {
-    "default": "Cross-Site Request Forgery",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cross-Site Request Forgery",
+        "industry": "Tech"
+      }
+    ]
   },
   "CRUD": {
-    "default": "Create, Read, Update, Delete",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Create, Read, Update, Delete",
+        "industry": "Tech"
+      }
+    ]
   },
   "CSM": {
-    "default": "Customer Success Manager",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Customer Success Manager",
+        "industry": "Business"
+      }
+    ]
   },
   "CSMs": {
-    "default": "Customer Success Managers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Customer Success Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "CSO": {
-    "default": "Chief Strategy Officer",
-    "alternatives": ["Chief Security Officer", "Chief Sales Officer"]
+    "definitions": [
+      {
+        "text": "Chief Strategy Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Security Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Sales Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CSOs": {
-    "default": "Chief Strategy Officers",
-    "alternatives": ["Chief Security Officers", "Chief Sales Officers"]
+    "definitions": [
+      {
+        "text": "Chief Strategy Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Security Officers",
+        "industry": "Business"
+      },
+      {
+        "text": "Chief Sales Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CSP": {
-    "default": "Content Security Policy",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Content Security Policy",
+        "industry": "Tech"
+      }
+    ]
   },
   "CSR": {
-    "default": "Client-Side Rendering",
-    "alternatives": ["Corporate Social Responsibility"],
-    "industry": { "tech": "Client-Side Rendering" }
+    "definitions": [
+      {
+        "text": "Client-Side Rendering",
+        "industry": "Tech"
+      },
+      {
+        "text": "Corporate Social Responsibility",
+        "industry": "Business"
+      }
+    ]
   },
   "CSS": {
-    "default": "Cascading Style Sheets",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cascading Style Sheets",
+        "industry": "Tech"
+      }
+    ]
   },
   "CTO": {
-    "default": "Chief Technology Officer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Technology Officer",
+        "industry": "Business"
+      }
+    ]
   },
   "CTOs": {
-    "default": "Chief Technology Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Chief Technology Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "CTR": {
-    "default": "Click-Through Rate",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Click-Through Rate",
+        "industry": "Tech"
+      }
+    ]
   },
   "CTV": {
-    "default": "Connected TV",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Connected TV",
+        "industry": "Media"
+      }
+    ]
   },
   "CV": {
-    "default": "Curriculum Vitae",
-    "alternatives": ["Résumé"]
+    "definitions": [
+      {
+        "text": "Curriculum Vitae",
+        "industry": "General"
+      },
+      {
+        "text": "Résumé",
+        "industry": "General"
+      }
+    ]
   },
   "CZ": {
-    "default": "Czech Republic",
-    "alternatives": ["Czechia"]
+    "definitions": [
+      {
+        "text": "Czech Republic",
+        "industry": "Geography"
+      },
+      {
+        "text": "Czechia",
+        "industry": "Geography"
+      }
+    ]
   },
   "CZK": {
-    "default": "Czech Koruna",
-    "alternatives": [],
-    "industry": { "finance": "Czech Koruna" }
+    "definitions": [
+      {
+        "text": "Czech Koruna",
+        "industry": "Currencies"
+      }
+    ]
   },
   "DAI": {
-    "default": "Dynamic Ad Insertion",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dynamic Ad Insertion",
+        "industry": "Media"
+      }
+    ]
   },
   "DASH": {
-    "default": "Dynamic Adaptive Streaming over HTTP",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dynamic Adaptive Streaming over HTTP",
+        "industry": "Tech"
+      }
+    ]
   },
   "DAU": {
-    "default": "Daily Active Users",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Daily Active Users",
+        "industry": "Tech"
+      }
+    ]
   },
   "DBA": {
-    "default": "Database Administrator",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Database Administrator",
+        "industry": "Tech"
+      }
+    ]
   },
   "DBAs": {
-    "default": "Database Administrators",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Database Administrators",
+        "industry": "Tech"
+      }
+    ]
   },
   "DBT": {
-    "default": "Department for Business and Trade",
-    "alternatives": ["Dialectical Behaviour Therapy"]
+    "definitions": [
+      {
+        "text": "Department for Business and Trade",
+        "industry": "Government"
+      },
+      {
+        "text": "Dialectical Behaviour Therapy",
+        "industry": "Medical"
+      }
+    ]
   },
   "DCF": {
-    "default": "Discounted Cash Flow",
-    "alternatives": [],
-    "industry": { "finance": "Discounted Cash Flow" }
+    "definitions": [
+      {
+        "text": "Discounted Cash Flow",
+        "industry": "Finance"
+      }
+    ]
   },
   "DD": {
-    "default": "Due Diligence",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Due Diligence",
+        "industry": "Finance"
+      }
+    ]
   },
   "DDD": {
-    "default": "Domain-Driven Design",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Domain-Driven Design",
+        "industry": "Tech"
+      }
+    ]
   },
   "DDR": {
-    "default": "Double Data Rate",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Double Data Rate",
+        "industry": "Tech"
+      }
+    ]
   },
   "DE": {
-    "default": "Germany",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Germany",
+        "industry": "Geography"
+      }
+    ]
   },
   "DEA": {
-    "default": "Drug Enforcement Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Drug Enforcement Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "DEI": {
-    "default": "Diversity, Equity, and Inclusion",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Diversity, Equity, and Inclusion",
+        "industry": "General"
+      }
+    ]
   },
   "DEFRA": {
-    "default": "Department for Environment, Food and Rural Affairs",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department for Environment, Food and Rural Affairs",
+        "industry": "Government"
+      }
+    ]
   },
   "DevOps": {
-    "default": "Development and Operations",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Development and Operations",
+        "industry": "Tech"
+      }
+    ]
   },
   "DfE": {
-    "default": "Department for Education",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department for Education",
+        "industry": "Government"
+      }
+    ]
   },
   "DfT": {
-    "default": "Department for Transport",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department for Transport",
+        "industry": "Government"
+      }
+    ]
   },
   "DHCP": {
-    "default": "Dynamic Host Configuration Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dynamic Host Configuration Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "DHS": {
-    "default": "Department of Homeland Security",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Homeland Security",
+        "industry": "Government"
+      }
+    ]
   },
   "DI": {
-    "default": "Dependency Injection",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dependency Injection",
+        "industry": "Tech"
+      }
+    ]
   },
   "DID": {
-    "default": "Dissociative Identity Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dissociative Identity Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "DIMM": {
-    "default": "Dual In-line Memory Module",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dual In-line Memory Module",
+        "industry": "Tech"
+      }
+    ]
   },
   "DK": {
-    "default": "Denmark",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Denmark",
+        "industry": "Geography"
+      }
+    ]
   },
   "DKK": {
-    "default": "Danish Krone",
-    "alternatives": [],
-    "industry": { "finance": "Danish Krone" }
+    "definitions": [
+      {
+        "text": "Danish Krone",
+        "industry": "Currencies"
+      }
+    ]
   },
   "DM": {
-    "default": "Direct Message",
-    "alternatives": ["Dungeon Master", "Data Migration", "Decision Maker"]
+    "definitions": [
+      {
+        "text": "Direct Message",
+        "industry": "General"
+      },
+      {
+        "text": "Dungeon Master",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Data Migration",
+        "industry": "Tech"
+      },
+      {
+        "text": "Decision Maker",
+        "industry": "General"
+      }
+    ]
   },
   "DMA": {
-    "default": "Direct Memory Access",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Direct Memory Access",
+        "industry": "Tech"
+      }
+    ]
   },
   "DNS": {
-    "default": "Domain Name System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Domain Name System",
+        "industry": "Tech"
+      }
+    ]
   },
   "DOD": {
-    "default": "Department of Defense",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Defense",
+        "industry": "Government"
+      }
+    ]
   },
   "DOE": {
-    "default": "Department of Energy",
-    "alternatives": ["Department of Education", "Depends on Experience"]
+    "definitions": [
+      {
+        "text": "Department of Energy",
+        "industry": "Government"
+      },
+      {
+        "text": "Department of Education",
+        "industry": "Government"
+      },
+      {
+        "text": "Depends on Experience",
+        "industry": "Business"
+      }
+    ]
   },
   "DOJ": {
-    "default": "Department of Justice",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Justice",
+        "industry": "Government"
+      }
+    ]
   },
   "DOL": {
-    "default": "Department of Labor",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Labor",
+        "industry": "Government"
+      }
+    ]
   },
   "DOM": {
-    "default": "Document Object Model",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Document Object Model",
+        "industry": "Tech"
+      }
+    ]
   },
   "DOS": {
-    "default": "Disk Operating System",
-    "alternatives": ["Department of State", "Denial of Service"]
+    "definitions": [
+      {
+        "text": "Disk Operating System",
+        "industry": "Tech"
+      },
+      {
+        "text": "Department of State",
+        "industry": "Government"
+      },
+      {
+        "text": "Denial of Service",
+        "industry": "Tech"
+      }
+    ]
   },
   "DOT": {
-    "default": "Department of Transportation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Transportation",
+        "industry": "Government"
+      }
+    ]
   },
   "DPI": {
-    "default": "Distributions to Paid-In",
-    "alternatives": [],
-    "industry": { "finance": "Distributions to Paid-In" }
+    "definitions": [
+      {
+        "text": "Distributions to Paid-In",
+        "industry": "Finance"
+      }
+    ]
   },
   "DPO": {
-    "default": "Data Protection Officer",
-    "alternatives": ["Days Payable Outstanding"]
+    "definitions": [
+      {
+        "text": "Data Protection Officer",
+        "industry": "Business"
+      },
+      {
+        "text": "Days Payable Outstanding",
+        "industry": "Finance"
+      }
+    ]
   },
   "DPOs": {
-    "default": "Data Protection Officers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Data Protection Officers",
+        "industry": "Business"
+      }
+    ]
   },
   "DRAM": {
-    "default": "Dynamic Random Access Memory",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Dynamic Random Access Memory",
+        "industry": "Tech"
+      }
+    ]
   },
   "DRM": {
-    "default": "Digital Rights Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Digital Rights Management",
+        "industry": "Tech"
+      }
+    ]
   },
   "DRY": {
-    "default": "Don't Repeat Yourself",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Don't Repeat Yourself",
+        "industry": "Tech"
+      }
+    ]
   },
   "DSIT": {
-    "default": "Department for Science, Innovation and Technology",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department for Science, Innovation and Technology",
+        "industry": "Government"
+      }
+    ]
   },
   "DSM": {
-    "default": "Diagnostic and Statistical Manual",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Diagnostic and Statistical Manual",
+        "industry": "Medical"
+      }
+    ]
   },
   "DSS": {
-    "default": "Data Security Standard",
-    "alternatives": ["Decision Support System"]
+    "definitions": [
+      {
+        "text": "Data Security Standard",
+        "industry": "Tech"
+      },
+      {
+        "text": "Decision Support System",
+        "industry": "Tech"
+      }
+    ]
   },
   "DVI": {
-    "default": "Digital Visual Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Digital Visual Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "DVLA": {
-    "default": "Driver and Vehicle Licensing Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Driver and Vehicle Licensing Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "DVR": {
-    "default": "Digital Video Recorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Digital Video Recorder",
+        "industry": "Media"
+      }
+    ]
   },
   "DVSA": {
-    "default": "Driver and Vehicle Standards Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Driver and Vehicle Standards Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "DWP": {
-    "default": "Department for Work and Pensions",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department for Work and Pensions",
+        "industry": "Government"
+      }
+    ]
   },
   "EAP": {
-    "default": "Employee Assistance Programme",
-    "alternatives": ["Extensible Authentication Protocol"]
+    "definitions": [
+      {
+        "text": "Employee Assistance Programme",
+        "industry": "Business"
+      },
+      {
+        "text": "Extensible Authentication Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "EBIT": {
-    "default": "Earnings Before Interest and Taxes",
-    "alternatives": [],
-    "industry": { "finance": "Earnings Before Interest and Taxes" }
+    "definitions": [
+      {
+        "text": "Earnings Before Interest and Taxes",
+        "industry": "Finance"
+      }
+    ]
   },
   "EBITDA": {
-    "default": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Earnings Before Interest, Taxes, Depreciation and Amortisation",
+        "industry": "Finance"
+      }
+    ]
   },
   "ECC": {
-    "default": "Error-Correcting Code",
-    "alternatives": ["Error Correction Code"]
+    "definitions": [
+      {
+        "text": "Error-Correcting Code",
+        "industry": "Tech"
+      },
+      {
+        "text": "Error Correction Code",
+        "industry": "Tech"
+      }
+    ]
   },
   "ECMA": {
-    "default": "Ecma International",
-    "alternatives": ["European Computer Manufacturers Association"]
+    "definitions": [
+      {
+        "text": "Ecma International",
+        "industry": "Tech"
+      },
+      {
+        "text": "European Computer Manufacturers Association",
+        "industry": "Tech"
+      }
+    ]
   },
   "ED": {
-    "default": "Executive Director",
-    "alternatives": ["Engineering Director"]
+    "definitions": [
+      {
+        "text": "Executive Director",
+        "industry": "Business"
+      },
+      {
+        "text": "Engineering Director",
+        "industry": "Business"
+      }
+    ]
   },
   "EDs": {
-    "default": "Executive Directors",
-    "alternatives": ["Engineering Directors"]
+    "definitions": [
+      {
+        "text": "Executive Directors",
+        "industry": "Business"
+      },
+      {
+        "text": "Engineering Directors",
+        "industry": "Business"
+      }
+    ]
   },
   "EEO": {
-    "default": "Equal Employment Opportunity",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Equal Employment Opportunity",
+        "industry": "Government"
+      }
+    ]
   },
   "EEOC": {
-    "default": "Equal Employment Opportunity Commission",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Equal Employment Opportunity Commission",
+        "industry": "Government"
+      }
+    ]
   },
   "EG": {
-    "default": "Egypt",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Egypt",
+        "industry": "Geography"
+      }
+    ]
   },
   "EGP": {
-    "default": "Egyptian Pound",
-    "alternatives": [],
-    "industry": { "finance": "Egyptian Pound" }
+    "definitions": [
+      {
+        "text": "Egyptian Pound",
+        "industry": "Currencies"
+      }
+    ]
   },
   "EGY": {
-    "default": "Egypt",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Egypt",
+        "industry": "Geography"
+      }
+    ]
   },
   "ELT": {
-    "default": "Executive Leadership Team",
-    "alternatives": ["English Language Teaching"]
+    "definitions": [
+      {
+        "text": "Executive Leadership Team",
+        "industry": "Business"
+      },
+      {
+        "text": "English Language Teaching",
+        "industry": "General"
+      }
+    ]
   },
   "EM": {
-    "default": "Engineering Manager",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Engineering Manager",
+        "industry": "Business"
+      }
+    ]
   },
   "EMs": {
-    "default": "Engineering Managers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Engineering Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "EMDR": {
-    "default": "Eye Movement Desensitisation and Reprocessing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Eye Movement Desensitisation and Reprocessing",
+        "industry": "Medical"
+      }
+    ]
   },
   "EMI": {
-    "default": "Enterprise Management Incentive",
-    "alternatives": ["Electromagnetic Interference", "Equated Monthly Instalment"]
+    "definitions": [
+      {
+        "text": "Enterprise Management Incentive",
+        "industry": "Finance"
+      },
+      {
+        "text": "Electromagnetic Interference",
+        "industry": "Tech"
+      },
+      {
+        "text": "Equated Monthly Instalment",
+        "industry": "Finance"
+      }
+    ]
   },
   "EOD": {
-    "default": "End of Day",
-    "alternatives": ["End of Discussion"]
+    "definitions": [
+      {
+        "text": "End of Day",
+        "industry": "General"
+      },
+      {
+        "text": "End of Discussion",
+        "industry": "General"
+      }
+    ]
   },
   "EOE": {
-    "default": "Equal Opportunity Employer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Equal Opportunity Employer",
+        "industry": "General"
+      }
+    ]
   },
   "EOM": {
-    "default": "End of Month",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "End of Month",
+        "industry": "General"
+      }
+    ]
   },
   "EOY": {
-    "default": "End of Year",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "End of Year",
+        "industry": "General"
+      }
+    ]
   },
   "EPA": {
-    "default": "Environmental Protection Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Environmental Protection Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "EPG": {
-    "default": "Electronic Programme Guide",
-    "alternatives": ["Electronic Program Guide"]
+    "definitions": [
+      {
+        "text": "Electronic Programme Guide",
+        "industry": "Media"
+      },
+      {
+        "text": "Electronic Program Guide",
+        "industry": "Media"
+      }
+    ]
   },
   "EPS": {
-    "default": "Earnings Per Share",
-    "alternatives": [],
-    "industry": { "finance": "Earnings Per Share" }
+    "definitions": [
+      {
+        "text": "Earnings Per Share",
+        "industry": "Finance"
+      }
+    ]
   },
   "ERG": {
-    "default": "Employee Resource Group",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Employee Resource Group",
+        "industry": "General"
+      }
+    ]
   },
   "ERP": {
-    "default": "Enterprise Resource Planning",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Enterprise Resource Planning",
+        "industry": "Tech"
+      }
+    ]
   },
   "ES": {
-    "default": "Spain",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Spain",
+        "industry": "Geography"
+      }
+    ]
   },
   "ESOP": {
-    "default": "Employee Stock Ownership Plan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Employee Stock Ownership Plan",
+        "industry": "Finance"
+      }
+    ]
   },
   "ESPP": {
-    "default": "Employee Stock Purchase Plan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Employee Stock Purchase Plan",
+        "industry": "Finance"
+      }
+    ]
   },
   "ESP": {
-    "default": "Spain",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Spain",
+        "industry": "Geography"
+      }
+    ]
   },
   "ETF": {
-    "default": "Exchange-Traded Fund",
-    "alternatives": [],
-    "industry": { "finance": "Exchange-Traded Fund" }
+    "definitions": [
+      {
+        "text": "Exchange-Traded Fund",
+        "industry": "Finance"
+      }
+    ]
   },
   "ETL": {
-    "default": "Extract, Transform, Load",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Extract, Transform, Load",
+        "industry": "Tech"
+      }
+    ]
   },
   "EU": {
-    "default": "European Union",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "European Union",
+        "industry": "Government"
+      }
+    ]
   },
   "EUPD": {
-    "default": "Emotionally Unstable Personality Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Emotionally Unstable Personality Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "EUR": {
-    "default": "Euro",
-    "alternatives": [],
-    "industry": { "finance": "Euro" }
+    "definitions": [
+      {
+        "text": "Euro",
+        "industry": "Currencies"
+      }
+    ]
   },
   "EV": {
-    "default": "Enterprise Value",
-    "alternatives": ["Electric Vehicle"],
-    "industry": { "finance": "Enterprise Value" }
+    "definitions": [
+      {
+        "text": "Enterprise Value",
+        "industry": "Finance"
+      },
+      {
+        "text": "Electric Vehicle",
+        "industry": "Tech"
+      }
+    ]
   },
   "EVP": {
-    "default": "Executive Vice President",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Executive Vice President",
+        "industry": "Business"
+      }
+    ]
   },
   "EVPs": {
-    "default": "Executive Vice Presidents",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Executive Vice Presidents",
+        "industry": "Business"
+      }
+    ]
   },
   "FAST": {
-    "default": "Free Ad-Supported Streaming TV",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Free Ad-Supported Streaming TV",
+        "industry": "Media"
+      }
+    ]
   },
   "FBI": {
-    "default": "Federal Bureau of Investigation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Federal Bureau of Investigation",
+        "industry": "Government"
+      }
+    ]
   },
   "FCA": {
-    "default": "Financial Conduct Authority",
-    "alternatives": [],
-    "industry": { "finance": "Financial Conduct Authority" }
+    "definitions": [
+      {
+        "text": "Financial Conduct Authority",
+        "industry": "Finance"
+      }
+    ]
   },
   "FCC": {
-    "default": "Federal Communications Commission",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Federal Communications Commission",
+        "industry": "Government"
+      }
+    ]
   },
   "FCDO": {
-    "default": "Foreign, Commonwealth and Development Office",
-    "alternatives": ["Foreign and Commonwealth Office"]
+    "definitions": [
+      {
+        "text": "Foreign, Commonwealth and Development Office",
+        "industry": "Government"
+      },
+      {
+        "text": "Foreign and Commonwealth Office",
+        "industry": "Government"
+      }
+    ]
   },
   "FCF": {
-    "default": "Free Cash Flow",
-    "alternatives": [],
-    "industry": { "finance": "Free Cash Flow" }
+    "definitions": [
+      {
+        "text": "Free Cash Flow",
+        "industry": "Finance"
+      }
+    ]
   },
   "FDA": {
-    "default": "Food and Drug Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Food and Drug Administration",
+        "industry": "Medical"
+      }
+    ]
   },
   "FDI": {
-    "default": "Foreign Direct Investment",
-    "alternatives": [],
-    "industry": { "finance": "Foreign Direct Investment" }
+    "definitions": [
+      {
+        "text": "Foreign Direct Investment",
+        "industry": "Finance"
+      }
+    ]
   },
   "FDIC": {
-    "default": "Federal Deposit Insurance Corporation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Federal Deposit Insurance Corporation",
+        "industry": "Finance"
+      }
+    ]
   },
   "FEMA": {
-    "default": "Federal Emergency Management Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Federal Emergency Management Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "FI": {
-    "default": "Finland",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Finland",
+        "industry": "Geography"
+      }
+    ]
   },
   "FIFO": {
-    "default": "First In, First Out",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "First In, First Out",
+        "industry": "Finance"
+      }
+    ]
   },
   "FLGS": {
-    "default": "Friendly Local Game Store",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Friendly Local Game Store",
+        "industry": "Gaming"
+      }
+    ]
   },
   "FLOPS": {
-    "default": "Floating-Point Operations Per Second",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Floating-Point Operations Per Second",
+        "industry": "Tech"
+      }
+    ]
   },
   "FPS": {
-    "default": "Frames Per Second",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Frames Per Second",
+        "industry": "Tech"
+      }
+    ]
   },
   "FR": {
-    "default": "France",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "France",
+        "industry": "Geography"
+      }
+    ]
   },
   "FTC": {
-    "default": "Federal Trade Commission",
-    "alternatives": ["Fixed-Term Contract"]
+    "definitions": [
+      {
+        "text": "Federal Trade Commission",
+        "industry": "Finance"
+      },
+      {
+        "text": "Fixed-Term Contract",
+        "industry": "Work"
+      }
+    ]
   },
   "FTE": {
-    "default": "Full-Time Employee",
-    "alternatives": ["Full-Time Equivalent"]
+    "definitions": [
+      {
+        "text": "Full-Time Employee",
+        "industry": "General"
+      },
+      {
+        "text": "Full-Time Equivalent",
+        "industry": "General"
+      }
+    ]
   },
   "FTA": {
-    "default": "Free to Air",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Free to Air",
+        "industry": "Media"
+      }
+    ]
   },
   "FTP": {
-    "default": "File Transfer Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "File Transfer Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "FY": {
-    "default": "Financial Year",
-    "alternatives": ["Fiscal Year"]
+    "definitions": [
+      {
+        "text": "Financial Year",
+        "industry": "Finance"
+      },
+      {
+        "text": "Fiscal Year",
+        "industry": "Finance"
+      }
+    ]
   },
   "FYI": {
-    "default": "For Your Information",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "For Your Information",
+        "industry": "General"
+      }
+    ]
   },
   "GAAP": {
-    "default": "Generally Accepted Accounting Principles",
-    "alternatives": [],
-    "industry": { "finance": "Generally Accepted Accounting Principles" }
+    "definitions": [
+      {
+        "text": "Generally Accepted Accounting Principles",
+        "industry": "Finance"
+      }
+    ]
   },
   "GAD": {
-    "default": "Generalised Anxiety Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Generalised Anxiety Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "GAO": {
-    "default": "Government Accountability Office",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Government Accountability Office",
+        "industry": "Government"
+      }
+    ]
   },
   "GB": {
-    "default": "United Kingdom",
-    "alternatives": ["Great Britain"]
+    "definitions": [
+      {
+        "text": "United Kingdom",
+        "industry": "Geography"
+      },
+      {
+        "text": "Great Britain",
+        "industry": "Geography"
+      }
+    ]
   },
   "GBP": {
-    "default": "British Pound Sterling",
-    "alternatives": ["Sterling", "Pound Sterling"],
-    "industry": { "finance": "British Pound Sterling" }
+    "definitions": [
+      {
+        "text": "British Pound Sterling",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Sterling",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Pound Sterling",
+        "industry": "Currencies"
+      }
+    ]
   },
   "GBR": {
-    "default": "United Kingdom",
-    "alternatives": ["Great Britain"]
+    "definitions": [
+      {
+        "text": "United Kingdom",
+        "industry": "Geography"
+      },
+      {
+        "text": "Great Britain",
+        "industry": "Geography"
+      }
+    ]
   },
   "GC": {
-    "default": "Garbage Collection",
-    "alternatives": ["General Counsel"],
-    "industry": { "tech": "Garbage Collection" }
+    "definitions": [
+      {
+        "text": "Garbage Collection",
+        "industry": "Tech"
+      },
+      {
+        "text": "General Counsel",
+        "industry": "General"
+      }
+    ]
   },
   "GCHQ": {
-    "default": "Government Communications Headquarters",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Government Communications Headquarters",
+        "industry": "Government"
+      }
+    ]
   },
   "GCP": {
-    "default": "Google Cloud Platform",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Google Cloud Platform",
+        "industry": "Tech"
+      }
+    ]
   },
   "GDPR": {
-    "default": "General Data Protection Regulation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "General Data Protection Regulation",
+        "industry": "General"
+      }
+    ]
   },
   "GM": {
-    "default": "General Manager",
-    "alternatives": ["Game Master"]
+    "definitions": [
+      {
+        "text": "General Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Game Master",
+        "industry": "Gaming"
+      }
+    ]
   },
   "GMs": {
-    "default": "General Managers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "General Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "GP": {
-    "default": "General Practitioner",
-    "alternatives": ["General Partner"],
-    "industry": { "finance": "General Partner" }
+    "definitions": [
+      {
+        "text": "General Practitioner",
+        "industry": "Medical"
+      },
+      {
+        "text": "General Partner",
+        "industry": "Finance"
+      }
+    ]
   },
   "GPs": {
-    "default": "General Practitioners",
-    "alternatives": ["General Partners"],
-    "industry": { "finance": "General Partners" }
+    "definitions": [
+      {
+        "text": "General Practitioners",
+        "industry": "Medical"
+      },
+      {
+        "text": "General Partners",
+        "industry": "Finance"
+      }
+    ]
   },
   "GPU": {
-    "default": "Graphics Processing Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Graphics Processing Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "GR": {
-    "default": "Greece",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Greece",
+        "industry": "Geography"
+      }
+    ]
   },
   "GSA": {
-    "default": "General Services Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "General Services Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "GTM": {
-    "default": "Go-to-Market",
-    "alternatives": ["Google Tag Manager"]
+    "definitions": [
+      {
+        "text": "Go-to-Market",
+        "industry": "Business"
+      },
+      {
+        "text": "Google Tag Manager",
+        "industry": "Tech"
+      }
+    ]
   },
   "GUI": {
-    "default": "Graphical User Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Graphical User Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "HDD": {
-    "default": "Hard Disk Drive",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Hard Disk Drive",
+        "industry": "Tech"
+      }
+    ]
   },
   "HDMI": {
-    "default": "High-Definition Multimedia Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "High-Definition Multimedia Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "HDR": {
-    "default": "High Dynamic Range",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "High Dynamic Range",
+        "industry": "Tech"
+      }
+    ]
   },
   "HEVC": {
-    "default": "High Efficiency Video Coding",
-    "alternatives": ["H.265"]
+    "definitions": [
+      {
+        "text": "High Efficiency Video Coding",
+        "industry": "Tech"
+      },
+      {
+        "text": "H.265",
+        "industry": "Tech"
+      }
+    ]
   },
   "HHS": {
-    "default": "Department of Health and Human Services",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Health and Human Services",
+        "industry": "Medical"
+      }
+    ]
   },
   "HIPAA": {
-    "default": "Health Insurance Portability and Accountability Act",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Health Insurance Portability and Accountability Act",
+        "industry": "Medical"
+      }
+    ]
   },
   "HK": {
-    "default": "Hong Kong",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Hong Kong",
+        "industry": "Geography"
+      }
+    ]
   },
   "HKD": {
-    "default": "Hong Kong Dollar",
-    "alternatives": [],
-    "industry": { "finance": "Hong Kong Dollar" }
+    "definitions": [
+      {
+        "text": "Hong Kong Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "HLS": {
-    "default": "HTTP Live Streaming",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HTTP Live Streaming",
+        "industry": "Tech"
+      }
+    ]
   },
   "HM": {
-    "default": "Hiring Manager",
-    "alternatives": ["Her Majesty's", "His Majesty's"]
+    "definitions": [
+      {
+        "text": "Hiring Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Her Majesty's",
+        "industry": "Government"
+      },
+      {
+        "text": "His Majesty's",
+        "industry": "Government"
+      }
+    ]
   },
   "HMRC": {
-    "default": "His Majesty's Revenue and Customs",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "His Majesty's Revenue and Customs",
+        "industry": "Finance"
+      }
+    ]
   },
   "HMT": {
-    "default": "His Majesty's Treasury",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "His Majesty's Treasury",
+        "industry": "Finance"
+      }
+    ]
   },
   "HP": {
-    "default": "Hit Points",
-    "alternatives": ["Hewlett-Packard"]
+    "definitions": [
+      {
+        "text": "Hit Points",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Hewlett-Packard",
+        "industry": "Tech"
+      }
+    ]
   },
   "HR": {
-    "default": "Human Resources",
-    "alternatives": ["Croatia"]
+    "definitions": [
+      {
+        "text": "Human Resources",
+        "industry": "Business"
+      },
+      {
+        "text": "Croatia",
+        "industry": "Geography"
+      }
+    ]
   },
   "HRBP": {
-    "default": "HR Business Partner",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HR Business Partner",
+        "industry": "Business"
+      }
+    ]
   },
   "HRBPs": {
-    "default": "HR Business Partners",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HR Business Partners",
+        "industry": "Business"
+      }
+    ]
   },
   "HRIS": {
-    "default": "Human Resource Information System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Human Resource Information System",
+        "industry": "Tech"
+      }
+    ]
   },
   "HSE": {
-    "default": "Health and Safety Executive",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Health and Safety Executive",
+        "industry": "Government"
+      }
+    ]
   },
   "HTML": {
-    "default": "HyperText Markup Language",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HyperText Markup Language",
+        "industry": "Tech"
+      }
+    ]
   },
   "HTTP": {
-    "default": "HyperText Transfer Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HyperText Transfer Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "HTTPS": {
-    "default": "HyperText Transfer Protocol Secure",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "HyperText Transfer Protocol Secure",
+        "industry": "Tech"
+      }
+    ]
   },
   "HU": {
-    "default": "Hungary",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Hungary",
+        "industry": "Geography"
+      }
+    ]
   },
   "HUD": {
-    "default": "Department of Housing and Urban Development",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Department of Housing and Urban Development",
+        "industry": "Government"
+      }
+    ]
   },
   "HUF": {
-    "default": "Hungarian Forint",
-    "alternatives": [],
-    "industry": { "finance": "Hungarian Forint" }
+    "definitions": [
+      {
+        "text": "Hungarian Forint",
+        "industry": "Currencies"
+      }
+    ]
   },
   "IaaS": {
-    "default": "Infrastructure as a Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Infrastructure as a Service",
+        "industry": "Tech"
+      }
+    ]
   },
   "IaC": {
-    "default": "Infrastructure as Code",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Infrastructure as Code",
+        "industry": "Tech"
+      }
+    ]
   },
   "IAM": {
-    "default": "Identity and Access Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Identity and Access Management",
+        "industry": "Tech"
+      }
+    ]
   },
   "IAPT": {
-    "default": "Improving Access to Psychological Therapies",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Improving Access to Psychological Therapies",
+        "industry": "Medical"
+      }
+    ]
   },
   "IC": {
-    "default": "Individual Contributor",
-    "alternatives": ["Investment Committee", "Integrated Circuit"],
-    "industry": { "finance": "Investment Committee" }
+    "definitions": [
+      {
+        "text": "Individual Contributor",
+        "industry": "Business"
+      },
+      {
+        "text": "Investment Committee",
+        "industry": "Finance"
+      },
+      {
+        "text": "Integrated Circuit",
+        "industry": "Tech"
+      }
+    ]
   },
   "ICs": {
-    "default": "Individual Contributors",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Individual Contributors",
+        "industry": "Business"
+      }
+    ]
   },
   "ICD": {
-    "default": "International Classification of Diseases",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "International Classification of Diseases",
+        "industry": "Medical"
+      }
+    ]
   },
   "ICE": {
-    "default": "Immigration and Customs Enforcement",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Immigration and Customs Enforcement",
+        "industry": "Government"
+      }
+    ]
   },
   "ID": {
-    "default": "Indonesia",
-    "alternatives": ["Identifier"],
-    "industry": { "tech": "Identifier" }
+    "definitions": [
+      {
+        "text": "Indonesia",
+        "industry": "Geography"
+      },
+      {
+        "text": "Identifier",
+        "industry": "Tech"
+      }
+    ]
   },
   "IDE": {
-    "default": "Integrated Development Environment",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Integrated Development Environment",
+        "industry": "Tech"
+      }
+    ]
   },
   "IDR": {
-    "default": "Indonesian Rupiah",
-    "alternatives": [],
-    "industry": { "finance": "Indonesian Rupiah" }
+    "definitions": [
+      {
+        "text": "Indonesian Rupiah",
+        "industry": "Currencies"
+      }
+    ]
   },
   "IEEE": {
-    "default": "Institute of Electrical and Electronics Engineers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Institute of Electrical and Electronics Engineers",
+        "industry": "Tech"
+      }
+    ]
   },
   "IFRS": {
-    "default": "International Financial Reporting Standards",
-    "alternatives": [],
-    "industry": { "finance": "International Financial Reporting Standards" }
+    "definitions": [
+      {
+        "text": "International Financial Reporting Standards",
+        "industry": "Finance"
+      }
+    ]
   },
   "IL": {
-    "default": "Israel",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Israel",
+        "industry": "Geography"
+      }
+    ]
   },
   "ILS": {
-    "default": "Israeli New Shekel",
-    "alternatives": ["Instrument Landing System"],
-    "industry": { "finance": "Israeli New Shekel" }
+    "definitions": [
+      {
+        "text": "Israeli New Shekel",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Instrument Landing System",
+        "industry": "Tech"
+      }
+    ]
   },
   "IMAP": {
-    "default": "Internet Message Access Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Internet Message Access Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "IN": {
-    "default": "India",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "India",
+        "industry": "Geography"
+      }
+    ]
   },
   "IND": {
-    "default": "India",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "India",
+        "industry": "Geography"
+      }
+    ]
   },
   "INR": {
-    "default": "Indian Rupee",
-    "alternatives": [],
-    "industry": { "finance": "Indian Rupee" }
+    "definitions": [
+      {
+        "text": "Indian Rupee",
+        "industry": "Currencies"
+      }
+    ]
   },
   "IOPS": {
-    "default": "Input/Output Operations Per Second",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Input/Output Operations Per Second",
+        "industry": "Tech"
+      }
+    ]
   },
   "IoC": {
-    "default": "Inversion of Control",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Inversion of Control",
+        "industry": "Tech"
+      }
+    ]
   },
   "IP": {
-    "default": "Internet Protocol",
-    "alternatives": ["Intellectual Property"],
-    "industry": { "tech": "Internet Protocol" }
+    "definitions": [
+      {
+        "text": "Internet Protocol",
+        "industry": "Tech"
+      },
+      {
+        "text": "Intellectual Property",
+        "industry": "Business"
+      }
+    ]
   },
   "IPO": {
-    "default": "Initial Public Offering",
-    "alternatives": [],
-    "industry": { "finance": "Initial Public Offering" }
+    "definitions": [
+      {
+        "text": "Initial Public Offering",
+        "industry": "Finance"
+      }
+    ]
   },
   "IPTV": {
-    "default": "Internet Protocol Television",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Internet Protocol Television",
+        "industry": "Tech"
+      }
+    ]
   },
   "IRQ": {
-    "default": "Interrupt Request",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Interrupt Request",
+        "industry": "Tech"
+      }
+    ]
   },
   "IRR": {
-    "default": "Internal Rate of Return",
-    "alternatives": [],
-    "industry": { "finance": "Internal Rate of Return" }
+    "definitions": [
+      {
+        "text": "Internal Rate of Return",
+        "industry": "Finance"
+      }
+    ]
   },
   "IRS": {
-    "default": "Internal Revenue Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Internal Revenue Service",
+        "industry": "Finance"
+      }
+    ]
   },
   "ISO": {
-    "default": "International Organisation for Standardisation",
-    "alternatives": ["In Search Of"]
+    "definitions": [
+      {
+        "text": "International Organisation for Standardisation",
+        "industry": "Business"
+      },
+      {
+        "text": "In Search Of",
+        "industry": "General"
+      }
+    ]
   },
   "ISR": {
-    "default": "Israel",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Israel",
+        "industry": "Geography"
+      }
+    ]
   },
   "IT": {
-    "default": "Information Technology",
-    "alternatives": ["Italy"],
-    "industry": { "tech": "Information Technology" }
+    "definitions": [
+      {
+        "text": "Information Technology",
+        "industry": "Tech"
+      },
+      {
+        "text": "Italy",
+        "industry": "Geography"
+      }
+    ]
   },
   "ITSM": {
-    "default": "IT Service Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "IT Service Management",
+        "industry": "Tech"
+      }
+    ]
   },
   "JD": {
-    "default": "Job Description",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Job Description",
+        "industry": "General"
+      }
+    ]
   },
   "JIT": {
-    "default": "Just-In-Time",
-    "alternatives": ["Just-In-Time Compilation"],
-    "industry": { "tech": "Just-In-Time Compilation" }
+    "definitions": [
+      {
+        "text": "Just-In-Time",
+        "industry": "Tech"
+      },
+      {
+        "text": "Just-In-Time Compilation",
+        "industry": "Tech"
+      }
+    ]
   },
   "JP": {
-    "default": "Japan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Japan",
+        "industry": "Geography"
+      }
+    ]
   },
   "JPN": {
-    "default": "Japan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Japan",
+        "industry": "Geography"
+      }
+    ]
   },
   "JPY": {
-    "default": "Japanese Yen",
-    "alternatives": [],
-    "industry": { "finance": "Japanese Yen" }
+    "definitions": [
+      {
+        "text": "Japanese Yen",
+        "industry": "Currencies"
+      }
+    ]
   },
   "JSON": {
-    "default": "JavaScript Object Notation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "JavaScript Object Notation",
+        "industry": "Tech"
+      }
+    ]
   },
   "JWT": {
-    "default": "JSON Web Token",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "JSON Web Token",
+        "industry": "Tech"
+      }
+    ]
   },
   "KISS": {
-    "default": "Keep It Simple, Stupid",
-    "alternatives": ["Keep It Simple and Straightforward"]
+    "definitions": [
+      {
+        "text": "Keep It Simple, Stupid",
+        "industry": "General"
+      },
+      {
+        "text": "Keep It Simple and Straightforward",
+        "industry": "General"
+      }
+    ]
   },
   "KOR": {
-    "default": "South Korea",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "South Korea",
+        "industry": "Geography"
+      }
+    ]
   },
   "KPI": {
-    "default": "Key Performance Indicator",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Key Performance Indicator",
+        "industry": "General"
+      }
+    ]
   },
   "KPIs": {
-    "default": "Key Performance Indicators",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Key Performance Indicators",
+        "industry": "General"
+      }
+    ]
   },
   "KR": {
-    "default": "South Korea",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "South Korea",
+        "industry": "Geography"
+      }
+    ]
   },
   "KRW": {
-    "default": "South Korean Won",
-    "alternatives": [],
-    "industry": { "finance": "South Korean Won" }
+    "definitions": [
+      {
+        "text": "South Korean Won",
+        "industry": "Currencies"
+      }
+    ]
   },
   "KS": {
-    "default": "Kickstarter",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Kickstarter",
+        "industry": "Gaming"
+      }
+    ]
   },
   "KSA": {
-    "default": "Saudi Arabia",
-    "alternatives": ["Kingdom of Saudi Arabia"]
+    "definitions": [
+      {
+        "text": "Saudi Arabia",
+        "industry": "Geography"
+      },
+      {
+        "text": "Kingdom of Saudi Arabia",
+        "industry": "Geography"
+      }
+    ]
   },
   "KW": {
-    "default": "Kuwait",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Kuwait",
+        "industry": "Geography"
+      }
+    ]
   },
   "KWD": {
-    "default": "Kuwaiti Dinar",
-    "alternatives": [],
-    "industry": { "finance": "Kuwaiti Dinar" }
+    "definitions": [
+      {
+        "text": "Kuwaiti Dinar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "KYC": {
-    "default": "Know Your Customer",
-    "alternatives": [],
-    "industry": { "finance": "Know Your Customer" }
+    "definitions": [
+      {
+        "text": "Know Your Customer",
+        "industry": "Finance"
+      }
+    ]
   },
   "LAN": {
-    "default": "Local Area Network",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Local Area Network",
+        "industry": "Tech"
+      }
+    ]
   },
   "LBO": {
-    "default": "Leveraged Buyout",
-    "alternatives": [],
-    "industry": { "finance": "Leveraged Buyout" }
+    "definitions": [
+      {
+        "text": "Leveraged Buyout",
+        "industry": "Finance"
+      }
+    ]
   },
   "LCG": {
-    "default": "Living Card Game",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Living Card Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "LGS": {
-    "default": "Local Game Store",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Local Game Store",
+        "industry": "Gaming"
+      }
+    ]
   },
   "LGTM": {
-    "default": "Looks Good to Me",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Looks Good to Me",
+        "industry": "General"
+      }
+    ]
   },
   "LIFO": {
-    "default": "Last In, First Out",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Last In, First Out",
+        "industry": "Finance"
+      }
+    ]
   },
   "LLM": {
-    "default": "Large Language Model",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Large Language Model",
+        "industry": "Tech"
+      }
+    ]
   },
   "LLMs": {
-    "default": "Large Language Models",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Large Language Models",
+        "industry": "Tech"
+      }
+    ]
   },
   "LOI": {
-    "default": "Letter of Intent",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Letter of Intent",
+        "industry": "Finance"
+      }
+    ]
   },
   "LP": {
-    "default": "Limited Partner",
-    "alternatives": ["Long Play", "Linear Programming"]
+    "definitions": [
+      {
+        "text": "Limited Partner",
+        "industry": "Finance"
+      },
+      {
+        "text": "Long Play",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Linear Programming",
+        "industry": "Tech"
+      }
+    ]
   },
   "LPs": {
-    "default": "Limited Partners",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Limited Partners",
+        "industry": "Finance"
+      }
+    ]
   },
   "LTI": {
-    "default": "Long-Term Incentive",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Long-Term Incentive",
+        "industry": "Finance"
+      }
+    ]
   },
   "LTIP": {
-    "default": "Long-Term Incentive Plan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Long-Term Incentive Plan",
+        "industry": "Finance"
+      }
+    ]
   },
   "LTV": {
-    "default": "Lifetime Value",
-    "alternatives": ["Long-Term Value", "Loan To Value"]
+    "definitions": [
+      {
+        "text": "Lifetime Value",
+        "industry": "Finance"
+      },
+      {
+        "text": "Long-Term Value",
+        "industry": "Finance"
+      },
+      {
+        "text": "Loan To Value",
+        "industry": "Finance"
+      }
+    ]
   },
   "MAOI": {
-    "default": "Monoamine Oxidase Inhibitor",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Monoamine Oxidase Inhibitor",
+        "industry": "Medical"
+      }
+    ]
   },
   "MAU": {
-    "default": "Monthly Active Users",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Monthly Active Users",
+        "industry": "Tech"
+      }
+    ]
   },
   "MBO": {
-    "default": "Management Buyout",
-    "alternatives": ["Management by Objectives"],
-    "industry": { "finance": "Management Buyout" }
+    "definitions": [
+      {
+        "text": "Management Buyout",
+        "industry": "Finance"
+      },
+      {
+        "text": "Management by Objectives",
+        "industry": "Finance"
+      }
+    ]
   },
   "MBS": {
-    "default": "Mortgage-Backed Securities",
-    "alternatives": [],
-    "industry": { "finance": "Mortgage-Backed Securities" }
+    "definitions": [
+      {
+        "text": "Mortgage-Backed Securities",
+        "industry": "Finance"
+      }
+    ]
   },
   "MCN": {
-    "default": "Multi-Channel Network",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Multi-Channel Network",
+        "industry": "Media"
+      }
+    ]
   },
   "MD": {
-    "default": "Managing Director",
-    "alternatives": ["Medical Doctor"]
+    "definitions": [
+      {
+        "text": "Managing Director",
+        "industry": "Business"
+      },
+      {
+        "text": "Medical Doctor",
+        "industry": "Medical"
+      }
+    ]
   },
   "MDD": {
-    "default": "Major Depressive Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Major Depressive Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "MDs": {
-    "default": "Managing Directors",
-    "alternatives": ["Medical Doctors"]
+    "definitions": [
+      {
+        "text": "Managing Directors",
+        "industry": "Business"
+      },
+      {
+        "text": "Medical Doctors",
+        "industry": "Medical"
+      }
+    ]
   },
   "MEX": {
-    "default": "Mexico",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Mexico",
+        "industry": "Geography"
+      }
+    ]
   },
   "MFA": {
-    "default": "Multi-Factor Authentication",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Multi-Factor Authentication",
+        "industry": "Tech"
+      }
+    ]
   },
   "MH": {
-    "default": "Mental Health",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Mental Health",
+        "industry": "Medical"
+      }
+    ]
   },
   "MHFA": {
-    "default": "Mental Health First Aid",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Mental Health First Aid",
+        "industry": "Medical"
+      }
+    ]
   },
   "MLOps": {
-    "default": "Machine Learning Operations",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Machine Learning Operations",
+        "industry": "Tech"
+      }
+    ]
   },
   "MOD": {
-    "default": "Ministry of Defence",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Ministry of Defence",
+        "industry": "Government"
+      }
+    ]
   },
   "MOIC": {
-    "default": "Multiple on Invested Capital",
-    "alternatives": [],
-    "industry": { "finance": "Multiple on Invested Capital" }
+    "definitions": [
+      {
+        "text": "Multiple on Invested Capital",
+        "industry": "Finance"
+      }
+    ]
   },
   "MOJ": {
-    "default": "Ministry of Justice",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Ministry of Justice",
+        "industry": "Government"
+      }
+    ]
   },
   "MR": {
-    "default": "Merge Request",
-    "alternatives": ["Magnetic Resonance"],
-    "industry": { "tech": "Merge Request" }
+    "definitions": [
+      {
+        "text": "Merge Request",
+        "industry": "Tech"
+      },
+      {
+        "text": "Magnetic Resonance",
+        "industry": "Medical"
+      }
+    ]
   },
   "MRR": {
-    "default": "Monthly Recurring Revenue",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Monthly Recurring Revenue",
+        "industry": "Finance"
+      }
+    ]
   },
   "MSA": {
-    "default": "Master Service Agreement",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Master Service Agreement",
+        "industry": "General"
+      }
+    ]
   },
   "MSP": {
-    "default": "Managed Service Provider",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Managed Service Provider",
+        "industry": "Tech"
+      }
+    ]
   },
   "MSRP": {
-    "default": "Manufacturer's Suggested Retail Price",
-    "alternatives": ["Recommended Retail Price"]
+    "definitions": [
+      {
+        "text": "Manufacturer's Suggested Retail Price",
+        "industry": "General"
+      },
+      {
+        "text": "Recommended Retail Price",
+        "industry": "General"
+      }
+    ]
   },
   "MTG": {
-    "default": "Magic: The Gathering",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Magic: The Gathering",
+        "industry": "Gaming"
+      }
+    ]
   },
   "MVC": {
-    "default": "Model-View-Controller",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Model-View-Controller",
+        "industry": "Tech"
+      }
+    ]
   },
   "MVP": {
-    "default": "Minimum Viable Product",
-    "alternatives": ["Most Valuable Player", "Model-View-Presenter"]
+    "definitions": [
+      {
+        "text": "Minimum Viable Product",
+        "industry": "Tech"
+      },
+      {
+        "text": "Most Valuable Player",
+        "industry": "Sports"
+      },
+      {
+        "text": "Model-View-Presenter",
+        "industry": "Tech"
+      }
+    ]
   },
   "MVVM": {
-    "default": "Model-View-ViewModel",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Model-View-ViewModel",
+        "industry": "Tech"
+      }
+    ]
   },
   "MX": {
-    "default": "Mexico",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Mexico",
+        "industry": "Geography"
+      }
+    ]
   },
   "MXN": {
-    "default": "Mexican Peso",
-    "alternatives": [],
-    "industry": { "finance": "Mexican Peso" }
+    "definitions": [
+      {
+        "text": "Mexican Peso",
+        "industry": "Currencies"
+      }
+    ]
   },
   "MY": {
-    "default": "Malaysia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Malaysia",
+        "industry": "Geography"
+      }
+    ]
   },
   "MYR": {
-    "default": "Malaysian Ringgit",
-    "alternatives": [],
-    "industry": { "finance": "Malaysian Ringgit" }
+    "definitions": [
+      {
+        "text": "Malaysian Ringgit",
+        "industry": "Currencies"
+      }
+    ]
   },
   "NAND": {
-    "default": "NAND Flash Memory",
-    "alternatives": ["Not AND"]
+    "definitions": [
+      {
+        "text": "NAND Flash Memory",
+        "industry": "Tech"
+      },
+      {
+        "text": "Not AND",
+        "industry": "Tech"
+      }
+    ]
   },
   "NAO": {
-    "default": "National Audit Office",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Audit Office",
+        "industry": "Government"
+      }
+    ]
   },
   "NASA": {
-    "default": "National Aeronautics and Space Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Aeronautics and Space Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "NAT": {
-    "default": "Network Address Translation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Network Address Translation",
+        "industry": "Tech"
+      }
+    ]
   },
   "NAV": {
-    "default": "Net Asset Value",
-    "alternatives": ["Navigation"],
-    "industry": { "finance": "Net Asset Value" }
+    "definitions": [
+      {
+        "text": "Net Asset Value",
+        "industry": "Finance"
+      },
+      {
+        "text": "Navigation",
+        "industry": "General"
+      }
+    ]
   },
   "NCA": {
-    "default": "National Crime Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Crime Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "NDA": {
-    "default": "Non-Disclosure Agreement",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Non-Disclosure Agreement",
+        "industry": "General"
+      }
+    ]
   },
   "NG": {
-    "default": "Nigeria",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Nigeria",
+        "industry": "Geography"
+      }
+    ]
   },
   "NGA": {
-    "default": "Nigeria",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Nigeria",
+        "industry": "Geography"
+      }
+    ]
   },
   "NGN": {
-    "default": "Nigerian Naira",
-    "alternatives": [],
-    "industry": { "finance": "Nigerian Naira" }
+    "definitions": [
+      {
+        "text": "Nigerian Naira",
+        "industry": "Currencies"
+      }
+    ]
   },
   "NHS": {
-    "default": "National Health Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Health Service",
+        "industry": "Medical"
+      }
+    ]
   },
   "NHSE": {
-    "default": "NHS England",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "NHS England",
+        "industry": "Medical"
+      }
+    ]
   },
   "NIH": {
-    "default": "National Institutes of Health",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Institutes of Health",
+        "industry": "Medical"
+      }
+    ]
   },
   "NIST": {
-    "default": "National Institute of Standards and Technology",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Institute of Standards and Technology",
+        "industry": "Government"
+      }
+    ]
   },
   "NL": {
-    "default": "Netherlands",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Netherlands",
+        "industry": "Geography"
+      }
+    ]
   },
   "NLP": {
-    "default": "Natural Language Processing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Natural Language Processing",
+        "industry": "Tech"
+      }
+    ]
   },
   "NO": {
-    "default": "Norway",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Norway",
+        "industry": "Geography"
+      }
+    ]
   },
   "NOAA": {
-    "default": "National Oceanic and Atmospheric Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Oceanic and Atmospheric Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "NOK": {
-    "default": "Norwegian Krone",
-    "alternatives": [],
-    "industry": { "finance": "Norwegian Krone" }
+    "definitions": [
+      {
+        "text": "Norwegian Krone",
+        "industry": "Currencies"
+      }
+    ]
   },
   "NOR": {
-    "default": "Norway",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Norway",
+        "industry": "Geography"
+      }
+    ]
   },
   "NPC": {
-    "default": "Non-Player Character",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Non-Player Character",
+        "industry": "Gaming"
+      }
+    ]
   },
   "NoSQL": {
-    "default": "Not Only SQL",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Not Only SQL",
+        "industry": "Tech"
+      }
+    ]
   },
   "NPS": {
-    "default": "Net Promoter Score",
-    "alternatives": ["National Park Service"]
+    "definitions": [
+      {
+        "text": "Net Promoter Score",
+        "industry": "Finance"
+      },
+      {
+        "text": "National Park Service",
+        "industry": "Government"
+      }
+    ]
   },
   "NPU": {
-    "default": "Neural Processing Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Neural Processing Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "NPV": {
-    "default": "Net Present Value",
-    "alternatives": [],
-    "industry": { "finance": "Net Present Value" }
+    "definitions": [
+      {
+        "text": "Net Present Value",
+        "industry": "Finance"
+      }
+    ]
   },
   "NRR": {
-    "default": "Net Revenue Retention",
-    "alternatives": ["Net Recurring Revenue"]
+    "definitions": [
+      {
+        "text": "Net Revenue Retention",
+        "industry": "Finance"
+      },
+      {
+        "text": "Net Recurring Revenue",
+        "industry": "Finance"
+      }
+    ]
   },
   "NSA": {
-    "default": "National Security Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Security Agency",
+        "industry": "Government"
+      }
+    ]
   },
   "NSF": {
-    "default": "National Science Foundation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "National Science Foundation",
+        "industry": "Government"
+      }
+    ]
   },
   "NZ": {
-    "default": "New Zealand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "New Zealand",
+        "industry": "Geography"
+      }
+    ]
   },
   "NZD": {
-    "default": "New Zealand Dollar",
-    "alternatives": [],
-    "industry": { "finance": "New Zealand Dollar" }
+    "definitions": [
+      {
+        "text": "New Zealand Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "NZL": {
-    "default": "New Zealand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "New Zealand",
+        "industry": "Geography"
+      }
+    ]
   },
   "OBR": {
-    "default": "Office for Budget Responsibility",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Office for Budget Responsibility",
+        "industry": "Finance"
+      }
+    ]
   },
   "OCD": {
-    "default": "Obsessive-Compulsive Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Obsessive-Compulsive Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "ODD": {
-    "default": "Oppositional Defiant Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Oppositional Defiant Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "OKR": {
-    "default": "Objectives and Key Results",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Objectives and Key Results",
+        "industry": "General"
+      }
+    ]
   },
   "OKRs": {
-    "default": "Objectives and Key Results",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Objectives and Key Results",
+        "industry": "General"
+      }
+    ]
   },
   "OLAP": {
-    "default": "Online Analytical Processing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Online Analytical Processing",
+        "industry": "Tech"
+      }
+    ]
   },
   "OLTP": {
-    "default": "Online Transaction Processing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Online Transaction Processing",
+        "industry": "Tech"
+      }
+    ]
   },
   "OMB": {
-    "default": "Office of Management and Budget",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Office of Management and Budget",
+        "industry": "Government"
+      }
+    ]
   },
   "ONS": {
-    "default": "Office for National Statistics",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Office for National Statistics",
+        "industry": "Government"
+      }
+    ]
   },
   "OOP": {
-    "default": "Object-Oriented Programming",
-    "alternatives": ["Out of Print"]
+    "definitions": [
+      {
+        "text": "Object-Oriented Programming",
+        "industry": "Tech"
+      },
+      {
+        "text": "Out of Print",
+        "industry": "Gaming"
+      }
+    ]
   },
   "OPM": {
-    "default": "Office of Personnel Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Office of Personnel Management",
+        "industry": "Government"
+      }
+    ]
   },
   "ORM": {
-    "default": "Object-Relational Mapping",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Object-Relational Mapping",
+        "industry": "Tech"
+      }
+    ]
   },
   "OS": {
-    "default": "Operating System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Operating System",
+        "industry": "Tech"
+      }
+    ]
   },
   "OSHA": {
-    "default": "Occupational Safety and Health Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Occupational Safety and Health Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "OSR": {
-    "default": "Old School Renaissance",
-    "alternatives": ["Old School Revival"]
+    "definitions": [
+      {
+        "text": "Old School Renaissance",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Old School Revival",
+        "industry": "Gaming"
+      }
+    ]
   },
   "OSS": {
-    "default": "Open Source Software",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Open Source Software",
+        "industry": "Tech"
+      }
+    ]
   },
   "OTC": {
-    "default": "Over the Counter",
-    "alternatives": [],
-    "industry": { "finance": "Over the Counter" }
+    "definitions": [
+      {
+        "text": "Over the Counter",
+        "industry": "Finance"
+      }
+    ]
   },
   "OTE": {
-    "default": "On-Target Earnings",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "On-Target Earnings",
+        "industry": "Finance"
+      }
+    ]
   },
   "OTT": {
-    "default": "Over the Top",
-    "alternatives": ["Over-the-Top streaming"]
+    "definitions": [
+      {
+        "text": "Over the Top",
+        "industry": "Media"
+      },
+      {
+        "text": "Over-the-Top streaming",
+        "industry": "Media"
+      }
+    ]
   },
   "OTel": {
-    "default": "OpenTelemetry",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "OpenTelemetry",
+        "industry": "Tech"
+      }
+    ]
   },
   "P&L": {
-    "default": "Profit and Loss",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Profit and Loss",
+        "industry": "Finance"
+      }
+    ]
   },
   "PBTA": {
-    "default": "Powered by the Apocalypse",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Powered by the Apocalypse",
+        "industry": "Gaming"
+      }
+    ]
   },
   "PC": {
-    "default": "Personal Computer",
-    "alternatives": ["Player Character"]
+    "definitions": [
+      {
+        "text": "Personal Computer",
+        "industry": "Tech"
+      },
+      {
+        "text": "Player Character",
+        "industry": "Gaming"
+      }
+    ]
   },
   "PaaS": {
-    "default": "Platform as a Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Platform as a Service",
+        "industry": "Tech"
+      }
+    ]
   },
   "PCB": {
-    "default": "Printed Circuit Board",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Printed Circuit Board",
+        "industry": "Tech"
+      }
+    ]
   },
   "PCI": {
-    "default": "Payment Card Industry",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Payment Card Industry",
+        "industry": "Finance"
+      }
+    ]
   },
   "PE": {
-    "default": "Peru",
-    "alternatives": ["Private Equity"],
-    "industry": { "finance": "Private Equity" }
+    "definitions": [
+      {
+        "text": "Peru",
+        "industry": "Geography"
+      },
+      {
+        "text": "Private Equity",
+        "industry": "Finance"
+      }
+    ]
   },
   "PEG": {
-    "default": "Price/Earnings to Growth",
-    "alternatives": [],
-    "industry": { "finance": "Price/Earnings to Growth" }
+    "definitions": [
+      {
+        "text": "Price/Earnings to Growth",
+        "industry": "Finance"
+      }
+    ]
   },
   "PH": {
-    "default": "Philippines",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Philippines",
+        "industry": "Geography"
+      }
+    ]
   },
   "PHP": {
-    "default": "Philippine Peso",
-    "alternatives": ["Hypertext Preprocessor"],
-    "industry": { "finance": "Philippine Peso", "tech": "Hypertext Preprocessor" }
+    "definitions": [
+      {
+        "text": "Philippine Peso",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Hypertext Preprocessor",
+        "industry": "Tech"
+      }
+    ]
   },
   "PIP": {
-    "default": "Performance Improvement Plan",
-    "alternatives": ["Python Installer Package"]
+    "definitions": [
+      {
+        "text": "Performance Improvement Plan",
+        "industry": "Business"
+      },
+      {
+        "text": "Python Installer Package",
+        "industry": "Tech"
+      }
+    ]
   },
   "PK": {
-    "default": "Pakistan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Pakistan",
+        "industry": "Geography"
+      }
+    ]
   },
   "PKR": {
-    "default": "Pakistani Rupee",
-    "alternatives": [],
-    "industry": { "finance": "Pakistani Rupee" }
+    "definitions": [
+      {
+        "text": "Pakistani Rupee",
+        "industry": "Currencies"
+      }
+    ]
   },
   "PL": {
-    "default": "Poland",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Poland",
+        "industry": "Geography"
+      }
+    ]
   },
   "PLN": {
-    "default": "Polish Zloty",
-    "alternatives": [],
-    "industry": { "finance": "Polish Zloty" }
+    "definitions": [
+      {
+        "text": "Polish Zloty",
+        "industry": "Currencies"
+      }
+    ]
   },
   "PM": {
-    "default": "Product Manager",
-    "alternatives": ["Project Manager", "Programme Manager", "Private Message"]
+    "definitions": [
+      {
+        "text": "Product Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Project Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Programme Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Private Message",
+        "industry": "General"
+      }
+    ]
   },
   "PMDD": {
-    "default": "Premenstrual Dysphoric Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Premenstrual Dysphoric Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "PMs": {
-    "default": "Product Managers",
-    "alternatives": ["Project Managers", "Programme Managers"]
+    "definitions": [
+      {
+        "text": "Product Managers",
+        "industry": "Business"
+      },
+      {
+        "text": "Project Managers",
+        "industry": "Business"
+      },
+      {
+        "text": "Programme Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "PND": {
-    "default": "Postnatal Depression",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Postnatal Depression",
+        "industry": "Medical"
+      }
+    ]
   },
   "POC": {
-    "default": "Proof of Concept",
-    "alternatives": ["Point of Contact"]
+    "definitions": [
+      {
+        "text": "Proof of Concept",
+        "industry": "General"
+      },
+      {
+        "text": "Point of Contact",
+        "industry": "General"
+      }
+    ]
   },
   "POL": {
-    "default": "Poland",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Poland",
+        "industry": "Geography"
+      }
+    ]
   },
   "POSIX": {
-    "default": "Portable Operating System Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Portable Operating System Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "POST": {
-    "default": "Power-On Self-Test",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Power-On Self-Test",
+        "industry": "Tech"
+      }
+    ]
   },
   "POTUS": {
-    "default": "President of the United States",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "President of the United States",
+        "industry": "Government"
+      }
+    ]
   },
   "PPD": {
-    "default": "Postpartum Depression",
-    "alternatives": ["Persistent Depressive Disorder"]
+    "definitions": [
+      {
+        "text": "Postpartum Depression",
+        "industry": "Medical"
+      },
+      {
+        "text": "Persistent Depressive Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "PR": {
-    "default": "Pull Request",
-    "alternatives": ["Public Relations", "Performance Review"]
+    "definitions": [
+      {
+        "text": "Pull Request",
+        "industry": "Tech"
+      },
+      {
+        "text": "Public Relations",
+        "industry": "General"
+      },
+      {
+        "text": "Performance Review",
+        "industry": "General"
+      }
+    ]
   },
   "PSU": {
-    "default": "Power Supply Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Power Supply Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "PT": {
-    "default": "Portugal",
-    "alternatives": ["Physical Therapy", "Part-Time"],
-    "industry": { "pharma": "Physical Therapy" }
+    "definitions": [
+      {
+        "text": "Portugal",
+        "industry": "Geography"
+      },
+      {
+        "text": "Physical Therapy",
+        "industry": "Medical"
+      },
+      {
+        "text": "Part-Time",
+        "industry": "Work"
+      }
+    ]
   },
   "PTO": {
-    "default": "Paid Time Off",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Paid Time Off",
+        "industry": "General"
+      }
+    ]
   },
   "PTSD": {
-    "default": "Post-Traumatic Stress Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Post-Traumatic Stress Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "PVR": {
-    "default": "Personal Video Recorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Personal Video Recorder",
+        "industry": "Media"
+      }
+    ]
   },
   "PWA": {
-    "default": "Progressive Web App",
-    "alternatives": ["Progressive Web Application"]
+    "definitions": [
+      {
+        "text": "Progressive Web App",
+        "industry": "Tech"
+      },
+      {
+        "text": "Progressive Web Application",
+        "industry": "Tech"
+      }
+    ]
   },
   "PnP": {
-    "default": "Print and Play",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Print and Play",
+        "industry": "Gaming"
+      }
+    ]
   },
   "QA": {
-    "default": "Quality Assurance",
-    "alternatives": ["Question and Answer", "Qatar"],
-    "industry": { "tech": "Quality Assurance" }
+    "definitions": [
+      {
+        "text": "Quality Assurance",
+        "industry": "Tech"
+      },
+      {
+        "text": "Question and Answer",
+        "industry": "General"
+      },
+      {
+        "text": "Qatar",
+        "industry": "Geography"
+      }
+    ]
   },
   "QAR": {
-    "default": "Qatari Riyal",
-    "alternatives": [],
-    "industry": { "finance": "Qatari Riyal" }
+    "definitions": [
+      {
+        "text": "Qatari Riyal",
+        "industry": "Currencies"
+      }
+    ]
   },
   "QAT": {
-    "default": "Qatar",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Qatar",
+        "industry": "Geography"
+      }
+    ]
   },
   "QE": {
-    "default": "Quality Engineer",
-    "alternatives": ["Quantitative Easing"],
-    "industry": { "finance": "Quantitative Easing" }
+    "definitions": [
+      {
+        "text": "Quality Engineer",
+        "industry": "Tech"
+      },
+      {
+        "text": "Quantitative Easing",
+        "industry": "Finance"
+      }
+    ]
   },
   "RAG": {
-    "default": "Retrieval-Augmented Generation",
-    "alternatives": ["Red, Amber, Green (status)"],
-    "industry": { "tech": "Retrieval-Augmented Generation" }
+    "definitions": [
+      {
+        "text": "Retrieval-Augmented Generation",
+        "industry": "Tech"
+      },
+      {
+        "text": "Red, Amber, Green (status)",
+        "industry": "Business"
+      }
+    ]
   },
   "RAI": {
-    "default": "Rules as Intended",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Rules as Intended",
+        "industry": "Gaming"
+      }
+    ]
   },
   "RAID": {
-    "default": "Redundant Array of Independent Disks",
-    "alternatives": ["Redundant Array of Inexpensive Disks"]
+    "definitions": [
+      {
+        "text": "Redundant Array of Independent Disks",
+        "industry": "Tech"
+      },
+      {
+        "text": "Redundant Array of Inexpensive Disks",
+        "industry": "Tech"
+      }
+    ]
   },
   "RAM": {
-    "default": "Random Access Memory",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Random Access Memory",
+        "industry": "Tech"
+      }
+    ]
   },
   "RAW": {
-    "default": "Rules as Written",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Rules as Written",
+        "industry": "Gaming"
+      }
+    ]
   },
   "RBAC": {
-    "default": "Role-Based Access Control",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Role-Based Access Control",
+        "industry": "Tech"
+      }
+    ]
   },
   "REIT": {
-    "default": "Real Estate Investment Trust",
-    "alternatives": [],
-    "industry": { "finance": "Real Estate Investment Trust" }
+    "definitions": [
+      {
+        "text": "Real Estate Investment Trust",
+        "industry": "Finance"
+      }
+    ]
   },
   "REST": {
-    "default": "Representational State Transfer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Representational State Transfer",
+        "industry": "Tech"
+      }
+    ]
   },
   "RFC": {
-    "default": "Request for Comments",
-    "alternatives": ["Request for Change"]
+    "definitions": [
+      {
+        "text": "Request for Comments",
+        "industry": "Tech"
+      },
+      {
+        "text": "Request for Change",
+        "industry": "Tech"
+      }
+    ]
   },
   "RO": {
-    "default": "Romania",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Romania",
+        "industry": "Geography"
+      }
+    ]
   },
   "ROI": {
-    "default": "Return on Investment",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Return on Investment",
+        "industry": "Finance"
+      }
+    ]
   },
   "ROM": {
-    "default": "Read-Only Memory",
-    "alternatives": ["Range of Motion"],
-    "industry": { "pharma": "Range of Motion" }
+    "definitions": [
+      {
+        "text": "Read-Only Memory",
+        "industry": "Tech"
+      },
+      {
+        "text": "Range of Motion",
+        "industry": "Medical"
+      }
+    ]
   },
   "RPG": {
-    "default": "Role-Playing Game",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Role-Playing Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "RPO": {
-    "default": "Recruitment Process Outsourcing",
-    "alternatives": ["Recovery Point Objective"]
+    "definitions": [
+      {
+        "text": "Recruitment Process Outsourcing",
+        "industry": "Business"
+      },
+      {
+        "text": "Recovery Point Objective",
+        "industry": "Tech"
+      }
+    ]
   },
   "RSU": {
-    "default": "Restricted Stock Unit",
-    "alternatives": [],
-    "industry": { "finance": "Restricted Stock Unit" }
+    "definitions": [
+      {
+        "text": "Restricted Stock Unit",
+        "industry": "Finance"
+      }
+    ]
   },
   "RTMP": {
-    "default": "Real-Time Messaging Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Real-Time Messaging Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "RTO": {
-    "default": "Return to Office",
-    "alternatives": ["Recovery Time Objective"]
+    "definitions": [
+      {
+        "text": "Return to Office",
+        "industry": "General"
+      },
+      {
+        "text": "Recovery Time Objective",
+        "industry": "Tech"
+      }
+    ]
   },
   "RTSP": {
-    "default": "Real-Time Streaming Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Real-Time Streaming Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "RU": {
-    "default": "Russia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Russia",
+        "industry": "Geography"
+      }
+    ]
   },
   "RUB": {
-    "default": "Russian Ruble",
-    "alternatives": [],
-    "industry": { "finance": "Russian Ruble" }
+    "definitions": [
+      {
+        "text": "Russian Ruble",
+        "industry": "Currencies"
+      }
+    ]
   },
   "RUS": {
-    "default": "Russia",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Russia",
+        "industry": "Geography"
+      }
+    ]
   },
   "SA": {
-    "default": "Saudi Arabia",
-    "alternatives": ["South Africa", "Solutions Architect"],
-    "industry": { "tech": "Solutions Architect" }
+    "definitions": [
+      {
+        "text": "Saudi Arabia",
+        "industry": "Geography"
+      },
+      {
+        "text": "South Africa",
+        "industry": "Geography"
+      },
+      {
+        "text": "Solutions Architect",
+        "industry": "Tech"
+      }
+    ]
   },
   "SAD": {
-    "default": "Seasonal Affective Disorder",
-    "alternatives": ["Social Anxiety Disorder"]
+    "definitions": [
+      {
+        "text": "Seasonal Affective Disorder",
+        "industry": "Medical"
+      },
+      {
+        "text": "Social Anxiety Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "SaaS": {
-    "default": "Software as a Service",
-    "alternatives": [],
-    "industry": { "tech": "Software as a Service" }
+    "definitions": [
+      {
+        "text": "Software as a Service",
+        "industry": "Tech"
+      }
+    ]
   },
   "SAFE": {
-    "default": "Simple Agreement for Future Equity",
-    "alternatives": [],
-    "industry": { "finance": "Simple Agreement for Future Equity" }
+    "definitions": [
+      {
+        "text": "Simple Agreement for Future Equity",
+        "industry": "Finance"
+      }
+    ]
   },
   "SAM": {
-    "default": "Serviceable Addressable Market",
-    "alternatives": ["Serviceable Available Market"]
+    "definitions": [
+      {
+        "text": "Serviceable Addressable Market",
+        "industry": "Finance"
+      },
+      {
+        "text": "Serviceable Available Market",
+        "industry": "Finance"
+      }
+    ]
   },
   "SAML": {
-    "default": "Security Assertion Markup Language",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Security Assertion Markup Language",
+        "industry": "Tech"
+      }
+    ]
   },
   "SAR": {
-    "default": "Saudi Riyal",
-    "alternatives": ["Suspicious Activity Report", "Specific Absorption Rate", "Search and Rescue"],
-    "industry": { "finance": "Saudi Riyal" }
+    "definitions": [
+      {
+        "text": "Saudi Riyal",
+        "industry": "Currencies"
+      },
+      {
+        "text": "Suspicious Activity Report",
+        "industry": "Finance"
+      },
+      {
+        "text": "Specific Absorption Rate",
+        "industry": "Science"
+      },
+      {
+        "text": "Search and Rescue",
+        "industry": "General"
+      }
+    ]
   },
   "SATA": {
-    "default": "Serial AT Attachment",
-    "alternatives": ["Serial ATA"]
+    "definitions": [
+      {
+        "text": "Serial AT Attachment",
+        "industry": "Tech"
+      },
+      {
+        "text": "Serial ATA",
+        "industry": "Tech"
+      }
+    ]
   },
   "SCOTUS": {
-    "default": "Supreme Court of the United States",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Supreme Court of the United States",
+        "industry": "Government"
+      }
+    ]
   },
   "SDK": {
-    "default": "Software Development Kit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Software Development Kit",
+        "industry": "Tech"
+      }
+    ]
   },
   "SDR": {
-    "default": "Sales Development Representative",
-    "alternatives": ["Special Drawing Rights", "Standard Dynamic Range"],
-    "industry": { "finance": "Special Drawing Rights" }
+    "definitions": [
+      {
+        "text": "Sales Development Representative",
+        "industry": "Business"
+      },
+      {
+        "text": "Special Drawing Rights",
+        "industry": "Finance"
+      },
+      {
+        "text": "Standard Dynamic Range",
+        "industry": "Tech"
+      }
+    ]
   },
   "SDRs": {
-    "default": "Sales Development Representatives",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Sales Development Representatives",
+        "industry": "Business"
+      }
+    ]
   },
   "SE": {
-    "default": "Sweden",
-    "alternatives": ["Software Engineer", "Software Engineering"],
-    "industry": { "tech": "Software Engineer" }
+    "definitions": [
+      {
+        "text": "Sweden",
+        "industry": "Geography"
+      },
+      {
+        "text": "Software Engineer",
+        "industry": "Tech"
+      },
+      {
+        "text": "Software Engineering",
+        "industry": "Tech"
+      }
+    ]
   },
   "SEC": {
-    "default": "Securities and Exchange Commission",
-    "alternatives": [],
-    "industry": { "finance": "Securities and Exchange Commission" }
+    "definitions": [
+      {
+        "text": "Securities and Exchange Commission",
+        "industry": "Finance"
+      }
+    ]
   },
   "SEK": {
-    "default": "Swedish Krona",
-    "alternatives": [],
-    "industry": { "finance": "Swedish Krona" }
+    "definitions": [
+      {
+        "text": "Swedish Krona",
+        "industry": "Currencies"
+      }
+    ]
   },
   "SFTP": {
-    "default": "SSH File Transfer Protocol",
-    "alternatives": ["Secure File Transfer Protocol"]
+    "definitions": [
+      {
+        "text": "SSH File Transfer Protocol",
+        "industry": "Tech"
+      },
+      {
+        "text": "Secure File Transfer Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "SG": {
-    "default": "Singapore",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Singapore",
+        "industry": "Geography"
+      }
+    ]
   },
   "SGD": {
-    "default": "Singapore Dollar",
-    "alternatives": [],
-    "industry": { "finance": "Singapore Dollar" }
+    "definitions": [
+      {
+        "text": "Singapore Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "SHRM": {
-    "default": "Society for Human Resource Management",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Society for Human Resource Management",
+        "industry": "Business"
+      }
+    ]
   },
   "SIS": {
-    "default": "Secret Intelligence Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Secret Intelligence Service",
+        "industry": "Government"
+      }
+    ]
   },
   "SLA": {
-    "default": "Service Level Agreement",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Service Level Agreement",
+        "industry": "Tech"
+      }
+    ]
   },
   "SLI": {
-    "default": "Service Level Indicator",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Service Level Indicator",
+        "industry": "Tech"
+      }
+    ]
   },
   "SLO": {
-    "default": "Service Level Objective",
-    "alternatives": ["Service Level Offering"]
+    "definitions": [
+      {
+        "text": "Service Level Objective",
+        "industry": "Tech"
+      },
+      {
+        "text": "Service Level Offering",
+        "industry": "Tech"
+      }
+    ]
   },
   "SLT": {
-    "default": "Senior Leadership Team",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Senior Leadership Team",
+        "industry": "Business"
+      }
+    ]
   },
   "SME": {
-    "default": "Subject Matter Expert",
-    "alternatives": ["Small and Medium Enterprise"]
+    "definitions": [
+      {
+        "text": "Subject Matter Expert",
+        "industry": "Work"
+      },
+      {
+        "text": "Small and Medium Enterprise",
+        "industry": "Work"
+      }
+    ]
   },
   "SMT": {
-    "default": "Simultaneous Multithreading",
-    "alternatives": ["Surface Mount Technology"]
+    "definitions": [
+      {
+        "text": "Simultaneous Multithreading",
+        "industry": "Tech"
+      },
+      {
+        "text": "Surface Mount Technology",
+        "industry": "Tech"
+      }
+    ]
   },
   "SMTP": {
-    "default": "Simple Mail Transfer Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Simple Mail Transfer Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "SNRI": {
-    "default": "Serotonin-Norepinephrine Reuptake Inhibitor",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Serotonin-Norepinephrine Reuptake Inhibitor",
+        "industry": "Medical"
+      }
+    ]
   },
   "SOA": {
-    "default": "Service-Oriented Architecture",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Service-Oriented Architecture",
+        "industry": "Tech"
+      }
+    ]
   },
   "SOAP": {
-    "default": "Simple Object Access Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Simple Object Access Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "SOC": {
-    "default": "Security Operations Center",
-    "alternatives": ["System on Chip", "Statement of Changes"],
-    "industry": { "tech": "Security Operations Center", "hardware": "System on Chip", "finance": "Statement of Changes" }
+    "definitions": [
+      {
+        "text": "Security Operations Center",
+        "industry": "Tech"
+      },
+      {
+        "text": "System on Chip",
+        "industry": "Tech"
+      },
+      {
+        "text": "Statement of Changes",
+        "industry": "Finance"
+      }
+    ]
   },
   "SOM": {
-    "default": "Serviceable Obtainable Market",
-    "alternatives": ["Share of Market"]
+    "definitions": [
+      {
+        "text": "Serviceable Obtainable Market",
+        "industry": "Finance"
+      },
+      {
+        "text": "Share of Market",
+        "industry": "Finance"
+      }
+    ]
   },
   "SOW": {
-    "default": "Statement of Work",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Statement of Work",
+        "industry": "Finance"
+      }
+    ]
   },
   "SPA": {
-    "default": "Single Page Application",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Single Page Application",
+        "industry": "Tech"
+      }
+    ]
   },
   "SPD": {
-    "default": "Sensory Processing Disorder",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Sensory Processing Disorder",
+        "industry": "Medical"
+      }
+    ]
   },
   "SPV": {
-    "default": "Special Purpose Vehicle",
-    "alternatives": ["Special Purpose Entity"],
-    "industry": { "finance": "Special Purpose Vehicle" }
+    "definitions": [
+      {
+        "text": "Special Purpose Vehicle",
+        "industry": "Finance"
+      },
+      {
+        "text": "Special Purpose Entity",
+        "industry": "Finance"
+      }
+    ]
   },
   "SQL": {
-    "default": "Structured Query Language",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Structured Query Language",
+        "industry": "Tech"
+      }
+    ]
   },
   "SRAM": {
-    "default": "Static Random Access Memory",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Static Random Access Memory",
+        "industry": "Tech"
+      }
+    ]
   },
   "SRD": {
-    "default": "System Reference Document",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "System Reference Document",
+        "industry": "Gaming"
+      }
+    ]
   },
   "SRE": {
-    "default": "Site Reliability Engineer",
-    "alternatives": ["Site Reliability Engineering"]
+    "definitions": [
+      {
+        "text": "Site Reliability Engineer",
+        "industry": "Tech"
+      },
+      {
+        "text": "Site Reliability Engineering",
+        "industry": "Tech"
+      }
+    ]
   },
   "SREs": {
-    "default": "Site Reliability Engineers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Site Reliability Engineers",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSA": {
-    "default": "Social Security Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Social Security Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "SSD": {
-    "default": "Solid State Drive",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Solid State Drive",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSG": {
-    "default": "Static Site Generation",
-    "alternatives": ["Static Site Generator"]
+    "definitions": [
+      {
+        "text": "Static Site Generation",
+        "industry": "Tech"
+      },
+      {
+        "text": "Static Site Generator",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSH": {
-    "default": "Secure Shell",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Secure Shell",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSL": {
-    "default": "Secure Sockets Layer",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Secure Sockets Layer",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSO": {
-    "default": "Single Sign-On",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Single Sign-On",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSR": {
-    "default": "Server-Side Rendering",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Server-Side Rendering",
+        "industry": "Tech"
+      }
+    ]
   },
   "SSRI": {
-    "default": "Selective Serotonin Reuptake Inhibitor",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Selective Serotonin Reuptake Inhibitor",
+        "industry": "Medical"
+      }
+    ]
   },
   "STAR": {
-    "default": "Situation, Task, Action, Result",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Situation, Task, Action, Result",
+        "industry": "General"
+      }
+    ]
   },
   "STB": {
-    "default": "Set-Top Box",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Set-Top Box",
+        "industry": "Media"
+      }
+    ]
   },
   "SVOD": {
-    "default": "Subscription Video on Demand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Subscription Video on Demand",
+        "industry": "Media"
+      }
+    ]
   },
   "SVP": {
-    "default": "Senior Vice President",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Senior Vice President",
+        "industry": "Business"
+      }
+    ]
   },
   "SVPs": {
-    "default": "Senior Vice Presidents",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Senior Vice Presidents",
+        "industry": "Business"
+      }
+    ]
   },
   "SWE": {
-    "default": "Sweden",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Sweden",
+        "industry": "Geography"
+      }
+    ]
   },
   "TA": {
-    "default": "Talent Acquisition",
-    "alternatives": ["Teaching Assistant", "Technical Analyst"]
+    "definitions": [
+      {
+        "text": "Talent Acquisition",
+        "industry": "Business"
+      },
+      {
+        "text": "Teaching Assistant",
+        "industry": "Business"
+      },
+      {
+        "text": "Technical Analyst",
+        "industry": "Business"
+      }
+    ]
   },
   "TAM": {
-    "default": "Total Addressable Market",
-    "alternatives": ["Total Available Market"]
+    "definitions": [
+      {
+        "text": "Total Addressable Market",
+        "industry": "Finance"
+      },
+      {
+        "text": "Total Available Market",
+        "industry": "Finance"
+      }
+    ]
   },
   "TBC": {
-    "default": "To Be Confirmed",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "To Be Confirmed",
+        "industry": "General"
+      }
+    ]
   },
   "TBD": {
-    "default": "To Be Determined",
-    "alternatives": ["To Be Decided", "To Be Defined"]
+    "definitions": [
+      {
+        "text": "To Be Determined",
+        "industry": "General"
+      },
+      {
+        "text": "To Be Decided",
+        "industry": "General"
+      },
+      {
+        "text": "To Be Defined",
+        "industry": "General"
+      }
+    ]
   },
   "TC": {
-    "default": "Total Compensation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Total Compensation",
+        "industry": "Finance"
+      }
+    ]
   },
   "TCA": {
-    "default": "Tricyclic Antidepressant",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Tricyclic Antidepressant",
+        "industry": "Medical"
+      }
+    ]
   },
   "TCG": {
-    "default": "Trading Card Game",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Trading Card Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "TCP": {
-    "default": "Transmission Control Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Transmission Control Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "TCV": {
-    "default": "Total Contract Value",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Total Contract Value",
+        "industry": "Finance"
+      }
+    ]
   },
   "TDD": {
-    "default": "Test-Driven Development",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Test-Driven Development",
+        "industry": "Tech"
+      }
+    ]
   },
   "TDP": {
-    "default": "Thermal Design Power",
-    "alternatives": ["Thermal Design Profile"]
+    "definitions": [
+      {
+        "text": "Thermal Design Power",
+        "industry": "Tech"
+      },
+      {
+        "text": "Thermal Design Profile",
+        "industry": "Tech"
+      }
+    ]
   },
   "TH": {
-    "default": "Thailand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Thailand",
+        "industry": "Geography"
+      }
+    ]
   },
   "THB": {
-    "default": "Thai Baht",
-    "alternatives": [],
-    "industry": { "finance": "Thai Baht" }
+    "definitions": [
+      {
+        "text": "Thai Baht",
+        "industry": "Currencies"
+      }
+    ]
   },
   "TL": {
-    "default": "Tech Lead",
-    "alternatives": ["Team Lead"]
+    "definitions": [
+      {
+        "text": "Tech Lead",
+        "industry": "Business"
+      },
+      {
+        "text": "Team Lead",
+        "industry": "Business"
+      }
+    ]
   },
   "TLs": {
-    "default": "Tech Leads",
-    "alternatives": ["Team Leads"]
+    "definitions": [
+      {
+        "text": "Tech Leads",
+        "industry": "Business"
+      },
+      {
+        "text": "Team Leads",
+        "industry": "Business"
+      }
+    ]
   },
   "TLS": {
-    "default": "Transport Layer Security",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Transport Layer Security",
+        "industry": "Tech"
+      }
+    ]
   },
   "TMS": {
-    "default": "Transcranial Magnetic Stimulation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Transcranial Magnetic Stimulation",
+        "industry": "Medical"
+      }
+    ]
   },
   "TPM": {
-    "default": "Technical Program Manager",
-    "alternatives": ["Trusted Platform Module"]
+    "definitions": [
+      {
+        "text": "Technical Program Manager",
+        "industry": "Business"
+      },
+      {
+        "text": "Trusted Platform Module",
+        "industry": "Tech"
+      }
+    ]
   },
   "TPMs": {
-    "default": "Technical Program Managers",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Technical Program Managers",
+        "industry": "Business"
+      }
+    ]
   },
   "TPU": {
-    "default": "Tensor Processing Unit",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Tensor Processing Unit",
+        "industry": "Tech"
+      }
+    ]
   },
   "TR": {
-    "default": "Turkey",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Turkey",
+        "industry": "Geography"
+      }
+    ]
   },
   "TRY": {
-    "default": "Turkish Lira",
-    "alternatives": [],
-    "industry": { "finance": "Turkish Lira" }
+    "definitions": [
+      {
+        "text": "Turkish Lira",
+        "industry": "Currencies"
+      }
+    ]
   },
   "TSA": {
-    "default": "Transportation Security Administration",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Transportation Security Administration",
+        "industry": "Government"
+      }
+    ]
   },
   "TTRPG": {
-    "default": "Tabletop Role-Playing Game",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Tabletop Role-Playing Game",
+        "industry": "Gaming"
+      }
+    ]
   },
   "TTS": {
-    "default": "Tabletop Simulator",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Tabletop Simulator",
+        "industry": "Gaming"
+      }
+    ]
   },
   "TUR": {
-    "default": "Turkey",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Turkey",
+        "industry": "Geography"
+      }
+    ]
   },
   "TVOD": {
-    "default": "Transactional Video on Demand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Transactional Video on Demand",
+        "industry": "Media"
+      }
+    ]
   },
   "TVPI": {
-    "default": "Total Value to Paid-In",
-    "alternatives": [],
-    "industry": { "finance": "Total Value to Paid-In" }
+    "definitions": [
+      {
+        "text": "Total Value to Paid-In",
+        "industry": "Finance"
+      }
+    ]
   },
   "TW": {
-    "default": "Taiwan",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Taiwan",
+        "industry": "Geography"
+      }
+    ]
   },
   "TWD": {
-    "default": "New Taiwan Dollar",
-    "alternatives": [],
-    "industry": { "finance": "New Taiwan Dollar" }
+    "definitions": [
+      {
+        "text": "New Taiwan Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "UA": {
-    "default": "Ukraine",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Ukraine",
+        "industry": "Geography"
+      }
+    ]
   },
   "UAE": {
-    "default": "United Arab Emirates",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United Arab Emirates",
+        "industry": "Geography"
+      }
+    ]
   },
   "UAH": {
-    "default": "Ukrainian Hryvnia",
-    "alternatives": [],
-    "industry": { "finance": "Ukrainian Hryvnia" }
+    "definitions": [
+      {
+        "text": "Ukrainian Hryvnia",
+        "industry": "Currencies"
+      }
+    ]
   },
   "UAT": {
-    "default": "User Acceptance Testing",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "User Acceptance Testing",
+        "industry": "Tech"
+      }
+    ]
   },
   "UDP": {
-    "default": "User Datagram Protocol",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "User Datagram Protocol",
+        "industry": "Tech"
+      }
+    ]
   },
   "UEFI": {
-    "default": "Unified Extensible Firmware Interface",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Unified Extensible Firmware Interface",
+        "industry": "Tech"
+      }
+    ]
   },
   "UFS": {
-    "default": "Universal Flash Storage",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Universal Flash Storage",
+        "industry": "Tech"
+      }
+    ]
   },
   "UGC": {
-    "default": "User-Generated Content",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "User-Generated Content",
+        "industry": "Tech"
+      }
+    ]
   },
   "UHD": {
-    "default": "Ultra High Definition",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Ultra High Definition",
+        "industry": "Tech"
+      }
+    ]
   },
   "UK": {
-    "default": "United Kingdom",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United Kingdom",
+        "industry": "Geography"
+      }
+    ]
   },
   "UKHSA": {
-    "default": "UK Health Security Agency",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "UK Health Security Agency",
+        "industry": "Medical"
+      }
+    ]
+  },
+  "UKPW": {
+    "definitions": [
+      {
+        "text": "UK Parliament Week",
+        "industry": "Government"
+      },
+      {
+        "text": "United Kingdom Professional Wrestling",
+        "industry": "Sports"
+      },
+      {
+        "text": "United Kingdom Parliament Week",
+        "industry": "Government"
+      }
+    ]
   },
   "UKR": {
-    "default": "Ukraine",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Ukraine",
+        "industry": "Geography"
+      }
+    ]
   },
   "UKRI": {
-    "default": "UK Research and Innovation",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "UK Research and Innovation",
+        "industry": "Government"
+      }
+    ]
   },
   "UPS": {
-    "default": "Uninterruptible Power Supply",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Uninterruptible Power Supply",
+        "industry": "Tech"
+      }
+    ]
   },
   "URI": {
-    "default": "Uniform Resource Identifier",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Uniform Resource Identifier",
+        "industry": "Tech"
+      }
+    ]
   },
   "URL": {
-    "default": "Uniform Resource Locator",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Uniform Resource Locator",
+        "industry": "Tech"
+      }
+    ]
   },
   "US": {
-    "default": "United States",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United States",
+        "industry": "Geography"
+      }
+    ]
   },
   "USA": {
-    "default": "United States",
-    "alternatives": ["United States of America"]
+    "definitions": [
+      {
+        "text": "United States",
+        "industry": "Geography"
+      },
+      {
+        "text": "United States of America",
+        "industry": "Geography"
+      }
+    ]
   },
   "USB": {
-    "default": "Universal Serial Bus",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Universal Serial Bus",
+        "industry": "Tech"
+      }
+    ]
   },
   "USCIS": {
-    "default": "United States Citizenship and Immigration Services",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United States Citizenship and Immigration Services",
+        "industry": "Government"
+      }
+    ]
   },
   "USD": {
-    "default": "US Dollar",
-    "alternatives": ["United States Dollar"],
-    "industry": { "finance": "US Dollar" }
+    "definitions": [
+      {
+        "text": "US Dollar",
+        "industry": "Currencies"
+      },
+      {
+        "text": "United States Dollar",
+        "industry": "Currencies"
+      }
+    ]
   },
   "USDA": {
-    "default": "United States Department of Agriculture",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United States Department of Agriculture",
+        "industry": "Government"
+      }
+    ]
   },
   "USPS": {
-    "default": "United States Postal Service",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "United States Postal Service",
+        "industry": "Government"
+      }
+    ]
   },
   "VA": {
-    "default": "Department of Veterans Affairs",
-    "alternatives": ["Virginia"]
+    "definitions": [
+      {
+        "text": "Department of Veterans Affairs",
+        "industry": "Government"
+      },
+      {
+        "text": "Virginia",
+        "industry": "Geography"
+      }
+    ]
   },
   "VAST": {
-    "default": "Video Ad Serving Template",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Video Ad Serving Template",
+        "industry": "Media"
+      }
+    ]
   },
   "VC": {
-    "default": "Venture Capital",
-    "alternatives": ["Venture Capitalist"],
-    "industry": { "finance": "Venture Capital" }
+    "definitions": [
+      {
+        "text": "Venture Capital",
+        "industry": "Finance"
+      },
+      {
+        "text": "Venture Capitalist",
+        "industry": "Finance"
+      }
+    ]
   },
   "VCs": {
-    "default": "Venture Capitalists",
-    "alternatives": [],
-    "industry": { "finance": "Venture Capitalists" }
+    "definitions": [
+      {
+        "text": "Venture Capitalists",
+        "industry": "Finance"
+      }
+    ]
   },
   "VGA": {
-    "default": "Video Graphics Array",
-    "alternatives": ["Video Graphics Adapter"]
+    "definitions": [
+      {
+        "text": "Video Graphics Array",
+        "industry": "Tech"
+      },
+      {
+        "text": "Video Graphics Adapter",
+        "industry": "Tech"
+      }
+    ]
   },
   "VM": {
-    "default": "Virtual Machine",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Virtual Machine",
+        "industry": "Tech"
+      }
+    ]
   },
   "VMS": {
-    "default": "Vendor Management System",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Vendor Management System",
+        "industry": "Tech"
+      }
+    ]
   },
   "VN": {
-    "default": "Vietnam",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Vietnam",
+        "industry": "Geography"
+      }
+    ]
   },
   "VND": {
-    "default": "Vietnamese Dong",
-    "alternatives": [],
-    "industry": { "finance": "Vietnamese Dong" }
+    "definitions": [
+      {
+        "text": "Vietnamese Dong",
+        "industry": "Currencies"
+      }
+    ]
   },
   "VOD": {
-    "default": "Video on Demand",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Video on Demand",
+        "industry": "Media"
+      }
+    ]
   },
   "VP": {
-    "default": "Vice President",
-    "alternatives": ["Victory Points"]
+    "definitions": [
+      {
+        "text": "Vice President",
+        "industry": "Business"
+      },
+      {
+        "text": "Victory Points",
+        "industry": "Gaming"
+      }
+    ]
   },
   "VPs": {
-    "default": "Vice Presidents",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Vice Presidents",
+        "industry": "Business"
+      }
+    ]
   },
   "VPN": {
-    "default": "Virtual Private Network",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Virtual Private Network",
+        "industry": "Tech"
+      }
+    ]
   },
   "VRAM": {
-    "default": "Video Random Access Memory",
-    "alternatives": ["Video RAM"]
+    "definitions": [
+      {
+        "text": "Video Random Access Memory",
+        "industry": "Tech"
+      },
+      {
+        "text": "Video RAM",
+        "industry": "Tech"
+      }
+    ]
   },
   "WACC": {
-    "default": "Weighted Average Cost of Capital",
-    "alternatives": [],
-    "industry": { "finance": "Weighted Average Cost of Capital" }
+    "definitions": [
+      {
+        "text": "Weighted Average Cost of Capital",
+        "industry": "Finance"
+      }
+    ]
   },
   "WAN": {
-    "default": "Wide Area Network",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Wide Area Network",
+        "industry": "Tech"
+      }
+    ]
   },
   "WASM": {
-    "default": "WebAssembly",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "WebAssembly",
+        "industry": "Tech"
+      }
+    ]
   },
   "WFH": {
-    "default": "Work From Home",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Work From Home",
+        "industry": "General"
+      }
+    ]
   },
   "WLB": {
-    "default": "Work-Life Balance",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Work-Life Balance",
+        "industry": "General"
+      }
+    ]
   },
   "WoTC": {
-    "default": "Wizards of the Coast",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Wizards of the Coast",
+        "industry": "Gaming"
+      }
+    ]
   },
   "XML": {
-    "default": "Extensible Markup Language",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Extensible Markup Language",
+        "industry": "Tech"
+      }
+    ]
   },
   "XP": {
-    "default": "Experience Points",
-    "alternatives": ["Extreme Programming"]
+    "definitions": [
+      {
+        "text": "Experience Points",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Extreme Programming",
+        "industry": "Tech"
+      }
+    ]
   },
   "XSS": {
-    "default": "Cross-Site Scripting",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Cross-Site Scripting",
+        "industry": "Tech"
+      }
+    ]
   },
   "YAGNI": {
-    "default": "You Aren't Gonna Need It",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "You Aren't Gonna Need It",
+        "industry": "Tech"
+      }
+    ]
   },
   "YAML": {
-    "default": "YAML Ain't Markup Language",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "YAML Ain't Markup Language",
+        "industry": "Tech"
+      }
+    ]
   },
   "YTD": {
-    "default": "Year to Date",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "Year to Date",
+        "industry": "Finance"
+      }
+    ]
   },
   "ZA": {
-    "default": "South Africa",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "South Africa",
+        "industry": "Geography"
+      }
+    ]
   },
   "ZAF": {
-    "default": "South Africa",
-    "alternatives": []
+    "definitions": [
+      {
+        "text": "South Africa",
+        "industry": "Geography"
+      }
+    ]
   },
   "ZAR": {
-    "default": "South African Rand",
-    "alternatives": [],
-    "industry": { "finance": "South African Rand" }
+    "definitions": [
+      {
+        "text": "South African Rand",
+        "industry": "Currencies"
+      }
+    ]
   }
 }

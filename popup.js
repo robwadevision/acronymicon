@@ -5,7 +5,6 @@
 (async function () {
   const toggle = document.getElementById("main-toggle");
   const toggleSub = document.getElementById("toggle-sub");
-  const industryBadge = document.getElementById("industry-badge");
   const statIdentified = document.getElementById("stat-identified");
   const statDefined = document.getElementById("stat-defined");
   const statNote = document.getElementById("stat-note");
@@ -34,13 +33,11 @@
         if (response.dictionarySize) {
           statDict.textContent = `${response.dictionarySize} Definitions available`;
         }
-        setIndustryBadge(response.industry || "default");
       }
     } catch {
       // Content script not yet injected (e.g. chrome:// pages)
       statIdentified.textContent = "—";
       statDefined.textContent = "—";
-      industryBadge.textContent = "n/a";
     }
   }
 
@@ -57,17 +54,5 @@
 
   function updateSubLabel(enabled) {
     toggleSub.textContent = enabled ? "Scanning for acronyms" : "Extension paused";
-  }
-
-  function setIndustryBadge(industry) {
-    const labels = {
-      tech: "Tech",
-      finance: "Finance",
-      pharma: "Pharma",
-      hr: "HR",
-      default: "General"
-    };
-    industryBadge.textContent = labels[industry] || "General";
-    industryBadge.className = `badge ${industry}`;
   }
 })();
