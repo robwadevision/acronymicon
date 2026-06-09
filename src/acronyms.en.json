@@ -137,6 +137,14 @@
       }
     ]
   },
+  "AGI": {
+    "definitions": [
+      {
+        "text": "Artificial General Intelligence",
+        "industry": "Tech"
+      }
+    ]
+  },
   "AI": {
     "definitions": [
       {
@@ -1477,6 +1485,14 @@
       }
     ]
   },
+  "CX": {
+    "definitions": [
+      {
+        "text": "Customer Experience",
+        "industry": "Business"
+      }
+    ]
+  },
   "CZ": {
     "definitions": [
       {
@@ -1934,6 +1950,22 @@
       {
         "text": "Department for Transport",
         "industry": "Government"
+      }
+    ]
+  },
+  "EA": {
+    "definitions": [
+      {
+        "text": "Enterprise Architecture",
+        "industry": "Tech"
+      },
+      {
+        "text": "Electronic Arts",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Executive Assistant",
+        "industry": "Business"
       }
     ]
   },
@@ -2601,6 +2633,14 @@
       }
     ]
   },
+  "GCGRA": {
+    "definitions": [
+      {
+        "text": "General Commercial Gaming Regulatory Authority",
+        "industry": "Government"
+      }
+    ]
+  },
   "GCHQ": {
     "definitions": [
       {
@@ -3061,6 +3101,14 @@
       }
     ]
   },
+  "IDS": {
+    "definitions": [
+      {
+        "text": "Intrusion Detection System",
+        "industry": "Tech"
+      }
+    ]
+  },
   "IEEE": {
     "definitions": [
       {
@@ -3506,6 +3554,14 @@
       {
         "text": "Last In, First Out",
         "industry": "Finance"
+      }
+    ]
+  },
+  "LLC": {
+    "definitions": [
+      {
+        "text": "Limited Liability Company",
+        "industry": "Business"
       }
     ]
   },
@@ -4466,6 +4522,22 @@
       {
         "text": "Hypertext Preprocessor",
         "industry": "Tech"
+      }
+    ]
+  },
+  "PI": {
+    "definitions": [
+      {
+        "text": "Principal Investigator",
+        "industry": "Science"
+      },
+      {
+        "text": "Private Investigator",
+        "industry": "General"
+      },
+      {
+        "text": "Personal Injury",
+        "industry": "Medical"
       }
     ]
   },
