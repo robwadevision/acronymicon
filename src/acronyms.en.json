@@ -185,6 +185,18 @@
       }
     ]
   },
+  "AMS": {
+    "definitions": [
+      {
+        "text": "Application Management Services",
+        "industry": "Tech"
+      },
+      {
+        "text": "Amsterdam",
+        "industry": "Geography"
+      }
+    ]
+  },
   "ANC": {
     "definitions": [
       {
@@ -1721,6 +1733,14 @@
       }
     ]
   },
+  "DMs": {
+    "definitions": [
+      {
+        "text": "Direct Messages",
+        "industry": "General"
+      }
+    ]
+  },
   "DNA": {
     "definitions": [
       {
@@ -2006,6 +2026,10 @@
       {
         "text": "Error Correction Code",
         "industry": "Tech"
+      },
+      {
+        "text": "Elliptic Curve Cryptography",
+        "industry": "Tech"
       }
     ]
   },
@@ -2153,6 +2177,14 @@
       },
       {
         "text": "Equated Monthly Instalment",
+        "industry": "Finance"
+      }
+    ]
+  },
+  "EMIR": {
+    "definitions": [
+      {
+        "text": "European Market Infrastructure Regulation",
         "industry": "Finance"
       }
     ]
@@ -2353,6 +2385,18 @@
       }
     ]
   },
+  "FB": {
+    "definitions": [
+      {
+        "text": "Facebook",
+        "industry": "Media"
+      },
+      {
+        "text": "Fullback",
+        "industry": "Sports"
+      }
+    ]
+  },
   "FBI": {
     "definitions": [
       {
@@ -2450,6 +2494,14 @@
       {
         "text": "First In, First Out",
         "industry": "Finance"
+      }
+    ]
+  },
+  "FIS": {
+    "definitions": [
+      {
+        "text": "Fédération Internationale de Ski",
+        "industry": "Sports"
       }
     ]
   },
@@ -3125,6 +3177,22 @@
       }
     ]
   },
+  "IG": {
+    "definitions": [
+      {
+        "text": "Instagram",
+        "industry": "Media"
+      },
+      {
+        "text": "Investment Grade",
+        "industry": "Finance"
+      },
+      {
+        "text": "Inspector General",
+        "industry": "Government"
+      }
+    ]
+  },
   "IL": {
     "definitions": [
       {
@@ -3161,6 +3229,14 @@
       }
     ]
   },
+  "IMI": {
+    "definitions": [
+      {
+        "text": "Innovative Medicines Initiative",
+        "industry": "Science"
+      }
+    ]
+  },
   "IN": {
     "definitions": [
       {
@@ -3186,6 +3262,14 @@
       {
         "text": "Indian Rupee",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "ION": {
+    "definitions": [
+      {
+        "text": "Inter Office Note",
+        "industry": "Business"
       }
     ]
   },
@@ -5113,6 +5197,14 @@
       }
     ]
   },
+  "SAP": {
+    "definitions": [
+      {
+        "text": "Systems, Applications and Products",
+        "industry": "Tech"
+      }
+    ]
+  },
   "SAR": {
     "definitions": [
       {
@@ -5842,6 +5934,18 @@
       {
         "text": "Transportation Security Administration",
         "industry": "Government"
+      }
+    ]
+  },
+  "TT": {
+    "definitions": [
+      {
+        "text": "Time Trial",
+        "industry": "Sports"
+      },
+      {
+        "text": "Telegraphic Transfer",
+        "industry": "Finance"
       }
     ]
   },
