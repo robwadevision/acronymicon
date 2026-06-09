@@ -9,6 +9,22 @@
       "definitions[].industry": "Optional: Business | Tech | Finance | Sports | Medical | Government | General | Media | Geography | Gaming | Work | Currencies | Science"
     }
   },
+  "AA": {
+    "definitions": [
+      {
+        "text": "Alcoholics Anonymous",
+        "industry": "Medical"
+      },
+      {
+        "text": "Automobile Association",
+        "industry": "General"
+      },
+      {
+        "text": "Anti-Aircraft",
+        "industry": "Government"
+      }
+    ]
+  },
   "ABR": {
     "definitions": [
       {
@@ -61,6 +77,14 @@
       }
     ]
   },
+  "ACX": {
+    "definitions": [
+      {
+        "text": "Audiobook Creation Exchange",
+        "industry": "Media"
+      }
+    ]
+  },
   "ADD": {
     "definitions": [
       {
@@ -77,6 +101,14 @@
       }
     ]
   },
+  "ADME": {
+    "definitions": [
+      {
+        "text": "Absorption, Distribution, Metabolism and Excretion",
+        "industry": "Science"
+      }
+    ]
+  },
   "AE": {
     "definitions": [
       {
@@ -89,19 +121,19 @@
       }
     ]
   },
-  "AEs": {
-    "definitions": [
-      {
-        "text": "Account Executives",
-        "industry": "Business"
-      }
-    ]
-  },
   "AED": {
     "definitions": [
       {
         "text": "UAE Dirham",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "AEs": {
+    "definitions": [
+      {
+        "text": "Account Executives",
+        "industry": "Business"
       }
     ]
   },
@@ -121,11 +153,39 @@
       }
     ]
   },
+  "AM": {
+    "definitions": [
+      {
+        "text": "Amplitude Modulation",
+        "industry": "Media"
+      },
+      {
+        "text": "Ante Meridiem",
+        "industry": "General"
+      },
+      {
+        "text": "Account Manager",
+        "industry": "Business"
+      }
+    ]
+  },
   "AML": {
     "definitions": [
       {
         "text": "Anti-Money Laundering",
         "industry": "Finance"
+      }
+    ]
+  },
+  "ANC": {
+    "definitions": [
+      {
+        "text": "Active Noise Cancellation",
+        "industry": "Tech"
+      },
+      {
+        "text": "African National Congress",
+        "industry": "Government"
       }
     ]
   },
@@ -273,6 +333,14 @@
       }
     ]
   },
+  "ATP": {
+    "definitions": [
+      {
+        "text": "Adenosine Triphosphate",
+        "industry": "Science"
+      }
+    ]
+  },
   "ATS": {
     "definitions": [
       {
@@ -286,6 +354,14 @@
       {
         "text": "Australia",
         "industry": "Geography"
+      }
+    ]
+  },
+  "AUC": {
+    "definitions": [
+      {
+        "text": "Area Under the Curve",
+        "industry": "Science"
       }
     ]
   },
@@ -381,6 +457,18 @@
       }
     ]
   },
+  "BBB": {
+    "definitions": [
+      {
+        "text": "Blood-Brain Barrier",
+        "industry": "Science"
+      },
+      {
+        "text": "Better Business Bureau",
+        "industry": "General"
+      }
+    ]
+  },
   "BDD": {
     "definitions": [
       {
@@ -450,6 +538,18 @@
       {
         "text": "Bureau of Labor Statistics",
         "industry": "Government"
+      }
+    ]
+  },
+  "BOE": {
+    "definitions": [
+      {
+        "text": "Bank of England",
+        "industry": "Finance"
+      },
+      {
+        "text": "Basis of Estimate",
+        "industry": "Business"
       }
     ]
   },
@@ -817,14 +917,6 @@
       }
     ]
   },
-  "CIPD": {
-    "definitions": [
-      {
-        "text": "Chartered Institute of Personnel and Development",
-        "industry": "Work"
-      }
-    ]
-  },
   "CIO": {
     "definitions": [
       {
@@ -846,6 +938,14 @@
       {
         "text": "Chief Investment Officers",
         "industry": "Finance"
+      }
+    ]
+  },
+  "CIPD": {
+    "definitions": [
+      {
+        "text": "Chartered Institute of Personnel and Development",
+        "industry": "Work"
       }
     ]
   },
@@ -945,19 +1045,19 @@
       }
     ]
   },
-  "CMOs": {
-    "definitions": [
-      {
-        "text": "Chief Marketing Officers",
-        "industry": "Business"
-      }
-    ]
-  },
   "CMOS": {
     "definitions": [
       {
         "text": "Complementary Metal-Oxide-Semiconductor",
         "industry": "Tech"
+      }
+    ]
+  },
+  "CMOs": {
+    "definitions": [
+      {
+        "text": "Chief Marketing Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -1169,6 +1269,14 @@
       }
     ]
   },
+  "CRISPR": {
+    "definitions": [
+      {
+        "text": "Clustered Regularly Interspaced Short Palindromic Repeats",
+        "industry": "Science"
+      }
+    ]
+  },
   "CRM": {
     "definitions": [
       {
@@ -1205,19 +1313,31 @@
       }
     ]
   },
-  "CSRF": {
-    "definitions": [
-      {
-        "text": "Cross-Site Request Forgery",
-        "industry": "Tech"
-      }
-    ]
-  },
   "CRUD": {
     "definitions": [
       {
         "text": "Create, Read, Update, Delete",
         "industry": "Tech"
+      }
+    ]
+  },
+  "CS": {
+    "definitions": [
+      {
+        "text": "Computer Science",
+        "industry": "Tech"
+      },
+      {
+        "text": "Customer Success",
+        "industry": "Business"
+      },
+      {
+        "text": "Counter-Strike",
+        "industry": "Gaming"
+      },
+      {
+        "text": "Civil Service",
+        "industry": "Government"
       }
     ]
   },
@@ -1289,11 +1409,27 @@
       }
     ]
   },
+  "CSRF": {
+    "definitions": [
+      {
+        "text": "Cross-Site Request Forgery",
+        "industry": "Tech"
+      }
+    ]
+  },
   "CSS": {
     "definitions": [
       {
         "text": "Cascading Style Sheets",
         "industry": "Tech"
+      }
+    ]
+  },
+  "CT": {
+    "definitions": [
+      {
+        "text": "Computed Tomography",
+        "industry": "Medical"
       }
     ]
   },
@@ -1461,14 +1597,6 @@
       }
     ]
   },
-  "DEI": {
-    "definitions": [
-      {
-        "text": "Diversity, Equity, and Inclusion",
-        "industry": "General"
-      }
-    ]
-  },
   "DEFRA": {
     "definitions": [
       {
@@ -1477,27 +1605,11 @@
       }
     ]
   },
-  "DevOps": {
+  "DEI": {
     "definitions": [
       {
-        "text": "Development and Operations",
-        "industry": "Tech"
-      }
-    ]
-  },
-  "DfE": {
-    "definitions": [
-      {
-        "text": "Department for Education",
-        "industry": "Government"
-      }
-    ]
-  },
-  "DfT": {
-    "definitions": [
-      {
-        "text": "Department for Transport",
-        "industry": "Government"
+        "text": "Diversity, Equity, and Inclusion",
+        "industry": "General"
       }
     ]
   },
@@ -1538,6 +1650,14 @@
       {
         "text": "Dual In-line Memory Module",
         "industry": "Tech"
+      }
+    ]
+  },
+  "DIY": {
+    "definitions": [
+      {
+        "text": "Do It Yourself",
+        "industry": "General"
       }
     ]
   },
@@ -1582,6 +1702,14 @@
       {
         "text": "Direct Memory Access",
         "industry": "Tech"
+      }
+    ]
+  },
+  "DNA": {
+    "definitions": [
+      {
+        "text": "Deoxyribonucleic Acid",
+        "industry": "Science"
       }
     ]
   },
@@ -1785,6 +1913,30 @@
       }
     ]
   },
+  "DevOps": {
+    "definitions": [
+      {
+        "text": "Development and Operations",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "DfE": {
+    "definitions": [
+      {
+        "text": "Department for Education",
+        "industry": "Government"
+      }
+    ]
+  },
+  "DfT": {
+    "definitions": [
+      {
+        "text": "Department for Transport",
+        "industry": "Government"
+      }
+    ]
+  },
   "EAP": {
     "definitions": [
       {
@@ -1901,6 +2053,22 @@
       }
     ]
   },
+  "EKS": {
+    "definitions": [
+      {
+        "text": "Elastic Kubernetes Service",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "ELISA": {
+    "definitions": [
+      {
+        "text": "Enzyme-Linked Immunosorbent Assay",
+        "industry": "Science"
+      }
+    ]
+  },
   "ELT": {
     "definitions": [
       {
@@ -1921,11 +2089,15 @@
       }
     ]
   },
-  "EMs": {
+  "EMA": {
     "definitions": [
       {
-        "text": "Engineering Managers",
-        "industry": "Business"
+        "text": "European Medicines Agency",
+        "industry": "Government"
+      },
+      {
+        "text": "Exponential Moving Average",
+        "industry": "Finance"
       }
     ]
   },
@@ -1950,6 +2122,14 @@
       {
         "text": "Equated Monthly Instalment",
         "industry": "Finance"
+      }
+    ]
+  },
+  "EMs": {
+    "definitions": [
+      {
+        "text": "Engineering Managers",
+        "industry": "Business"
       }
     ]
   },
@@ -2049,19 +2229,19 @@
       }
     ]
   },
-  "ESPP": {
-    "definitions": [
-      {
-        "text": "Employee Stock Purchase Plan",
-        "industry": "Finance"
-      }
-    ]
-  },
   "ESP": {
     "definitions": [
       {
         "text": "Spain",
         "industry": "Geography"
+      }
+    ]
+  },
+  "ESPP": {
+    "definitions": [
+      {
+        "text": "Employee Stock Purchase Plan",
+        "industry": "Finance"
       }
     ]
   },
@@ -2225,6 +2405,14 @@
       }
     ]
   },
+  "FIFA": {
+    "definitions": [
+      {
+        "text": "Fédération Internationale de Football Association",
+        "industry": "Sports"
+      }
+    ]
+  },
   "FIFO": {
     "definitions": [
       {
@@ -2249,6 +2437,18 @@
       }
     ]
   },
+  "FM": {
+    "definitions": [
+      {
+        "text": "Frequency Modulation",
+        "industry": "Media"
+      },
+      {
+        "text": "Football Manager",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "FPS": {
     "definitions": [
       {
@@ -2262,6 +2462,14 @@
       {
         "text": "France",
         "industry": "Geography"
+      }
+    ]
+  },
+  "FTA": {
+    "definitions": [
+      {
+        "text": "Free to Air",
+        "industry": "Media"
       }
     ]
   },
@@ -2286,14 +2494,6 @@
       {
         "text": "Full-Time Equivalent",
         "industry": "General"
-      }
-    ]
-  },
-  "FTA": {
-    "definitions": [
-      {
-        "text": "Free to Air",
-        "industry": "Media"
       }
     ]
   },
@@ -2414,6 +2614,10 @@
       {
         "text": "Google Cloud Platform",
         "industry": "Tech"
+      },
+      {
+        "text": "Good Clinical Practice",
+        "industry": "Science"
       }
     ]
   },
@@ -2422,6 +2626,14 @@
       {
         "text": "General Data Protection Regulation",
         "industry": "General"
+      }
+    ]
+  },
+  "GLP": {
+    "definitions": [
+      {
+        "text": "Good Laboratory Practice",
+        "industry": "Science"
       }
     ]
   },
@@ -2434,6 +2646,22 @@
       {
         "text": "Game Master",
         "industry": "Gaming"
+      }
+    ]
+  },
+  "GMO": {
+    "definitions": [
+      {
+        "text": "Genetically Modified Organism",
+        "industry": "Science"
+      }
+    ]
+  },
+  "GMP": {
+    "definitions": [
+      {
+        "text": "Good Manufacturing Practice",
+        "industry": "Science"
       }
     ]
   },
@@ -2457,6 +2685,14 @@
       }
     ]
   },
+  "GPU": {
+    "definitions": [
+      {
+        "text": "Graphics Processing Unit",
+        "industry": "Tech"
+      }
+    ]
+  },
   "GPs": {
     "definitions": [
       {
@@ -2469,19 +2705,19 @@
       }
     ]
   },
-  "GPU": {
-    "definitions": [
-      {
-        "text": "Graphics Processing Unit",
-        "industry": "Tech"
-      }
-    ]
-  },
   "GR": {
     "definitions": [
       {
         "text": "Greece",
         "industry": "Geography"
+      }
+    ]
+  },
+  "GRR": {
+    "definitions": [
+      {
+        "text": "Gross Revenue Retention",
+        "industry": "Finance"
       }
     ]
   },
@@ -2633,6 +2869,14 @@
       }
     ]
   },
+  "HPLC": {
+    "definitions": [
+      {
+        "text": "High-Performance Liquid Chromatography",
+        "industry": "Science"
+      }
+    ]
+  },
   "HR": {
     "definitions": [
       {
@@ -2725,22 +2969,6 @@
       }
     ]
   },
-  "IaaS": {
-    "definitions": [
-      {
-        "text": "Infrastructure as a Service",
-        "industry": "Tech"
-      }
-    ]
-  },
-  "IaC": {
-    "definitions": [
-      {
-        "text": "Infrastructure as Code",
-        "industry": "Tech"
-      }
-    ]
-  },
   "IAM": {
     "definitions": [
       {
@@ -2773,14 +3001,6 @@
       }
     ]
   },
-  "ICs": {
-    "definitions": [
-      {
-        "text": "Individual Contributors",
-        "industry": "Business"
-      }
-    ]
-  },
   "ICD": {
     "definitions": [
       {
@@ -2794,6 +3014,22 @@
       {
         "text": "Immigration and Customs Enforcement",
         "industry": "Government"
+      }
+    ]
+  },
+  "ICT": {
+    "definitions": [
+      {
+        "text": "Information and Communications Technology",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "ICs": {
+    "definitions": [
+      {
+        "text": "Individual Contributors",
+        "industry": "Business"
       }
     ]
   },
@@ -2869,6 +3105,14 @@
       }
     ]
   },
+  "IMF": {
+    "definitions": [
+      {
+        "text": "International Monetary Fund",
+        "industry": "Finance"
+      }
+    ]
+  },
   "IN": {
     "definitions": [
       {
@@ -2882,6 +3126,10 @@
       {
         "text": "India",
         "industry": "Geography"
+      },
+      {
+        "text": "Investigational New Drug",
+        "industry": "Government"
       }
     ]
   },
@@ -2897,14 +3145,6 @@
     "definitions": [
       {
         "text": "Input/Output Operations Per Second",
-        "industry": "Tech"
-      }
-    ]
-  },
-  "IoC": {
-    "definitions": [
-      {
-        "text": "Inversion of Control",
         "industry": "Tech"
       }
     ]
@@ -2934,6 +3174,18 @@
       {
         "text": "Internet Protocol Television",
         "industry": "Tech"
+      }
+    ]
+  },
+  "IR": {
+    "definitions": [
+      {
+        "text": "Infrared",
+        "industry": "Science"
+      },
+      {
+        "text": "Investor Relations",
+        "industry": "Finance"
       }
     ]
   },
@@ -3001,6 +3253,38 @@
       }
     ]
   },
+  "ITV": {
+    "definitions": [
+      {
+        "text": "Independent Television",
+        "industry": "Media"
+      }
+    ]
+  },
+  "IaC": {
+    "definitions": [
+      {
+        "text": "Infrastructure as Code",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "IaaS": {
+    "definitions": [
+      {
+        "text": "Infrastructure as a Service",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "IoC": {
+    "definitions": [
+      {
+        "text": "Inversion of Control",
+        "industry": "Tech"
+      }
+    ]
+  },
   "JD": {
     "definitions": [
       {
@@ -3026,6 +3310,14 @@
       {
         "text": "Japan",
         "industry": "Geography"
+      }
+    ]
+  },
+  "JPG": {
+    "definitions": [
+      {
+        "text": "Joint Photographic Experts Group",
+        "industry": "Tech"
       }
     ]
   },
@@ -3154,6 +3446,18 @@
       {
         "text": "Know Your Customer",
         "industry": "Finance"
+      }
+    ]
+  },
+  "LA": {
+    "definitions": [
+      {
+        "text": "Los Angeles",
+        "industry": "Geography"
+      },
+      {
+        "text": "Louisiana",
+        "industry": "Geography"
       }
     ]
   },
@@ -3349,6 +3653,22 @@
       }
     ]
   },
+  "MDR": {
+    "definitions": [
+      {
+        "text": "Managed Detection and Response",
+        "industry": "Tech"
+      },
+      {
+        "text": "Multidrug Resistance",
+        "industry": "Medical"
+      },
+      {
+        "text": "Medical Device Regulation",
+        "industry": "Government"
+      }
+    ]
+  },
   "MDs": {
     "definitions": [
       {
@@ -3393,6 +3713,34 @@
       }
     ]
   },
+  "MIT": {
+    "definitions": [
+      {
+        "text": "Massachusetts Institute of Technology",
+        "industry": "General"
+      },
+      {
+        "text": "MIT License",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "ML": {
+    "definitions": [
+      {
+        "text": "Machine Learning",
+        "industry": "Tech"
+      },
+      {
+        "text": "Markup Language",
+        "industry": "Tech"
+      },
+      {
+        "text": "Millilitre",
+        "industry": "Science"
+      }
+    ]
+  },
   "MLOps": {
     "definitions": [
       {
@@ -3433,6 +3781,14 @@
       },
       {
         "text": "Magnetic Resonance",
+        "industry": "Medical"
+      }
+    ]
+  },
+  "MRI": {
+    "definitions": [
+      {
+        "text": "Magnetic Resonance Imaging",
         "industry": "Medical"
       }
     ]
@@ -3606,6 +3962,30 @@
       {
         "text": "Non-Disclosure Agreement",
         "industry": "General"
+      },
+      {
+        "text": "New Drug Application",
+        "industry": "Government"
+      }
+    ]
+  },
+  "NEC": {
+    "definitions": [
+      {
+        "text": "National Exhibition Centre",
+        "industry": "Geography"
+      },
+      {
+        "text": "Not Elsewhere Classified",
+        "industry": "General"
+      }
+    ]
+  },
+  "NFL": {
+    "definitions": [
+      {
+        "text": "National Football League",
+        "industry": "Sports"
       }
     ]
   },
@@ -3681,6 +4061,14 @@
       }
     ]
   },
+  "NMR": {
+    "definitions": [
+      {
+        "text": "Nuclear Magnetic Resonance",
+        "industry": "Science"
+      }
+    ]
+  },
   "NO": {
     "definitions": [
       {
@@ -3718,14 +4106,6 @@
       {
         "text": "Non-Player Character",
         "industry": "Gaming"
-      }
-    ]
-  },
-  "NoSQL": {
-    "definitions": [
-      {
-        "text": "Not Only SQL",
-        "industry": "Tech"
       }
     ]
   },
@@ -3806,6 +4186,14 @@
       {
         "text": "New Zealand",
         "industry": "Geography"
+      }
+    ]
+  },
+  "NoSQL": {
+    "definitions": [
+      {
+        "text": "Not Only SQL",
+        "industry": "Tech"
       }
     ]
   },
@@ -3949,7 +4337,7 @@
     "definitions": [
       {
         "text": "Over the Counter",
-        "industry": "Finance"
+        "industry": "Medical"
       }
     ]
   },
@@ -4009,14 +4397,6 @@
       }
     ]
   },
-  "PaaS": {
-    "definitions": [
-      {
-        "text": "Platform as a Service",
-        "industry": "Tech"
-      }
-    ]
-  },
   "PCB": {
     "definitions": [
       {
@@ -4030,6 +4410,22 @@
       {
         "text": "Payment Card Industry",
         "industry": "Finance"
+      }
+    ]
+  },
+  "PCR": {
+    "definitions": [
+      {
+        "text": "Polymerase Chain Reaction",
+        "industry": "Science"
+      }
+    ]
+  },
+  "PDF": {
+    "definitions": [
+      {
+        "text": "Portable Document Format",
+        "industry": "Tech"
       }
     ]
   },
@@ -4090,6 +4486,10 @@
       {
         "text": "Pakistan",
         "industry": "Geography"
+      },
+      {
+        "text": "Pharmacokinetics",
+        "industry": "Science"
       }
     ]
   },
@@ -4166,6 +4566,14 @@
       {
         "text": "Postnatal Depression",
         "industry": "Medical"
+      }
+    ]
+  },
+  "PNG": {
+    "definitions": [
+      {
+        "text": "Portable Network Graphics",
+        "industry": "Tech"
       }
     ]
   },
@@ -4301,6 +4709,14 @@
       }
     ]
   },
+  "PaaS": {
+    "definitions": [
+      {
+        "text": "Platform as a Service",
+        "industry": "Tech"
+      }
+    ]
+  },
   "PnP": {
     "definitions": [
       {
@@ -4338,6 +4754,14 @@
       {
         "text": "Qatar",
         "industry": "Geography"
+      }
+    ]
+  },
+  "QBR": {
+    "definitions": [
+      {
+        "text": "Quarterly Business Review",
+        "industry": "Business"
       }
     ]
   },
@@ -4409,6 +4833,14 @@
       }
     ]
   },
+  "RCT": {
+    "definitions": [
+      {
+        "text": "Randomised Controlled Trial",
+        "industry": "Medical"
+      }
+    ]
+  },
   "REIT": {
     "definitions": [
       {
@@ -4434,6 +4866,14 @@
       {
         "text": "Request for Change",
         "industry": "Tech"
+      }
+    ]
+  },
+  "RNA": {
+    "definitions": [
+      {
+        "text": "Ribonucleic Acid",
+        "industry": "Science"
       }
     ]
   },
@@ -4573,14 +5013,6 @@
       }
     ]
   },
-  "SaaS": {
-    "definitions": [
-      {
-        "text": "Software as a Service",
-        "industry": "Tech"
-      }
-    ]
-  },
   "SAFE": {
     "definitions": [
       {
@@ -4713,6 +5145,18 @@
       }
     ]
   },
+  "SEO": {
+    "definitions": [
+      {
+        "text": "Search Engine Optimisation",
+        "industry": "Tech"
+      },
+      {
+        "text": "Search Engine Optimiser",
+        "industry": "Business"
+      }
+    ]
+  },
   "SFTP": {
     "definitions": [
       {
@@ -4749,6 +5193,18 @@
       }
     ]
   },
+  "SIM": {
+    "definitions": [
+      {
+        "text": "Subscriber Identity Module",
+        "industry": "Tech"
+      },
+      {
+        "text": "Simulation",
+        "industry": "Gaming"
+      }
+    ]
+  },
   "SIS": {
     "definitions": [
       {
@@ -4761,6 +5217,14 @@
     "definitions": [
       {
         "text": "Service Level Agreement",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "SLAs": {
+    "definitions": [
+      {
+        "text": "Service Level Agreements",
         "industry": "Tech"
       }
     ]
@@ -4822,6 +5286,14 @@
       {
         "text": "Simple Mail Transfer Protocol",
         "industry": "Tech"
+      }
+    ]
+  },
+  "SNP": {
+    "definitions": [
+      {
+        "text": "Single Nucleotide Polymorphism",
+        "industry": "Science"
       }
     ]
   },
@@ -5073,6 +5545,14 @@
       }
     ]
   },
+  "SaaS": {
+    "definitions": [
+      {
+        "text": "Software as a Service",
+        "industry": "Tech"
+      }
+    ]
+  },
   "TA": {
     "definitions": [
       {
@@ -5213,6 +5693,14 @@
       }
     ]
   },
+  "TLS": {
+    "definitions": [
+      {
+        "text": "Transport Layer Security",
+        "industry": "Tech"
+      }
+    ]
+  },
   "TLs": {
     "definitions": [
       {
@@ -5222,14 +5710,6 @@
       {
         "text": "Team Leads",
         "industry": "Business"
-      }
-    ]
-  },
-  "TLS": {
-    "definitions": [
-      {
-        "text": "Transport Layer Security",
-        "industry": "Tech"
       }
     ]
   },
@@ -5314,6 +5794,14 @@
       {
         "text": "Turkey",
         "industry": "Geography"
+      }
+    ]
+  },
+  "TV": {
+    "definitions": [
+      {
+        "text": "Television",
+        "industry": "Media"
       }
     ]
   },
@@ -5417,6 +5905,14 @@
     "definitions": [
       {
         "text": "Ultra High Definition",
+        "industry": "Tech"
+      }
+    ]
+  },
+  "UI": {
+    "definitions": [
+      {
+        "text": "User Interface",
         "industry": "Tech"
       }
     ]
@@ -5557,6 +6053,22 @@
       }
     ]
   },
+  "UV": {
+    "definitions": [
+      {
+        "text": "Ultraviolet",
+        "industry": "Science"
+      }
+    ]
+  },
+  "UX": {
+    "definitions": [
+      {
+        "text": "User Experience",
+        "industry": "Tech"
+      }
+    ]
+  },
   "VA": {
     "definitions": [
       {
@@ -5661,19 +6173,19 @@
       }
     ]
   },
-  "VPs": {
-    "definitions": [
-      {
-        "text": "Vice Presidents",
-        "industry": "Business"
-      }
-    ]
-  },
   "VPN": {
     "definitions": [
       {
         "text": "Virtual Private Network",
         "industry": "Tech"
+      }
+    ]
+  },
+  "VPs": {
+    "definitions": [
+      {
+        "text": "Vice Presidents",
+        "industry": "Business"
       }
     ]
   },
@@ -5721,11 +6233,27 @@
       }
     ]
   },
+  "WHO": {
+    "definitions": [
+      {
+        "text": "World Health Organization",
+        "industry": "Government"
+      }
+    ]
+  },
   "WLB": {
     "definitions": [
       {
         "text": "Work-Life Balance",
         "industry": "General"
+      }
+    ]
+  },
+  "WWE": {
+    "definitions": [
+      {
+        "text": "World Wrestling Entertainment",
+        "industry": "Sports"
       }
     ]
   },
@@ -5810,6 +6338,14 @@
       {
         "text": "South African Rand",
         "industry": "Currencies"
+      }
+    ]
+  },
+  "mRNA": {
+    "definitions": [
+      {
+        "text": "Messenger RNA",
+        "industry": "Science"
       }
     ]
   }

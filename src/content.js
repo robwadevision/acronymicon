@@ -465,7 +465,9 @@
       spans.forEach((s) => {
         if (lookup(s.getAttribute(TOOLTIP_ANCHOR_ATTR))) defined++;
       });
-      const dictionarySize = Object.keys(acronymData).filter(k => k !== "_meta").length;
+      const dictionarySize = Object.entries(acronymData)
+        .filter(([k]) => k !== "_meta")
+        .reduce((n, [, v]) => n + (v.definitions?.length ?? 0), 0);
       sendResponse({ identified: spans.length, defined, dictionarySize });
     }
 
