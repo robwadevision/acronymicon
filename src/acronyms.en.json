@@ -6,7 +6,7 @@
     "schema": {
       "definitions": "Array of definition objects — first is primary/most common",
       "definitions[].text": "The definition text",
-      "definitions[].industry": "Optional: Tech | Finance | Sports | Medical"
+      "definitions[].industry": "Optional: Business | Tech | Finance | Sports | Medical | Government | General | Media | Geography | Gaming | Work | Currencies | Science"
     }
   },
   "ABR": {
@@ -32,7 +32,8 @@
   "ACAS": {
     "definitions": [
       {
-        "text": "Advisory, Conciliation and Arbitration Service"
+        "text": "Advisory, Conciliation and Arbitration Service",
+        "industry": "Government"
       }
     ]
   },
@@ -79,17 +80,20 @@
   "AE": {
     "definitions": [
       {
-        "text": "United Arab Emirates"
+        "text": "United Arab Emirates",
+        "industry": "Geography"
       },
       {
-        "text": "Account Executive"
+        "text": "Account Executive",
+        "industry": "Business"
       }
     ]
   },
   "AEs": {
     "definitions": [
       {
-        "text": "Account Executives"
+        "text": "Account Executives",
+        "industry": "Business"
       }
     ]
   },
@@ -97,7 +101,7 @@
     "definitions": [
       {
         "text": "UAE Dirham",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -140,7 +144,8 @@
   "AP": {
     "definitions": [
       {
-        "text": "Analysis Paralysis"
+        "text": "Analysis Paralysis",
+        "industry": "Gaming"
       },
       {
         "text": "Accounts Payable",
@@ -179,7 +184,8 @@
   "AR": {
     "definitions": [
       {
-        "text": "Argentina"
+        "text": "Argentina",
+        "industry": "Geography"
       }
     ]
   },
@@ -194,7 +200,8 @@
   "ARG": {
     "definitions": [
       {
-        "text": "Argentina"
+        "text": "Argentina",
+        "industry": "Geography"
       }
     ]
   },
@@ -222,14 +229,15 @@
     "definitions": [
       {
         "text": "Argentine Peso",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "ASAP": {
     "definitions": [
       {
-        "text": "As Soon As Possible"
+        "text": "As Soon As Possible",
+        "industry": "General"
       }
     ]
   },
@@ -252,14 +260,16 @@
   "AT": {
     "definitions": [
       {
-        "text": "Austria"
+        "text": "Austria",
+        "industry": "Geography"
       }
     ]
   },
   "ATF": {
     "definitions": [
       {
-        "text": "Bureau of Alcohol, Tobacco, Firearms and Explosives"
+        "text": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "industry": "Government"
       }
     ]
   },
@@ -274,7 +284,8 @@
   "AU": {
     "definitions": [
       {
-        "text": "Australia"
+        "text": "Australia",
+        "industry": "Geography"
       }
     ]
   },
@@ -282,7 +293,7 @@
     "definitions": [
       {
         "text": "Australian Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -297,7 +308,8 @@
   "AUS": {
     "definitions": [
       {
-        "text": "Australia"
+        "text": "Australia",
+        "industry": "Geography"
       }
     ]
   },
@@ -317,27 +329,31 @@
     "definitions": [
       {
         "text": "Advertising Video on Demand",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "AVP": {
     "definitions": [
       {
-        "text": "Associate Vice President"
+        "text": "Associate Vice President",
+        "industry": "Business"
       },
       {
-        "text": "Assistant Vice President"
+        "text": "Assistant Vice President",
+        "industry": "Business"
       }
     ]
   },
   "AVPs": {
     "definitions": [
       {
-        "text": "Associate Vice Presidents"
+        "text": "Associate Vice Presidents",
+        "industry": "Business"
       },
       {
-        "text": "Assistant Vice Presidents"
+        "text": "Assistant Vice Presidents",
+        "industry": "Business"
       }
     ]
   },
@@ -352,14 +368,16 @@
   "B2B": {
     "definitions": [
       {
-        "text": "Business to Business"
+        "text": "Business to Business",
+        "industry": "General"
       }
     ]
   },
   "B2C": {
     "definitions": [
       {
-        "text": "Business to Consumer"
+        "text": "Business to Consumer",
+        "industry": "General"
       }
     ]
   },
@@ -374,42 +392,48 @@
   "BDM": {
     "definitions": [
       {
-        "text": "Business Development Manager"
+        "text": "Business Development Manager",
+        "industry": "Business"
       }
     ]
   },
   "BDMs": {
     "definitions": [
       {
-        "text": "Business Development Managers"
+        "text": "Business Development Managers",
+        "industry": "Business"
       }
     ]
   },
   "BDR": {
     "definitions": [
       {
-        "text": "Business Development Representative"
+        "text": "Business Development Representative",
+        "industry": "Business"
       }
     ]
   },
   "BDRs": {
     "definitions": [
       {
-        "text": "Business Development Representatives"
+        "text": "Business Development Representatives",
+        "industry": "Business"
       }
     ]
   },
   "BE": {
     "definitions": [
       {
-        "text": "Belgium"
+        "text": "Belgium",
+        "industry": "Geography"
       }
     ]
   },
   "BGG": {
     "definitions": [
       {
-        "text": "BoardGameGeek"
+        "text": "BoardGameGeek",
+        "industry": "Gaming"
       }
     ]
   },
@@ -424,7 +448,8 @@
   "BLS": {
     "definitions": [
       {
-        "text": "Bureau of Labor Statistics"
+        "text": "Bureau of Labor Statistics",
+        "industry": "Government"
       }
     ]
   },
@@ -443,14 +468,16 @@
   "BR": {
     "definitions": [
       {
-        "text": "Brazil"
+        "text": "Brazil",
+        "industry": "Geography"
       }
     ]
   },
   "BRA": {
     "definitions": [
       {
-        "text": "Brazil"
+        "text": "Brazil",
+        "industry": "Geography"
       }
     ]
   },
@@ -458,7 +485,7 @@
     "definitions": [
       {
         "text": "Brazilian Real",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -473,14 +500,16 @@
   "CA": {
     "definitions": [
       {
-        "text": "Canada"
+        "text": "Canada",
+        "industry": "Geography"
       }
     ]
   },
   "CAA": {
     "definitions": [
       {
-        "text": "Civil Aviation Authority"
+        "text": "Civil Aviation Authority",
+        "industry": "Government"
       }
     ]
   },
@@ -496,7 +525,7 @@
     "definitions": [
       {
         "text": "Canadian Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -519,21 +548,24 @@
   "CAN": {
     "definitions": [
       {
-        "text": "Canada"
+        "text": "Canada",
+        "industry": "Geography"
       }
     ]
   },
   "CBO": {
     "definitions": [
       {
-        "text": "Congressional Budget Office"
+        "text": "Congressional Budget Office",
+        "industry": "Government"
       }
     ]
   },
   "CBP": {
     "definitions": [
       {
-        "text": "Customs and Border Protection"
+        "text": "Customs and Border Protection",
+        "industry": "Government"
       }
     ]
   },
@@ -548,36 +580,44 @@
   "CCG": {
     "definitions": [
       {
-        "text": "Collectible Card Game"
+        "text": "Collectible Card Game",
+        "industry": "Gaming"
       },
       {
-        "text": "Customisable Card Game"
+        "text": "Customisable Card Game",
+        "industry": "Gaming"
       }
     ]
   },
   "CCO": {
     "definitions": [
       {
-        "text": "Chief Commercial Officer"
+        "text": "Chief Commercial Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Compliance Officer"
+        "text": "Chief Compliance Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Content Officer"
+        "text": "Chief Content Officer",
+        "industry": "Business"
       }
     ]
   },
   "CCOs": {
     "definitions": [
       {
-        "text": "Chief Commercial Officers"
+        "text": "Chief Commercial Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Compliance Officers"
+        "text": "Chief Compliance Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Content Officers"
+        "text": "Chief Content Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -596,14 +636,16 @@
   "CDC": {
     "definitions": [
       {
-        "text": "Centers for Disease Control and Prevention"
+        "text": "Centers for Disease Control and Prevention",
+        "industry": "Government"
       }
     ]
   },
   "CDG": {
     "definitions": [
       {
-        "text": "Card-Driven Game"
+        "text": "Card-Driven Game",
+        "industry": "Gaming"
       }
     ]
   },
@@ -630,10 +672,12 @@
   "CDO": {
     "definitions": [
       {
-        "text": "Chief Data Officer"
+        "text": "Chief Data Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Digital Officer"
+        "text": "Chief Digital Officer",
+        "industry": "Business"
       },
       {
         "text": "Collateralised Debt Obligation",
@@ -644,10 +688,12 @@
   "CDOs": {
     "definitions": [
       {
-        "text": "Chief Data Officers"
+        "text": "Chief Data Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Digital Officers"
+        "text": "Chief Digital Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -662,28 +708,32 @@
   "CEO": {
     "definitions": [
       {
-        "text": "Chief Executive Officer"
+        "text": "Chief Executive Officer",
+        "industry": "Business"
       }
     ]
   },
   "CEOs": {
     "definitions": [
       {
-        "text": "Chief Executive Officers"
+        "text": "Chief Executive Officers",
+        "industry": "Business"
       }
     ]
   },
   "CFO": {
     "definitions": [
       {
-        "text": "Chief Financial Officer"
+        "text": "Chief Financial Officer",
+        "industry": "Business"
       }
     ]
   },
   "CFOs": {
     "definitions": [
       {
-        "text": "Chief Financial Officers"
+        "text": "Chief Financial Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -706,7 +756,8 @@
   "CH": {
     "definitions": [
       {
-        "text": "Switzerland"
+        "text": "Switzerland",
+        "industry": "Geography"
       }
     ]
   },
@@ -714,28 +765,31 @@
     "definitions": [
       {
         "text": "Swiss Franc",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "CHN": {
     "definitions": [
       {
-        "text": "China"
+        "text": "China",
+        "industry": "Geography"
       }
     ]
   },
   "CHRO": {
     "definitions": [
       {
-        "text": "Chief Human Resources Officer"
+        "text": "Chief Human Resources Officer",
+        "industry": "Business"
       }
     ]
   },
   "CHROs": {
     "definitions": [
       {
-        "text": "Chief Human Resources Officers"
+        "text": "Chief Human Resources Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -750,28 +804,32 @@
         "industry": "Tech"
       },
       {
-        "text": "Côte d'Ivoire"
+        "text": "Côte d'Ivoire",
+        "industry": "Geography"
       }
     ]
   },
   "CIA": {
     "definitions": [
       {
-        "text": "Central Intelligence Agency"
+        "text": "Central Intelligence Agency",
+        "industry": "Government"
       }
     ]
   },
   "CIPD": {
     "definitions": [
       {
-        "text": "Chartered Institute of Personnel and Development"
+        "text": "Chartered Institute of Personnel and Development",
+        "industry": "Work"
       }
     ]
   },
   "CIO": {
     "definitions": [
       {
-        "text": "Chief Information Officer"
+        "text": "Chief Information Officer",
+        "industry": "Business"
       },
       {
         "text": "Chief Investment Officer",
@@ -782,7 +840,8 @@
   "CIOs": {
     "definitions": [
       {
-        "text": "Chief Information Officers"
+        "text": "Chief Information Officers",
+        "industry": "Business"
       },
       {
         "text": "Chief Investment Officers",
@@ -793,21 +852,24 @@
   "CISO": {
     "definitions": [
       {
-        "text": "Chief Information Security Officer"
+        "text": "Chief Information Security Officer",
+        "industry": "Business"
       }
     ]
   },
   "CISOs": {
     "definitions": [
       {
-        "text": "Chief Information Security Officers"
+        "text": "Chief Information Security Officers",
+        "industry": "Business"
       }
     ]
   },
   "CL": {
     "definitions": [
       {
-        "text": "Chile"
+        "text": "Chile",
+        "industry": "Geography"
       }
     ]
   },
@@ -822,10 +884,12 @@
   "CLO": {
     "definitions": [
       {
-        "text": "Chief Legal Officer"
+        "text": "Chief Legal Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Learning Officer"
+        "text": "Chief Learning Officer",
+        "industry": "Business"
       },
       {
         "text": "Collateralised Loan Obligation",
@@ -836,10 +900,12 @@
   "CLOs": {
     "definitions": [
       {
-        "text": "Chief Legal Officers"
+        "text": "Chief Legal Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Learning Officers"
+        "text": "Chief Learning Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -847,7 +913,7 @@
     "definitions": [
       {
         "text": "Chilean Peso",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -870,7 +936,8 @@
   "CMO": {
     "definitions": [
       {
-        "text": "Chief Marketing Officer"
+        "text": "Chief Marketing Officer",
+        "industry": "Business"
       },
       {
         "text": "Collateralised Mortgage Obligation",
@@ -881,7 +948,8 @@
   "CMOs": {
     "definitions": [
       {
-        "text": "Chief Marketing Officers"
+        "text": "Chief Marketing Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -908,7 +976,8 @@
   "CN": {
     "definitions": [
       {
-        "text": "China"
+        "text": "China",
+        "industry": "Geography"
       }
     ]
   },
@@ -916,60 +985,67 @@
     "definitions": [
       {
         "text": "Chinese Yuan Renminbi",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Chinese Yuan",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Renminbi",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "CO": {
     "definitions": [
       {
-        "text": "Colombia"
+        "text": "Colombia",
+        "industry": "Geography"
       }
     ]
   },
   "COIN": {
     "definitions": [
       {
-        "text": "Counter-Insurgency"
+        "text": "Counter-Insurgency",
+        "industry": "Government"
       }
     ]
   },
   "COL": {
     "definitions": [
       {
-        "text": "Colombia"
+        "text": "Colombia",
+        "industry": "Geography"
       }
     ]
   },
   "COLA": {
     "definitions": [
       {
-        "text": "Cost of Living Adjustment"
+        "text": "Cost of Living Adjustment",
+        "industry": "General"
       },
       {
-        "text": "Cost of Living Allowance"
+        "text": "Cost of Living Allowance",
+        "industry": "General"
       }
     ]
   },
   "COO": {
     "definitions": [
       {
-        "text": "Chief Operating Officer"
+        "text": "Chief Operating Officer",
+        "industry": "Business"
       }
     ]
   },
   "COOs": {
     "definitions": [
       {
-        "text": "Chief Operating Officers"
+        "text": "Chief Operating Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -977,10 +1053,11 @@
     "definitions": [
       {
         "text": "Colombian Peso",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
-        "text": "Community of Practice"
+        "text": "Community of Practice",
+        "industry": "General"
       }
     ]
   },
@@ -1027,30 +1104,36 @@
   "CPO": {
     "definitions": [
       {
-        "text": "Chief Product Officer"
+        "text": "Chief Product Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief People Officer"
+        "text": "Chief People Officer",
+        "industry": "Business"
       }
     ]
   },
   "CPOs": {
     "definitions": [
       {
-        "text": "Chief Product Officers"
+        "text": "Chief Product Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief People Officers"
+        "text": "Chief People Officers",
+        "industry": "Business"
       }
     ]
   },
   "CPS": {
     "definitions": [
       {
-        "text": "Crown Prosecution Service"
+        "text": "Crown Prosecution Service",
+        "industry": "Government"
       },
       {
-        "text": "Child Protective Services"
+        "text": "Child Protective Services",
+        "industry": "Government"
       }
     ]
   },
@@ -1089,30 +1172,36 @@
   "CRM": {
     "definitions": [
       {
-        "text": "Customer Relationship Management"
+        "text": "Customer Relationship Management",
+        "industry": "General"
       }
     ]
   },
   "CRO": {
     "definitions": [
       {
-        "text": "Chief Revenue Officer"
+        "text": "Chief Revenue Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Risk Officer"
+        "text": "Chief Risk Officer",
+        "industry": "Business"
       },
       {
-        "text": "Conversion Rate Optimisation"
+        "text": "Conversion Rate Optimisation",
+        "industry": "Business"
       }
     ]
   },
   "CROs": {
     "definitions": [
       {
-        "text": "Chief Revenue Officers"
+        "text": "Chief Revenue Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Risk Officers"
+        "text": "Chief Risk Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -1135,40 +1224,48 @@
   "CSM": {
     "definitions": [
       {
-        "text": "Customer Success Manager"
+        "text": "Customer Success Manager",
+        "industry": "Business"
       }
     ]
   },
   "CSMs": {
     "definitions": [
       {
-        "text": "Customer Success Managers"
+        "text": "Customer Success Managers",
+        "industry": "Business"
       }
     ]
   },
   "CSO": {
     "definitions": [
       {
-        "text": "Chief Strategy Officer"
+        "text": "Chief Strategy Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Security Officer"
+        "text": "Chief Security Officer",
+        "industry": "Business"
       },
       {
-        "text": "Chief Sales Officer"
+        "text": "Chief Sales Officer",
+        "industry": "Business"
       }
     ]
   },
   "CSOs": {
     "definitions": [
       {
-        "text": "Chief Strategy Officers"
+        "text": "Chief Strategy Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Security Officers"
+        "text": "Chief Security Officers",
+        "industry": "Business"
       },
       {
-        "text": "Chief Sales Officers"
+        "text": "Chief Sales Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -1187,7 +1284,8 @@
         "industry": "Tech"
       },
       {
-        "text": "Corporate Social Responsibility"
+        "text": "Corporate Social Responsibility",
+        "industry": "Business"
       }
     ]
   },
@@ -1202,14 +1300,16 @@
   "CTO": {
     "definitions": [
       {
-        "text": "Chief Technology Officer"
+        "text": "Chief Technology Officer",
+        "industry": "Business"
       }
     ]
   },
   "CTOs": {
     "definitions": [
       {
-        "text": "Chief Technology Officers"
+        "text": "Chief Technology Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -1225,27 +1325,31 @@
     "definitions": [
       {
         "text": "Connected TV",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "CV": {
     "definitions": [
       {
-        "text": "Curriculum Vitae"
+        "text": "Curriculum Vitae",
+        "industry": "General"
       },
       {
-        "text": "Résumé"
+        "text": "Résumé",
+        "industry": "General"
       }
     ]
   },
   "CZ": {
     "definitions": [
       {
-        "text": "Czech Republic"
+        "text": "Czech Republic",
+        "industry": "Geography"
       },
       {
-        "text": "Czechia"
+        "text": "Czechia",
+        "industry": "Geography"
       }
     ]
   },
@@ -1253,7 +1357,7 @@
     "definitions": [
       {
         "text": "Czech Koruna",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -1261,7 +1365,7 @@
     "definitions": [
       {
         "text": "Dynamic Ad Insertion",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -1300,7 +1404,8 @@
   "DBT": {
     "definitions": [
       {
-        "text": "Department for Business and Trade"
+        "text": "Department for Business and Trade",
+        "industry": "Government"
       },
       {
         "text": "Dialectical Behaviour Therapy",
@@ -1343,28 +1448,32 @@
   "DE": {
     "definitions": [
       {
-        "text": "Germany"
+        "text": "Germany",
+        "industry": "Geography"
       }
     ]
   },
   "DEA": {
     "definitions": [
       {
-        "text": "Drug Enforcement Administration"
+        "text": "Drug Enforcement Administration",
+        "industry": "Government"
       }
     ]
   },
   "DEI": {
     "definitions": [
       {
-        "text": "Diversity, Equity, and Inclusion"
+        "text": "Diversity, Equity, and Inclusion",
+        "industry": "General"
       }
     ]
   },
   "DEFRA": {
     "definitions": [
       {
-        "text": "Department for Environment, Food and Rural Affairs"
+        "text": "Department for Environment, Food and Rural Affairs",
+        "industry": "Government"
       }
     ]
   },
@@ -1379,14 +1488,16 @@
   "DfE": {
     "definitions": [
       {
-        "text": "Department for Education"
+        "text": "Department for Education",
+        "industry": "Government"
       }
     ]
   },
   "DfT": {
     "definitions": [
       {
-        "text": "Department for Transport"
+        "text": "Department for Transport",
+        "industry": "Government"
       }
     ]
   },
@@ -1401,7 +1512,8 @@
   "DHS": {
     "definitions": [
       {
-        "text": "Department of Homeland Security"
+        "text": "Department of Homeland Security",
+        "industry": "Government"
       }
     ]
   },
@@ -1432,7 +1544,8 @@
   "DK": {
     "definitions": [
       {
-        "text": "Denmark"
+        "text": "Denmark",
+        "industry": "Geography"
       }
     ]
   },
@@ -1440,24 +1553,27 @@
     "definitions": [
       {
         "text": "Danish Krone",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "DM": {
     "definitions": [
       {
-        "text": "Direct Message"
+        "text": "Direct Message",
+        "industry": "General"
       },
       {
-        "text": "Dungeon Master"
+        "text": "Dungeon Master",
+        "industry": "Gaming"
       },
       {
         "text": "Data Migration",
         "industry": "Tech"
       },
       {
-        "text": "Decision Maker"
+        "text": "Decision Maker",
+        "industry": "General"
       }
     ]
   },
@@ -1480,34 +1596,40 @@
   "DOD": {
     "definitions": [
       {
-        "text": "Department of Defense"
+        "text": "Department of Defense",
+        "industry": "Government"
       }
     ]
   },
   "DOE": {
     "definitions": [
       {
-        "text": "Department of Energy"
+        "text": "Department of Energy",
+        "industry": "Government"
       },
       {
-        "text": "Department of Education"
+        "text": "Department of Education",
+        "industry": "Government"
       },
       {
-        "text": "Depends on Experience"
+        "text": "Depends on Experience",
+        "industry": "Business"
       }
     ]
   },
   "DOJ": {
     "definitions": [
       {
-        "text": "Department of Justice"
+        "text": "Department of Justice",
+        "industry": "Government"
       }
     ]
   },
   "DOL": {
     "definitions": [
       {
-        "text": "Department of Labor"
+        "text": "Department of Labor",
+        "industry": "Government"
       }
     ]
   },
@@ -1526,7 +1648,8 @@
         "industry": "Tech"
       },
       {
-        "text": "Department of State"
+        "text": "Department of State",
+        "industry": "Government"
       },
       {
         "text": "Denial of Service",
@@ -1537,7 +1660,8 @@
   "DOT": {
     "definitions": [
       {
-        "text": "Department of Transportation"
+        "text": "Department of Transportation",
+        "industry": "Government"
       }
     ]
   },
@@ -1552,7 +1676,8 @@
   "DPO": {
     "definitions": [
       {
-        "text": "Data Protection Officer"
+        "text": "Data Protection Officer",
+        "industry": "Business"
       },
       {
         "text": "Days Payable Outstanding",
@@ -1563,7 +1688,8 @@
   "DPOs": {
     "definitions": [
       {
-        "text": "Data Protection Officers"
+        "text": "Data Protection Officers",
+        "industry": "Business"
       }
     ]
   },
@@ -1594,7 +1720,8 @@
   "DSIT": {
     "definitions": [
       {
-        "text": "Department for Science, Innovation and Technology"
+        "text": "Department for Science, Innovation and Technology",
+        "industry": "Government"
       }
     ]
   },
@@ -1629,7 +1756,8 @@
   "DVLA": {
     "definitions": [
       {
-        "text": "Driver and Vehicle Licensing Agency"
+        "text": "Driver and Vehicle Licensing Agency",
+        "industry": "Government"
       }
     ]
   },
@@ -1637,28 +1765,31 @@
     "definitions": [
       {
         "text": "Digital Video Recorder",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "DVSA": {
     "definitions": [
       {
-        "text": "Driver and Vehicle Standards Agency"
+        "text": "Driver and Vehicle Standards Agency",
+        "industry": "Government"
       }
     ]
   },
   "DWP": {
     "definitions": [
       {
-        "text": "Department for Work and Pensions"
+        "text": "Department for Work and Pensions",
+        "industry": "Government"
       }
     ]
   },
   "EAP": {
     "definitions": [
       {
-        "text": "Employee Assistance Programme"
+        "text": "Employee Assistance Programme",
+        "industry": "Business"
       },
       {
         "text": "Extensible Authentication Protocol",
@@ -1709,41 +1840,48 @@
   "ED": {
     "definitions": [
       {
-        "text": "Executive Director"
+        "text": "Executive Director",
+        "industry": "Business"
       },
       {
-        "text": "Engineering Director"
+        "text": "Engineering Director",
+        "industry": "Business"
       }
     ]
   },
   "EDs": {
     "definitions": [
       {
-        "text": "Executive Directors"
+        "text": "Executive Directors",
+        "industry": "Business"
       },
       {
-        "text": "Engineering Directors"
+        "text": "Engineering Directors",
+        "industry": "Business"
       }
     ]
   },
   "EEO": {
     "definitions": [
       {
-        "text": "Equal Employment Opportunity"
+        "text": "Equal Employment Opportunity",
+        "industry": "Government"
       }
     ]
   },
   "EEOC": {
     "definitions": [
       {
-        "text": "Equal Employment Opportunity Commission"
+        "text": "Equal Employment Opportunity Commission",
+        "industry": "Government"
       }
     ]
   },
   "EG": {
     "definitions": [
       {
-        "text": "Egypt"
+        "text": "Egypt",
+        "industry": "Geography"
       }
     ]
   },
@@ -1751,38 +1889,43 @@
     "definitions": [
       {
         "text": "Egyptian Pound",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "EGY": {
     "definitions": [
       {
-        "text": "Egypt"
+        "text": "Egypt",
+        "industry": "Geography"
       }
     ]
   },
   "ELT": {
     "definitions": [
       {
-        "text": "Executive Leadership Team"
+        "text": "Executive Leadership Team",
+        "industry": "Business"
       },
       {
-        "text": "English Language Teaching"
+        "text": "English Language Teaching",
+        "industry": "General"
       }
     ]
   },
   "EM": {
     "definitions": [
       {
-        "text": "Engineering Manager"
+        "text": "Engineering Manager",
+        "industry": "Business"
       }
     ]
   },
   "EMs": {
     "definitions": [
       {
-        "text": "Engineering Managers"
+        "text": "Engineering Managers",
+        "industry": "Business"
       }
     ]
   },
@@ -1813,38 +1956,44 @@
   "EOD": {
     "definitions": [
       {
-        "text": "End of Day"
+        "text": "End of Day",
+        "industry": "General"
       },
       {
-        "text": "End of Discussion"
+        "text": "End of Discussion",
+        "industry": "General"
       }
     ]
   },
   "EOE": {
     "definitions": [
       {
-        "text": "Equal Opportunity Employer"
+        "text": "Equal Opportunity Employer",
+        "industry": "General"
       }
     ]
   },
   "EOM": {
     "definitions": [
       {
-        "text": "End of Month"
+        "text": "End of Month",
+        "industry": "General"
       }
     ]
   },
   "EOY": {
     "definitions": [
       {
-        "text": "End of Year"
+        "text": "End of Year",
+        "industry": "General"
       }
     ]
   },
   "EPA": {
     "definitions": [
       {
-        "text": "Environmental Protection Agency"
+        "text": "Environmental Protection Agency",
+        "industry": "Government"
       }
     ]
   },
@@ -1852,11 +2001,11 @@
     "definitions": [
       {
         "text": "Electronic Programme Guide",
-        "industry": "Tech"
+        "industry": "Media"
       },
       {
         "text": "Electronic Program Guide",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -1871,7 +2020,8 @@
   "ERG": {
     "definitions": [
       {
-        "text": "Employee Resource Group"
+        "text": "Employee Resource Group",
+        "industry": "General"
       }
     ]
   },
@@ -1886,7 +2036,8 @@
   "ES": {
     "definitions": [
       {
-        "text": "Spain"
+        "text": "Spain",
+        "industry": "Geography"
       }
     ]
   },
@@ -1909,7 +2060,8 @@
   "ESP": {
     "definitions": [
       {
-        "text": "Spain"
+        "text": "Spain",
+        "industry": "Geography"
       }
     ]
   },
@@ -1932,7 +2084,8 @@
   "EU": {
     "definitions": [
       {
-        "text": "European Union"
+        "text": "European Union",
+        "industry": "Government"
       }
     ]
   },
@@ -1948,7 +2101,7 @@
     "definitions": [
       {
         "text": "Euro",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -1959,21 +2112,24 @@
         "industry": "Finance"
       },
       {
-        "text": "Electric Vehicle"
+        "text": "Electric Vehicle",
+        "industry": "Tech"
       }
     ]
   },
   "EVP": {
     "definitions": [
       {
-        "text": "Executive Vice President"
+        "text": "Executive Vice President",
+        "industry": "Business"
       }
     ]
   },
   "EVPs": {
     "definitions": [
       {
-        "text": "Executive Vice Presidents"
+        "text": "Executive Vice Presidents",
+        "industry": "Business"
       }
     ]
   },
@@ -1981,14 +2137,15 @@
     "definitions": [
       {
         "text": "Free Ad-Supported Streaming TV",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "FBI": {
     "definitions": [
       {
-        "text": "Federal Bureau of Investigation"
+        "text": "Federal Bureau of Investigation",
+        "industry": "Government"
       }
     ]
   },
@@ -2003,17 +2160,20 @@
   "FCC": {
     "definitions": [
       {
-        "text": "Federal Communications Commission"
+        "text": "Federal Communications Commission",
+        "industry": "Government"
       }
     ]
   },
   "FCDO": {
     "definitions": [
       {
-        "text": "Foreign, Commonwealth and Development Office"
+        "text": "Foreign, Commonwealth and Development Office",
+        "industry": "Government"
       },
       {
-        "text": "Foreign and Commonwealth Office"
+        "text": "Foreign and Commonwealth Office",
+        "industry": "Government"
       }
     ]
   },
@@ -2052,14 +2212,16 @@
   "FEMA": {
     "definitions": [
       {
-        "text": "Federal Emergency Management Agency"
+        "text": "Federal Emergency Management Agency",
+        "industry": "Government"
       }
     ]
   },
   "FI": {
     "definitions": [
       {
-        "text": "Finland"
+        "text": "Finland",
+        "industry": "Geography"
       }
     ]
   },
@@ -2074,7 +2236,8 @@
   "FLGS": {
     "definitions": [
       {
-        "text": "Friendly Local Game Store"
+        "text": "Friendly Local Game Store",
+        "industry": "Gaming"
       }
     ]
   },
@@ -2097,7 +2260,8 @@
   "FR": {
     "definitions": [
       {
-        "text": "France"
+        "text": "France",
+        "industry": "Geography"
       }
     ]
   },
@@ -2108,17 +2272,20 @@
         "industry": "Finance"
       },
       {
-        "text": "Fixed-Term Contract"
+        "text": "Fixed-Term Contract",
+        "industry": "Work"
       }
     ]
   },
   "FTE": {
     "definitions": [
       {
-        "text": "Full-Time Employee"
+        "text": "Full-Time Employee",
+        "industry": "General"
       },
       {
-        "text": "Full-Time Equivalent"
+        "text": "Full-Time Equivalent",
+        "industry": "General"
       }
     ]
   },
@@ -2126,7 +2293,7 @@
     "definitions": [
       {
         "text": "Free to Air",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -2153,7 +2320,8 @@
   "FYI": {
     "definitions": [
       {
-        "text": "For Your Information"
+        "text": "For Your Information",
+        "industry": "General"
       }
     ]
   },
@@ -2176,17 +2344,20 @@
   "GAO": {
     "definitions": [
       {
-        "text": "Government Accountability Office"
+        "text": "Government Accountability Office",
+        "industry": "Government"
       }
     ]
   },
   "GB": {
     "definitions": [
       {
-        "text": "United Kingdom"
+        "text": "United Kingdom",
+        "industry": "Geography"
       },
       {
-        "text": "Great Britain"
+        "text": "Great Britain",
+        "industry": "Geography"
       }
     ]
   },
@@ -2194,25 +2365,27 @@
     "definitions": [
       {
         "text": "British Pound Sterling",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Sterling",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Pound Sterling",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "GBR": {
     "definitions": [
       {
-        "text": "United Kingdom"
+        "text": "United Kingdom",
+        "industry": "Geography"
       },
       {
-        "text": "Great Britain"
+        "text": "Great Britain",
+        "industry": "Geography"
       }
     ]
   },
@@ -2223,14 +2396,16 @@
         "industry": "Tech"
       },
       {
-        "text": "General Counsel"
+        "text": "General Counsel",
+        "industry": "General"
       }
     ]
   },
   "GCHQ": {
     "definitions": [
       {
-        "text": "Government Communications Headquarters"
+        "text": "Government Communications Headquarters",
+        "industry": "Government"
       }
     ]
   },
@@ -2245,24 +2420,28 @@
   "GDPR": {
     "definitions": [
       {
-        "text": "General Data Protection Regulation"
+        "text": "General Data Protection Regulation",
+        "industry": "General"
       }
     ]
   },
   "GM": {
     "definitions": [
       {
-        "text": "General Manager"
+        "text": "General Manager",
+        "industry": "Business"
       },
       {
-        "text": "Game Master"
+        "text": "Game Master",
+        "industry": "Gaming"
       }
     ]
   },
   "GMs": {
     "definitions": [
       {
-        "text": "General Managers"
+        "text": "General Managers",
+        "industry": "Business"
       }
     ]
   },
@@ -2301,21 +2480,24 @@
   "GR": {
     "definitions": [
       {
-        "text": "Greece"
+        "text": "Greece",
+        "industry": "Geography"
       }
     ]
   },
   "GSA": {
     "definitions": [
       {
-        "text": "General Services Administration"
+        "text": "General Services Administration",
+        "industry": "Government"
       }
     ]
   },
   "GTM": {
     "definitions": [
       {
-        "text": "Go-to-Market"
+        "text": "Go-to-Market",
+        "industry": "Business"
       },
       {
         "text": "Google Tag Manager",
@@ -2386,7 +2568,8 @@
   "HK": {
     "definitions": [
       {
-        "text": "Hong Kong"
+        "text": "Hong Kong",
+        "industry": "Geography"
       }
     ]
   },
@@ -2394,7 +2577,7 @@
     "definitions": [
       {
         "text": "Hong Kong Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2409,13 +2592,16 @@
   "HM": {
     "definitions": [
       {
-        "text": "Hiring Manager"
+        "text": "Hiring Manager",
+        "industry": "Business"
       },
       {
-        "text": "Her Majesty's"
+        "text": "Her Majesty's",
+        "industry": "Government"
       },
       {
-        "text": "His Majesty's"
+        "text": "His Majesty's",
+        "industry": "Government"
       }
     ]
   },
@@ -2438,7 +2624,8 @@
   "HP": {
     "definitions": [
       {
-        "text": "Hit Points"
+        "text": "Hit Points",
+        "industry": "Gaming"
       },
       {
         "text": "Hewlett-Packard",
@@ -2449,24 +2636,28 @@
   "HR": {
     "definitions": [
       {
-        "text": "Human Resources"
+        "text": "Human Resources",
+        "industry": "Business"
       },
       {
-        "text": "Croatia"
+        "text": "Croatia",
+        "industry": "Geography"
       }
     ]
   },
   "HRBP": {
     "definitions": [
       {
-        "text": "HR Business Partner"
+        "text": "HR Business Partner",
+        "industry": "Business"
       }
     ]
   },
   "HRBPs": {
     "definitions": [
       {
-        "text": "HR Business Partners"
+        "text": "HR Business Partners",
+        "industry": "Business"
       }
     ]
   },
@@ -2481,7 +2672,8 @@
   "HSE": {
     "definitions": [
       {
-        "text": "Health and Safety Executive"
+        "text": "Health and Safety Executive",
+        "industry": "Government"
       }
     ]
   },
@@ -2512,14 +2704,16 @@
   "HU": {
     "definitions": [
       {
-        "text": "Hungary"
+        "text": "Hungary",
+        "industry": "Geography"
       }
     ]
   },
   "HUD": {
     "definitions": [
       {
-        "text": "Department of Housing and Urban Development"
+        "text": "Department of Housing and Urban Development",
+        "industry": "Government"
       }
     ]
   },
@@ -2527,7 +2721,7 @@
     "definitions": [
       {
         "text": "Hungarian Forint",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2566,7 +2760,8 @@
   "IC": {
     "definitions": [
       {
-        "text": "Individual Contributor"
+        "text": "Individual Contributor",
+        "industry": "Business"
       },
       {
         "text": "Investment Committee",
@@ -2581,7 +2776,8 @@
   "ICs": {
     "definitions": [
       {
-        "text": "Individual Contributors"
+        "text": "Individual Contributors",
+        "industry": "Business"
       }
     ]
   },
@@ -2596,14 +2792,16 @@
   "ICE": {
     "definitions": [
       {
-        "text": "Immigration and Customs Enforcement"
+        "text": "Immigration and Customs Enforcement",
+        "industry": "Government"
       }
     ]
   },
   "ID": {
     "definitions": [
       {
-        "text": "Indonesia"
+        "text": "Indonesia",
+        "industry": "Geography"
       },
       {
         "text": "Identifier",
@@ -2623,7 +2821,7 @@
     "definitions": [
       {
         "text": "Indonesian Rupiah",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2646,7 +2844,8 @@
   "IL": {
     "definitions": [
       {
-        "text": "Israel"
+        "text": "Israel",
+        "industry": "Geography"
       }
     ]
   },
@@ -2654,10 +2853,11 @@
     "definitions": [
       {
         "text": "Israeli New Shekel",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
-        "text": "Instrument Landing System"
+        "text": "Instrument Landing System",
+        "industry": "Tech"
       }
     ]
   },
@@ -2672,14 +2872,16 @@
   "IN": {
     "definitions": [
       {
-        "text": "India"
+        "text": "India",
+        "industry": "Geography"
       }
     ]
   },
   "IND": {
     "definitions": [
       {
-        "text": "India"
+        "text": "India",
+        "industry": "Geography"
       }
     ]
   },
@@ -2687,7 +2889,7 @@
     "definitions": [
       {
         "text": "Indian Rupee",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2714,7 +2916,8 @@
         "industry": "Tech"
       },
       {
-        "text": "Intellectual Property"
+        "text": "Intellectual Property",
+        "industry": "Business"
       }
     ]
   },
@@ -2761,17 +2964,20 @@
   "ISO": {
     "definitions": [
       {
-        "text": "International Organisation for Standardisation"
+        "text": "International Organisation for Standardisation",
+        "industry": "Business"
       },
       {
-        "text": "In Search Of"
+        "text": "In Search Of",
+        "industry": "General"
       }
     ]
   },
   "ISR": {
     "definitions": [
       {
-        "text": "Israel"
+        "text": "Israel",
+        "industry": "Geography"
       }
     ]
   },
@@ -2782,7 +2988,8 @@
         "industry": "Tech"
       },
       {
-        "text": "Italy"
+        "text": "Italy",
+        "industry": "Geography"
       }
     ]
   },
@@ -2797,7 +3004,8 @@
   "JD": {
     "definitions": [
       {
-        "text": "Job Description"
+        "text": "Job Description",
+        "industry": "General"
       }
     ]
   },
@@ -2816,14 +3024,16 @@
   "JP": {
     "definitions": [
       {
-        "text": "Japan"
+        "text": "Japan",
+        "industry": "Geography"
       }
     ]
   },
   "JPN": {
     "definitions": [
       {
-        "text": "Japan"
+        "text": "Japan",
+        "industry": "Geography"
       }
     ]
   },
@@ -2831,7 +3041,7 @@
     "definitions": [
       {
         "text": "Japanese Yen",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2854,38 +3064,44 @@
   "KISS": {
     "definitions": [
       {
-        "text": "Keep It Simple, Stupid"
+        "text": "Keep It Simple, Stupid",
+        "industry": "General"
       },
       {
-        "text": "Keep It Simple and Straightforward"
+        "text": "Keep It Simple and Straightforward",
+        "industry": "General"
       }
     ]
   },
   "KOR": {
     "definitions": [
       {
-        "text": "South Korea"
+        "text": "South Korea",
+        "industry": "Geography"
       }
     ]
   },
   "KPI": {
     "definitions": [
       {
-        "text": "Key Performance Indicator"
+        "text": "Key Performance Indicator",
+        "industry": "General"
       }
     ]
   },
   "KPIs": {
     "definitions": [
       {
-        "text": "Key Performance Indicators"
+        "text": "Key Performance Indicators",
+        "industry": "General"
       }
     ]
   },
   "KR": {
     "definitions": [
       {
-        "text": "South Korea"
+        "text": "South Korea",
+        "industry": "Geography"
       }
     ]
   },
@@ -2893,31 +3109,35 @@
     "definitions": [
       {
         "text": "South Korean Won",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "KS": {
     "definitions": [
       {
-        "text": "Kickstarter"
+        "text": "Kickstarter",
+        "industry": "Gaming"
       }
     ]
   },
   "KSA": {
     "definitions": [
       {
-        "text": "Saudi Arabia"
+        "text": "Saudi Arabia",
+        "industry": "Geography"
       },
       {
-        "text": "Kingdom of Saudi Arabia"
+        "text": "Kingdom of Saudi Arabia",
+        "industry": "Geography"
       }
     ]
   },
   "KW": {
     "definitions": [
       {
-        "text": "Kuwait"
+        "text": "Kuwait",
+        "industry": "Geography"
       }
     ]
   },
@@ -2925,7 +3145,7 @@
     "definitions": [
       {
         "text": "Kuwaiti Dinar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -2956,21 +3176,24 @@
   "LCG": {
     "definitions": [
       {
-        "text": "Living Card Game"
+        "text": "Living Card Game",
+        "industry": "Gaming"
       }
     ]
   },
   "LGS": {
     "definitions": [
       {
-        "text": "Local Game Store"
+        "text": "Local Game Store",
+        "industry": "Gaming"
       }
     ]
   },
   "LGTM": {
     "definitions": [
       {
-        "text": "Looks Good to Me"
+        "text": "Looks Good to Me",
+        "industry": "General"
       }
     ]
   },
@@ -3013,10 +3236,12 @@
         "industry": "Finance"
       },
       {
-        "text": "Long Play"
+        "text": "Long Play",
+        "industry": "Gaming"
       },
       {
-        "text": "Linear Programming"
+        "text": "Linear Programming",
+        "industry": "Tech"
       }
     ]
   },
@@ -3100,14 +3325,15 @@
     "definitions": [
       {
         "text": "Multi-Channel Network",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "MD": {
     "definitions": [
       {
-        "text": "Managing Director"
+        "text": "Managing Director",
+        "industry": "Business"
       },
       {
         "text": "Medical Doctor",
@@ -3126,7 +3352,8 @@
   "MDs": {
     "definitions": [
       {
-        "text": "Managing Directors"
+        "text": "Managing Directors",
+        "industry": "Business"
       },
       {
         "text": "Medical Doctors",
@@ -3137,7 +3364,8 @@
   "MEX": {
     "definitions": [
       {
-        "text": "Mexico"
+        "text": "Mexico",
+        "industry": "Geography"
       }
     ]
   },
@@ -3176,7 +3404,8 @@
   "MOD": {
     "definitions": [
       {
-        "text": "Ministry of Defence"
+        "text": "Ministry of Defence",
+        "industry": "Government"
       }
     ]
   },
@@ -3191,7 +3420,8 @@
   "MOJ": {
     "definitions": [
       {
-        "text": "Ministry of Justice"
+        "text": "Ministry of Justice",
+        "industry": "Government"
       }
     ]
   },
@@ -3218,7 +3448,8 @@
   "MSA": {
     "definitions": [
       {
-        "text": "Master Service Agreement"
+        "text": "Master Service Agreement",
+        "industry": "General"
       }
     ]
   },
@@ -3233,17 +3464,20 @@
   "MSRP": {
     "definitions": [
       {
-        "text": "Manufacturer's Suggested Retail Price"
+        "text": "Manufacturer's Suggested Retail Price",
+        "industry": "General"
       },
       {
-        "text": "Recommended Retail Price"
+        "text": "Recommended Retail Price",
+        "industry": "General"
       }
     ]
   },
   "MTG": {
     "definitions": [
       {
-        "text": "Magic: The Gathering"
+        "text": "Magic: The Gathering",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3282,7 +3516,8 @@
   "MX": {
     "definitions": [
       {
-        "text": "Mexico"
+        "text": "Mexico",
+        "industry": "Geography"
       }
     ]
   },
@@ -3290,14 +3525,15 @@
     "definitions": [
       {
         "text": "Mexican Peso",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "MY": {
     "definitions": [
       {
-        "text": "Malaysia"
+        "text": "Malaysia",
+        "industry": "Geography"
       }
     ]
   },
@@ -3305,7 +3541,7 @@
     "definitions": [
       {
         "text": "Malaysian Ringgit",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -3324,14 +3560,16 @@
   "NAO": {
     "definitions": [
       {
-        "text": "National Audit Office"
+        "text": "National Audit Office",
+        "industry": "Government"
       }
     ]
   },
   "NASA": {
     "definitions": [
       {
-        "text": "National Aeronautics and Space Administration"
+        "text": "National Aeronautics and Space Administration",
+        "industry": "Government"
       }
     ]
   },
@@ -3350,35 +3588,40 @@
         "industry": "Finance"
       },
       {
-        "text": "Navigation"
+        "text": "Navigation",
+        "industry": "General"
       }
     ]
   },
   "NCA": {
     "definitions": [
       {
-        "text": "National Crime Agency"
+        "text": "National Crime Agency",
+        "industry": "Government"
       }
     ]
   },
   "NDA": {
     "definitions": [
       {
-        "text": "Non-Disclosure Agreement"
+        "text": "Non-Disclosure Agreement",
+        "industry": "General"
       }
     ]
   },
   "NG": {
     "definitions": [
       {
-        "text": "Nigeria"
+        "text": "Nigeria",
+        "industry": "Geography"
       }
     ]
   },
   "NGA": {
     "definitions": [
       {
-        "text": "Nigeria"
+        "text": "Nigeria",
+        "industry": "Geography"
       }
     ]
   },
@@ -3386,7 +3629,7 @@
     "definitions": [
       {
         "text": "Nigerian Naira",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -3417,14 +3660,16 @@
   "NIST": {
     "definitions": [
       {
-        "text": "National Institute of Standards and Technology"
+        "text": "National Institute of Standards and Technology",
+        "industry": "Government"
       }
     ]
   },
   "NL": {
     "definitions": [
       {
-        "text": "Netherlands"
+        "text": "Netherlands",
+        "industry": "Geography"
       }
     ]
   },
@@ -3439,14 +3684,16 @@
   "NO": {
     "definitions": [
       {
-        "text": "Norway"
+        "text": "Norway",
+        "industry": "Geography"
       }
     ]
   },
   "NOAA": {
     "definitions": [
       {
-        "text": "National Oceanic and Atmospheric Administration"
+        "text": "National Oceanic and Atmospheric Administration",
+        "industry": "Government"
       }
     ]
   },
@@ -3454,21 +3701,23 @@
     "definitions": [
       {
         "text": "Norwegian Krone",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "NOR": {
     "definitions": [
       {
-        "text": "Norway"
+        "text": "Norway",
+        "industry": "Geography"
       }
     ]
   },
   "NPC": {
     "definitions": [
       {
-        "text": "Non-Player Character"
+        "text": "Non-Player Character",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3487,7 +3736,8 @@
         "industry": "Finance"
       },
       {
-        "text": "National Park Service"
+        "text": "National Park Service",
+        "industry": "Government"
       }
     ]
   },
@@ -3522,21 +3772,24 @@
   "NSA": {
     "definitions": [
       {
-        "text": "National Security Agency"
+        "text": "National Security Agency",
+        "industry": "Government"
       }
     ]
   },
   "NSF": {
     "definitions": [
       {
-        "text": "National Science Foundation"
+        "text": "National Science Foundation",
+        "industry": "Government"
       }
     ]
   },
   "NZ": {
     "definitions": [
       {
-        "text": "New Zealand"
+        "text": "New Zealand",
+        "industry": "Geography"
       }
     ]
   },
@@ -3544,14 +3797,15 @@
     "definitions": [
       {
         "text": "New Zealand Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "NZL": {
     "definitions": [
       {
-        "text": "New Zealand"
+        "text": "New Zealand",
+        "industry": "Geography"
       }
     ]
   },
@@ -3582,14 +3836,16 @@
   "OKR": {
     "definitions": [
       {
-        "text": "Objectives and Key Results"
+        "text": "Objectives and Key Results",
+        "industry": "General"
       }
     ]
   },
   "OKRs": {
     "definitions": [
       {
-        "text": "Objectives and Key Results"
+        "text": "Objectives and Key Results",
+        "industry": "General"
       }
     ]
   },
@@ -3612,14 +3868,16 @@
   "OMB": {
     "definitions": [
       {
-        "text": "Office of Management and Budget"
+        "text": "Office of Management and Budget",
+        "industry": "Government"
       }
     ]
   },
   "ONS": {
     "definitions": [
       {
-        "text": "Office for National Statistics"
+        "text": "Office for National Statistics",
+        "industry": "Government"
       }
     ]
   },
@@ -3630,14 +3888,16 @@
         "industry": "Tech"
       },
       {
-        "text": "Out of Print"
+        "text": "Out of Print",
+        "industry": "Gaming"
       }
     ]
   },
   "OPM": {
     "definitions": [
       {
-        "text": "Office of Personnel Management"
+        "text": "Office of Personnel Management",
+        "industry": "Government"
       }
     ]
   },
@@ -3660,17 +3920,20 @@
   "OSHA": {
     "definitions": [
       {
-        "text": "Occupational Safety and Health Administration"
+        "text": "Occupational Safety and Health Administration",
+        "industry": "Government"
       }
     ]
   },
   "OSR": {
     "definitions": [
       {
-        "text": "Old School Renaissance"
+        "text": "Old School Renaissance",
+        "industry": "Gaming"
       },
       {
-        "text": "Old School Revival"
+        "text": "Old School Revival",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3702,11 +3965,11 @@
     "definitions": [
       {
         "text": "Over the Top",
-        "industry": "Tech"
+        "industry": "Media"
       },
       {
         "text": "Over-the-Top streaming",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -3729,7 +3992,8 @@
   "PBTA": {
     "definitions": [
       {
-        "text": "Powered by the Apocalypse"
+        "text": "Powered by the Apocalypse",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3740,7 +4004,8 @@
         "industry": "Tech"
       },
       {
-        "text": "Player Character"
+        "text": "Player Character",
+        "industry": "Gaming"
       }
     ]
   },
@@ -3771,7 +4036,8 @@
   "PE": {
     "definitions": [
       {
-        "text": "Peru"
+        "text": "Peru",
+        "industry": "Geography"
       },
       {
         "text": "Private Equity",
@@ -3790,7 +4056,8 @@
   "PH": {
     "definitions": [
       {
-        "text": "Philippines"
+        "text": "Philippines",
+        "industry": "Geography"
       }
     ]
   },
@@ -3798,7 +4065,7 @@
     "definitions": [
       {
         "text": "Philippine Peso",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Hypertext Preprocessor",
@@ -3809,7 +4076,8 @@
   "PIP": {
     "definitions": [
       {
-        "text": "Performance Improvement Plan"
+        "text": "Performance Improvement Plan",
+        "industry": "Business"
       },
       {
         "text": "Python Installer Package",
@@ -3820,7 +4088,8 @@
   "PK": {
     "definitions": [
       {
-        "text": "Pakistan"
+        "text": "Pakistan",
+        "industry": "Geography"
       }
     ]
   },
@@ -3828,14 +4097,15 @@
     "definitions": [
       {
         "text": "Pakistani Rupee",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "PL": {
     "definitions": [
       {
-        "text": "Poland"
+        "text": "Poland",
+        "industry": "Geography"
       }
     ]
   },
@@ -3843,23 +4113,27 @@
     "definitions": [
       {
         "text": "Polish Zloty",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "PM": {
     "definitions": [
       {
-        "text": "Product Manager"
+        "text": "Product Manager",
+        "industry": "Business"
       },
       {
-        "text": "Project Manager"
+        "text": "Project Manager",
+        "industry": "Business"
       },
       {
-        "text": "Programme Manager"
+        "text": "Programme Manager",
+        "industry": "Business"
       },
       {
-        "text": "Private Message"
+        "text": "Private Message",
+        "industry": "General"
       }
     ]
   },
@@ -3874,13 +4148,16 @@
   "PMs": {
     "definitions": [
       {
-        "text": "Product Managers"
+        "text": "Product Managers",
+        "industry": "Business"
       },
       {
-        "text": "Project Managers"
+        "text": "Project Managers",
+        "industry": "Business"
       },
       {
-        "text": "Programme Managers"
+        "text": "Programme Managers",
+        "industry": "Business"
       }
     ]
   },
@@ -3895,17 +4172,20 @@
   "POC": {
     "definitions": [
       {
-        "text": "Proof of Concept"
+        "text": "Proof of Concept",
+        "industry": "General"
       },
       {
-        "text": "Point of Contact"
+        "text": "Point of Contact",
+        "industry": "General"
       }
     ]
   },
   "POL": {
     "definitions": [
       {
-        "text": "Poland"
+        "text": "Poland",
+        "industry": "Geography"
       }
     ]
   },
@@ -3928,7 +4208,8 @@
   "POTUS": {
     "definitions": [
       {
-        "text": "President of the United States"
+        "text": "President of the United States",
+        "industry": "Government"
       }
     ]
   },
@@ -3951,10 +4232,12 @@
         "industry": "Tech"
       },
       {
-        "text": "Public Relations"
+        "text": "Public Relations",
+        "industry": "General"
       },
       {
-        "text": "Performance Review"
+        "text": "Performance Review",
+        "industry": "General"
       }
     ]
   },
@@ -3969,21 +4252,24 @@
   "PT": {
     "definitions": [
       {
-        "text": "Portugal"
+        "text": "Portugal",
+        "industry": "Geography"
       },
       {
         "text": "Physical Therapy",
         "industry": "Medical"
       },
       {
-        "text": "Part-Time"
+        "text": "Part-Time",
+        "industry": "Work"
       }
     ]
   },
   "PTO": {
     "definitions": [
       {
-        "text": "Paid Time Off"
+        "text": "Paid Time Off",
+        "industry": "General"
       }
     ]
   },
@@ -3999,7 +4285,7 @@
     "definitions": [
       {
         "text": "Personal Video Recorder",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -4018,7 +4304,8 @@
   "PnP": {
     "definitions": [
       {
-        "text": "Print and Play"
+        "text": "Print and Play",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4029,10 +4316,12 @@
         "industry": "Tech"
       },
       {
-        "text": "Question and Answer"
+        "text": "Question and Answer",
+        "industry": "General"
       },
       {
-        "text": "Qatar"
+        "text": "Qatar",
+        "industry": "Geography"
       }
     ]
   },
@@ -4040,14 +4329,15 @@
     "definitions": [
       {
         "text": "Qatari Riyal",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "QAT": {
     "definitions": [
       {
-        "text": "Qatar"
+        "text": "Qatar",
+        "industry": "Geography"
       }
     ]
   },
@@ -4070,14 +4360,16 @@
         "industry": "Tech"
       },
       {
-        "text": "Red, Amber, Green (status)"
+        "text": "Red, Amber, Green (status)",
+        "industry": "Business"
       }
     ]
   },
   "RAI": {
     "definitions": [
       {
-        "text": "Rules as Intended"
+        "text": "Rules as Intended",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4104,7 +4396,8 @@
   "RAW": {
     "definitions": [
       {
-        "text": "Rules as Written"
+        "text": "Rules as Written",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4147,7 +4440,8 @@
   "RO": {
     "definitions": [
       {
-        "text": "Romania"
+        "text": "Romania",
+        "industry": "Geography"
       }
     ]
   },
@@ -4174,14 +4468,16 @@
   "RPG": {
     "definitions": [
       {
-        "text": "Role-Playing Game"
+        "text": "Role-Playing Game",
+        "industry": "Gaming"
       }
     ]
   },
   "RPO": {
     "definitions": [
       {
-        "text": "Recruitment Process Outsourcing"
+        "text": "Recruitment Process Outsourcing",
+        "industry": "Business"
       },
       {
         "text": "Recovery Point Objective",
@@ -4208,7 +4504,8 @@
   "RTO": {
     "definitions": [
       {
-        "text": "Return to Office"
+        "text": "Return to Office",
+        "industry": "General"
       },
       {
         "text": "Recovery Time Objective",
@@ -4227,7 +4524,8 @@
   "RU": {
     "definitions": [
       {
-        "text": "Russia"
+        "text": "Russia",
+        "industry": "Geography"
       }
     ]
   },
@@ -4235,24 +4533,27 @@
     "definitions": [
       {
         "text": "Russian Ruble",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "RUS": {
     "definitions": [
       {
-        "text": "Russia"
+        "text": "Russia",
+        "industry": "Geography"
       }
     ]
   },
   "SA": {
     "definitions": [
       {
-        "text": "Saudi Arabia"
+        "text": "Saudi Arabia",
+        "industry": "Geography"
       },
       {
-        "text": "South Africa"
+        "text": "South Africa",
+        "industry": "Geography"
       },
       {
         "text": "Solutions Architect",
@@ -4312,17 +4613,19 @@
     "definitions": [
       {
         "text": "Saudi Riyal",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "Suspicious Activity Report",
         "industry": "Finance"
       },
       {
-        "text": "Specific Absorption Rate"
+        "text": "Specific Absorption Rate",
+        "industry": "Science"
       },
       {
-        "text": "Search and Rescue"
+        "text": "Search and Rescue",
+        "industry": "General"
       }
     ]
   },
@@ -4341,7 +4644,8 @@
   "SCOTUS": {
     "definitions": [
       {
-        "text": "Supreme Court of the United States"
+        "text": "Supreme Court of the United States",
+        "industry": "Government"
       }
     ]
   },
@@ -4356,7 +4660,8 @@
   "SDR": {
     "definitions": [
       {
-        "text": "Sales Development Representative"
+        "text": "Sales Development Representative",
+        "industry": "Business"
       },
       {
         "text": "Special Drawing Rights",
@@ -4371,14 +4676,16 @@
   "SDRs": {
     "definitions": [
       {
-        "text": "Sales Development Representatives"
+        "text": "Sales Development Representatives",
+        "industry": "Business"
       }
     ]
   },
   "SE": {
     "definitions": [
       {
-        "text": "Sweden"
+        "text": "Sweden",
+        "industry": "Geography"
       },
       {
         "text": "Software Engineer",
@@ -4402,7 +4709,7 @@
     "definitions": [
       {
         "text": "Swedish Krona",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -4421,7 +4728,8 @@
   "SG": {
     "definitions": [
       {
-        "text": "Singapore"
+        "text": "Singapore",
+        "industry": "Geography"
       }
     ]
   },
@@ -4429,21 +4737,23 @@
     "definitions": [
       {
         "text": "Singapore Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "SHRM": {
     "definitions": [
       {
-        "text": "Society for Human Resource Management"
+        "text": "Society for Human Resource Management",
+        "industry": "Business"
       }
     ]
   },
   "SIS": {
     "definitions": [
       {
-        "text": "Secret Intelligence Service"
+        "text": "Secret Intelligence Service",
+        "industry": "Government"
       }
     ]
   },
@@ -4478,17 +4788,20 @@
   "SLT": {
     "definitions": [
       {
-        "text": "Senior Leadership Team"
+        "text": "Senior Leadership Team",
+        "industry": "Business"
       }
     ]
   },
   "SME": {
     "definitions": [
       {
-        "text": "Subject Matter Expert"
+        "text": "Subject Matter Expert",
+        "industry": "Work"
       },
       {
-        "text": "Small and Medium Enterprise"
+        "text": "Small and Medium Enterprise",
+        "industry": "Work"
       }
     ]
   },
@@ -4619,7 +4932,8 @@
   "SRD": {
     "definitions": [
       {
-        "text": "System Reference Document"
+        "text": "System Reference Document",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4646,7 +4960,8 @@
   "SSA": {
     "definitions": [
       {
-        "text": "Social Security Administration"
+        "text": "Social Security Administration",
+        "industry": "Government"
       }
     ]
   },
@@ -4713,7 +5028,8 @@
   "STAR": {
     "definitions": [
       {
-        "text": "Situation, Task, Action, Result"
+        "text": "Situation, Task, Action, Result",
+        "industry": "General"
       }
     ]
   },
@@ -4721,7 +5037,7 @@
     "definitions": [
       {
         "text": "Set-Top Box",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -4729,41 +5045,47 @@
     "definitions": [
       {
         "text": "Subscription Video on Demand",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "SVP": {
     "definitions": [
       {
-        "text": "Senior Vice President"
+        "text": "Senior Vice President",
+        "industry": "Business"
       }
     ]
   },
   "SVPs": {
     "definitions": [
       {
-        "text": "Senior Vice Presidents"
+        "text": "Senior Vice Presidents",
+        "industry": "Business"
       }
     ]
   },
   "SWE": {
     "definitions": [
       {
-        "text": "Sweden"
+        "text": "Sweden",
+        "industry": "Geography"
       }
     ]
   },
   "TA": {
     "definitions": [
       {
-        "text": "Talent Acquisition"
+        "text": "Talent Acquisition",
+        "industry": "Business"
       },
       {
-        "text": "Teaching Assistant"
+        "text": "Teaching Assistant",
+        "industry": "Business"
       },
       {
-        "text": "Technical Analyst"
+        "text": "Technical Analyst",
+        "industry": "Business"
       }
     ]
   },
@@ -4782,20 +5104,24 @@
   "TBC": {
     "definitions": [
       {
-        "text": "To Be Confirmed"
+        "text": "To Be Confirmed",
+        "industry": "General"
       }
     ]
   },
   "TBD": {
     "definitions": [
       {
-        "text": "To Be Determined"
+        "text": "To Be Determined",
+        "industry": "General"
       },
       {
-        "text": "To Be Decided"
+        "text": "To Be Decided",
+        "industry": "General"
       },
       {
-        "text": "To Be Defined"
+        "text": "To Be Defined",
+        "industry": "General"
       }
     ]
   },
@@ -4818,7 +5144,8 @@
   "TCG": {
     "definitions": [
       {
-        "text": "Trading Card Game"
+        "text": "Trading Card Game",
+        "industry": "Gaming"
       }
     ]
   },
@@ -4861,7 +5188,8 @@
   "TH": {
     "definitions": [
       {
-        "text": "Thailand"
+        "text": "Thailand",
+        "industry": "Geography"
       }
     ]
   },
@@ -4869,27 +5197,31 @@
     "definitions": [
       {
         "text": "Thai Baht",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "TL": {
     "definitions": [
       {
-        "text": "Tech Lead"
+        "text": "Tech Lead",
+        "industry": "Business"
       },
       {
-        "text": "Team Lead"
+        "text": "Team Lead",
+        "industry": "Business"
       }
     ]
   },
   "TLs": {
     "definitions": [
       {
-        "text": "Tech Leads"
+        "text": "Tech Leads",
+        "industry": "Business"
       },
       {
-        "text": "Team Leads"
+        "text": "Team Leads",
+        "industry": "Business"
       }
     ]
   },
@@ -4912,7 +5244,8 @@
   "TPM": {
     "definitions": [
       {
-        "text": "Technical Program Manager"
+        "text": "Technical Program Manager",
+        "industry": "Business"
       },
       {
         "text": "Trusted Platform Module",
@@ -4923,7 +5256,8 @@
   "TPMs": {
     "definitions": [
       {
-        "text": "Technical Program Managers"
+        "text": "Technical Program Managers",
+        "industry": "Business"
       }
     ]
   },
@@ -4938,7 +5272,8 @@
   "TR": {
     "definitions": [
       {
-        "text": "Turkey"
+        "text": "Turkey",
+        "industry": "Geography"
       }
     ]
   },
@@ -4946,35 +5281,39 @@
     "definitions": [
       {
         "text": "Turkish Lira",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "TSA": {
     "definitions": [
       {
-        "text": "Transportation Security Administration"
+        "text": "Transportation Security Administration",
+        "industry": "Government"
       }
     ]
   },
   "TTRPG": {
     "definitions": [
       {
-        "text": "Tabletop Role-Playing Game"
+        "text": "Tabletop Role-Playing Game",
+        "industry": "Gaming"
       }
     ]
   },
   "TTS": {
     "definitions": [
       {
-        "text": "Tabletop Simulator"
+        "text": "Tabletop Simulator",
+        "industry": "Gaming"
       }
     ]
   },
   "TUR": {
     "definitions": [
       {
-        "text": "Turkey"
+        "text": "Turkey",
+        "industry": "Geography"
       }
     ]
   },
@@ -4982,7 +5321,7 @@
     "definitions": [
       {
         "text": "Transactional Video on Demand",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -4997,7 +5336,8 @@
   "TW": {
     "definitions": [
       {
-        "text": "Taiwan"
+        "text": "Taiwan",
+        "industry": "Geography"
       }
     ]
   },
@@ -5005,21 +5345,23 @@
     "definitions": [
       {
         "text": "New Taiwan Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "UA": {
     "definitions": [
       {
-        "text": "Ukraine"
+        "text": "Ukraine",
+        "industry": "Geography"
       }
     ]
   },
   "UAE": {
     "definitions": [
       {
-        "text": "United Arab Emirates"
+        "text": "United Arab Emirates",
+        "industry": "Geography"
       }
     ]
   },
@@ -5027,7 +5369,7 @@
     "definitions": [
       {
         "text": "Ukrainian Hryvnia",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -5082,7 +5424,8 @@
   "UK": {
     "definitions": [
       {
-        "text": "United Kingdom"
+        "text": "United Kingdom",
+        "industry": "Geography"
       }
     ]
   },
@@ -5097,27 +5440,32 @@
   "UKPW": {
     "definitions": [
       {
-        "text": "UK Parliament Week"
+        "text": "UK Parliament Week",
+        "industry": "Government"
       },
       {
-        "text": "United Kingdom Professional Wrestling"
+        "text": "United Kingdom Professional Wrestling",
+        "industry": "Sports"
       },
       {
-        "text": "United Kingdom Parliament Week"
+        "text": "United Kingdom Parliament Week",
+        "industry": "Government"
       }
     ]
   },
   "UKR": {
     "definitions": [
       {
-        "text": "Ukraine"
+        "text": "Ukraine",
+        "industry": "Geography"
       }
     ]
   },
   "UKRI": {
     "definitions": [
       {
-        "text": "UK Research and Innovation"
+        "text": "UK Research and Innovation",
+        "industry": "Government"
       }
     ]
   },
@@ -5148,17 +5496,20 @@
   "US": {
     "definitions": [
       {
-        "text": "United States"
+        "text": "United States",
+        "industry": "Geography"
       }
     ]
   },
   "USA": {
     "definitions": [
       {
-        "text": "United States"
+        "text": "United States",
+        "industry": "Geography"
       },
       {
-        "text": "United States of America"
+        "text": "United States of America",
+        "industry": "Geography"
       }
     ]
   },
@@ -5173,7 +5524,8 @@
   "USCIS": {
     "definitions": [
       {
-        "text": "United States Citizenship and Immigration Services"
+        "text": "United States Citizenship and Immigration Services",
+        "industry": "Government"
       }
     ]
   },
@@ -5181,35 +5533,39 @@
     "definitions": [
       {
         "text": "US Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       },
       {
         "text": "United States Dollar",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
   "USDA": {
     "definitions": [
       {
-        "text": "United States Department of Agriculture"
+        "text": "United States Department of Agriculture",
+        "industry": "Government"
       }
     ]
   },
   "USPS": {
     "definitions": [
       {
-        "text": "United States Postal Service"
+        "text": "United States Postal Service",
+        "industry": "Government"
       }
     ]
   },
   "VA": {
     "definitions": [
       {
-        "text": "Department of Veterans Affairs"
+        "text": "Department of Veterans Affairs",
+        "industry": "Government"
       },
       {
-        "text": "Virginia"
+        "text": "Virginia",
+        "industry": "Geography"
       }
     ]
   },
@@ -5217,7 +5573,7 @@
     "definitions": [
       {
         "text": "Video Ad Serving Template",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
@@ -5272,7 +5628,8 @@
   "VN": {
     "definitions": [
       {
-        "text": "Vietnam"
+        "text": "Vietnam",
+        "industry": "Geography"
       }
     ]
   },
@@ -5280,7 +5637,7 @@
     "definitions": [
       {
         "text": "Vietnamese Dong",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   },
@@ -5288,24 +5645,27 @@
     "definitions": [
       {
         "text": "Video on Demand",
-        "industry": "Tech"
+        "industry": "Media"
       }
     ]
   },
   "VP": {
     "definitions": [
       {
-        "text": "Vice President"
+        "text": "Vice President",
+        "industry": "Business"
       },
       {
-        "text": "Victory Points"
+        "text": "Victory Points",
+        "industry": "Gaming"
       }
     ]
   },
   "VPs": {
     "definitions": [
       {
-        "text": "Vice Presidents"
+        "text": "Vice Presidents",
+        "industry": "Business"
       }
     ]
   },
@@ -5356,21 +5716,24 @@
   "WFH": {
     "definitions": [
       {
-        "text": "Work From Home"
+        "text": "Work From Home",
+        "industry": "General"
       }
     ]
   },
   "WLB": {
     "definitions": [
       {
-        "text": "Work-Life Balance"
+        "text": "Work-Life Balance",
+        "industry": "General"
       }
     ]
   },
   "WoTC": {
     "definitions": [
       {
-        "text": "Wizards of the Coast"
+        "text": "Wizards of the Coast",
+        "industry": "Gaming"
       }
     ]
   },
@@ -5385,7 +5748,8 @@
   "XP": {
     "definitions": [
       {
-        "text": "Experience Points"
+        "text": "Experience Points",
+        "industry": "Gaming"
       },
       {
         "text": "Extreme Programming",
@@ -5428,14 +5792,16 @@
   "ZA": {
     "definitions": [
       {
-        "text": "South Africa"
+        "text": "South Africa",
+        "industry": "Geography"
       }
     ]
   },
   "ZAF": {
     "definitions": [
       {
-        "text": "South Africa"
+        "text": "South Africa",
+        "industry": "Geography"
       }
     ]
   },
@@ -5443,7 +5809,7 @@
     "definitions": [
       {
         "text": "South African Rand",
-        "industry": "Finance"
+        "industry": "Currencies"
       }
     ]
   }
