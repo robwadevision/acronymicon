@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.6.14
+- Manifest: removed `src/constants.js` from `content_scripts` permanently — any zip built from the repo is now valid for Chrome Web Store upload without a CI pipeline
+- Analytics: added `typeof AcronymConfig !== 'undefined'` guards so local dev no longer throws a `ReferenceError` when `constants.js` is absent; analytics degrades silently to a no-op
+- Release workflow: updated GA4 credential injection to replace the entire `const` declaration line via regex, ensuring the shipped `analytics.js` contains a clean hardcoded value with no runtime conditional
+
 ### v1.6.13
 - README: added Author section to both `README.md` and `docs/README.md` linking to the author's LinkedIn profile
 

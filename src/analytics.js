@@ -13,9 +13,9 @@ const AcronymAnalytics = (() => {
   "use strict";
 
   const GA_ENDPOINT = "https://www.google-analytics.com/mp/collect";
-  const MEASUREMENT_ID = AcronymConfig.measurementId;
-  const API_SECRET = AcronymConfig.apiSecret;
-  const DEBUG = AcronymConfig.debug ?? false;
+  const MEASUREMENT_ID = typeof AcronymConfig !== 'undefined' ? AcronymConfig.measurementId : "";
+  const API_SECRET = typeof AcronymConfig !== 'undefined' ? AcronymConfig.apiSecret : "";
+  const DEBUG = typeof AcronymConfig !== 'undefined' ? (AcronymConfig.debug ?? false) : false;
 
   let clientId = null;
   const queue = [];

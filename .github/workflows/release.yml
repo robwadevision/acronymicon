@@ -51,9 +51,9 @@ jobs:
           node -e "
             const fs = require('fs');
             let src = fs.readFileSync('src/analytics.js', 'utf8');
-            src = src.replace('AcronymConfig.measurementId', JSON.stringify(process.env.GA4_MEASUREMENT_ID));
-            src = src.replace('AcronymConfig.apiSecret', JSON.stringify(process.env.GA4_API_SECRET));
-            src = src.replace('AcronymConfig.debug ?? false', 'false');
+            src = src.replace(/const MEASUREMENT_ID = .+/, 'const MEASUREMENT_ID = ' + JSON.stringify(process.env.GA4_MEASUREMENT_ID) + ';');
+            src = src.replace(/const API_SECRET = .+/, 'const API_SECRET = ' + JSON.stringify(process.env.GA4_API_SECRET) + ';');
+            src = src.replace(/const DEBUG = .+/, 'const DEBUG = false;');
             fs.writeFileSync('src/analytics.js', src);
           "
 
