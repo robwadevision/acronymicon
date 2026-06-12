@@ -1,5 +1,10 @@
 # Changelog
 
+### v1.6.12
+- Release workflow: production zip no longer includes or references `src/constants.js` — the CI build now injects GA4 credentials directly into `analytics.js` via node string replacement, patches `manifest.json` to strip `src/constants.js` from `content_scripts`, and explicitly excludes both `constants.js` and `constants.example.js` from the zip; local dev workflow is unchanged
+- Popup: added "About ↗" link to the footer pointing to the GitHub Pages README, alongside the existing GitHub link
+- Popup: added a language badge to the header showing the active dictionary language (globe icon + language code read from `acLang` storage, defaulting to `EN`); non-interactive for now, structured for future language switching
+
 ### v1.6.11
 - Tooltip: undefined acronyms are no longer highlighted or interactive — only dictionary-defined acronyms receive the underline and tooltip
 - Analytics: `acronym_undefined` events continue to fire silently for unrecognised regex matches, preserving the dictionary-gap data signal
