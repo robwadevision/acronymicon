@@ -1,5 +1,8 @@
 # Changelog
 
+### v1.6.13
+- README: added Author section to both `README.md` and `docs/README.md` linking to the author's LinkedIn profile
+
 ### v1.6.12
 - Release workflow: production zip no longer includes or references `src/constants.js` — the CI build now injects GA4 credentials directly into `analytics.js` via node string replacement, patches `manifest.json` to strip `src/constants.js` from `content_scripts`, and explicitly excludes both `constants.js` and `constants.example.js` from the zip; local dev workflow is unchanged
 - Popup: added "About ↗" link to the footer pointing to the GitHub Pages README, alongside the existing GitHub link

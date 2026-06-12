@@ -116,3 +116,9 @@ Acronymicon is free to use and always will be. If it saves you time and you'd li
 ## License
 
 MIT
+
+---
+
+## Author
+
+[Rob Wade](https://www.linkedin.com/in/robwadevision)
