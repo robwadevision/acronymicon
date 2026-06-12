@@ -20,22 +20,42 @@ jobs:
         id: version
         run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
 
-      - name: Create constants.js from secrets
+      - name: Update manifest version from tag
+        env:
+          VERSION: ${{ steps.version.outputs.VERSION }}
         run: |
-          VERSION_NUM="${{ steps.version.outputs.VERSION }}"
-          VERSION_NUM="${VERSION_NUM#v}"
-          cat > src/constants.js << EOF
-          const versionNumber = "${VERSION_NUM}";
-          const AcronymConfig = {
-            version: "${VERSION_NUM}",
-            measurementId: "${{ secrets.GA4_MEASUREMENT_ID }}",
-            apiSecret: "${{ secrets.GA4_API_SECRET }}",
-            debug: false,
-          };
-          EOF
+          node -e "
+            const fs = require('fs');
+            const version = process.env.VERSION.replace(/^v/, '');
+            const m = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+            m.version = version;
+            fs.writeFileSync('manifest.json', JSON.stringify(m, null, 2) + '\n');
+          "
 
-      - name: Sync version to manifest.json
-        run: node scripts/sync-version.js
+      - name: Remove constants.js from production manifest
+        run: |
+          node -e "
+            const fs = require('fs');
+            const m = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+            m.content_scripts.forEach(cs => {
+              cs.js = cs.js.filter(f => f !== 'src/constants.js');
+            });
+            fs.writeFileSync('manifest.json', JSON.stringify(m, null, 2) + '\n');
+          "
+
+      - name: Inject GA4 credentials into analytics.js
+        env:
+          GA4_MEASUREMENT_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
+          GA4_API_SECRET: ${{ secrets.GA4_API_SECRET }}
+        run: |
+          node -e "
+            const fs = require('fs');
+            let src = fs.readFileSync('src/analytics.js', 'utf8');
+            src = src.replace('AcronymConfig.measurementId', JSON.stringify(process.env.GA4_MEASUREMENT_ID));
+            src = src.replace('AcronymConfig.apiSecret', JSON.stringify(process.env.GA4_API_SECRET));
+            src = src.replace('AcronymConfig.debug ?? false', 'false');
+            fs.writeFileSync('src/analytics.js', src);
+          "
 
       - name: Build zip
         run: |
@@ -45,7 +65,9 @@ jobs:
             --exclude "*.DS_Store" \
             --exclude "*.md" \
             --exclude "docs/*" \
-            --exclude "scripts/*"
+            --exclude "scripts/*" \
+            --exclude "src/constants.js" \
+            --exclude "src/constants.example.js"
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2

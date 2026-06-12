@@ -45,6 +45,26 @@ body {
   color: #ffffff;
 }
 
+/* ── Language badge ── */
+.lang-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border: 1px solid #3d2a6e;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a78bfa;
+  letter-spacing: 0.05em;
+}
+
+.lang-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
 /* ── Toggle row ── */
 .toggle-row {
   display: flex;

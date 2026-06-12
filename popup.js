@@ -11,9 +11,10 @@
   const statDict = document.getElementById("stat-dict");
 
   // ── Load persisted state ───────────────────────────────────────────────
-  const { acEnabled = true } = await chrome.storage.sync.get("acEnabled");
+  const { acEnabled = true, acLang = "en" } = await chrome.storage.sync.get(["acEnabled", "acLang"]);
   toggle.checked = acEnabled;
   updateSubLabel(acEnabled);
+  document.getElementById("lang-label").textContent = acLang.toUpperCase();
 
   // ── Query the active tab for live stats ───────────────────────────────
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
