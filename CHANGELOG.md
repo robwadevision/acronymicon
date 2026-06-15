@@ -1,5 +1,9 @@
 # Changelog
 
+### v1.6.15
+
+- Removed duplicate readme and fixed link to About on popup
+
 ### v1.6.14
 - Manifest: removed `src/constants.js` from `content_scripts` permanently — any zip built from the repo is now valid for Chrome Web Store upload without a CI pipeline
 - Analytics: added `typeof AcronymConfig !== 'undefined'` guards so local dev no longer throws a `ReferenceError` when `constants.js` is absent; analytics degrades silently to a no-op
